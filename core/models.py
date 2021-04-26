@@ -25,7 +25,7 @@ class Career(models.Model):
     start = models.DateField("data inici", null=False)
     end = models.DateField("data finalització", null=True, default=None)
     active = models.BooleanField("és actiu", null=False)
-    mp = models.ForeignKey(Term, on_delete=models.RESTRICT)
+    term_id = models.ForeignKey(Term, on_delete=models.RESTRICT)
 
     def __str__(self):
         return self.name
@@ -46,15 +46,15 @@ class Enrolment(models.Model):
     birthplace = models.CharField(
         "lloc de naixement", max_length=50, null=True, default=None)
     birthday = models.DateField("data de naixement", null=True, default=None)
-    address = models.CharField("adreça")
-    city = models.CharField("ciutat")
-    postal_code = models.CharField("codi postal")
+    address = models.CharField("adreça", max_length=255)
+    city = models.CharField("ciutat", max_length=150)
+    postal_code = models.CharField("codi postal", max_length=5)
     phone_number = models.CharField("número de telèfon", max_length=14)
     emergency_number = models.CharField("número d'emergència", max_length=14)
     tutor_1 = models.CharField(
-        "nom del pare/mare o tutor/a legal", null=True, default=None)
+        "nom del pare/mare o tutor/a legal", max_length=50, null=True, default=None)
     tutor_2 = models.CharField(
-        "nom del pare/mare o tutor/a legal (2)", null=True, default=None)
+        "nom del pare/mare o tutor/a legal (2)", max_length=50, null=True, default=None)
     tutor_1_dni = models.CharField(
         "dni del pare/mare o tutor/a legal", max_length=9, null=True, default=None)
     tutor_2_dni = models.CharField(
@@ -70,7 +70,7 @@ class MP(models.Model):
     name = models.CharField(max_length=200)
     code = models.CharField(max_length=20)
     desc = models.TextField(blank=True, null=True)
-    career = models.ForeignKey(Career, on_delete=models.CASCADE)
+    career_id = models.ForeignKey(Career, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.name
@@ -94,7 +94,7 @@ class EnrolmentUF(models.Model):
 
 
 class ProfileRequirement(models.Model):
-    name = models.CharField("nom")
+    name = models.CharField("nom", max_length=50)
 
 
 class Record(models.Model):

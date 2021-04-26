@@ -8,7 +8,7 @@ admin.site.register(models.Career)
 admin.site.register(models.UF)
 
 class MpAdmin(admin.ModelAdmin):
-    list_display = ("name","code","career")
+    list_display = ("name","code")
     search_fields= ("name","code","career__name")
     
 
