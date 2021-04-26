@@ -87,3 +87,17 @@ class UF(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class EnrolmentUF(models.Model):
+    uf_id = models.ForeignKey(UF, on_delete=models.RESTRICT)
+    enrolment_id = models.ForeignKey(Enrolment, on_delete=models.RESTRICT)
+
+
+class ProfileRequirement(models.Model):
+    name = models.CharField("nom")
+
+
+class Record(models.Model):
+    #user_id = models.ForeignKey(User, on_delete=models.RESTRICT)
+    uf_id = models.ForeignKey(UF, on_delete=models.RESTRICT)
