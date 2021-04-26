@@ -1,4 +1,16 @@
 from django.db import models
+from enum import Enum
+
+
+class Term(models.Model):
+    class Meta:
+        verbose_name = "Curs"
+    name = models.CharField("nom", max_length=200)
+    desc = models.TextField(
+        "descripció", max_length=300, blank=True, null=True)
+    start = models.DateField("data inici", null=False)
+    end = models.DateField("data finalització", null=True, default=None)
+    active = models.BooleanField("és actiu", null=False)
 
 
 class Career(models.Model):
