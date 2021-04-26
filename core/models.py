@@ -31,6 +31,40 @@ class Career(models.Model):
     def __str__(self):
         return self.name
 
+
+class ValidationState(Enum):
+    P = "Pending"
+    V = "Validated"
+    U = "Unregistered"
+
+
+class Enrolment(models.Model):
+    class Meta:
+        verbose_name = "Matrícula"
+    dni = models.CharField("dni", max_length=9)
+    state = models.CharField(max_length=20, choices=[(
+        val_state, val_state.value) for val_state in ValidationState], default=None)
+    birthplace = models.CharField(
+        "lloc de naixement", max_length=50, null=True, default=None)
+    birthday = models.DateField("data de naixement", null=True, default=None)
+    address = models.CharField("adreça")
+    city = models.CharField("ciutat")
+    postal_code = models.CharField("codi postal")
+    phone_number = models.CharField("número de telèfon", max_length=14)
+    emergency_number = models.CharField("número d'emergència", max_length=14)
+    tutor_1 = models.CharField(
+        "nom del pare/mare o tutor/a legal", null=True, default=None)
+    tutor_2 = models.CharField(
+        "nom del pare/mare o tutor/a legal (2)", null=True, default=None)
+    tutor_1_dni = models.CharField(
+        "dni del pare/mare o tutor/a legal", max_length=9, null=True, default=None)
+    tutor_2_dni = models.CharField(
+        "dni del pare/mare o tutor/a legal (2)", max_length=9, null=True, default=None)
+    user_id = models.ForeignKey(User, on_delete=models.RESTRICT)
+    term_id = models.ForeignKey(Term, on_delete=models.RESTRICT)
+    career_id = models.ForeignKey(Career, on_delete=models.RESTRICT)
+
+
 class MP(models.Model):
     class Meta:
         verbose_name_plural = "MPs"
