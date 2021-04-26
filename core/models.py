@@ -25,7 +25,6 @@ class Career(models.Model):
     start = models.DateField("data inici", null=False)
     end = models.DateField("data finalització", null=True, default=None)
     active = models.BooleanField("és actiu", null=False)
-    # theres's no on_update method
     mp = models.ForeignKey(Term, on_delete=models.RESTRICT)
 
     def __str__(self):
@@ -60,7 +59,7 @@ class Enrolment(models.Model):
         "dni del pare/mare o tutor/a legal", max_length=9, null=True, default=None)
     tutor_2_dni = models.CharField(
         "dni del pare/mare o tutor/a legal (2)", max_length=9, null=True, default=None)
-    user_id = models.ForeignKey(User, on_delete=models.RESTRICT)
+    # user_id = models.ForeignKey(User, on_delete=models.RESTRICT)
     term_id = models.ForeignKey(Term, on_delete=models.RESTRICT)
     career_id = models.ForeignKey(Career, on_delete=models.RESTRICT)
 
@@ -83,7 +82,7 @@ class UF(models.Model):
     name = models.CharField(max_length=200)
     code = models.CharField(max_length=20)
     desc = models.TextField(blank=True, null=True)
-    mp = models.ForeignKey(MP, on_delete=models.CASCADE)
+    mp = models.ForeignKey(MP, on_delete=models.RESTRICT)
 
     def __str__(self):
         return self.name
