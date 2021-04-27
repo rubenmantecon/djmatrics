@@ -80,10 +80,12 @@ class MP(models.Model):
 class UF(models.Model):
     class Meta:
         verbose_name_plural = "UFs"
-    name = models.CharField(max_length=200)
-    code = models.CharField(max_length=20)
-    desc = models.TextField(blank=True, null=True)
-    mp = models.ForeignKey(MP, on_delete=models.RESTRICT)
+    name = models.CharField("nom", max_length=255)
+    code = models.CharField("codi", max_length=20)
+    desc = models.CharField(
+        "descripcio", max_length=300, blank=True, null=True)
+    mp_id = models.ForeignKey(MP, on_delete=models.RESTRICT)
+    active = models.BooleanField("és actiu", default=True)
 
     def __str__(self):
         return self.name
@@ -101,3 +103,38 @@ class ProfileRequirement(models.Model):
 class Record(models.Model):
     #user_id = models.ForeignKey(User, on_delete=models.RESTRICT)
     uf_id = models.ForeignKey(UF, on_delete=models.RESTRICT)
+
+
+class Req_EnrolState(Enum):
+    P = "Pending"
+    V = "Validated"
+    R = "Rejected"
+    E = "Empty"
+
+
+class Requirement(models.Model):
+    class Meta:
+        verbose_name = "Requeriment"
+    profile_id = models.ForeignKey(
+        ProfileRequirement, on_delete=models.RESTRICT)
+    name = models.CharField("nom", max_length=255)
+
+    def __str__(self):
+        return self.name
+
+
+class Req_enrol(models.Model):
+    class Meta:
+        verbose_name = "Requeriments matricula"
+    requirement_id = models.ForeignKey(Requirement, on_delete=models.RESTRICT)
+    enrolment_id = models.ForeignKey(Enrolment, on_delete=models.RESTRICT)
+    state = models.CharField(max_length=20, choices=[(
+        val_state, val_state.value) for val_state in Req_EnrolState], default=None)
+
+
+class Upload(models.Model):
+    class Meta:
+        verbose_name = "Pujades"
+        verbose_name_plural = "Pujades"
+    #data = models.FileField(storage=select_storage, null=True)
+    req_enrol_id = models.ForeignKey(Req_enrol, on_delete=models.RESTRICT)
