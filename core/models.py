@@ -1,5 +1,6 @@
 from django.db import models
 from enum import Enum
+import django.utils.timezone as timezone
 
 
 class Term(models.Model):
@@ -10,7 +11,7 @@ class Term(models.Model):
         "descripció", max_length=300, blank=True, null=True)
     start = models.DateField("data inici", null=False)
     end = models.DateField("data finalització", null=True, default=None)
-    active = models.BooleanField("és actiu", null=False)
+    active = models.BooleanField("és actiu", null=False, default=False)
 
 
 class Career(models.Model):
@@ -21,10 +22,10 @@ class Career(models.Model):
     code = models.CharField("codi", max_length=20)
     desc = models.TextField(
         "descripció", max_length=300, blank=True, null=True)
-    hours = models.IntegerField("duracio", null=False)
-    start = models.DateField("data inici", null=False)
+    hours = models.IntegerField("duracio", null=False, default=0)
+    start = models.DateField("data inici", null=False, default=timezone.now)
     end = models.DateField("data finalització", null=True, default=None)
-    active = models.BooleanField("és actiu", null=False)
+    active = models.BooleanField("és actiu", null=False, default=None)
     term_id = models.ForeignKey(Term, on_delete=models.RESTRICT)
 
     def __str__(self):

@@ -6,6 +6,8 @@ from core import models
 
 admin.site.register(models.Career)
 admin.site.register(models.UF)
+admin.site.register(models.Enrolment)
+
 
 class MpAdmin(admin.ModelAdmin):
     list_display = ("name","code")
@@ -13,3 +15,4 @@ class MpAdmin(admin.ModelAdmin):
     
 
 admin.site.register(models.MP, MpAdmin)
+
