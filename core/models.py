@@ -2,6 +2,7 @@ from django.db import models
 from enum import Enum
 import django.utils.timezone as timezone
 from django.core.files.storage import FileSystemStorage
+from django.contrib.auth.models import User
 
 
 class Term(models.Model):
@@ -72,6 +73,13 @@ class Enrolment(models.Model):
     career_id = models.ForeignKey(Career, on_delete=models.RESTRICT)
 
 
+class StudentUser(models.Model):
+    person = models.OneToOneField(
+        User, on_delete=models.RESTRICT, primary_key=True)
+    email = models.EmailField("correu", max_length=254)
+    enrolment_id = models.ForeignKey(Enrolment, on_delete=models.RESTRICT)
+
+
 class MP(models.Model):
     class Meta:
         verbose_name_plural = "MPs"
@@ -126,6 +134,7 @@ class Req_EnrolState(Enum):
 class Requirement(models.Model):
     verbose_name = "Requeriment"
     verbose_name_plural = "Requeriments"
+
     class Meta:
         verbose_name = "Requeriment"
     profile_id = models.ForeignKey(

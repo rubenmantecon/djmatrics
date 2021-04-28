@@ -14,6 +14,7 @@ admin.site.register(models.ProfileRequirement)
 admin.site.register(models.Requirement)
 #admin.site.register(models.Req_enrol)
 #admin.site.register(models.Upload)
+admin.site.register(models.StudentUser)
 
 
 class MpAdmin(admin.ModelAdmin):
