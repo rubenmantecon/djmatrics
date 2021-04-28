@@ -6,12 +6,16 @@ import django.utils.timezone as timezone
 class Term(models.Model):
     class Meta:
         verbose_name = "Curs"
+        verbose_name_plural = "Cursos"
     name = models.CharField("nom", max_length=200)
     desc = models.TextField(
         "descripció", max_length=300, blank=True, null=True)
     start = models.DateField("data inici", null=False)
     end = models.DateField("data finalització", null=True, default=None)
     active = models.BooleanField("és actiu", null=False, default=False)
+
+    def __str__(self):
+        return self.name
 
 
 class Career(models.Model):
@@ -41,6 +45,7 @@ class ValidationState(Enum):
 class Enrolment(models.Model):
     class Meta:
         verbose_name = "Matrícula"
+        verbose_name_plural = "Matricules"
     dni = models.CharField("dni", max_length=9)
     state = models.CharField(max_length=20, choices=[(
         val_state, val_state.value) for val_state in ValidationState], default=None)
@@ -97,11 +102,15 @@ class EnrolmentUF(models.Model):
 
 
 class ProfileRequirement(models.Model):
+    class Meta:
+        verbose_name = "Perfil de requeriments"
+        verbose_name_plural = "Perfils de requeriment"
     name = models.CharField("nom", max_length=50)
+    description = models.TextField("descripció", null=True)
 
 
 class Record(models.Model):
-    #user_id = models.ForeignKey(User, on_delete=models.RESTRICT)
+    # user_id = models.ForeignKey(User, on_delete=models.RESTRICT)
     uf_id = models.ForeignKey(UF, on_delete=models.RESTRICT)
 
 
@@ -136,5 +145,5 @@ class Upload(models.Model):
     class Meta:
         verbose_name = "Pujades"
         verbose_name_plural = "Pujades"
-    #data = models.FileField(storage=select_storage, null=True)
+    # data = models.FileField(storage=select_storage, null=True)
     req_enrol_id = models.ForeignKey(Req_enrol, on_delete=models.RESTRICT)
