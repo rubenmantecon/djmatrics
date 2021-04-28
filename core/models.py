@@ -1,6 +1,7 @@
 from django.db import models
 from enum import Enum
 import django.utils.timezone as timezone
+from django.core.files.storage import FileSystemStorage
 
 
 class Term(models.Model):
@@ -46,6 +47,7 @@ class Enrolment(models.Model):
     class Meta:
         verbose_name = "Matrícula"
         verbose_name_plural = "Matricules"
+
     dni = models.CharField("dni", max_length=9)
     state = models.CharField(max_length=20, choices=[(
         val_state, val_state.value) for val_state in ValidationState], default=None)
@@ -122,6 +124,8 @@ class Req_EnrolState(Enum):
 
 
 class Requirement(models.Model):
+    verbose_name = "Requeriment"
+    verbose_name_plural = "Requeriments"
     class Meta:
         verbose_name = "Requeriment"
     profile_id = models.ForeignKey(
@@ -135,15 +139,19 @@ class Requirement(models.Model):
 class Req_enrol(models.Model):
     class Meta:
         verbose_name = "Requeriments matricula"
+        verbose_name_plural = "Requeriments matricula"
     requirement_id = models.ForeignKey(Requirement, on_delete=models.RESTRICT)
     enrolment_id = models.ForeignKey(Enrolment, on_delete=models.RESTRICT)
     state = models.CharField(max_length=20, choices=[(
         val_state, val_state.value) for val_state in Req_EnrolState], default=None)
 
 
+fs = FileSystemStorage(location='')
+
+
 class Upload(models.Model):
     class Meta:
         verbose_name = "Pujades"
         verbose_name_plural = "Pujades"
-    # data = models.FileField(storage=select_storage, null=True)
+    data = models.FileField(storage=fs, null=True)
     req_enrol_id = models.ForeignKey(Req_enrol, on_delete=models.RESTRICT)

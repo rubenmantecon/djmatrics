@@ -15,10 +15,10 @@ admin.site.register(models.Requirement)
 #admin.site.register(models.Req_enrol)
 #admin.site.register(models.Upload)
 
+
 class MpAdmin(admin.ModelAdmin):
-    list_display = ("name","code")
-    search_fields= ("name","code","career__name")
+    list_display = ("name", "code")
+    search_fields = ("name", "code", "career__name")
 
 
 admin.site.register(models.MP, MpAdmin)
-
