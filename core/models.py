@@ -32,7 +32,7 @@ class Career(models.Model):
     start = models.DateField("data inici", null=False, default=timezone.now)
     end = models.DateField("data finalització", null=True, default=None)
     active = models.BooleanField("és actiu", null=False, default=None)
-    term_id = models.ForeignKey(Term, on_delete=models.RESTRICT)
+    term = models.ForeignKey(Term, on_delete=models.RESTRICT)
 
     def __str__(self):
         return self.name
@@ -68,16 +68,16 @@ class Enrolment(models.Model):
         "dni del pare/mare o tutor/a legal", max_length=9, null=True, default=None)
     tutor_2_dni = models.CharField(
         "dni del pare/mare o tutor/a legal (2)", max_length=9, null=True, default=None)
-    # user_id = models.ForeignKey(User, on_delete=models.RESTRICT)
-    term_id = models.ForeignKey(Term, on_delete=models.RESTRICT)
-    career_id = models.ForeignKey(Career, on_delete=models.RESTRICT)
+    # user = models.ForeignKey(User, on_delete=models.RESTRICT)
+    term = models.ForeignKey(Term, on_delete=models.RESTRICT)
+    career = models.ForeignKey(Career, on_delete=models.RESTRICT)
 
 
 class StudentUser(models.Model):
     person = models.OneToOneField(
         User, on_delete=models.RESTRICT, primary_key=True)
     email = models.EmailField("correu", max_length=254)
-    enrolment_id = models.ForeignKey(Enrolment, on_delete=models.RESTRICT)
+    enrolment = models.ForeignKey(Enrolment, on_delete=models.RESTRICT)
 
 
 class MP(models.Model):
@@ -86,7 +86,7 @@ class MP(models.Model):
     name = models.CharField(max_length=200)
     code = models.CharField(max_length=20)
     desc = models.TextField(blank=True, null=True)
-    career_id = models.ForeignKey(Career, on_delete=models.CASCADE)
+    career = models.ForeignKey(Career, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.name
@@ -99,7 +99,7 @@ class UF(models.Model):
     code = models.CharField("codi", max_length=20)
     desc = models.CharField(
         "descripcio", max_length=300, blank=True, null=True)
-    mp_id = models.ForeignKey(MP, on_delete=models.RESTRICT)
+    mp = models.ForeignKey(MP, on_delete=models.RESTRICT)
     active = models.BooleanField("és actiu", default=True)
 
     def __str__(self):
@@ -107,8 +107,8 @@ class UF(models.Model):
 
 
 class EnrolmentUF(models.Model):
-    uf_id = models.ForeignKey(UF, on_delete=models.RESTRICT)
-    enrolment_id = models.ForeignKey(Enrolment, on_delete=models.RESTRICT)
+    uf = models.ForeignKey(UF, on_delete=models.RESTRICT)
+    enrolment = models.ForeignKey(Enrolment, on_delete=models.RESTRICT)
 
 
 class ProfileRequirement(models.Model):
@@ -120,8 +120,8 @@ class ProfileRequirement(models.Model):
 
 
 class Record(models.Model):
-    # user_id = models.ForeignKey(User, on_delete=models.RESTRICT)
-    uf_id = models.ForeignKey(UF, on_delete=models.RESTRICT)
+    # user = models.ForeignKey(User, on_delete=models.RESTRICT)
+    uf = models.ForeignKey(UF, on_delete=models.RESTRICT)
 
 
 class Req_EnrolState(Enum):
@@ -137,7 +137,7 @@ class Requirement(models.Model):
 
     class Meta:
         verbose_name = "Requeriment"
-    profile_id = models.ForeignKey(
+    profile = models.ForeignKey(
         ProfileRequirement, on_delete=models.RESTRICT)
     name = models.CharField("nom", max_length=255)
 
@@ -149,8 +149,8 @@ class Req_enrol(models.Model):
     class Meta:
         verbose_name = "Requeriments matricula"
         verbose_name_plural = "Requeriments matricula"
-    requirement_id = models.ForeignKey(Requirement, on_delete=models.RESTRICT)
-    enrolment_id = models.ForeignKey(Enrolment, on_delete=models.RESTRICT)
+    requirement = models.ForeignKey(Requirement, on_delete=models.RESTRICT)
+    enrolment = models.ForeignKey(Enrolment, on_delete=models.RESTRICT)
     state = models.CharField(max_length=20, choices=[(
         val_state, val_state.value) for val_state in Req_EnrolState], default=None)
 
@@ -163,4 +163,4 @@ class Upload(models.Model):
         verbose_name = "Pujades"
         verbose_name_plural = "Pujades"
     data = models.FileField(storage=fs, null=True)
-    req_enrol_id = models.ForeignKey(Req_enrol, on_delete=models.RESTRICT)
+    req_enrol = models.ForeignKey(Req_enrol, on_delete=models.RESTRICT)
