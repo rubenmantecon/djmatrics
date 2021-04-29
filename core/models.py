@@ -14,7 +14,7 @@ class Term(models.Model):
         "descripció", max_length=300, blank=True, null=True)
     start = models.DateField("data inici", null=False)
     end = models.DateField("data finalització", null=True, default=None)
-    active = models.BooleanField("és actiu", null=False, default=False)
+    active = models.BooleanField("és actiu", default=False)
 
     def __str__(self):
         return self.name
@@ -31,7 +31,7 @@ class Career(models.Model):
     hours = models.IntegerField("duracio", null=False, default=0)
     start = models.DateField("data inici", null=False, default=timezone.now)
     end = models.DateField("data finalització", null=True, default=None)
-    active = models.BooleanField("és actiu", null=False, default=None)
+    active = models.BooleanField("és actiu", default=False)
     term = models.ForeignKey(Term, on_delete=models.RESTRICT)
 
     def __str__(self):
@@ -39,9 +39,9 @@ class Career(models.Model):
 
 
 class ValidationState(Enum):
-    P = "Pending"
-    V = "Validated"
-    U = "Unregistered"
+    P = "Pendent"
+    V = "Validat"
+    U = "Failed"  # TODO: i18 it
 
 
 class Enrolment(models.Model):
@@ -49,8 +49,10 @@ class Enrolment(models.Model):
         verbose_name = "Matrícula"
         verbose_name_plural = "Matricules"
 
+    role = models.OneToOneField(
+        User, on_delete=models.RESTRICT, primary_key=True)
     dni = models.CharField("dni", max_length=9)
-    state = models.CharField(max_length=20, choices=[(
+    state = models.CharField("estat de matrícula", max_length=20, choices=[(
         val_state, val_state.value) for val_state in ValidationState], default=None)
     birthplace = models.CharField(
         "lloc de naixement", max_length=50, null=True, default=None)
@@ -59,6 +61,7 @@ class Enrolment(models.Model):
     city = models.CharField("ciutat", max_length=150)
     postal_code = models.CharField("codi postal", max_length=5)
     phone_number = models.CharField("número de telèfon", max_length=14)
+    email = models.EmailField("correu", max_length=254, null=False)
     emergency_number = models.CharField("número d'emergència", max_length=14)
     tutor_1 = models.CharField(
         "nom del pare/mare o tutor/a legal", max_length=50, null=True, default=None)
@@ -71,13 +74,6 @@ class Enrolment(models.Model):
     # user = models.ForeignKey(User, on_delete=models.RESTRICT)
     term = models.ForeignKey(Term, on_delete=models.RESTRICT)
     career = models.ForeignKey(Career, on_delete=models.RESTRICT)
-
-
-class StudentUser(models.Model):
-    person = models.OneToOneField(
-        User, on_delete=models.RESTRICT, primary_key=True)
-    email = models.EmailField("correu", max_length=254)
-    enrolment = models.ForeignKey(Enrolment, on_delete=models.RESTRICT)
 
 
 class MP(models.Model):
