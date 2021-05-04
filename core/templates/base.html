@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="core/styles/css/materialize.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="core/styles/js/materialize.js"></script>
+	<title>{% block title %}{{title}}{% endblock %}</title>
+</head>
+
+<body>
+	<header class="blue-darken-4">
+		<header>
+			<div>
+				<img src="" alt="">
+				<p>INS Esteve Terradas i Illa</p>
+				<p>MATRICULACIONS</p>
+			</div>
+			<div>
+				<div>
+					{% block user %} {{user}} {% endblock %}
+				</div>
+				<i class="material-icons">exit_to_app</i>
+			</div>
+		</header>
+		<nav></nav>
+	</header>
+	<main></main>
+	<footer></footer>
+</body>
+
+</html>
