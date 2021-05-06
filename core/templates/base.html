@@ -28,6 +28,7 @@
 </head>
 
 <body>
+{% block header %}
 	<header>
 		<header>
 			<nav class="blue darken-4">
@@ -56,9 +57,11 @@
 			</div>
 		</nav>
 	</header>
+	{% endblock %}
 	<main class="background container">
 		{% block content %}{% endblock %}
 	</main>
+	{% block footer %}
 	<footer class="page-footer blue darken-4">
 		<div class="container">
 			<i class="material-icons right">timelapse</i>
@@ -69,6 +72,7 @@
 			</div>
 		</div>
 	</footer>
+	{% endblock %}
 </body>
 
 </html>
