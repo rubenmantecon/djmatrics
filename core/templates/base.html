@@ -1,35 +1,92 @@
 <!DOCTYPE html>
 <html lang="es">
+{% load static %}
 
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="core/styles/css/materialize.css">
+	<!-- <link rel="stylesheet" href="static/materialize.css">
+	<script type="text/javascript" src="static/materialize.js"></script> -->
+	<!-- CDNs -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<script src="core/styles/js/materialize.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 	<title>{% block title %}{{title}}{% endblock %}</title>
+	<style>
+		/* This is just for now, until we can locally serve static CSS files */
+		body {
+			display: flex;
+			min-height: 100vh;
+			flex-direction: column;
+		}
+
+		main {
+			flex: 1 0 auto;
+		}
+	</style>
 </head>
 
 <body>
-	<header class="blue-darken-4">
+	<header>
 		<header>
-			<div>
-				<img src="" alt="">
-				<p>INS Esteve Terradas i Illa</p>
-				<p>MATRICULACIONS</p>
-			</div>
-			<div>
-				<div>
-					{% block user %} {{user}} {% endblock %}
+			<nav class="blue darken-4">
+				<div class="nav-wrapper">
+					<a href="#" class="brand-logo">Logo</a>
+					<ul class="right hide-on-med-and-down">
+						<li><a href="#">Inici</a></li>
+						<li><a href="#">{% block user %}{{user}}{% endblock %}</a></li>
+						<li><a href="#"><i class="material-icons">exit_to_app</i></a></li>
+					</ul>
 				</div>
-				<i class="material-icons">exit_to_app</i>
-			</div>
+			</nav>
 		</header>
-		<nav></nav>
+		<nav class="blue darken-3">
+			<div class="nav-wrapper">
+				<div class="col s12">
+					<a href="#!" class="breadcrumb">First</a>
+					<a href="#!" class="breadcrumb">Second</a>
+					<a href="#!" class="breadcrumb">Third</a>
+					<ul class="col s12 right hide-on-med-and-down">
+						<li><a href="#">Inici</a></li>
+						<li><a href="#">Dades personals</a></li>
+						<li><a href="#">Documents</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 	</header>
-	<main></main>
-	<footer></footer>
+	<main class="background container">
+		<table class="striped highlight responsive">
+			<tbody>
+				<tr>
+					<td>Nom</td>
+					<td>Valor del nom</td>
+				</tr>
+				<tr>
+					<td>Cognom</td>
+					<td>Valor del cognom</td>
+				</tr>
+				<tr>
+					<td>Correu electrònic</td>
+					<td>Valor del correu electrònic</td>
+				</tr>
+			</tbody>
+		</table>
+	</main>
+
+	<footer class="page-footer blue darken-4">
+		<div class="container">
+			<i class="material-icons right">timelapse</i>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				© 2021 INS Esteve Terradas i Illa
+			</div>
+
+		</div>
+	</footer>
+
 </body>
 
 </html>

@@ -22,5 +22,6 @@ from core import views as coreviews
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+		path('dades/', include("core.urls")),
     path('', include("core.urls")),
 ]
