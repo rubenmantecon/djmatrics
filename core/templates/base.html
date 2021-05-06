@@ -1,36 +1,74 @@
 <!DOCTYPE html>
-{% load static%}
+<html lang="es">
+{% load static %}
 
 <html lang="es">
 <head>
+	{% load static %}
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="{% static 'materialize.css' %}">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<script src="{% static 'materialize.js' %}"></script>
 	<title>{% block title %}{{title}}{% endblock %}</title>
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="{% static 'css/materialize.css' %}">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+
+	<!-- Javascript -->
+	<script src="{% static 'js/jquery.js' %}"></script>
+	<script src="{% static 'js/jquery-plugins/jquery-rotate.js' %}"></script>
+	<script src="{% static 'js/materialize.js' %}"></script>
+	<script src="{% static 'js/script.js' %}"></script>
 </head>
 
 <body>
-	<header class="blue darken-4">
-		
-			<div>
-				<img src="" alt="">
-				<p>INS Esteve Terradas i Illa</p>
-				<p>MATRICULACIONS</p>
-			</div>
-			<div>
-				<div>
-					{% block user %} {{user}} {% endblock %}
+	<header>
+		<header>
+			<nav class="blue darken-4">
+				<div class="nav-wrapper">
+					<a href="#" class="brand-logo">Logo</a>
+					<ul class="right hide-on-med-and-down">
+						<li><a href="#">Inici</a></li>
+						<li><a href="#">{% block user %}{{user}}{% endblock %}</a></li>
+						<li><a href="#"><i class="material-icons">exit_to_app</i></a></li>
+					</ul>
 				</div>
-				<i class="material-icons">exit_to_app</i>
+			</nav>
+		</header>
+		<nav class="blue darken-3">
+			<div class="nav-wrapper">
+				<div class="col s12">
+					<a href="#!" class="breadcrumb">First</a>
+					<a href="#!" class="breadcrumb">Second</a>
+					<a href="#!" class="breadcrumb">Third</a>
+					<ul class="col s12 right hide-on-med-and-down">
+						<li><a href="#">Inici</a></li>
+						<li><a href="#">Dades personals</a></li>
+						<li><a href="#">Documents</a></li>
+					</ul>
+				</div>
 			</div>
-		
-		<nav></nav>
+		</nav>
 	</header>
-	<main></main>
-	<footer></footer>
+	<main class="background container">
+		{% block content %}{% endblock %}
+	</main>
+	<footer class="page-footer blue darken-4">
+		<div class="container">
+			<i class="material-icons right">timelapse</i>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				© 2021 INS Esteve Terradas i Illa
+			</div>
+		</div>
+	</footer>
 </body>
 
 </html>

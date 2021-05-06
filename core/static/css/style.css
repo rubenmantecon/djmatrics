@@ -1,0 +1,36 @@
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+.title-section {
+	font-size: 2em;
+	font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.fl-right {
+	float: right;
+}
+
+.fl-left {
+	float: left;
+}
+
+.input-fl-right {
+	right: 0;
+	position: absolute;
+}
+
+.collection-bonification {
+	background: #E7E7E7;
+	font-weight: 500;
+}
