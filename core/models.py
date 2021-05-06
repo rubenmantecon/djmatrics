@@ -108,11 +108,19 @@ class EnrolmentUF(models.Model):
 
 
 class ProfileRequirement(models.Model):
+
     class Meta:
         verbose_name = "Perfil de requeriments"
         verbose_name_plural = "Perfils de requeriment"
-    name = models.CharField("nom", max_length=50)
+		
+    class ProfileChoices(Enum):
+        EX = 'exemption'
+        BO = 'bonus'
+
+    name = models.CharField("nom", max_length=255)
     description = models.TextField("descripció", null=True)
+    profile_type = models.CharField('profile_type', max_length=9, choices=[(
+        val_state, val_state.value) for val_state in ProfileChoices], default=None, null=False)
 
 
 class Record(models.Model):
@@ -133,6 +141,7 @@ class Requirement(models.Model):
 
     class Meta:
         verbose_name = "Requeriment"
+
     profile = models.ForeignKey(
         ProfileRequirement, on_delete=models.RESTRICT)
     name = models.CharField("nom", max_length=255)
