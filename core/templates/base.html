@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+{% load static %}
 
 <head>
 	{% load static %}
@@ -9,8 +10,8 @@
 	<title>{% block title %}{{title}}{% endblock %}</title>
 
 	<!-- Styles -->
-	<link rel="stylesheet" href="{% static 'css/style.css' %}">
 	<link rel="stylesheet" href="{% static 'css/materialize.css' %}">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 	<!-- Fonts -->
@@ -26,26 +27,47 @@
 </head>
 
 <body>
-	<header class="blue-darken-4">
+	<header>
 		<header>
-			<div>
-				<img src="" alt="">
-				<p>INS Esteve Terradas i Illa</p>
-				<p>MATRICULACIONS</p>
-			</div>
-			<div>
-				<div>
-					{% block user %} {{user}} {% endblock %}
+			<nav class="blue darken-4">
+				<div class="nav-wrapper">
+					<a href="#" class="brand-logo">Logo</a>
+					<ul class="right hide-on-med-and-down">
+						<li><a href="#">Inici</a></li>
+						<li><a href="#">{% block user %}{{user}}{% endblock %}</a></li>
+						<li><a href="#"><i class="material-icons">exit_to_app</i></a></li>
+					</ul>
 				</div>
-				<i class="material-icons">exit_to_app</i>
-			</div>
+			</nav>
 		</header>
-		<nav></nav>
+		<nav class="blue darken-3">
+			<div class="nav-wrapper">
+				<div class="col s12">
+					<a href="#!" class="breadcrumb">First</a>
+					<a href="#!" class="breadcrumb">Second</a>
+					<a href="#!" class="breadcrumb">Third</a>
+					<ul class="col s12 right hide-on-med-and-down">
+						<li><a href="#">Inici</a></li>
+						<li><a href="#">Dades personals</a></li>
+						<li><a href="#">Documents</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 	</header>
-	<main>
+	<main class="background container">
 		{% block content %}{% endblock %}
 	</main>
-	<footer></footer>
+	<footer class="page-footer blue darken-4">
+		<div class="container">
+			<i class="material-icons right">timelapse</i>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				© 2021 INS Esteve Terradas i Illa
+			</div>
+		</div>
+	</footer>
 </body>
 
 </html>
