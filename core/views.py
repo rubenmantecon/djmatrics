@@ -36,8 +36,8 @@ def profiles (request):
 				else:
 					toSaveEnrolment.profile_id = ''
 				
-				if toSaveEnrolment.save():
-					return HttpResponseRedirect('/student/prices')
+				toSaveEnrolment.save()
+				return HttpResponseRedirect('/student/prices')
 
 	else:
 		form = SaveProfiles()
