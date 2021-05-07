@@ -67,6 +67,7 @@ class UF(models.Model):
     code = models.CharField("codi", max_length=20)
     desc = models.CharField(
         "descripcio", max_length=300, blank=True, null=True)
+    price = models.IntegerField("preu", default=25)
     mp = models.ForeignKey(MP, on_delete=models.RESTRICT)
     term = models.ForeignKey(Term, on_delete=models.RESTRICT)
     active = models.BooleanField("és actiu", default=True)
