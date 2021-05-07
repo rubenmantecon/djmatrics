@@ -1,0 +1,1021 @@
+CODI_CICLE_FORMATIU;NOM_CICLE_FORMATIU;CODI_ADAPTACIO_CURRICULAR;HORES_CICLE_FORMATIU;DATA_INICI_CICLE_FORMATIU;DATA_FI_CICLE_FORMATIU;CODI_MODUL;NOM_MODUL;DURADA_MIN_MODUL;DURADA_MAX_MODUL;DATA_INICI_MODUL;DATA_FI_MODUL;CODI_UNITAT_FORMATIVA;NOM_UNITAT_FORMATIVA;DURADA_UNITAT_FORMATIVA;INDICADOR_FCT;INDICADOR_SINTESIS;INDICADOR_IDIOMA;INDICADOR_PROJECTE
+CFPM    AF10;Preimpressió digital;0;2000;25/02/13;;AF10001;MP1. Tractament de textos;165;165;25/02/13;;AF1000101;UF1. Equips i programari de tractament de textos;15;N;N;N;N
+CFPM    AF10;Preimpressió digital;0;2000;25/02/13;;AF10001;MP1. Tractament de textos;165;165;25/02/13;;AF1000102;UF2. Digitalització de textos;50;N;N;N;N
+CFPM    AF10;Preimpressió digital;0;2000;25/02/13;;AF10001;MP1. Tractament de textos;165;165;25/02/13;;AF1000103;UF3. Tractament digital de textos;80;N;N;N;N
+CFPM    AF10;Preimpressió digital;0;2000;25/02/13;;AF10001;MP1. Tractament de textos;165;165;25/02/13;;AF1000104;UF4. Aplicació de normes de correcció;20;N;N;N;N
+CFPM    AF10;Preimpressió digital;0;2000;25/02/13;;AF10002;MP2. Tractament d'imatges en mapa de bits;231;264;01/03/13;;AF1000201;UF1. Classificació i preparació d'originals d'imatge;20;N;N;N;N
+CFPM    AF10;Preimpressió digital;0;2000;25/02/13;;AF10002;MP2. Tractament d'imatges en mapa de bits;231;264;01/03/13;;AF1000202;UF2. Obtenció d'imatges digitals;40;N;N;N;N
+CFPM    AF10;Preimpressió digital;0;2000;25/02/13;;AF10002;MP2. Tractament d'imatges en mapa de bits;231;264;01/03/13;;AF1000203;UF3. Ajust dimensional i tonal de les imatges;80;N;N;N;N
+CFPM    AF10;Preimpressió digital;0;2000;25/02/13;;AF10002;MP2. Tractament d'imatges en mapa de bits;231;264;01/03/13;;AF1000204;UF4. Realització de fotomuntatges;60;N;N;N;N
+CFPM    AF10;Preimpressió digital;0;2000;25/02/13;;AF10002;MP2. Tractament d'imatges en mapa de bits;231;264;01/03/13;;AF1000205;UF5. Obtenció de proves de color;31;N;N;N;N
+CFPM    AF10;Preimpressió digital;0;2000;25/02/13;;AF10003;MP3. Imposició i obtenció digital de la forma impressora;99;132;01/03/13;;AF1000301;UF1. Traçat i imposició digital;40;N;N;N;N
+CFPM    AF10;Preimpressió digital;0;2000;25/02/13;;AF10003;MP3. Imposició i obtenció digital de la forma impressora;99;132;01/03/13;;AF1000302;UF2. Obtenció digital de formes impressores;59;N;N;N;N
+CFPM    AF10;Preimpressió digital;0;2000;25/02/13;;AF10004;MP4. Impressió digital;132;165;01/03/13;;AF1000401;UF1. Tractament de la informació digital;25;N;N;N;N
+CFPM    AF10;Preimpressió digital;0;2000;25/02/13;;AF10004;MP4. Impressió digital;132;165;01/03/13;;AF1000402;UF2. Preparació de matèries primeres, consumibles i equips d'impressió digital;47;N;N;N;N
+CFPM    AF10;Preimpressió digital;0;2000;25/02/13;;AF10004;MP4. Impressió digital;132;165;01/03/13;;AF1000403;UF3. Impressió, acabats i manteniment preventiu amb dispositius digitals;60;N;N;N;N
+CFPM    AF10;Preimpressió digital;0;2000;25/02/13;;AF10005;MP5. Compaginació;165;165;01/03/13;;AF1000501;UF1. Elaboració de maquetes i fulls d'estil;25;N;N;N;N
+CFPM    AF10;Preimpressió digital;0;2000;25/02/13;;AF10005;MP5. Compaginació;165;165;01/03/13;;AF1000502;UF2. Compaginació de productes editorials;60;N;N;N;N
+CFPM    AF10;Preimpressió digital;0;2000;25/02/13;;AF10005;MP5. Compaginació;165;165;01/03/13;;AF1000503;UF3. Compaginació de productes extraeditorials;60;N;N;N;N
+CFPM    AF10;Preimpressió digital;0;2000;25/02/13;;AF10005;MP5. Compaginació;165;165;01/03/13;;AF1000504;UF4. Correcció de proves de compaginades;20;N;N;N;N
+CFPM    AF10;Preimpressió digital;0;2000;25/02/13;;AF10006;MP6. Il·lustració vectorial;99;99;01/03/13;;AF1000601;UF1. Imatges vectorials i retolació;40;N;N;N;N
+CFPM    AF10;Preimpressió digital;0;2000;25/02/13;;AF10006;MP6. Il·lustració vectorial;99;99;01/03/13;;AF1000602;UF2. Composició infogràfica i il·lustració;59;N;N;N;N
+CFPM    AF10;Preimpressió digital;0;2000;25/02/13;;AF10007;MP7. Identificació de materials en preimpressió;132;132;01/03/13;;AF1000701;UF1. Processos i productes gràfics;32;N;N;N;N
+CFPM    AF10;Preimpressió digital;0;2000;25/02/13;;AF10007;MP7. Identificació de materials en preimpressió;132;132;01/03/13;;AF1000702;UF2. Formes impressores i emulsions;20;N;N;N;N
+CFPM    AF10;Preimpressió digital;0;2000;25/02/13;;AF10007;MP7. Identificació de materials en preimpressió;132;132;01/03/13;;AF1000703;UF3. Suports d'impressió;60;N;N;N;N
+CFPM    AF10;Preimpressió digital;0;2000;25/02/13;;AF10007;MP7. Identificació de materials en preimpressió;132;132;01/03/13;;AF1000704;UF4. Tintes d'impressió;20;N;N;N;N
+CFPM    AF10;Preimpressió digital;0;2000;25/02/13;;AF10008;MP8. Realització de publicacions electròniques;165;198;01/03/13;;AF1000801;UF1. Preparació d'arxius de text, d'imatge, vídeo i so;15;N;N;N;N
+CFPM    AF10;Preimpressió digital;0;2000;25/02/13;;AF10008;MP8. Realització de publicacions electròniques;165;198;01/03/13;;AF1000802;UF2. Realització d'animacions;30;N;N;N;N
+CFPM    AF10;Preimpressió digital;0;2000;25/02/13;;AF10008;MP8. Realització de publicacions electròniques;165;198;01/03/13;;AF1000803;UF3. Creació i publicació de pàgines web;40;N;N;N;N
+CFPM    AF10;Preimpressió digital;0;2000;25/02/13;;AF10008;MP8. Realització de publicacions electròniques;165;198;01/03/13;;AF1000804;UF4. Compaginació i publicació de llibres electrònics;60;N;N;N;N
+CFPM    AF10;Preimpressió digital;0;2000;25/02/13;;AF10008;MP8. Realització de publicacions electròniques;165;198;01/03/13;;AF1000805;UF5. Realització de productes multimèdia;20;N;N;N;N
+CFPM    AF10;Preimpressió digital;0;2000;25/02/13;;AF10009;MP9. Formació i orientació laboral;99;99;01/03/13;;AF1000901;UF1. Incorporació al treball;66;N;N;N;N
+CFPM    AF10;Preimpressió digital;0;2000;25/02/13;;AF10009;MP9. Formació i orientació laboral;99;99;01/03/13;;AF1000902;UF2. Prevenció de riscos laborals;33;N;N;N;N
+CFPM    AF10;Preimpressió digital;0;2000;25/02/13;;AF10010;MP10. Empresa i iniciativa emprenedora;66;66;01/03/13;;AF1001001;UF1. Empresa i iniciativa emprenedora;66;N;N;N;N
+CFPM    AF10;Preimpressió digital;0;2000;25/02/13;;AF10011;MP11. Anglès tècnic;99;99;01/03/13;;AF1001101;UF1. Anglès tècnic;99;N;N;N;N
+CFPM    AF10;Preimpressió digital;0;2000;25/02/13;;AF10012;MP12. Síntesi;66;66;01/03/13;;AF1001201;UF1. Síntesi;66;N;S;N;N
+CFPM    AF10;Preimpressió digital;0;2000;25/02/13;;AF10013;MP13. Formació en centres de treball;350;350;01/03/13;;AF1001301;Formació en centres de treball;350;S;N;N;N
+CFPM    AF20;Impressió gràfica;0;2000;25/02/13;;AF20001;MP1. Preparació i regulació de màquines òfset;231;231;11/03/13;;AF2000101;UF1. Processos en productes gràfics;55;N;N;N;N
+CFPM    AF20;Impressió gràfica;0;2000;25/02/13;;AF20001;MP1. Preparació i regulació de màquines òfset;231;231;11/03/13;;AF2000102;UF2. Manteniment de la màquina òfset;25;N;N;N;N
+CFPM    AF20;Impressió gràfica;0;2000;25/02/13;;AF20001;MP1. Preparació i regulació de màquines òfset;231;231;11/03/13;;AF2000103;UF3. Alimentació i registre del suport en òfset;60;N;N;N;N
+CFPM    AF20;Impressió gràfica;0;2000;25/02/13;;AF20001;MP1. Preparació i regulació de màquines òfset;231;231;11/03/13;;AF2000104;UF4. Regulació dels cilindres;31;N;N;N;N
+CFPM    AF20;Impressió gràfica;0;2000;25/02/13;;AF20001;MP1. Preparació i regulació de màquines òfset;231;231;11/03/13;;AF2000105;UF5. Regulació de la bateria i el grup d'humectació;60;N;N;N;N
+CFPM    AF20;Impressió gràfica;0;2000;25/02/13;;AF20002;MP2. Desenvolupament de la tirada òfset;231;264;11/03/13;;AF2000201;UF1. Registre en l'imprès;35;N;N;N;N
+CFPM    AF20;Impressió gràfica;0;2000;25/02/13;;AF20002;MP2. Desenvolupament de la tirada òfset;231;264;11/03/13;;AF2000202;UF2. Entonació i equilibri aigua-tinta;46;N;N;N;N
+CFPM    AF20;Impressió gràfica;0;2000;25/02/13;;AF20002;MP2. Desenvolupament de la tirada òfset;231;264;11/03/13;;AF2000203;UF3. Obtenció del full validat;60;N;N;N;N
+CFPM    AF20;Impressió gràfica;0;2000;25/02/13;;AF20002;MP2. Desenvolupament de la tirada òfset;231;264;11/03/13;;AF2000204;UF4. Realització i control de la tirada;90;N;N;N;N
+CFPM    AF20;Impressió gràfica;0;2000;25/02/13;;AF20003;MP3. Impressió en flexografia;132;132;11/03/13;;AF2000301;UF1. Preparació de la màquina de flexografia;60;N;N;N;N
+CFPM    AF20;Impressió gràfica;0;2000;25/02/13;;AF20003;MP3. Impressió en flexografia;132;132;11/03/13;;AF2000302;UF2. Realització i control de la tirada en flexografia;72;N;N;N;N
+CFPM    AF20;Impressió gràfica;0;2000;25/02/13;;AF20004;MP4. Impressió en serigrafia;165;198;11/03/13;;AF2000401;UF1. Realització de la pantalla;40;N;N;N;N
+CFPM    AF20;Impressió gràfica;0;2000;25/02/13;;AF20004;MP4. Impressió en serigrafia;165;198;11/03/13;;AF2000402;UF2. Impressió en serigrafia amb màquina plana i rotativa;75;N;N;N;N
+CFPM    AF20;Impressió gràfica;0;2000;25/02/13;;AF20004;MP4. Impressió en serigrafia;165;198;11/03/13;;AF2000403;UF3. Impressió tèxtil en serigrafia;50;N;N;N;N
+CFPM    AF20;Impressió gràfica;0;2000;25/02/13;;AF20005;MP5. Impressió digital;132;165;11/03/13;;AF2000501;UF1. Tractament de la informació digital;25;N;N;N;N
+CFPM    AF20;Impressió gràfica;0;2000;25/02/13;;AF20005;MP5. Impressió digital;132;165;11/03/13;;AF2000502;UF2. Preparació de matèries primeres i equips d'impressió digital;47;N;N;N;N
+CFPM    AF20;Impressió gràfica;0;2000;25/02/13;;AF20005;MP5. Impressió digital;132;165;11/03/13;;AF2000503;UF3. Impressió, acabats i manteniment preventiu amb dispositius digitals;60;N;N;N;N
+CFPM    AF20;Impressió gràfica;0;2000;25/02/13;;AF20006;MP6. Preparació de materials per a impressió;231;231;11/03/13;;AF2000601;UF1. Suports paperers;60;N;N;N;N
+CFPM    AF20;Impressió gràfica;0;2000;25/02/13;;AF20006;MP6. Preparació de materials per a impressió;231;231;11/03/13;;AF2000602;UF2. Cartró ondulat i suports no paperers.;35;N;N;N;N
+CFPM    AF20;Impressió gràfica;0;2000;25/02/13;;AF20006;MP6. Preparació de materials per a impressió;231;231;11/03/13;;AF2000603;UF3. Formes impressores;50;N;N;N;N
+CFPM    AF20;Impressió gràfica;0;2000;25/02/13;;AF20006;MP6. Preparació de materials per a impressió;231;231;11/03/13;;AF2000604;UF4. Tintes per a impressió;36;N;N;N;N
+CFPM    AF20;Impressió gràfica;0;2000;25/02/13;;AF20006;MP6. Preparació de materials per a impressió;231;231;11/03/13;;AF2000605;UF5. Preparació de tintes;30;N;N;N;N
+CFPM    AF20;Impressió gràfica;0;2000;25/02/13;;AF20006;MP6. Preparació de materials per a impressió;231;231;11/03/13;;AF2000606;UF6. Preparació de solucions d'humectació;20;N;N;N;N
+CFPM    AF20;Impressió gràfica;0;2000;25/02/13;;AF20007;MP7. Impressió en rotogravat i tampografia;66;99;;26/08/16;12;FFF;20;N;N;N;N
+CFPM    AF20;Impressió gràfica;0;2000;25/02/13;;AF20008;MP8. Formació i orientació laboral;99;99;11/03/13;;AF2000801;UF1. Incorporació al treball;66;N;N;N;N
+CFPM    AF20;Impressió gràfica;0;2000;25/02/13;;AF20008;MP8. Formació i orientació laboral;99;99;11/03/13;;AF2000802;UF2. Prevenció de riscos laborals;33;N;N;N;N
+CFPM    AF20;Impressió gràfica;0;2000;25/02/13;;AF20009;MP9. Empresa i iniciativa emprenedora;66;66;11/03/13;;AF2000901;UF1. Empresa i iniciativa emprenedora;66;N;N;N;N
+CFPM    AF20;Impressió gràfica;0;2000;25/02/13;;AF20010;MP10. Anglès tècnic;99;99;11/03/13;;AF2001001;UF1. Anglès tècnic;99;N;N;N;N
+CFPM    AF20;Impressió gràfica;0;2000;25/02/13;;AF20011;MP11. Síntesi;66;66;11/03/13;;AF2001101;UF1. Síntesi;66;N;S;N;N
+CFPM    AF20;Impressió gràfica;0;2000;25/02/13;;AF20012;MP12. Formació en centres de treball;350;350;11/03/13;;AF2001201;Formació en centres de treball;350;S;N;N;N
+CFPM    AF20;Impressió gràfica;0;2000;25/02/13;;AF20013;MP7. Impressió en baix relleu;66;99;26/08/16;;AF2001301;UF1. Impressió en rotogravat;36;N;N;N;N
+CFPM    AF20;Impressió gràfica;0;2000;25/02/13;;AF20013;MP7. Impressió en baix relleu;66;99;26/08/16;;AF2001302;UF2. Impressió en tampografia;30;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21001;MP1. Preparació i regulació de màquines òfset;165;165;14/11/13;;AF2100101;UF1. Processos en productes gràfics;33;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21001;MP1. Preparació i regulació de màquines òfset;165;165;14/11/13;;AF2100102;UF2. Regulació del marcador i dispositius d'acabat;62;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21001;MP1. Preparació i regulació de màquines òfset;165;165;14/11/13;;AF2100103;UF3. Regulació dels cilindres;20;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21001;MP1. Preparació i regulació de màquines òfset;165;165;14/11/13;;AF2100104;UF4. Regulació de la bateria i el grup d'humectació;50;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21002;MP2. Desenvolupament de la tirada òfset;132;132;14/11/13;;AF2100201;UF1. Registre en l'imprès;20;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21002;MP2. Desenvolupament de la tirada òfset;132;132;14/11/13;;AF2100202;UF2. Entonació i equilibri aigua-tinta;32;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21002;MP2. Desenvolupament de la tirada òfset;132;132;14/11/13;;AF2100203;UF3. Obtenció del full validat;30;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21002;MP2. Desenvolupament de la tirada òfset;132;132;14/11/13;;AF2100204;UF4. Realització i control de la tirada òfset;50;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21003;MP3. Impressió en flexografia;231;231;14/11/13;;AF2100301;UF1. Procés d' impressió en flexografia;33;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21003;MP3. Impressió en flexografia;231;231;14/11/13;;AF2100302;UF2. Regulació del pas del suport en flexografia;33;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21003;MP3. Impressió en flexografia;231;231;14/11/13;;AF2100303;UF3. Regulació dels cossos impressors en flexografia;45;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21003;MP3. Impressió en flexografia;231;231;14/11/13;;AF2100304;UF4. Operacions d' entonació i registre en flexografia;40;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21003;MP3. Impressió en flexografia;231;231;14/11/13;;AF2100305;UF5. Realització i control de la tirada en flexografia;55;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21003;MP3. Impressió en flexografia;231;231;14/11/13;;AF2100306;UF6. Operacions de conversió en màquines flexogràfiques;25;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21004;MP4. Impressió en serigrafia;132;132;14/11/13;;AF2100401;UF1. Realització de la pantalla;40;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21004;MP4. Impressió en serigrafia;132;132;14/11/13;;AF2100402;UF2. Impressió en serigrafia amb màquina plana i rotativa;42;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21004;MP4. Impressió en serigrafia;132;132;14/11/13;;AF2100403;UF3. Impressió tèxtil en serigrafia;50;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21005;MP5. Impressió digital;132;132;14/11/13;;AF2100501;UF1. Tractament de la informació digital;25;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21005;MP5. Impressió digital;132;132;14/11/13;;AF2100502;UF2. Preparació de matèries primeres i equips d'impressió digital;29;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21005;MP5. Impressió digital;132;132;14/11/13;;AF2100503;UF3. Impressió, acabats i manteniment preventiu amb dispositius digitals;45;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21005;MP5. Impressió digital;132;132;14/11/13;;AF2100504;UF4. Retolació amb plotter de tall;33;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21006;MP6. Preparació de materials per a impressió;231;231;14/11/13;;AF2100601;UF1. Suports paperers;50;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21006;MP6. Preparació de materials per a impressió;231;231;14/11/13;;AF2100602;UF2. Pel·lícules plàstiques i suports no paperers;63;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21006;MP6. Preparació de materials per a impressió;231;231;14/11/13;;AF2100603;UF3. Formes impressores;48;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21006;MP6. Preparació de materials per a impressió;231;231;14/11/13;;AF2100604;UF4. Tintes per a impressió;30;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21006;MP6. Preparació de materials per a impressió;231;231;14/11/13;;AF2100605;UF5. Preparació de tintes;25;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21006;MP6. Preparació de materials per a impressió;231;231;14/11/13;;AF2100606;UF6. Preparació de solucions d'humectació;15;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21007;MP7. Impressió en rotogravat i tampografia;198;198;;26/08/16;AF2100701;UF1. Procés d'impressió en rotogravat;33;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21007;MP7. Impressió en rotogravat i tampografia;198;198;;26/08/16;AF2100702;UF2. Regulació de la màquina de rotogravat;40;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21007;MP7. Impressió en rotogravat i tampografia;198;198;;26/08/16;AF2100703;UF3. Operacions d' entonació i registre en rotogravat;34;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21007;MP7. Impressió en rotogravat i tampografia;198;198;;26/08/16;AF2100704;UF4. Realització i control de la tirada en rotogravat;58;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21007;MP7. Impressió en rotogravat i tampografia;198;198;;26/08/16;AF2100705;UF5. Impressió en tampografia;33;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21008;MP8. Processos de laminat;165;165;;26/08/16;AF2100801;UF1. Preparació d'equips i materials pel procés de laminat;25;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21008;MP8. Processos de laminat;165;165;;26/08/16;AF2100802;UF2. Regulació del pas de la bobina en la laminadora;50;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21008;MP8. Processos de laminat;165;165;;26/08/16;AF2100803;UF3. Realització i control de l'aplicació d'adhesiu i laminat;90;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21009;MP9. Processos de conversió;165;165;;26/08/16;AF2100901;UF1. Regulació del pas de la bobina;50;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21009;MP9. Processos de conversió;165;165;;26/08/16;AF2100902;UF2. Regulació del material;55;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21009;MP9. Processos de conversió;165;165;;26/08/16;AF2100903;UF3. Realització i control del tall i rebobinat;60;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21010;MP10. Formació i orientació laboral;99;99;14/11/13;;AF2101001;UF1. Incorporació al treball;66;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21010;MP10. Formació i orientació laboral;99;99;14/11/13;;AF2101002;UF2. Prevenció de riscos laborals;33;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21011;MP11. Empresa e iniciativa emprenedora;66;66;14/11/13;;AF2101101;UF1. Empresa i iniciativa emprenedora;66;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21012;MP12. Anglès tècnic;99;99;;26/08/16;AF2101201;UF1. Anglès tècnic;99;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21013;MP13. Síntesi;66;66;;26/08/16;AF2101301;UF1. Síntesi;66;N;S;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21014;MP14. Formació en centres de treball;119;119;14/11/13;;AF2101401;Formació en centres de treball;119;S;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21015;MP7. Impressió en baix relleu;198;198;26/08/16;;AF2101501;UF1. Procés d'impressió en rotogravat;33;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21015;MP7. Impressió en baix relleu;198;198;26/08/16;;AF2101502;UF2. Regulació de la màquina de rotogravat;40;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21015;MP7. Impressió en baix relleu;198;198;26/08/16;;AF2101503;UF3. Operacions d' entonació i registre en rotogravat;34;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21015;MP7. Impressió en baix relleu;198;198;26/08/16;;AF2101504;UF4. Realització i control de la tirada en rotogravat;58;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21015;MP7. Impressió en baix relleu;198;198;26/08/16;;AF2101505;UF5. Impressió en tampografia;33;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21016;MP8. Processos de laminat;132;132;26/08/16;;AF2101601;UF1. Preparació d'equips i materials pel procés de laminat;25;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21016;MP8. Processos de laminat;132;132;26/08/16;;AF2101602;UF2. Regulació del pas de la bobina en la laminadora;50;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21016;MP8. Processos de laminat;132;132;26/08/16;;AF2101603;UF3. Realització i control de l'aplicació d'adhesiu i laminat;57;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21017;MP9. Processos de conversió;132;132;26/08/16;;AF2101701;UF1. Regulació del pas de la bobina;42;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21017;MP9. Processos de conversió;132;132;26/08/16;;AF2101702;UF2. Regulació del material;42;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21017;MP9. Processos de conversió;132;132;26/08/16;;AF2101703;UF3. Realització i control del tall i rebobinat;48;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21018;MP12. Anglès tècnic;132;132;26/08/16;;AF2101801;UF1. Anglès tècnic;99;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21018;MP12. Anglès tècnic;132;132;26/08/16;;AF2101802;UF2. Anglès aplicat al converting;33;N;N;N;N
+CFPM    AF21;Impressió gràfica (converting);21;2000;14/11/13;;AF21019;MP13. Síntesi;99;99;26/08/16;;AF2101901;UF1. Síntesi;99;N;N;N;N
+CFPM    AF30;Postimpressió i acabats gràfics;0;2000;17/06/14;;AF30001;MP1. Guillotinat i plegat ;198;198;17/06/14;;AF3000101;UF1. Preparació de la guillotina;50;N;N;N;N
+CFPM    AF30;Postimpressió i acabats gràfics;0;2000;17/06/14;;AF30001;MP1. Guillotinat i plegat ;198;198;17/06/14;;AF3000102;UF2. Realització i control del tall;38;N;N;N;N
+CFPM    AF30;Postimpressió i acabats gràfics;0;2000;17/06/14;;AF30001;MP1. Guillotinat i plegat ;198;198;17/06/14;;AF3000103;UF3. Preparació de la plegadora;60;N;N;N;N
+CFPM    AF30;Postimpressió i acabats gràfics;0;2000;17/06/14;;AF30001;MP1. Guillotinat i plegat ;198;198;17/06/14;;AF3000104;UF4. Realització i control del plegat;50;N;N;N;N
+CFPM    AF30;Postimpressió i acabats gràfics;0;2000;17/06/14;;AF30002;MP2. Enquadernació en grapa;99;99;17/06/14;;AF3000201;UF1. Preparació del tren de grapat;50;N;N;N;N
+CFPM    AF30;Postimpressió i acabats gràfics;0;2000;17/06/14;;AF30002;MP2. Enquadernació en grapa;99;99;17/06/14;;AF3000202;UF2. Preparació de la guillotina trilateral;20;N;N;N;N
+CFPM    AF30;Postimpressió i acabats gràfics;0;2000;17/06/14;;AF30002;MP2. Enquadernació en grapa;99;99;17/06/14;;AF3000203;UF3. Realització i control de l'enquadernació en grapa.;29;N;N;N;N
+CFPM    AF30;Postimpressió i acabats gràfics;0;2000;17/06/14;;AF30003;MP3. Enquadernació en rústica i tapa dura;165;198;17/06/14;;AF3000301;UF1. Procés d'alçada i cosit;33;N;N;N;N
+CFPM    AF30;Postimpressió i acabats gràfics;0;2000;17/06/14;;AF30003;MP3. Enquadernació en rústica i tapa dura;165;198;17/06/14;;AF3000302;UF2. Realització i control de l'enquadernació en rústica;66;N;N;N;N
+CFPM    AF30;Postimpressió i acabats gràfics;0;2000;17/06/14;;AF30003;MP3. Enquadernació en rústica i tapa dura;165;198;17/06/14;;AF3000303;UF3. Realització i control de l'enquadernació en tapa;66;N;N;N;N
+CFPM    AF30;Postimpressió i acabats gràfics;0;2000;17/06/14;;AF30004;MP4. Encunyat;165;198;17/06/14;;AF3000401;UF1. Preparació de l'encuny;20;N;N;N;N
+CFPM    AF30;Postimpressió i acabats gràfics;0;2000;17/06/14;;AF30004;MP4. Encunyat;165;198;17/06/14;;AF3000402;UF2. Regulació del pas del suport;20;N;N;N;N
+CFPM    AF30;Postimpressió i acabats gràfics;0;2000;17/06/14;;AF30004;MP4. Encunyat;165;198;17/06/14;;AF3000403;UF3. Preparació de la contrapartida i el cos expulsor;45;N;N;N;N
+CFPM    AF30;Postimpressió i acabats gràfics;0;2000;17/06/14;;AF30004;MP4. Encunyat;165;198;17/06/14;;AF3000404;UF4. Realització de l'arranjament;45;N;N;N;N
+CFPM    AF30;Postimpressió i acabats gràfics;0;2000;17/06/14;;AF30004;MP4. Encunyat;165;198;17/06/14;;AF3000405;UF5. Realització i control de l'encunyament;35;N;N;N;N
+CFPM    AF30;Postimpressió i acabats gràfics;0;2000;17/06/14;;AF30005;MP5. Impressió en flexografia;132;132;17/06/14;;AF3000501;UF1. Preparació de la màquina de flexografia;60;N;N;N;N
+CFPM    AF30;Postimpressió i acabats gràfics;0;2000;17/06/14;;AF30005;MP5. Impressió en flexografia;132;132;17/06/14;;AF3000502;UF2. Realització i control de la tirada en flexografia;72;N;N;N;N
+CFPM    AF30;Postimpressió i acabats gràfics;0;2000;17/06/14;;AF30006;MP6. Elaboració de tapes i arxivadors;132;165;17/06/14;;AF3000601;UF1. Preparació de la màquina de confecció de tapes i arxivadors;40;N;N;N;N
+CFPM    AF30;Postimpressió i acabats gràfics;0;2000;17/06/14;;AF30006;MP6. Elaboració de tapes i arxivadors;132;165;17/06/14;;AF3000602;UF2. Estampació de tapes i arxivadors ;26;N;N;N;N
+CFPM    AF30;Postimpressió i acabats gràfics;0;2000;17/06/14;;AF30006;MP6. Elaboració de tapes i arxivadors;132;165;17/06/14;;AF3000603;UF3. Realització i control de tapes i arxivadors;66;N;N;N;N
+CFPM    AF30;Postimpressió i acabats gràfics;0;2000;17/06/14;;AF30007;MP7. Tractament superficial de l'imprès ;132;132;17/06/14;;AF3000701;UF1. Preparació i regulació de la màquina d'estampació per calor;20;N;N;N;N
+CFPM    AF30;Postimpressió i acabats gràfics;0;2000;17/06/14;;AF30007;MP7. Tractament superficial de l'imprès ;132;132;17/06/14;;AF3000702;UF2. Realització i control de l'estampació per calor;20;N;N;N;N
+CFPM    AF30;Postimpressió i acabats gràfics;0;2000;17/06/14;;AF30007;MP7. Tractament superficial de l'imprès ;132;132;17/06/14;;AF3000703;UF3. Preparació de la màquina plastificadora;20;N;N;N;N
+CFPM    AF30;Postimpressió i acabats gràfics;0;2000;17/06/14;;AF30007;MP7. Tractament superficial de l'imprès ;132;132;17/06/14;;AF3000704;UF4. Realització i control del plastificat;25;N;N;N;N
+CFPM    AF30;Postimpressió i acabats gràfics;0;2000;17/06/14;;AF30007;MP7. Tractament superficial de l'imprès ;132;132;17/06/14;;AF3000705;UF5. Preparació de la màquina envernissadora;20;N;N;N;N
+CFPM    AF30;Postimpressió i acabats gràfics;0;2000;17/06/14;;AF30007;MP7. Tractament superficial de l'imprès ;132;132;17/06/14;;AF3000706;UF6. Realització i control de l'envernissament;27;N;N;N;N
+CFPM    AF30;Postimpressió i acabats gràfics;0;2000;17/06/14;;AF30008;MP8. Formació d'envasos;66;99;17/06/14;;AF3000801;UF1. Preparació d'elements en la plegadora-encoladora;30;N;N;N;N
+CFPM    AF30;Postimpressió i acabats gràfics;0;2000;17/06/14;;AF30008;MP8. Formació d'envasos;66;99;17/06/14;;AF3000802;UF2. Preparació de l'encolat i tancament;20;N;N;N;N
+CFPM    AF30;Postimpressió i acabats gràfics;0;2000;17/06/14;;AF30008;MP8. Formació d'envasos;66;99;17/06/14;;AF3000803;UF3. Realització i control del plegat i pegat;16;N;N;N;N
+CFPM    AF30;Postimpressió i acabats gràfics;0;2000;17/06/14;;AF30009;MP9. Materials per a postimpressió;99;99;17/06/14;;AF3000901;UF1. Materials i adhesius per a l'elaboració de complexos.;29;N;N;N;N
+CFPM    AF30;Postimpressió i acabats gràfics;0;2000;17/06/14;;AF30009;MP9. Materials per a postimpressió;99;99;17/06/14;;AF3000902;UF2. Materials per a embalatges, laminats i bosses;30;N;N;N;N
+CFPM    AF30;Postimpressió i acabats gràfics;0;2000;17/06/14;;AF30009;MP9. Materials per a postimpressió;99;99;17/06/14;;AF3000903;UF3. Forma impressora i tintes de flexografia;20;N;N;N;N
+CFPM    AF30;Postimpressió i acabats gràfics;0;2000;17/06/14;;AF30009;MP9. Materials per a postimpressió;99;99;17/06/14;;AF3000904;UF4. Recollida de residus i neteja d'equips;20;N;N;N;N
+CFPM    AF30;Postimpressió i acabats gràfics;0;2000;17/06/14;;AF30010;MP10. Formació i orientació laboral;99;99;17/06/14;;AF3001001;UF1. Incorporació al treball;66;N;N;N;N
+CFPM    AF30;Postimpressió i acabats gràfics;0;2000;17/06/14;;AF30010;MP10. Formació i orientació laboral;99;99;17/06/14;;AF3001002;UF2. Prevenció de riscos laborals;33;N;N;N;N
+CFPM    AF30;Postimpressió i acabats gràfics;0;2000;17/06/14;;AF30011;MP11. Empresa i iniciativa emprenedora;66;66;17/06/14;;AF3001101;UF1. Empresa i iniciativa emprenedora;66;N;N;N;N
+CFPM    AF30;Postimpressió i acabats gràfics;0;2000;17/06/14;;AF30012;MP12. Anglès tècnic;99;99;17/06/14;;AF3001201;UF1. Anglès;99;N;N;N;N
+CFPM    AF30;Postimpressió i acabats gràfics;0;2000;17/06/14;;AF30013;MP13. Síntesi;66;66;17/06/14;;AF3001301;UF1. Síntesi;66;N;S;N;N
+CFPM    AF30;Postimpressió i acabats gràfics;0;2000;17/06/14;;AF30014;MP14. Formació en centres de treball;350;350;17/06/14;;AF3001401;Formació en centres de treball;350;S;N;N;N
+CFPM    AG10;Gestió administrativa;0;2000;14/10/10;;AG10001;MP1. Comunicació empresarial i atenció al client;132;165;19/10/10;;AG1000101;UF1. Comunicació empresarial oral;33;N;N;N;N
+CFPM    AG10;Gestió administrativa;0;2000;14/10/10;;AG10001;MP1. Comunicació empresarial i atenció al client;132;165;19/10/10;;AG1000102;UF2. Comunicació empresarial escrita;33;N;N;N;N
+CFPM    AG10;Gestió administrativa;0;2000;14/10/10;;AG10001;MP1. Comunicació empresarial i atenció al client;132;165;19/10/10;;AG1000103;UF3. Sistemes d'arxiu;33;N;N;N;N
+CFPM    AG10;Gestió administrativa;0;2000;14/10/10;;AG10001;MP1. Comunicació empresarial i atenció al client;132;165;19/10/10;;AG1000104;UF4. Atenció al client/usuari;33;N;N;N;N
+CFPM    AG10;Gestió administrativa;0;2000;14/10/10;;AG10002;MP2. Operacions administratives de compravenda ;132;165;19/10/10;;AG1000201;UF1. Circuit administratiu de la compravenda;66;N;N;N;N
+CFPM    AG10;Gestió administrativa;0;2000;14/10/10;;AG10002;MP2. Operacions administratives de compravenda ;132;165;19/10/10;;AG1000202;UF2. Gestió d'estocs;33;N;N;N;N
+CFPM    AG10;Gestió administrativa;0;2000;14/10/10;;AG10002;MP2. Operacions administratives de compravenda ;132;165;19/10/10;;AG1000203;UF3. Declaracions fiscals derivades de la compravenda;33;N;N;N;N
+CFPM    AG10;Gestió administrativa;0;2000;14/10/10;;AG10003;MP3. Operacions administratives de recursos humans;99;99;19/10/10;;AG1000301;UF1. Selecció i formació;33;N;N;N;N
+CFPM    AG10;Gestió administrativa;0;2000;14/10/10;;AG10003;MP3. Operacions administratives de recursos humans;99;99;19/10/10;;AG1000302;UF2. Contractació i retribució;33;N;N;N;N
+CFPM    AG10;Gestió administrativa;0;2000;14/10/10;;AG10003;MP3. Operacions administratives de recursos humans;99;99;19/10/10;;AG1000303;UF3. Processos de l'activitat laboral ;33;N;N;N;N
+CFPM    AG10;Gestió administrativa;0;2000;14/10/10;;AG10004;MP4. Operacions auxiliars de gestió de tresoreria ;132;132;19/10/10;;AG1000401;UF1. Control de tresoreria;33;N;N;N;N
+CFPM    AG10;Gestió administrativa;0;2000;14/10/10;;AG10004;MP4. Operacions auxiliars de gestió de tresoreria ;132;132;19/10/10;;AG1000402;UF2. Tramitació d'instruments financers;66;N;N;N;N
+CFPM    AG10;Gestió administrativa;0;2000;14/10/10;;AG10004;MP4. Operacions auxiliars de gestió de tresoreria ;132;132;19/10/10;;AG1000403;UF3. Operacions financeres bàsiques;33;N;N;N;N
+CFPM    AG10;Gestió administrativa;0;2000;14/10/10;;AG10005;MP5. Tècnica comptable;132;165;19/10/10;;AG1000501;UF1. Patrimoni empresarial i metodologia comptable;33;N;N;N;N
+CFPM    AG10;Gestió administrativa;0;2000;14/10/10;;AG10005;MP5. Tècnica comptable;132;165;19/10/10;;AG1000502;UF2. Cicle comptable bàsic;33;N;N;N;N
+CFPM    AG10;Gestió administrativa;0;2000;14/10/10;;AG10005;MP5. Tècnica comptable;132;165;19/10/10;;AG1000503;UF3. Cicle comptable mitjà;66;N;N;N;N
+CFPM    AG10;Gestió administrativa;0;2000;14/10/10;;AG10006;MP6. Tractament de la documentació comptable ;99;132;19/10/10;;AG1000601;UF1. Preparació i codificació comptable;33;N;N;N;N
+CFPM    AG10;Gestió administrativa;0;2000;14/10/10;;AG10006;MP6. Tractament de la documentació comptable ;99;132;19/10/10;;AG1000602;UF2. Registre comptable;36;N;N;N;N
+CFPM    AG10;Gestió administrativa;0;2000;14/10/10;;AG10006;MP6. Tractament de la documentació comptable ;99;132;19/10/10;;AG1000603;UF3. Comptes anuals bàsics;15;N;N;N;N
+CFPM    AG10;Gestió administrativa;0;2000;14/10/10;;AG10006;MP6. Tractament de la documentació comptable ;99;132;19/10/10;;AG1000604;UF4. Verificació i control intern;15;N;N;N;N
+CFPM    AG10;Gestió administrativa;0;2000;14/10/10;;AG10007;MP7. Tractament informàtic de la informació ;198;231;19/10/10;;AG1000701;UF1. Tecnologia i comunicacions digitals;33;N;N;N;N
+CFPM    AG10;Gestió administrativa;0;2000;14/10/10;;AG10007;MP7. Tractament informàtic de la informació ;198;231;19/10/10;;AG1000702;UF2. Ordinografia i gravació de dades;33;N;N;N;N
+CFPM    AG10;Gestió administrativa;0;2000;14/10/10;;AG10007;MP7. Tractament informàtic de la informació ;198;231;19/10/10;;AG1000704;UF4. Tractament de dades i integració d'aplicacions;33;N;N;N;N
+CFPM    AG10;Gestió administrativa;0;2000;14/10/10;;AG10007;MP7. Tractament informàtic de la informació ;198;231;19/10/10;;AG1000705;UF5. Presentacions multimèdia de continguts;33;N;N;N;N
+CFPM    AG10;Gestió administrativa;0;2000;14/10/10;;AG10007;MP7. Tractament informàtic de la informació ;198;231;19/10/10;;AG1000706;UF6. Eines d'internet per a l'empresa;33;N;N;N;N
+CFPM    AG10;Gestió administrativa;0;2000;14/10/10;;AG10007;MP7. Tractament informàtic de la informació ;198;231;19/10/10;;AG1000708;UF3. Tractament de la informació escrita i numèrica ;66;N;N;N;N
+CFPM    AG10;Gestió administrativa;0;2000;14/10/10;;AG10008;MP8. Operacions administratives de suport ;66;66;19/10/10;;AG1000801;UF1. Selecció i tractament de la informació ;33;N;N;N;N
+CFPM    AG10;Gestió administrativa;0;2000;14/10/10;;AG10008;MP8. Operacions administratives de suport ;66;66;19/10/10;;AG1000802;UF2. Operacions logístiques de suport administratiu;33;N;N;N;N
+CFPM    AG10;Gestió administrativa;0;2000;14/10/10;;AG10009;MP9. Anglès ;99;99;19/10/10;;AG1000901;UF1. Anglès tècnic;99;N;N;N;N
+CFPM    AG10;Gestió administrativa;0;2000;14/10/10;;AG10010;MP10. Empresa i Administració;165;165;19/10/10;;AG1001001;UF1. Innovació i emprenedoria;33;N;N;N;N
+CFPM    AG10;Gestió administrativa;0;2000;14/10/10;;AG10010;MP10. Empresa i Administració;165;165;19/10/10;;AG1001002;UF2. Empresa i activitat econòmica;24;N;N;N;N
+CFPM    AG10;Gestió administrativa;0;2000;14/10/10;;AG10010;MP10. Empresa i Administració;165;165;19/10/10;;AG1001003;UF3. Administracions públiques;60;N;N;N;N
+CFPM    AG10;Gestió administrativa;0;2000;14/10/10;;AG10010;MP10. Empresa i Administració;165;165;19/10/10;;AG1001004;UF4. Fiscalitat empresarial bàsica;48;N;N;N;N
+CFPM    AG10;Gestió administrativa;0;2000;14/10/10;;AG10011;MP11. Empresa a l'aula ;132;132;19/10/10;;AG1001101;UF1. Empresa a l'aula;132;N;N;N;N
+CFPM    AG10;Gestió administrativa;0;2000;14/10/10;;AG10012;MP12. Formació i orientació laboral;99;99;19/10/10;;AG1001201;UF1. Incorporació al treball;66;N;N;N;N
+CFPM    AG10;Gestió administrativa;0;2000;14/10/10;;AG10012;MP12. Formació i orientació laboral;99;99;19/10/10;;AG1001202;UF2. Prevenció de riscos laborals;33;N;N;N;N
+CFPM    AG10;Gestió administrativa;0;2000;14/10/10;;AG10013;MP13. Formació en centres de treball;350;350;19/10/10;;AG1001301;Formació en centres de treball;350;S;N;N;N
+CFPM    CM10;Activitats comercials;0;2000;08/04/13;;CM10001;MP1. Dinamització del punt de venda;132;165;04/06/15;;CM1000101;UF1. Organització de lespai comercial i gestió de làrea expositiva;33;N;N;N;N
+CFPM    CM10;Activitats comercials;0;2000;08/04/13;;CM10001;MP1. Dinamització del punt de venda;132;165;04/06/15;;CM1000102;UF2. Aparadorisme: muntatge i manteniment;66;N;N;N;N
+CFPM    CM10;Activitats comercials;0;2000;08/04/13;;CM10001;MP1. Dinamització del punt de venda;132;165;04/06/15;;CM1000103;UF3. Accions promocionals en el punt de venda;33;N;N;N;N
+CFPM    CM10;Activitats comercials;0;2000;08/04/13;;CM10002;MP2. Gestió de compres;99;99;04/06/15;;CM1000201;UF1. Aprovisionament;33;N;N;N;N
+CFPM    CM10;Activitats comercials;0;2000;08/04/13;;CM10002;MP2. Gestió de compres;99;99;04/06/15;;CM1000202;UF2. Procés de compres i seguiment;66;N;N;N;N
+CFPM    CM10;Activitats comercials;0;2000;08/04/13;;CM10003;MP3. Gestió dun petit comerç;165;165;04/06/15;;CM1000301;UF1. Emprenedoria i creació dun petit comerç;33;N;N;N;N
+CFPM    CM10;Activitats comercials;0;2000;08/04/13;;CM10003;MP3. Gestió dun petit comerç;165;165;04/06/15;;CM1000302;UF2. Gestió econòmica dun petit comerç;66;N;N;N;N
+CFPM    CM10;Activitats comercials;0;2000;08/04/13;;CM10003;MP3. Gestió dun petit comerç;165;165;04/06/15;;CM1000303;UF3. Procés administratiu, comptable i fiscal;66;N;N;N;N
+CFPM    CM10;Activitats comercials;0;2000;08/04/13;;CM10004;MP4. Processos de venda;165;165;04/06/15;;CM1000401;UF1. Venda al consumidor final;66;N;N;N;N
+CFPM    CM10;Activitats comercials;0;2000;08/04/13;;CM10004;MP4. Processos de venda;165;165;04/06/15;;CM1000402;UF2. Venda a intermediaris, empreses i organitzacions;66;N;N;N;N
+CFPM    CM10;Activitats comercials;0;2000;08/04/13;;CM10004;MP4. Processos de venda;165;165;04/06/15;;CM1000403;UF3. Terminal punt de venda (TPV) i altres eines de gestió de venda;33;N;N;N;N
+CFPM    CM10;Activitats comercials;0;2000;08/04/13;;CM10005;MP5. Serveis datenció comercial;99;132;04/06/15;;CM1000501;UF1. Atenció presencial i telefònica al client;33;N;N;N;N
+CFPM    CM10;Activitats comercials;0;2000;08/04/13;;CM10005;MP5. Serveis datenció comercial;99;132;04/06/15;;CM1000502;UF2. Atenció per escrit al client;33;N;N;N;N
+CFPM    CM10;Activitats comercials;0;2000;08/04/13;;CM10005;MP5. Serveis datenció comercial;99;132;04/06/15;;CM1000503;UF3. Serveis al consumidor i gestió de la relació amb clients (CRM);33;N;N;N;N
+CFPM    CM10;Activitats comercials;0;2000;08/04/13;;CM10006;MP6. Tècniques de magatzem;132;132;04/06/15;;CM1000601;UF1. Organització i seguretat del magatzem;33;N;N;N;N
+CFPM    CM10;Activitats comercials;0;2000;08/04/13;;CM10006;MP6. Tècniques de magatzem;132;132;04/06/15;;CM1000602;UF2. Recepció de mercaderies;33;N;N;N;N
+CFPM    CM10;Activitats comercials;0;2000;08/04/13;;CM10006;MP6. Tècniques de magatzem;132;132;04/06/15;;CM1000603;UF3. Expedició de mercaderies;33;N;N;N;N
+CFPM    CM10;Activitats comercials;0;2000;08/04/13;;CM10006;MP6. Tècniques de magatzem;132;132;04/06/15;;CM1000604;UF4. Inventari i gestió destocs;33;N;N;N;N
+CFPM    CM10;Activitats comercials;0;2000;08/04/13;;CM10007;MP7. Venda tècnica;132;165;04/06/15;;CM1000701;UF1. Venda de serveis;33;N;N;N;N
+CFPM    CM10;Activitats comercials;0;2000;08/04/13;;CM10007;MP7. Venda tècnica;132;165;04/06/15;;CM1000702;UF2. Venda de productes comercials;45;N;N;N;N
+CFPM    CM10;Activitats comercials;0;2000;08/04/13;;CM10007;MP7. Venda tècnica;132;165;04/06/15;;CM1000703;UF3. Venda de productes industrials, del sector primari i immobiliaris;33;N;N;N;N
+CFPM    CM10;Activitats comercials;0;2000;08/04/13;;CM10007;MP7. Venda tècnica;132;165;04/06/15;;CM1000704;UF4. Telemàrqueting;21;N;N;N;N
+CFPM    CM10;Activitats comercials;0;2000;08/04/13;;CM10008;MP8. Anglès;99;99;04/06/15;;CM1000801;UF1. Anglès tècnic;99;N;N;N;N
+CFPM    CM10;Activitats comercials;0;2000;08/04/13;;CM10009;MP9. Aplicacions informàtiques pel comerç;132;165;04/06/15;;CM1000901;UF1. Tecnologies digitals i eines dinternet per lempresa;33;N;N;N;N
+CFPM    CM10;Activitats comercials;0;2000;08/04/13;;CM10009;MP9. Aplicacions informàtiques pel comerç;132;165;04/06/15;;CM1000902;UF2. Edició digital de material publicitari;66;N;N;N;N
+CFPM    CM10;Activitats comercials;0;2000;08/04/13;;CM10009;MP9. Aplicacions informàtiques pel comerç;132;165;04/06/15;;CM1000903;UF3. Gestió informatitzada per al comerç;33;N;N;N;N
+CFPM    CM10;Activitats comercials;0;2000;08/04/13;;CM10010;MP10. Comerç electrònic;99;99;04/06/15;;CM1001001;UF1. Gestió de la web i la botiga virtual;45;N;N;N;N
+CFPM    CM10;Activitats comercials;0;2000;08/04/13;;CM10010;MP10. Comerç electrònic;99;99;04/06/15;;CM1001002;UF2. Execució del pla de màrqueting digital;33;N;N;N;N
+CFPM    CM10;Activitats comercials;0;2000;08/04/13;;CM10010;MP10. Comerç electrònic;99;99;04/06/15;;CM1001003;UF3. Comunicació empresarial en lentorn digital;21;N;N;N;N
+CFPM    CM10;Activitats comercials;0;2000;08/04/13;;CM10011;MP11. Màrqueting en lactivitat comercial;99;99;04/06/15;;CM1001104;UF1. Màrqueting i recerca d'informació;45;N;N;N;N
+CFPM    CM10;Activitats comercials;0;2000;08/04/13;;CM10011;MP11. Màrqueting en lactivitat comercial;99;99;04/06/15;;CM1001105;UF2. Polítiques comercials i pla de màrqueting;54;N;N;N;N
+CFPM    CM10;Activitats comercials;0;2000;08/04/13;;CM10012;MP12. Formació i orientació laboral;99;99;04/06/15;;CM1001201;UF1. Incorporació al treball;66;N;N;N;N
+CFPM    CM10;Activitats comercials;0;2000;08/04/13;;CM10012;MP12. Formació i orientació laboral;99;99;04/06/15;;CM1001202;UF2. Prevenció de riscos laborals;33;N;N;N;N
+CFPM    CM10;Activitats comercials;0;2000;08/04/13;;CM10013;MP13. Síntesi;66;66;04/06/15;;CM1001301;UF1. Síntesi;66;N;S;N;N
+CFPM    CM10;Activitats comercials;0;2000;08/04/13;;CM10014;MP14. Formació en centres de treball;350;350;04/06/15;;CM1001401;Formació en centres de treball;350;S;N;N;N
+CFPM    EA10;Xarxes, instal·lacions i estacions de tractament d'aigua;0;2000;17/06/14;;EA10001;MP1. Instal·lacions d'aigua;231;264;17/06/14;;EA1000101;UF1. Configuració d'instal·lacions d'abastament d'aigua i sanejament;99;N;N;N;N
+CFPM    EA10;Xarxes, instal·lacions i estacions de tractament d'aigua;0;2000;17/06/14;;EA10001;MP1. Instal·lacions d'aigua;231;264;17/06/14;;EA1000102;UF2. Posada en servei d'instal·lacions d'abastament d'aigua i sanejament;66;N;N;N;N
+CFPM    EA10;Xarxes, instal·lacions i estacions de tractament d'aigua;0;2000;17/06/14;;EA10001;MP1. Instal·lacions d'aigua;231;264;17/06/14;;EA1000103;UF3. Manteniment d'instal·lacions d'abastament d'aigua i sanejament;66;N;N;N;N
+CFPM    EA10;Xarxes, instal·lacions i estacions de tractament d'aigua;0;2000;17/06/14;;EA10002;MP2. Tècniques de muntatge d'instal·lacions;231;264;17/06/14;;EA1000201;UF1. Tècniques d'unió i muntatge en xarxes d'abastament;99;N;N;N;N
+CFPM    EA10;Xarxes, instal·lacions i estacions de tractament d'aigua;0;2000;17/06/14;;EA10002;MP2. Tècniques de muntatge d'instal·lacions;231;264;17/06/14;;EA1000202;UF2. Tècniques d'unió i muntatge en xarxes de sanejament;99;N;N;N;N
+CFPM    EA10;Xarxes, instal·lacions i estacions de tractament d'aigua;0;2000;17/06/14;;EA10002;MP2. Tècniques de muntatge d'instal·lacions;231;264;17/06/14;;EA1000203;UF3. Seguretat en el muntatge d'instal·lacions;33;N;N;N;N
+CFPM    EA10;Xarxes, instal·lacions i estacions de tractament d'aigua;0;2000;17/06/14;;EA10003;MP3. estacions de tractament d'aigües;264;264;17/06/14;;EA1000301;UF1. Estacions depuradores d'aigües residuals;90;N;N;N;N
+CFPM    EA10;Xarxes, instal·lacions i estacions de tractament d'aigua;0;2000;17/06/14;;EA10003;MP3. estacions de tractament d'aigües;264;264;17/06/14;;EA1000302;UF2. Estacions de tractament d'aigües potables;50;N;N;N;N
+CFPM    EA10;Xarxes, instal·lacions i estacions de tractament d'aigua;0;2000;17/06/14;;EA10003;MP3. estacions de tractament d'aigües;264;264;17/06/14;;EA1000303;UF3. Presa de mostres;25;N;N;N;N
+CFPM    EA10;Xarxes, instal·lacions i estacions de tractament d'aigua;0;2000;17/06/14;;EA10003;MP3. estacions de tractament d'aigües;264;264;17/06/14;;EA1000304;UF4. Anàlisi d'aigües;99;N;N;N;N
+CFPM    EA10;Xarxes, instal·lacions i estacions de tractament d'aigua;0;2000;17/06/14;;EA10004;MP4. Instal·lacions de les estacions de tractament d'aigua;99;132;17/06/14;;EA1000401;UF1. Manteniment dels equips i instal·lacions;66;N;N;N;N
+CFPM    EA10;Xarxes, instal·lacions i estacions de tractament d'aigua;0;2000;17/06/14;;EA10004;MP4. Instal·lacions de les estacions de tractament d'aigua;99;132;17/06/14;;EA1000402;UF2. Seguretat i medi ambient en les instal·lacions;33;N;N;N;N
+CFPM    EA10;Xarxes, instal·lacions i estacions de tractament d'aigua;0;2000;17/06/14;;EA10005;MP5. Instal·lacions elèctriques;165;165;17/06/14;;EA1000501;UF1. Representació gràfica en instal·lacions elèctriques;33;N;N;N;N
+CFPM    EA10;Xarxes, instal·lacions i estacions de tractament d'aigua;0;2000;17/06/14;;EA10005;MP5. Instal·lacions elèctriques;165;165;17/06/14;;EA1000502;UF2. Muntatge i mecanització de quadres elèctrics;33;N;N;N;N
+CFPM    EA10;Xarxes, instal·lacions i estacions de tractament d'aigua;0;2000;17/06/14;;EA10005;MP5. Instal·lacions elèctriques;165;165;17/06/14;;EA1000503;UF3. Automatització elèctrica cablada;99;N;N;N;N
+CFPM    EA10;Xarxes, instal·lacions i estacions de tractament d'aigua;0;2000;17/06/14;;EA10006;MP6. Instal·lacions d'aigua en edificis;132;165;17/06/14;;EA1000601;UF1. Elements i configuracions d'instal·lacions d'aigua i evacuació;44;N;N;N;N
+CFPM    EA10;Xarxes, instal·lacions i estacions de tractament d'aigua;0;2000;17/06/14;;EA10006;MP6. Instal·lacions d'aigua en edificis;132;165;17/06/14;;EA1000602;UF2. Muntatge i instal·lació de xarxes d'aigua i evacuació;66;N;N;N;N
+CFPM    EA10;Xarxes, instal·lacions i estacions de tractament d'aigua;0;2000;17/06/14;;EA10006;MP6. Instal·lacions d'aigua en edificis;132;165;17/06/14;;EA1000603;UF3. Manteniment, diagnosi i reparació d'instal·lació d'aigua i evacuació;22;N;N;N;N
+CFPM    EA10;Xarxes, instal·lacions i estacions de tractament d'aigua;0;2000;17/06/14;;EA10007;MP7. Formació i orientació laboral;99;99;17/06/14;;EA1000701;UF1. Incorporació al treball;66;N;N;N;N
+CFPM    EA10;Xarxes, instal·lacions i estacions de tractament d'aigua;0;2000;17/06/14;;EA10007;MP7. Formació i orientació laboral;99;99;17/06/14;;EA1000702;UF2. Prevenció de riscos laborals;33;N;N;N;N
+CFPM    EA10;Xarxes, instal·lacions i estacions de tractament d'aigua;0;2000;17/06/14;;EA10008;MP8. Empresa i iniciativa emprenedora;66;66;17/06/14;;EA1000801;UF1. Empresa i iniciativa emprenedora;66;N;N;N;N
+CFPM    EA10;Xarxes, instal·lacions i estacions de tractament d'aigua;0;2000;17/06/14;;EA10009;MP9. Anglès tècnic;99;99;17/06/14;;EA1000901;UF1. Anglès tècnic;99;N;N;N;N
+CFPM    EA10;Xarxes, instal·lacions i estacions de tractament d'aigua;0;2000;17/06/14;;EA10010;MP10. Síntesi;99;99;17/06/14;;EA1001001;UF1. Síntesi;99;N;S;N;N
+CFPM    EA10;Xarxes, instal·lacions i estacions de tractament d'aigua;0;2000;17/06/14;;EA10011;MP11. Formació en centres de treball;383;383;17/06/14;;EA1001101;Formació en centres de treball;383;S;N;N;N
+CFPM    EA20;Xarxes i estacions de tractament d'aigües;0;2000;29/08/17;;EA20001;MP1. Hidràulica i xarxes d'aigua;99;99;29/08/17;;EA2000101;UF1. Gestió del cicle de l'aigua;17;N;N;N;N
+CFPM    EA20;Xarxes i estacions de tractament d'aigües;0;2000;29/08/17;;EA20001;MP1. Hidràulica i xarxes d'aigua;99;99;29/08/17;;EA2000102;UF2. Efectes de l'aigua;16;N;N;N;N
+CFPM    EA20;Xarxes i estacions de tractament d'aigües;0;2000;29/08/17;;EA20001;MP1. Hidràulica i xarxes d'aigua;99;99;29/08/17;;EA2000103;UF3. Xarxes d'aigua;66;N;N;N;N
+CFPM    EA20;Xarxes i estacions de tractament d'aigües;0;2000;29/08/17;;EA20002;MP2. Replanteig en xarxes d'aigua;99;99;29/08/17;;EA2000201;UF1. Documentació associada al replanteig;33;N;N;N;N
+CFPM    EA20;Xarxes i estacions de tractament d'aigües;0;2000;29/08/17;;EA20002;MP2. Replanteig en xarxes d'aigua;99;99;29/08/17;;EA2000202;UF2. Interpretació gràfica del replanteig;66;N;N;N;N
+CFPM    EA20;Xarxes i estacions de tractament d'aigües;0;2000;29/08/17;;EA20003;MP3. Manteniment de xarxes;132;165;29/08/17;;EA2000301;UF1. Plans de manteniment i seguretat;33;N;N;N;N
+CFPM    EA20;Xarxes i estacions de tractament d'aigües;0;2000;29/08/17;;EA20003;MP3. Manteniment de xarxes;132;165;29/08/17;;EA2000302;UF2. Manteniment preventiu de xarxes d'aigua;33;N;N;N;N
+CFPM    EA20;Xarxes i estacions de tractament d'aigües;0;2000;29/08/17;;EA20003;MP3. Manteniment de xarxes;132;165;29/08/17;;EA2000303;UF3. Manteniment correctiu de xarxes d'aigua;66;N;N;N;N
+CFPM    EA20;Xarxes i estacions de tractament d'aigües;0;2000;29/08/17;;EA20004;MP4. Tècniques de mecanització i unió;99;99;29/08/17;;EA2000401;UF1. Tècniques de mecanització i unió en xarxes d'abastament;66;N;N;N;N
+CFPM    EA20;Xarxes i estacions de tractament d'aigües;0;2000;29/08/17;;EA20004;MP4. Tècniques de mecanització i unió;99;99;29/08/17;;EA2000402;UF2. Tècniques de mecanització i unió en xarxes de sanejament;33;N;N;N;N
+CFPM    EA20;Xarxes i estacions de tractament d'aigües;0;2000;29/08/17;;EA20005;MP5. Muntatge i posada en servei de xarxes d'aigua;99;99;29/08/17;;EA2000501;UF1. Muntatge i posada en servei de xarxes en xarxes d'abastament;66;N;N;N;N
+CFPM    EA20;Xarxes i estacions de tractament d'aigües;0;2000;29/08/17;;EA20005;MP5. Muntatge i posada en servei de xarxes d'aigua;99;99;29/08/17;;EA2000502;UF2. Muntatge i posada en servei de xarxes en xarxes de sanejament;33;N;N;N;N
+CFPM    EA20;Xarxes i estacions de tractament d'aigües;0;2000;29/08/17;;EA20006;MP6. Estacions de tractament d'aigües;66;66;29/08/17;;EA2000601;UF1: estacions de tractament d'aigua potable;33;N;N;N;N
+CFPM    EA20;Xarxes i estacions de tractament d'aigües;0;2000;29/08/17;;EA20006;MP6. Estacions de tractament d'aigües;66;66;29/08/17;;EA2000602;UF2. Estacions depuradores d'aigues residuals;33;N;N;N;N
+CFPM    EA20;Xarxes i estacions de tractament d'aigües;0;2000;29/08/17;;EA20007;MP7. Qualitat de l'aigua;99;99;29/08/17;;EA2000701;UF1. Principis bàsics de qualitat en l'aigua;11;N;N;N;N
+CFPM    EA20;Xarxes i estacions de tractament d'aigües;0;2000;29/08/17;;EA20007;MP7. Qualitat de l'aigua;99;99;29/08/17;;EA2000702;UF2. Presa de mostres;22;N;N;N;N
+CFPM    EA20;Xarxes i estacions de tractament d'aigües;0;2000;29/08/17;;EA20007;MP7. Qualitat de l'aigua;99;99;29/08/17;;EA2000703;UF3. Anàlisis d'aigua;66;N;N;N;N
+CFPM    EA20;Xarxes i estacions de tractament d'aigües;0;2000;29/08/17;;EA20008;MP8. Manteniment d'equips i instal·lacions;99;165;29/08/17;;EA2000801;UF1. Manteniment d'instal·lacions de xarxes d'aigua;66;N;N;N;N
+CFPM    EA20;Xarxes i estacions de tractament d'aigües;0;2000;29/08/17;;EA20008;MP8. Manteniment d'equips i instal·lacions;99;165;29/08/17;;EA2000802;UF2. Seguretat i medi ambient;33;N;N;N;N
+CFPM    EA20;Xarxes i estacions de tractament d'aigües;0;2000;29/08/17;;EA20009;MP9. Instal·lacions elèctriques en xarxes d'aigua;99;99;29/08/17;;EA2000901;UF1. Representació gràfica en instal·lacions;16;N;N;N;N
+CFPM    EA20;Xarxes i estacions de tractament d'aigües;0;2000;29/08/17;;EA20009;MP9. Instal·lacions elèctriques en xarxes d'aigua;99;99;29/08/17;;EA2000902;UF2. Muntatges elèctrics;17;N;N;N;N
+CFPM    EA20;Xarxes i estacions de tractament d'aigües;0;2000;29/08/17;;EA20009;MP9. Instal·lacions elèctriques en xarxes d'aigua;99;99;29/08/17;;EA2000903;UF3. Automatització elèctrica;66;N;N;N;N
+CFPM    EA20;Xarxes i estacions de tractament d'aigües;0;2000;29/08/17;;EA20010;MP10. Muntatge i manteniment d'instal·lacions d'aigua;99;132;29/08/17;;EA2001001;UF1. Elements i configuracions d¿instal·lacions d¿aigua i evacuació;32;N;N;N;N
+CFPM    EA20;Xarxes i estacions de tractament d'aigües;0;2000;29/08/17;;EA20010;MP10. Muntatge i manteniment d'instal·lacions d'aigua;99;132;29/08/17;;EA2001002;UF2. Muntatge i instal·lació de xarxes d¿aigua i evacuació;52;N;N;N;N
+CFPM    EA20;Xarxes i estacions de tractament d'aigües;0;2000;29/08/17;;EA20010;MP10. Muntatge i manteniment d'instal·lacions d'aigua;99;132;29/08/17;;EA2001003;UF3. Manteniment, diagnosi i reparació d¿instal·lació d¿aigua i evacuació;15;N;N;N;N
+CFPM    EA20;Xarxes i estacions de tractament d'aigües;0;2000;29/08/17;;EA20011;MP11. Construcció en xarxes i estacions de tractament d'aigua;132;132;30/08/17;;EA2001101;UF1. Organització i obres en xarxes i estacions de tractament d'aigües ;46;N;N;N;N
+CFPM    EA20;Xarxes i estacions de tractament d'aigües;0;2000;29/08/17;;EA20011;MP11. Construcció en xarxes i estacions de tractament d'aigua;132;132;30/08/17;;EA2001102;UF2. Paviments urbans;66;N;N;N;N
+CFPM    EA20;Xarxes i estacions de tractament d'aigües;0;2000;29/08/17;;EA20011;MP11. Construcció en xarxes i estacions de tractament d'aigua;132;132;30/08/17;;EA2001103;UF3. Prevenció de riscos laborals en obres de construcció;20;N;N;N;N
+CFPM    EA20;Xarxes i estacions de tractament d'aigües;0;2000;29/08/17;;EA20012;MP12. Formació i orientació laboral;99;99;30/08/17;;EA2001201;UF1. Incorporació al treball;66;N;N;N;N
+CFPM    EA20;Xarxes i estacions de tractament d'aigües;0;2000;29/08/17;;EA20012;MP12. Formació i orientació laboral;99;99;30/08/17;;EA2001202;UF2. Prevenció de riscos laboral;33;N;N;N;N
+CFPM    EA20;Xarxes i estacions de tractament d'aigües;0;2000;29/08/17;;EA20013;MP13. Empresa i iniciativa emprenedora;66;66;30/08/17;;EA2001301;UF1. Empresa i iniciativa emprenedora;66;N;N;N;N
+CFPM    EA20;Xarxes i estacions de tractament d'aigües;0;2000;29/08/17;;EA20014;MP14. Anglès tècnic;99;99;30/08/17;;EA2001401;UF1. Anglès tècnic;99;N;N;N;N
+CFPM    EA20;Xarxes i estacions de tractament d'aigües;0;2000;29/08/17;;EA20015;MP15. Síntesi;99;99;30/08/17;;EA2001501;UF1. Síntesi;99;N;S;N;N
+CFPM    EA20;Xarxes i estacions de tractament d'aigües;0;2000;29/08/17;;EA20016;MP16. Formació en centres de treball;383;383;30/08/17;;EA2001601;Formació en centres de treball;383;S;N;N;N
+CFPM    FM10;Soldadura i caldereria;0;2000;20/02/09;;FM10001;MP1. Interpretació gràfica;99;132;08/03/10;;FM1000101;UF1. Interpretació gràfica;66;N;N;N;N
+CFPM    FM10;Soldadura i caldereria;0;2000;20/02/09;;FM10001;MP1. Interpretació gràfica;99;132;08/03/10;;FM1000102;UF2. Representació gràfica;33;N;N;N;N
+CFPM    FM10;Soldadura i caldereria;0;2000;20/02/09;;FM10002;MP2. Traçat, tall i conformació;165;165;08/03/10;;FM1000201;UF1. Preparació i organització del treball;20;N;N;N;N
+CFPM    FM10;Soldadura i caldereria;0;2000;20/02/09;;FM10002;MP2. Traçat, tall i conformació;165;165;08/03/10;;FM1000202;UF2. Traçat i marcatge;30;N;N;N;N
+CFPM    FM10;Soldadura i caldereria;0;2000;20/02/09;;FM10002;MP2. Traçat, tall i conformació;165;165;08/03/10;;FM1000203;UF3. Tall tèrmic i mecànic;20;N;N;N;N
+CFPM    FM10;Soldadura i caldereria;0;2000;20/02/09;;FM10002;MP2. Traçat, tall i conformació;165;165;08/03/10;;FM1000204;UF4. Conformació tèrmica i mecànica;95;N;N;N;N
+CFPM    FM10;Soldadura i caldereria;0;2000;20/02/09;;FM10003;MP3. Mecanització;132;165;08/03/10;;FM1000301;UF1. Operacions manuals de mecanitzat;44;N;N;N;N
+CFPM    FM10;Soldadura i caldereria;0;2000;20/02/09;;FM10003;MP3. Mecanització;132;165;08/03/10;;FM1000302;UF2. Mecanització amb màquines convencionals i de CNC;88;N;N;N;N
+CFPM    FM10;Soldadura i caldereria;0;2000;20/02/09;;FM10004;MP4. Soldadura en atmosfera natural;231;264;08/03/10;;FM1000401;UF1. Soldadura amb arc elèctric i elèctrode revestit;180;N;N;N;N
+CFPM    FM10;Soldadura i caldereria;0;2000;20/02/09;;FM10004;MP4. Soldadura en atmosfera natural;231;264;08/03/10;;FM1000402;UF2. Soldadura i projecció tèrmica per oxigàs;51;N;N;N;N
+CFPM    FM10;Soldadura i caldereria;0;2000;20/02/09;;FM10005;MP5. Soldadura en atmosfera protegida;231;264;08/03/10;;FM1000501;UF1. Soldadura TIG;143;N;N;N;N
+CFPM    FM10;Soldadura i caldereria;0;2000;20/02/09;;FM10005;MP5. Soldadura en atmosfera protegida;231;264;08/03/10;;FM1000502;UF2. Soldadura MIG/MAG;77;N;N;N;N
+CFPM    FM10;Soldadura i caldereria;0;2000;20/02/09;;FM10005;MP5. Soldadura en atmosfera protegida;231;264;08/03/10;;FM1000503;UF3. Projecció tèrmica amb arc elèctric;11;N;N;N;N
+CFPM    FM10;Soldadura i caldereria;0;2000;20/02/09;;FM10006;MP6. Muntatge;198;198;08/03/10;;FM1000601;UF1. Planificació i preparació del muntatge;22;N;N;N;N
+CFPM    FM10;Soldadura i caldereria;0;2000;20/02/09;;FM10006;MP6. Muntatge;198;198;08/03/10;;FM1000602;UF2. Realització del muntatge;131;N;N;N;N
+CFPM    FM10;Soldadura i caldereria;0;2000;20/02/09;;FM10006;MP6. Muntatge;198;198;08/03/10;;FM1000603;UF3. Reparació i acabat de construccions metàl·liques;45;N;N;N;N
+CFPM    FM10;Soldadura i caldereria;0;2000;20/02/09;;FM10007;MP7. Metrologia i assajos;99;99;08/03/10;;FM1000701;UF1. Metrologia;33;N;N;N;N
+CFPM    FM10;Soldadura i caldereria;0;2000;20/02/09;;FM10007;MP7. Metrologia i assajos;99;99;08/03/10;;FM1000702;UF2. Assajos mecànics, metal·logràfics i no destructius;33;N;N;N;N
+CFPM    FM10;Soldadura i caldereria;0;2000;20/02/09;;FM10007;MP7. Metrologia i assajos;99;99;08/03/10;;FM1000703;UF3. Control de processos;22;N;N;N;N
+CFPM    FM10;Soldadura i caldereria;0;2000;20/02/09;;FM10007;MP7. Metrologia i assajos;99;99;08/03/10;;FM1000704;UF4. Sistemes i models de gestió de qualitat;11;N;N;N;N
+CFPM    FM10;Soldadura i caldereria;0;2000;20/02/09;;FM10008;MP8. Formació i orientació laboral;99;99;08/03/10;;FM1000801;UF1. Incorporació al treball;66;N;N;N;N
+CFPM    FM10;Soldadura i caldereria;0;2000;20/02/09;;FM10008;MP8. Formació i orientació laboral;99;99;08/03/10;;FM1000802;UF2. Prevenció de riscos laborals;33;N;N;N;N
+CFPM    FM10;Soldadura i caldereria;0;2000;20/02/09;;FM10009;MP9. Empresa i iniciativa emprenedora;66;66;08/03/10;;FM1000901;UF1. Empresa i iniciativa emprenedora;66;N;N;N;N
+CFPM    FM10;Soldadura i caldereria;0;2000;20/02/09;;FM10010;MP11. Síntesi;66;66;08/03/10;;FM1001001;UF1. Síntesi;66;N;S;N;N
+CFPM    FM10;Soldadura i caldereria;0;2000;20/02/09;;FM10011;MP12. Formació en centres de treball;383;383;08/03/10;;FM1001101;Formació en centres de treball;383;S;N;N;N
+CFPM    FM10;Soldadura i caldereria;0;2000;20/02/09;;FM10012;MP10. Anglès tècnic;99;99;13/11/13;;FM1001201;UF1. Anglès tècnic;99;N;N;N;N
+CFPM    FM20;Mecanització;0;2000;20/02/09;;FM20001;MP1. Processos de mecanització;99;132;03/03/10;;FM2000101;UF1. Processos de mecanització per arrencament de ferritja;44;N;N;N;N
+CFPM    FM20;Mecanització;0;2000;20/02/09;;FM20001;MP1. Processos de mecanització;99;132;03/03/10;;FM2000102;UF2. Processos de mecanització per abrasió, electroerosió, procediments especials, tall i conformació;33;N;N;N;N
+CFPM    FM20;Mecanització;0;2000;20/02/09;;FM20001;MP1. Processos de mecanització;99;132;03/03/10;;FM2000103;UF3. Costos de mecanització;11;N;N;N;N
+CFPM    FM20;Mecanització;0;2000;20/02/09;;FM20001;MP1. Processos de mecanització;99;132;03/03/10;;FM2000104;UF4. Tractaments tèrmics;11;N;N;N;N
+CFPM    FM20;Mecanització;0;2000;20/02/09;;FM20002;MP2. Mecanització per control numèric;231;264;03/03/10;;FM2000201;UF1. Programació de màquines de CNC;88;N;N;N;N
+CFPM    FM20;Mecanització;0;2000;20/02/09;;FM20002;MP2. Mecanització per control numèric;231;264;03/03/10;;FM2000202;UF2. Preparació de màquines de CNC;66;N;N;N;N
+CFPM    FM20;Mecanització;0;2000;20/02/09;;FM20002;MP2. Mecanització per control numèric;231;264;03/03/10;;FM2000203;UF3. Mecanització en màquines de CNC;77;N;N;N;N
+CFPM    FM20;Mecanització;0;2000;20/02/09;;FM20003;MP3. Fabricació per abrasió, electroerosió, tall i conformació, i processos especials;198;198;03/03/10;;FM2000301;UF1. Fabricació per abrasió;66;N;N;N;N
+CFPM    FM20;Mecanització;0;2000;20/02/09;;FM20003;MP3. Fabricació per abrasió, electroerosió, tall i conformació, i processos especials;198;198;03/03/10;;FM2000302;UF2. Fabricació per electroerosió;33;N;N;N;N
+CFPM    FM20;Mecanització;0;2000;20/02/09;;FM20003;MP3. Fabricació per abrasió, electroerosió, tall i conformació, i processos especials;198;198;03/03/10;;FM2000303;UF3. Fabricació per processos especials;33;N;N;N;N
+CFPM    FM20;Mecanització;0;2000;20/02/09;;FM20003;MP3. Fabricació per abrasió, electroerosió, tall i conformació, i processos especials;198;198;03/03/10;;FM2000304;UF4. Fabricació per tall;33;N;N;N;N
+CFPM    FM20;Mecanització;0;2000;20/02/09;;FM20003;MP3. Fabricació per abrasió, electroerosió, tall i conformació, i processos especials;198;198;03/03/10;;FM2000305;UF5. Processos de conformació;33;N;N;N;N
+CFPM    FM20;Mecanització;0;2000;20/02/09;;FM20003;MP3. Fabricació per abrasió, electroerosió, tall i conformació, i processos especials;198;198;03/03/10;;FM2000306;UF6. Processos de soldadura;33;N;N;N;N
+CFPM    FM20;Mecanització;0;2000;20/02/09;;FM20004;MP4. Fabricació per arrencament de ferritja;297;330;03/03/10;;FM2000401;UF1. Torn;143;N;N;N;N
+CFPM    FM20;Mecanització;0;2000;20/02/09;;FM20004;MP4. Fabricació per arrencament de ferritja;297;330;03/03/10;;FM2000402;UF2. Fresadora;110;N;N;N;N
+CFPM    FM20;Mecanització;0;2000;20/02/09;;FM20004;MP4. Fabricació per arrencament de ferritja;297;330;03/03/10;;FM2000403;UF3. Màquines auxiliars per a l'arrencament de ferritja;22;N;N;N;N
+CFPM    FM20;Mecanització;0;2000;20/02/09;;FM20004;MP4. Fabricació per arrencament de ferritja;297;330;03/03/10;;FM2000404;UF4. Organització de processos de mecanització per arrencament de ferritja;22;N;N;N;N
+CFPM    FM20;Mecanització;0;2000;20/02/09;;FM20005;MP5. Sistemes automatitzats;132;132;03/03/10;;FM2000501;UF1. Preparació de sistemes automàtics;66;N;N;N;N
+CFPM    FM20;Mecanització;0;2000;20/02/09;;FM20005;MP5. Sistemes automatitzats;132;132;03/03/10;;FM2000502;UF2. Programació de sistemes automàtics;66;N;N;N;N
+CFPM    FM20;Mecanització;0;2000;20/02/09;;FM20006;MP6. Interpretació gràfica;99;132;03/03/10;;FM2000601;UF1. Interpretació gràfica;66;N;N;N;N
+CFPM    FM20;Mecanització;0;2000;20/02/09;;FM20006;MP6. Interpretació gràfica;99;132;03/03/10;;FM2000602;UF2. Representació gràfica;33;N;N;N;N
+CFPM    FM20;Mecanització;0;2000;20/02/09;;FM20007;MP7. Metrologia i assajos;99;99;03/03/10;;FM2000701;UF1. Metrologia;33;N;N;N;N
+CFPM    FM20;Mecanització;0;2000;20/02/09;;FM20007;MP7. Metrologia i assajos;99;99;03/03/10;;FM2000702;UF2. Assajos mecànics, metal·logràfics i no destructius;33;N;N;N;N
+CFPM    FM20;Mecanització;0;2000;20/02/09;;FM20007;MP7. Metrologia i assajos;99;99;03/03/10;;FM2000703;UF3. Control de processos;22;N;N;N;N
+CFPM    FM20;Mecanització;0;2000;20/02/09;;FM20007;MP7. Metrologia i assajos;99;99;03/03/10;;FM2000704;UF4. Sistemes i models de gestió de qualitat;11;N;N;N;N
+CFPM    FM20;Mecanització;0;2000;20/02/09;;FM20008;MP8. Formació i orientació laboral;99;99;03/03/10;;FM2000801;UF1. Incorporació al treball;66;N;N;N;N
+CFPM    FM20;Mecanització;0;2000;20/02/09;;FM20008;MP8. Formació i orientació laboral;99;99;03/03/10;;FM2000802;UF2. Prevenció de riscos laborals;33;N;N;N;N
+CFPM    FM20;Mecanització;0;2000;20/02/09;;FM20009;MP9. Empresa i iniciativa emprenedora;66;66;03/03/10;;FM2000901;UF1. Empresa i iniciativa emprenedora;66;N;N;N;N
+CFPM    FM20;Mecanització;0;2000;20/02/09;;FM20010;MP11. Síntesi;0;66;08/03/10;;FM2001001;UF1. Síntesi;66;N;S;N;N
+CFPM    FM20;Mecanització;0;2000;20/02/09;;FM20011;MP12. Formació en centres de treball;383;383;08/03/10;;FM2001101;Formació en centres de treball;383;S;N;N;N
+CFPM    FM20;Mecanització;0;2000;20/02/09;;FM20012;MP10. Anglès tècnic;99;99;13/11/13;;FM2001201;UF1. Anglès tècnic;99;N;N;N;N
+CFPM    IC10;Sistemes microinformàtics i xarxes;0;2000;20/02/09;;IC10001;MP1. Muntatge i manteniment d'equips;165;198;11/02/10;;IC1000101;UF1. Electricitat a l'ordinador;25;N;N;N;N
+CFPM    IC10;Sistemes microinformàtics i xarxes;0;2000;20/02/09;;IC10001;MP1. Muntatge i manteniment d'equips;165;198;11/02/10;;IC1000102;UF2. Components d'un equip microinformàtic;28;N;N;N;N
+CFPM    IC10;Sistemes microinformàtics i xarxes;0;2000;20/02/09;;IC10001;MP1. Muntatge i manteniment d'equips;165;198;11/02/10;;IC1000103;UF3. Muntatge d'un equip microinformàtic;28;N;N;N;N
+CFPM    IC10;Sistemes microinformàtics i xarxes;0;2000;20/02/09;;IC10001;MP1. Muntatge i manteniment d'equips;165;198;11/02/10;;IC1000104;UF4. Noves tendències de muntatge;28;N;N;N;N
+CFPM    IC10;Sistemes microinformàtics i xarxes;0;2000;20/02/09;;IC10001;MP1. Muntatge i manteniment d'equips;165;198;11/02/10;;IC1000105;UF5. Manteniment d'equips microinformàtics;28;N;N;N;N
+CFPM    IC10;Sistemes microinformàtics i xarxes;0;2000;20/02/09;;IC10001;MP1. Muntatge i manteniment d'equips;165;198;11/02/10;;IC1000106;UF6. Instal·lació de programari;28;N;N;N;N
+CFPM    IC10;Sistemes microinformàtics i xarxes;0;2000;20/02/09;;IC10002;MP2. Sistemes operatius monolloc;99;132;11/02/10;;IC1000201;UF1. Introducció als sistemes operatius;33;N;N;N;N
+CFPM    IC10;Sistemes microinformàtics i xarxes;0;2000;20/02/09;;IC10002;MP2. Sistemes operatius monolloc;99;132;11/02/10;;IC1000202;UF2. Sistemes operatius propietaris;33;N;N;N;N
+CFPM    IC10;Sistemes microinformàtics i xarxes;0;2000;20/02/09;;IC10002;MP2. Sistemes operatius monolloc;99;132;11/02/10;;IC1000203;UF3. Sistemes operatius lliures;33;N;N;N;N
+CFPM    IC10;Sistemes microinformàtics i xarxes;0;2000;20/02/09;;IC10003;MP3. Aplicacions ofimàtiques;165;165;11/02/10;;IC1000301;UF1. Aplicacions ofimàtiques i atenció a l'usuari;20;N;N;N;N
+CFPM    IC10;Sistemes microinformàtics i xarxes;0;2000;20/02/09;;IC10003;MP3. Aplicacions ofimàtiques;165;165;11/02/10;;IC1000302;UF2. El correu i l'agenda electrònica;20;N;N;N;N
+CFPM    IC10;Sistemes microinformàtics i xarxes;0;2000;20/02/09;;IC10003;MP3. Aplicacions ofimàtiques;165;165;11/02/10;;IC1000303;UF3. Processadors de text;30;N;N;N;N
+CFPM    IC10;Sistemes microinformàtics i xarxes;0;2000;20/02/09;;IC10003;MP3. Aplicacions ofimàtiques;165;165;11/02/10;;IC1000304;UF4. Fulls de càlcul;30;N;N;N;N
+CFPM    IC10;Sistemes microinformàtics i xarxes;0;2000;20/02/09;;IC10003;MP3. Aplicacions ofimàtiques;165;165;11/02/10;;IC1000305;UF5. Bases de dades;35;N;N;N;N
+CFPM    IC10;Sistemes microinformàtics i xarxes;0;2000;20/02/09;;IC10003;MP3. Aplicacions ofimàtiques;165;165;11/02/10;;IC1000306;UF6. Imatge i vídeo - Presentacions;30;N;N;N;N
+CFPM    IC10;Sistemes microinformàtics i xarxes;0;2000;20/02/09;;IC10004;MP4. Sistemes operatius en xarxa;132;132;11/02/10;;IC1000401;UF1. Sistemes operatius propietaris en xarxa;36;N;N;N;N
+CFPM    IC10;Sistemes microinformàtics i xarxes;0;2000;20/02/09;;IC10004;MP4. Sistemes operatius en xarxa;132;132;11/02/10;;IC1000402;UF2. Sistemes operatius lliures en xarxa;36;N;N;N;N
+CFPM    IC10;Sistemes microinformàtics i xarxes;0;2000;20/02/09;;IC10004;MP4. Sistemes operatius en xarxa;132;132;11/02/10;;IC1000403;UF3. Compartició de recursos i seguretat;24;N;N;N;N
+CFPM    IC10;Sistemes microinformàtics i xarxes;0;2000;20/02/09;;IC10004;MP4. Sistemes operatius en xarxa;132;132;11/02/10;;IC1000404;UF4. Integració de sistemes operatius;36;N;N;N;N
+CFPM    IC10;Sistemes microinformàtics i xarxes;0;2000;20/02/09;;IC10005;MP5. Xarxes locals;165;165;16/02/10;;IC1000501;UF1. Introducció a les xarxes locals;66;N;N;N;N
+CFPM    IC10;Sistemes microinformàtics i xarxes;0;2000;20/02/09;;IC10005;MP5. Xarxes locals;165;165;16/02/10;;IC1000502;UF2. Configuració de commutadors i encaminadors;66;N;N;N;N
+CFPM    IC10;Sistemes microinformàtics i xarxes;0;2000;20/02/09;;IC10005;MP5. Xarxes locals;165;165;16/02/10;;IC1000503;UF3. Resolució d'incidències en xarxes locals;33;N;N;N;N
+CFPM    IC10;Sistemes microinformàtics i xarxes;0;2000;20/02/09;;IC10006;MP6. Seguretat informàtica;132;132;16/02/10;;IC1000601;UF1. Seguretat passiva.;24;N;N;N;N
+CFPM    IC10;Sistemes microinformàtics i xarxes;0;2000;20/02/09;;IC10006;MP6. Seguretat informàtica;132;132;16/02/10;;IC1000602;UF2. Còpies de seguretat;26;N;N;N;N
+CFPM    IC10;Sistemes microinformàtics i xarxes;0;2000;20/02/09;;IC10006;MP6. Seguretat informàtica;132;132;16/02/10;;IC1000603;UF3. Legislació de seguretat i protecció de dades.;20;N;N;N;N
+CFPM    IC10;Sistemes microinformàtics i xarxes;0;2000;20/02/09;;IC10006;MP6. Seguretat informàtica;132;132;16/02/10;;IC1000604;UF4. Seguretat activa.;24;N;N;N;N
+CFPM    IC10;Sistemes microinformàtics i xarxes;0;2000;20/02/09;;IC10006;MP6. Seguretat informàtica;132;132;16/02/10;;IC1000605;UF5. Tallafocs i monitoratge de xarxes;38;N;N;N;N
+CFPM    IC10;Sistemes microinformàtics i xarxes;0;2000;20/02/09;;IC10007;MP7. Serveis de xarxa;132;165;17/02/10;;IC1000701;UF1. Configuració de la xarxa (DNS i DHCP);36;N;N;N;N
+CFPM    IC10;Sistemes microinformàtics i xarxes;0;2000;20/02/09;;IC10007;MP7. Serveis de xarxa;132;165;17/02/10;;IC1000702;UF2. Correu electrònic i transmissió d'arxius;32;N;N;N;N
+CFPM    IC10;Sistemes microinformàtics i xarxes;0;2000;20/02/09;;IC10007;MP7. Serveis de xarxa;132;165;17/02/10;;IC1000703;UF3. Servidor web i servidor intermediari o proxy;32;N;N;N;N
+CFPM    IC10;Sistemes microinformàtics i xarxes;0;2000;20/02/09;;IC10007;MP7. Serveis de xarxa;132;165;17/02/10;;IC1000704;UF4. Accés a sistemes remots;32;N;N;N;N
+CFPM    IC10;Sistemes microinformàtics i xarxes;0;2000;20/02/09;;IC10008;MP8. Aplicacions Web;165;198;17/02/10;;IC1000801;UF1. Ofimàtica i eines web;22;N;N;N;N
+CFPM    IC10;Sistemes microinformàtics i xarxes;0;2000;20/02/09;;IC10008;MP8. Aplicacions Web;165;198;17/02/10;;IC1000802;UF2. Gestors d'arxius web;25;N;N;N;N
+CFPM    IC10;Sistemes microinformàtics i xarxes;0;2000;20/02/09;;IC10008;MP8. Aplicacions Web;165;198;17/02/10;;IC1000803;UF3. Gestors de continguts;30;N;N;N;N
+CFPM    IC10;Sistemes microinformàtics i xarxes;0;2000;20/02/09;;IC10008;MP8. Aplicacions Web;165;198;17/02/10;;IC1000804;UF4. Portals web d'aprenentatge;30;N;N;N;N
+CFPM    IC10;Sistemes microinformàtics i xarxes;0;2000;20/02/09;;IC10008;MP8. Aplicacions Web;165;198;17/02/10;;IC1000805;UF5. Fonaments d'HTML i fulls d'estils;58;N;N;N;N
+CFPM    IC10;Sistemes microinformàtics i xarxes;0;2000;20/02/09;;IC10009;MP9. Formació i orientació laboral;99;99;17/02/10;;IC1000901;UF1. Incorporació al treball;66;N;N;N;N
+CFPM    IC10;Sistemes microinformàtics i xarxes;0;2000;20/02/09;;IC10009;MP9. Formació i orientació laboral;99;99;17/02/10;;IC1000902;UF2. Prevenció de riscos laborals;33;N;N;N;N
+CFPM    IC10;Sistemes microinformàtics i xarxes;0;2000;20/02/09;;IC10010;MP10. Empresa i iniciativa emprenedora;66;66;17/02/10;;IC1001001;UF1. Empresa i iniciativa emprenedora;66;N;N;N;N
+CFPM    IC10;Sistemes microinformàtics i xarxes;0;2000;20/02/09;;IC10011;MP12. Síntesi;99;99;17/02/10;;IC1001101;UF1. Síntesi;99;N;S;N;N
+CFPM    IC10;Sistemes microinformàtics i xarxes;0;2000;20/02/09;;IC10012;MP11. Anglès tècnic;99;99;17/02/10;;IC1001201;UF1. Anglès tècnic;99;N;N;N;N
+CFPM    IC10;Sistemes microinformàtics i xarxes;0;2000;20/02/09;;IC10013;MP13. Formació en centres de treball;350;350;17/02/10;;IC1001301;Formació en centres de treball;350;S;N;N;N
+CFPM    IM10;Manteniment electromecànic;0;2000;29/04/13;;IM10001;MP1. Tècniques de fabricació;165;198;29/04/13;;IM1000101;UF1. Interpretació grafica;33;N;N;N;N
+CFPM    IM10;Manteniment electromecànic;0;2000;29/04/13;;IM10001;MP1. Tècniques de fabricació;165;198;29/04/13;;IM1000102;UF2. Materials;18;N;N;N;N
+CFPM    IM10;Manteniment electromecànic;0;2000;29/04/13;;IM10001;MP1. Tècniques de fabricació;165;198;29/04/13;;IM1000103;UF3. Metrologia;18;N;N;N;N
+CFPM    IM10;Manteniment electromecànic;0;2000;29/04/13;;IM10001;MP1. Tècniques de fabricació;165;198;29/04/13;;IM1000104;UF4. Mecanització manual;40;N;N;N;N
+CFPM    IM10;Manteniment electromecànic;0;2000;29/04/13;;IM10001;MP1. Tècniques de fabricació;165;198;29/04/13;;IM1000105;UF5. Mecanització amb màquina-eina;56;N;N;N;N
+CFPM    IM10;Manteniment electromecànic;0;2000;29/04/13;;IM10002;MP2. Tècniques d'unió i muntatge;99;132;29/04/13;;IM1000201;UF1. Procediments de muntatge i unió;20;N;N;N;N
+CFPM    IM10;Manteniment electromecànic;0;2000;29/04/13;;IM10002;MP2. Tècniques d'unió i muntatge;99;132;29/04/13;;IM1000202;UF2. Conformació i unions no soldades;29;N;N;N;N
+CFPM    IM10;Manteniment electromecànic;0;2000;29/04/13;;IM10002;MP2. Tècniques d'unió i muntatge;99;132;29/04/13;;IM1000203;UF3. Soldadura;50;N;N;N;N
+CFPM    IM10;Manteniment electromecànic;0;2000;29/04/13;;IM10003;MP3. Electricitat i automatismes elèctrics;231;231;29/04/13;;IM1000301;UF1. Mesures en els circuits de corrent continu;66;N;N;N;N
+CFPM    IM10;Manteniment electromecànic;0;2000;29/04/13;;IM10003;MP3. Electricitat i automatismes elèctrics;231;231;29/04/13;;IM1000302;UF2. Mesures en els circuits de corrent altern;66;N;N;N;N
+CFPM    IM10;Manteniment electromecànic;0;2000;29/04/13;;IM10003;MP3. Electricitat i automatismes elèctrics;231;231;29/04/13;;IM1000303;UF3. Instal·lacions electrotècniques;33;N;N;N;N
+CFPM    IM10;Manteniment electromecànic;0;2000;29/04/13;;IM10003;MP3. Electricitat i automatismes elèctrics;231;231;29/04/13;;IM1000304;UF4. Quadres elèctrics;66;N;N;N;N
+CFPM    IM10;Manteniment electromecànic;0;2000;29/04/13;;IM10004;MP4. Automatismes pneumàtics i hidràulics;165;198;29/04/13;;IM1000401;UF1. Automatismes pneumàtics;66;N;N;N;N
+CFPM    IM10;Manteniment electromecànic;0;2000;29/04/13;;IM10004;MP4. Automatismes pneumàtics i hidràulics;165;198;29/04/13;;IM1000402;UF2. Automatismes hidràulics;33;N;N;N;N
+CFPM    IM10;Manteniment electromecànic;0;2000;29/04/13;;IM10004;MP4. Automatismes pneumàtics i hidràulics;165;198;29/04/13;;IM1000403;UF3. Programació d'automatismes pneumàtics i hidràulics;66;N;N;N;N
+CFPM    IM10;Manteniment electromecànic;0;2000;29/04/13;;IM10005;MP5. Muntatge i manteniment mecànic;165;198;29/04/13;;IM1000501;UF1. Elements de màquines;33;N;N;N;N
+CFPM    IM10;Manteniment electromecànic;0;2000;29/04/13;;IM10005;MP5. Muntatge i manteniment mecànic;165;198;29/04/13;;IM1000502;UF2. Muntatge i posada en marxa de màquines;66;N;N;N;N
+CFPM    IM10;Manteniment electromecànic;0;2000;29/04/13;;IM10005;MP5. Muntatge i manteniment mecànic;165;198;29/04/13;;IM1000503;UF3. Manteniment mecànic;66;N;N;N;N
+CFPM    IM10;Manteniment electromecànic;0;2000;29/04/13;;IM10006;MP6. Muntatge i manteniment electricoelectrònic;165;165;29/04/13;;IM1000601;UF1. Màquines elèctriques;33;N;N;N;N
+CFPM    IM10;Manteniment electromecànic;0;2000;29/04/13;;IM10006;MP6. Muntatge i manteniment electricoelectrònic;165;165;29/04/13;;IM1000602;UF2. Muntatge i manteniment de màquines elèctriques;66;N;N;N;N
+CFPM    IM10;Manteniment electromecànic;0;2000;29/04/13;;IM10006;MP6. Muntatge i manteniment electricoelectrònic;165;165;29/04/13;;IM1000603;UF3. Sistemes automàtics per a màquines elèctriques;66;N;N;N;N
+CFPM    IM10;Manteniment electromecànic;0;2000;29/04/13;;IM10007;MP7. Muntatge i manteniment de línies automatitzades;198;198;29/04/13;;IM1000701;UF1. Organització del manteniment industrial;33;N;N;N;N
+CFPM    IM10;Manteniment electromecànic;0;2000;29/04/13;;IM10007;MP7. Muntatge i manteniment de línies automatitzades;198;198;29/04/13;;IM1000702;UF2. Processos auxiliars de producció;33;N;N;N;N
+CFPM    IM10;Manteniment electromecànic;0;2000;29/04/13;;IM10007;MP7. Muntatge i manteniment de línies automatitzades;198;198;29/04/13;;IM1000703;UF3. Sistemes mecatrònics;99;N;N;N;N
+CFPM    IM10;Manteniment electromecànic;0;2000;29/04/13;;IM10007;MP7. Muntatge i manteniment de línies automatitzades;198;198;29/04/13;;IM1000704;UF4. Manteniment correctiu en sistemes mecatrònics;33;N;N;N;N
+CFPM    IM10;Manteniment electromecànic;0;2000;29/04/13;;IM10008;MP8. Formació i orientació laboral;99;99;03/05/13;;IM1000801;UF1. Incorporació al treball;66;N;N;N;N
+CFPM    IM10;Manteniment electromecànic;0;2000;29/04/13;;IM10008;MP8. Formació i orientació laboral;99;99;03/05/13;;IM1000802;UF2. Prevenció de riscos laborals;33;N;N;N;N
+CFPM    IM10;Manteniment electromecànic;0;2000;29/04/13;;IM10009;MP9. Empresa i iniciativa emprenedora;66;66;03/05/13;;IM1000901;UF1. Empresa i iniciativa emprenedora;66;N;N;N;N
+CFPM    IM10;Manteniment electromecànic;0;2000;29/04/13;;IM10010;MP10. Anglès tècnic;99;99;03/05/13;;IM1001001;UF1. Anglès tècnic;99;N;N;N;N
+CFPM    IM10;Manteniment electromecànic;0;2000;29/04/13;;IM10011;MP11. Síntesi;66;66;03/05/13;;IM1001101;UF1. Síntesi;66;N;S;N;N
+CFPM    IM10;Manteniment electromecànic;0;2000;29/04/13;;IM10012;MP12. Formació en centres de treball;350;350;03/05/13;;IM1001201;Formació en centres de treball;350;S;N;N;N
+CFPM    TM10;Electromecànica de vehicles automòbils;0;2000;17/05/11;;TM10001;MP1. Motors;0;165;17/05/11;;TM1000101;UF1. Motors: funcionament i components;33;N;N;N;N
+CFPM    TM10;Electromecànica de vehicles automòbils;0;2000;17/05/11;;TM10001;MP1. Motors;0;165;17/05/11;;TM1000102;UF2. Verificació de motors;66;N;N;N;N
+CFPM    TM10;Electromecànica de vehicles automòbils;0;2000;17/05/11;;TM10001;MP1. Motors;0;165;17/05/11;;TM1000103;UF3. Diagnosi d'avaries i manteniment dels motors;33;N;N;N;N
+CFPM    TM10;Electromecànica de vehicles automòbils;0;2000;17/05/11;;TM10002;MP2. Sistemes auxiliars del motor;198;198;01/07/13;;TM1000201;UF1. Combustibles i sistemes anticontaminació;33;N;N;N;N
+CFPM    TM10;Electromecànica de vehicles automòbils;0;2000;17/05/11;;TM10002;MP2. Sistemes auxiliars del motor;198;198;01/07/13;;TM1000203;UF3. Verificació  dels sistemes auxiliars;66;N;N;N;N
+CFPM    TM10;Electromecànica de vehicles automòbils;0;2000;17/05/11;;TM10002;MP2. Sistemes auxiliars del motor;198;198;01/07/13;;TM1000204;UF4. Diagnosi i manteniment dels sistemes auxiliars;33;N;N;N;N
+CFPM    TM10;Electromecànica de vehicles automòbils;0;2000;17/05/11;;TM10002;MP2. Sistemes auxiliars del motor;198;198;01/07/13;;TM1000205;UF2. Sistemes auxiliars dels motors. Gestió i funcionament;55;N;N;N;N
+CFPM    TM10;Electromecànica de vehicles automòbils;0;2000;17/05/11;;TM10003;MP3. Circuits de fluids. Suspensió i direcció;132;165;01/07/13;;TM1000301;UF1. Circuits pneumàtics i hidràulics;33;N;N;N;N
+CFPM    TM10;Electromecànica de vehicles automòbils;0;2000;17/05/11;;TM10003;MP3. Circuits de fluids. Suspensió i direcció;132;165;01/07/13;;TM1000303;UF3. Diagnosi i manteniment dels sistemes de direcció i suspensió;66;N;N;N;N
+CFPM    TM10;Electromecànica de vehicles automòbils;0;2000;17/05/11;;TM10003;MP3. Circuits de fluids. Suspensió i direcció;132;165;01/07/13;;TM1000305;UF2. Sistemes de suspensió i direcció;44;N;N;N;N
+CFPM    TM10;Electromecànica de vehicles automòbils;0;2000;17/05/11;;TM10004;MP4. Sistemes de transmissió i frenada;165;165;01/07/13;;TM1000402;UF2. Transmissions automàtiques. Funcionament, verificació i diagnosi;33;N;N;N;N
+CFPM    TM10;Electromecànica de vehicles automòbils;0;2000;17/05/11;;TM10004;MP4. Sistemes de transmissió i frenada;165;165;01/07/13;;TM1000403;UF3. Sistemes de frens. Funcionament, verificació i diagnosi;66;N;N;N;N
+CFPM    TM10;Electromecànica de vehicles automòbils;0;2000;17/05/11;;TM10004;MP4. Sistemes de transmissió i frenada;165;165;01/07/13;;TM1000404;UF1. Sistemes de transmissió. Funcionament, verificació i diagnosi;66;N;N;N;N
+CFPM    TM10;Electromecànica de vehicles automòbils;0;2000;17/05/11;;TM10006;MP6. Circuits elèctrics auxiliars del vehicle;132;165;01/07/13;;TM1000601;UF1. Funcionament i verificació dels circuits elèctrics auxiliars;66;N;N;N;N
+CFPM    TM10;Electromecànica de vehicles automòbils;0;2000;17/05/11;;TM10006;MP6. Circuits elèctrics auxiliars del vehicle;132;165;01/07/13;;TM1000602;UF2. Xarxes de comunicacions ;33;N;N;N;N
+CFPM    TM10;Electromecànica de vehicles automòbils;0;2000;17/05/11;;TM10006;MP6. Circuits elèctrics auxiliars del vehicle;132;165;01/07/13;;TM1000603;UF3. Diagnosi i manteniment dels sistemes elèctrics;33;N;N;N;N
+CFPM    TM10;Electromecànica de vehicles automòbils;0;2000;17/05/11;;TM10007;MP7. Sistemes de seguretat i confortabilitat;165;165;01/07/13;;TM1000701;UF1. Sistemes de seguretat. Funcionament, verificació i diagnosi;33;N;N;N;N
+CFPM    TM10;Electromecànica de vehicles automòbils;0;2000;17/05/11;;TM10007;MP7. Sistemes de seguretat i confortabilitat;165;165;01/07/13;;TM1000702;UF2. Sistemes de confortabilitat. Funcionament, verificació i diagnosi;33;N;N;N;N
+CFPM    TM10;Electromecànica de vehicles automòbils;0;2000;17/05/11;;TM10007;MP7. Sistemes de seguretat i confortabilitat;165;165;01/07/13;;TM1000703;UF3. Diagnosi i manteniment dels sistemes de  seguretat i confortabilitat;59;N;N;N;N
+CFPM    TM10;Electromecànica de vehicles automòbils;0;2000;17/05/11;;TM10007;MP7. Sistemes de seguretat i confortabilitat;165;165;01/07/13;;TM1000704;UF4. Manteniment i reciclatge dels sistemes amb gasos refrigerants;40;N;N;N;N
+CFPM    TM10;Electromecànica de vehicles automòbils;0;2000;17/05/11;;TM10008;MP8. Mecanització bàsica;99;99;01/07/13;;TM1000801;UF1. Dibuix tècnic i traçat de peces;20;N;N;N;N
+CFPM    TM10;Electromecànica de vehicles automòbils;0;2000;17/05/11;;TM10008;MP8. Mecanització bàsica;99;99;01/07/13;;TM1000802;UF2. Mecanització manual de peces;46;N;N;N;N
+CFPM    TM10;Electromecànica de vehicles automòbils;0;2000;17/05/11;;TM10008;MP8. Mecanització bàsica;99;99;01/07/13;;TM1000803;UF3. Soldadura;33;N;N;N;N
+CFPM    TM10;Electromecànica de vehicles automòbils;0;2000;17/05/11;;TM10009;MP9. Formació i orientació laboral;99;99;01/07/13;;TM1000901;UF1. Incorporació al treball;66;N;N;N;N
+CFPM    TM10;Electromecànica de vehicles automòbils;0;2000;17/05/11;;TM10009;MP9. Formació i orientació laboral;99;99;01/07/13;;TM1000902;UF2. Prevenció de riscos laborals;33;N;N;N;N
+CFPM    TM10;Electromecànica de vehicles automòbils;0;2000;17/05/11;;TM10010;MP10. Empresa i iniciativa emprenedora;66;66;01/07/13;;TM1001001;UF1. Empresa i iniciativa emprenedora;66;N;N;N;N
+CFPM    TM10;Electromecànica de vehicles automòbils;0;2000;17/05/11;;TM10011;MP11. Anglès tècnic;99;99;01/07/13;;TM1001101;UF1. Anglès tècnic;99;N;N;N;N
+CFPM    TM10;Electromecànica de vehicles automòbils;0;2000;17/05/11;;TM10012;MP12. Síntesi;66;66;01/07/13;;TM1001201;UF1. Síntesi;66;N;S;N;N
+CFPM    TM10;Electromecànica de vehicles automòbils;0;2000;17/05/11;;TM10013;MP13. Formació en centres de treball;383;383;01/07/13;;TM1001301;Formació en centres de treball;383;S;N;N;N
+CFPM    TM10;Electromecànica de vehicles automòbils;0;2000;17/05/11;;TM10014;MP5. Sistemes de càrrega i arrencada;132;165;01/07/13;;TM1001401;UF1. Principis electrotècnics bàsics;33;N;N;N;N
+CFPM    TM10;Electromecànica de vehicles automòbils;0;2000;17/05/11;;TM10014;MP5. Sistemes de càrrega i arrencada;132;165;01/07/13;;TM1001402;UF2. Circuits elèctrics bàsics: simbologia i esquemes;33;N;N;N;N
+CFPM    TM10;Electromecànica de vehicles automòbils;0;2000;17/05/11;;TM10014;MP5. Sistemes de càrrega i arrencada;132;165;01/07/13;;TM1001403;UF3. Circuits de càrrega. Funcionament, verificació i diagnosi;33;N;N;N;N
+CFPM    TM10;Electromecànica de vehicles automòbils;0;2000;17/05/11;;TM10014;MP5. Sistemes de càrrega i arrencada;132;165;01/07/13;;TM1001404;UF4. Motors elèctrics. Funcionament, verificació i diagnosi;33;N;N;N;N
+CFPM    TM20;Carrosseria;0;2000;20/02/09;;TM20001;MP1. Elements amovibles;165;165;05/02/10;;TM2000101;UF1. Elements amovibles exteriors;33;N;N;N;N
+CFPM    TM20;Carrosseria;0;2000;20/02/09;;TM20001;MP1. Elements amovibles;165;165;05/02/10;;TM2000102;UF2. Elements amovibles interiors;33;N;N;N;N
+CFPM    TM20;Carrosseria;0;2000;20/02/09;;TM20001;MP1. Elements amovibles;165;165;05/02/10;;TM2000103;UF3. Llunes del vehicle;33;N;N;N;N
+CFPM    TM20;Carrosseria;0;2000;20/02/09;;TM20001;MP1. Elements amovibles;165;165;05/02/10;;TM2000104;UF4. Principis elèctrics i els seus sistemes bàsics;33;N;N;N;N
+CFPM    TM20;Carrosseria;0;2000;20/02/09;;TM20001;MP1. Elements amovibles;165;165;05/02/10;;TM2000105;UF5. Sistemes mecànics bàsics;33;N;N;N;N
+CFPM    TM20;Carrosseria;0;2000;20/02/09;;TM20002;MP2. Elements metàl·lics i sintètics;138;165;08/02/10;;TM2000201;UF1. Materials metàl·lics;22;N;N;N;N
+CFPM    TM20;Carrosseria;0;2000;20/02/09;;TM20002;MP2. Elements metàl·lics i sintètics;138;165;08/02/10;;TM2000202;UF2. Conformació d'elements metàl·lics no estructurals;50;N;N;N;N
+CFPM    TM20;Carrosseria;0;2000;20/02/09;;TM20002;MP2. Elements metàl·lics i sintètics;138;165;08/02/10;;TM2000203;UF3. Conformació d'elements d'alumini no estructurals;33;N;N;N;N
+CFPM    TM20;Carrosseria;0;2000;20/02/09;;TM20002;MP2. Elements metàl·lics i sintètics;138;165;08/02/10;;TM2000204;UF4. Reparació d'elements plàstics i compostos;33;N;N;N;N
+CFPM    TM20;Carrosseria;0;2000;20/02/09;;TM20003;MP3. Elements fixos;181;198;08/02/10;;TM2000301;UF1. Elements fixos enganxats i engrapats;41;N;N;N;N
+CFPM    TM20;Carrosseria;0;2000;20/02/09;;TM20003;MP3. Elements fixos;181;198;08/02/10;;TM2000302;UF2. Desmuntatge d'elements  fixos soldats;33;N;N;N;N
+CFPM    TM20;Carrosseria;0;2000;20/02/09;;TM20003;MP3. Elements fixos;181;198;08/02/10;;TM2000303;UF3. Equips de soldadura;41;N;N;N;N
+CFPM    TM20;Carrosseria;0;2000;20/02/09;;TM20003;MP3. Elements fixos;181;198;08/02/10;;TM2000304;UF4. Substitució d'elements fixos no estructurals;66;N;N;N;N
+CFPM    TM20;Carrosseria;0;2000;20/02/09;;TM20004;MP5. Elements estructurals del vehicle;165;198;08/02/10;;TM2000401;UF1. Deformacions de carrosseries i xassissos;33;N;N;N;N
+CFPM    TM20;Carrosseria;0;2000;20/02/09;;TM20004;MP5. Elements estructurals del vehicle;165;198;08/02/10;;TM2000402;UF2. Bancades: col·locació de carrosseries o xassissos;33;N;N;N;N
+CFPM    TM20;Carrosseria;0;2000;20/02/09;;TM20004;MP5. Elements estructurals del vehicle;165;198;08/02/10;;TM2000403;UF3. Reparacions: tirs frontals i posteriors;66;N;N;N;N
+CFPM    TM20;Carrosseria;0;2000;20/02/09;;TM20004;MP5. Elements estructurals del vehicle;165;198;08/02/10;;TM2000404;UF4. Reparacions: tirs laterals;66;N;N;N;N
+CFPM    TM20;Carrosseria;0;2000;20/02/09;;TM20005;MP8. Mecanització bàsica;0;66;08/02/10;;TM2000501;UF1. Dibuix tècnic i traçat de peces;20;N;N;N;N
+CFPM    TM20;Carrosseria;0;2000;20/02/09;;TM20005;MP8. Mecanització bàsica;0;66;08/02/10;;TM2000502;UF2. mecanització manual de peces;46;N;N;N;N
+CFPM    TM20;Carrosseria;0;2000;20/02/09;;TM20007;MP6. Embelliment de superfícies;0;198;08/02/10;;TM2000701;UF1. Tècniques d'emmascarament;15;N;N;N;N
+CFPM    TM20;Carrosseria;0;2000;20/02/09;;TM20007;MP6. Embelliment de superfícies;0;198;08/02/10;;TM2000702;UF2. Colorimetria i preparació de pintures;30;N;N;N;N
+CFPM    TM20;Carrosseria;0;2000;20/02/09;;TM20007;MP6. Embelliment de superfícies;0;198;08/02/10;;TM2000705;UF5. Correcció de defectes i lliurament de vehicles;20;N;N;N;N
+CFPM    TM20;Carrosseria;0;2000;20/02/09;;TM20007;MP6. Embelliment de superfícies;0;198;08/02/10;;TM2000707;UF3. tècniques d'aplicació de pintures;60;N;N;N;N
+CFPM    TM20;Carrosseria;0;2000;20/02/09;;TM20007;MP6. Embelliment de superfícies;0;198;08/02/10;;TM2000708;UF4. Tècniques de difuminar;40;N;N;N;N
+CFPM    TM20;Carrosseria;0;2000;20/02/09;;TM20008;MP7. Personalització i decoració de vehicles;0;99;08/02/10;;TM2000801;UF1. Franjats, aerografies i retolació;44;N;N;N;N
+CFPM    TM20;Carrosseria;0;2000;20/02/09;;TM20008;MP7. Personalització i decoració de vehicles;0;99;08/02/10;;TM2000802;UF2. Decoració i retolació amb films autoadhesius;33;N;N;N;N
+CFPM    TM20;Carrosseria;0;2000;20/02/09;;TM20009;MP10. Empresa i iniciativa emprenedora;0;66;08/02/10;;TM2000901;UF1. Empresa i iniciativa emprenedora ;66;N;N;N;N
+CFPM    TM20;Carrosseria;0;2000;20/02/09;;TM20010;MP9. Formació i orientació laboral;0;99;08/02/10;;TM2001001;UF1. Incorporació al treball;66;N;N;N;N
+CFPM    TM20;Carrosseria;0;2000;20/02/09;;TM20010;MP9. Formació i orientació laboral;0;99;08/02/10;;TM2001002;UF2. prevenció de riscos laborals;33;N;N;N;N
+CFPM    TM20;Carrosseria;0;2000;20/02/09;;TM20011;MP12. Síntesi;0;66;08/02/10;;TM2001101;UF1. Síntesi;66;N;S;N;N
+CFPM    TM20;Carrosseria;0;2000;20/02/09;;TM20012;MP13. Formació en centres de treball;383;383;08/02/10;;TM2001201;Formació en centres de treball;383;S;N;N;N
+CFPM    TM20;Carrosseria;0;2000;20/02/09;;TM20013;MP11. Anglès tècnic;99;99;08/07/13;;TM2001301;UF1. Anglès tècnic;99;N;N;N;N
+CFPM    TM20;Carrosseria;0;2000;20/02/09;;TM20014;MP4. Preparació de superfícies;198;198;08/02/10;;TM2001401;UF1. Principis de la corrosió i imprimacions;48;N;N;N;N
+CFPM    TM20;Carrosseria;0;2000;20/02/09;;TM20014;MP4. Preparació de superfícies;198;198;08/02/10;;TM2001402;UF2. Productes de protecció per revestiment;18;N;N;N;N
+CFPM    TM20;Carrosseria;0;2000;20/02/09;;TM20014;MP4. Preparació de superfícies;198;198;08/02/10;;TM2001403;UF3. Igualació de superfícies;66;N;N;N;N
+CFPM    TM20;Carrosseria;0;2000;20/02/09;;TM20014;MP4. Preparació de superfícies;198;198;08/02/10;;TM2001404;UF4. Preparació de superfícies;66;N;N;N;N
+CFPM    TM30;Electromecànica de maquinària;0;2000;18/02/13;;TM30001;MP1. Motors;132;165;18/02/13;;TM3000101;UF1. Motors: funcionament i components;33;N;N;N;N
+CFPM    TM30;Electromecànica de maquinària;0;2000;18/02/13;;TM30001;MP1. Motors;132;165;18/02/13;;TM3000102;UF2. Verificació de motors;66;N;N;N;N
+CFPM    TM30;Electromecànica de maquinària;0;2000;18/02/13;;TM30001;MP1. Motors;132;165;18/02/13;;TM3000103;UF3. Diagnosi d'avaries i manteniment dels motors;33;N;N;N;N
+CFPM    TM30;Electromecànica de maquinària;0;2000;18/02/13;;TM30003;MP3. Sistemes de suspensió i guiatge;165;198;18/02/13;;TM3000301;UF1. Circuits de fluids;66;N;N;N;N
+CFPM    TM30;Electromecànica de maquinària;0;2000;18/02/13;;TM30003;MP3. Sistemes de suspensió i guiatge;165;198;18/02/13;;TM3000302;UF2. Sistemes de suspensió i direcció;33;N;N;N;N
+CFPM    TM30;Electromecànica de maquinària;0;2000;18/02/13;;TM30003;MP3. Sistemes de suspensió i guiatge;165;198;18/02/13;;TM3000303;UF3. Diagnosi i manteniment dels sistemes de suspensió i direcció;66;N;N;N;N
+CFPM    TM30;Electromecànica de maquinària;0;2000;18/02/13;;TM30004;MP4. Sistemes de força i detenció;132;132;18/02/13;;TM3000401;UF1. Sistemes de força;33;N;N;N;N
+CFPM    TM30;Electromecànica de maquinària;0;2000;18/02/13;;TM30004;MP4. Sistemes de força i detenció;132;132;18/02/13;;TM3000402;UF2. Sistemes de detenció;33;N;N;N;N
+CFPM    TM30;Electromecànica de maquinària;0;2000;18/02/13;;TM30004;MP4. Sistemes de força i detenció;132;132;18/02/13;;TM3000403;UF3. Diagnosi i manteniment de sistemes de força i detenció;66;N;N;N;N
+CFPM    TM30;Electromecànica de maquinària;0;2000;18/02/13;;TM30005;MP5. Sistemes d'accionament d'equips i accessoris de maquinària;132;165;18/02/13;;TM3000501;UF1. Sistemes de comandament i accionament;33;N;N;N;N
+CFPM    TM30;Electromecànica de maquinària;0;2000;18/02/13;;TM30005;MP5. Sistemes d'accionament d'equips i accessoris de maquinària;132;165;18/02/13;;TM3000502;UF2. Diagnosi i manteniment dels sistemes d'accionament d'equips i accessoris de maquinària;66;N;N;N;N
+CFPM    TM30;Electromecànica de maquinària;0;2000;18/02/13;;TM30005;MP5. Sistemes d'accionament d'equips i accessoris de maquinària;132;165;18/02/13;;TM3000503;UF3. Instal·lació de nous sistemes d'accionament;33;N;N;N;N
+CFPM    TM30;Electromecànica de maquinària;0;2000;18/02/13;;TM30006;MP6. Equips i accessoris de maquinària;132;132;22/02/13;;TM3000601;UF1. Equips i accessoris de maquinària;33;N;N;N;N
+CFPM    TM30;Electromecànica de maquinària;0;2000;18/02/13;;TM30006;MP6. Equips i accessoris de maquinària;132;132;22/02/13;;TM3000602;UF2. Diagnosi i manteniment d'equips i accessoris de maquinària;66;N;N;N;N
+CFPM    TM30;Electromecànica de maquinària;0;2000;18/02/13;;TM30006;MP6. Equips i accessoris de maquinària;132;132;22/02/13;;TM3000603;UF3. Instal·lació de nous equips i accessoris de maquinària;33;N;N;N;N
+CFPM    TM30;Electromecànica de maquinària;0;2000;18/02/13;;TM30008;MP8. Circuits elèctrics, electrònics i de confortabilitat;132;132;22/02/13;;TM3000801;UF1. Circuits elèctrics auxiliars de maquinària;60;N;N;N;N
+CFPM    TM30;Electromecànica de maquinària;0;2000;18/02/13;;TM30008;MP8. Circuits elèctrics, electrònics i de confortabilitat;132;132;22/02/13;;TM3000802;UF2. Sistemes de confort i instal·lació de nous equips;32;N;N;N;N
+CFPM    TM30;Electromecànica de maquinària;0;2000;18/02/13;;TM30008;MP8. Circuits elèctrics, electrònics i de confortabilitat;132;132;22/02/13;;TM3000803;UF3. Manteniment i reciclatge dels sistemes amb gasos refrigerants;40;N;N;N;N
+CFPM    TM30;Electromecànica de maquinària;0;2000;18/02/13;;TM30009;MP9. Mecanització bàsica;99;99;22/02/13;;TM3000901;UF1. Dibuix tècnic i traçat de peces;20;N;N;N;N
+CFPM    TM30;Electromecànica de maquinària;0;2000;18/02/13;;TM30009;MP9. Mecanització bàsica;99;99;22/02/13;;TM3000902;UF2. Mecanitzat manual de peces;46;N;N;N;N
+CFPM    TM30;Electromecànica de maquinària;0;2000;18/02/13;;TM30009;MP9. Mecanització bàsica;99;99;22/02/13;;TM3000903;UF3. Soldadura;33;N;N;N;N
+CFPM    TM30;Electromecànica de maquinària;0;2000;18/02/13;;TM30010;MP10. Formació i orientació laboral;99;99;23/02/13;;TM3001001;UF1. Incorporació al treball;66;N;N;N;N
+CFPM    TM30;Electromecànica de maquinària;0;2000;18/02/13;;TM30010;MP10. Formació i orientació laboral;99;99;23/02/13;;TM3001002;UF2. Prevenció de riscos laborals;33;N;N;N;N
+CFPM    TM30;Electromecànica de maquinària;0;2000;18/02/13;;TM30011;MP11. Empresa i iniciativa emprenedora;66;66;23/02/13;;TM3001101;UF1. Empresa i iniciativa emprenedora;66;N;N;N;N
+CFPM    TM30;Electromecànica de maquinària;0;2000;18/02/13;;TM30012;MP12. Anglès tècnic;99;99;23/02/13;;TM3001201;UF1. Anglès tècnic;99;N;N;N;N
+CFPM    TM30;Electromecànica de maquinària;0;2000;18/02/13;;TM30013;MP13. Síntesi;66;66;23/02/13;;TM3001301;UF1. Síntesi;66;N;S;N;N
+CFPM    TM30;Electromecànica de maquinària;0;2000;18/02/13;;TM30014;MP14. Formació en centres de treball;350;350;23/02/13;;TM3001401;Formació en centres de treball;350;S;N;N;N
+CFPM    TM30;Electromecànica de maquinària;0;2000;18/02/13;;TM30015;MP2. Sistemes auxiliars del motor diesel;132;132;18/02/13;;TM3001501;UF1. Sistemes auxiliars dels motors diesel;33;N;N;N;N
+CFPM    TM30;Electromecànica de maquinària;0;2000;18/02/13;;TM30015;MP2. Sistemes auxiliars del motor diesel;132;132;18/02/13;;TM3001502;UF2. Sobrealimentació i anticontaminació;20;N;N;N;N
+CFPM    TM30;Electromecànica de maquinària;0;2000;18/02/13;;TM30015;MP2. Sistemes auxiliars del motor diesel;132;132;18/02/13;;TM3001503;UF3. Diagnosi i manteniment dels sistemes auxiliars diesel;46;N;N;N;N
+CFPM    TM30;Electromecànica de maquinària;0;2000;18/02/13;;TM30015;MP2. Sistemes auxiliars del motor diesel;132;132;18/02/13;;TM3001504;UF4. Altres combustibles;33;N;N;N;N
+CFPM    TM30;Electromecànica de maquinària;0;2000;18/02/13;;TM30016;MP7. Sistemes de càrrega i arrencada;132;165;22/02/13;;TM3001601;UF1. Principis electrotècnics bàsics;33;N;N;N;N
+CFPM    TM30;Electromecànica de maquinària;0;2000;18/02/13;;TM30016;MP7. Sistemes de càrrega i arrencada;132;165;22/02/13;;TM3001602;UF2. Circuits elèctrics bàsics: simbologia i esquemes;33;N;N;N;N
+CFPM    TM30;Electromecànica de maquinària;0;2000;18/02/13;;TM30016;MP7. Sistemes de càrrega i arrencada;132;165;22/02/13;;TM3001603;UF3. Circuits de càrrega. Funcionament, verificació i diagnosi;33;N;N;N;N
+CFPM    TM30;Electromecànica de maquinària;0;2000;18/02/13;;TM30016;MP7. Sistemes de càrrega i arrencada;132;165;22/02/13;;TM3001604;UF4. Motors elèctrics. Funcionament, verificació i diagnosi;33;N;N;N;N
+CFPS    AFB0;Disseny i gestió de la producció gràfica;0;2000;12/06/14;;AFB0001;MP1. Materials de producció gràfica;132;132;12/06/14;;AFB000101;UF1. Característiques dels materials de producció gràfica;50;N;N;N;N
+CFPS    AFB0;Disseny i gestió de la producció gràfica;0;2000;12/06/14;;AFB0001;MP1. Materials de producció gràfica;132;132;12/06/14;;AFB000102;UF2. Tractaments superficials en la indústria gràfica;17;N;N;N;N
+CFPS    AFB0;Disseny i gestió de la producció gràfica;0;2000;12/06/14;;AFB0001;MP1. Materials de producció gràfica;132;132;12/06/14;;AFB000103;UF3. Aprovisionament i emmagatzematge en la indústria gràfica;25;N;N;N;N
+CFPS    AFB0;Disseny i gestió de la producció gràfica;0;2000;12/06/14;;AFB0001;MP1. Materials de producció gràfica;132;132;12/06/14;;AFB000104;UF4. Qualitat dels materials gràfics;40;N;N;N;N
+CFPS    AFB0;Disseny i gestió de la producció gràfica;0;2000;12/06/14;;AFB0002;MP2. Organització dels processos de preimpressió digital;231;264;12/06/14;;AFB000201;UF1. Planificació dels processos de preimpressió;35;N;N;N;N
+CFPS    AFB0;Disseny i gestió de la producció gràfica;0;2000;12/06/14;;AFB0002;MP2. Organització dels processos de preimpressió digital;231;264;12/06/14;;AFB000202;UF2. Control de qualitat en el tractament d'imatges;70;N;N;N;N
+CFPS    AFB0;Disseny i gestió de la producció gràfica;0;2000;12/06/14;;AFB0002;MP2. Organització dels processos de preimpressió digital;231;264;12/06/14;;AFB000203;UF3. Control de qualitat de textos i compaginació;58;N;N;N;N
+CFPS    AFB0;Disseny i gestió de la producció gràfica;0;2000;12/06/14;;AFB0002;MP2. Organització dels processos de preimpressió digital;231;264;12/06/14;;AFB000204;UF4. Control de qualitat  de la imposició i obtenció de la forma impressora;45;N;N;N;N
+CFPS    AFB0;Disseny i gestió de la producció gràfica;0;2000;12/06/14;;AFB0002;MP2. Organització dels processos de preimpressió digital;231;264;12/06/14;;AFB000205;UF5. Pla de manteniment i prevenció de riscos en preimpressió;23;N;N;N;N
+CFPS    AFB0;Disseny i gestió de la producció gràfica;0;2000;12/06/14;;AFB0003;MP3. Disseny de productes gràfics;198;231;12/06/14;;AFB000301;UF1. Briefing i documentació del projecte gràfic;20;N;N;N;N
+CFPS    AFB0;Disseny i gestió de la producció gràfica;0;2000;12/06/14;;AFB0003;MP3. Disseny de productes gràfics;198;231;12/06/14;;AFB000302;UF2. Elements del projecte gràfic;20;N;N;N;N
+CFPS    AFB0;Disseny i gestió de la producció gràfica;0;2000;12/06/14;;AFB0003;MP3. Disseny de productes gràfics;198;231;12/06/14;;AFB000303;UF3. Creació, desenvolupament digital i anàlisi d'esbossos;60;N;N;N;N
+CFPS    AFB0;Disseny i gestió de la producció gràfica;0;2000;12/06/14;;AFB0003;MP3. Disseny de productes gràfics;198;231;12/06/14;;AFB000304;UF4. Planificació i valoració de costos del projecte gràfic;38;N;N;N;N
+CFPS    AFB0;Disseny i gestió de la producció gràfica;0;2000;12/06/14;;AFB0003;MP3. Disseny de productes gràfics;198;231;12/06/14;;AFB000305;UF5. Realització de maquetes i preparació d'arts finals digitals;60;N;N;N;N
+CFPS    AFB0;Disseny i gestió de la producció gràfica;0;2000;12/06/14;;AFB0004;MP4. Gestió de la producció en la indústria gràfica;132;132;12/06/14;;AFB000401;UF1. Anàlisi de viabilitat del projecte gràfic;26;N;N;N;N
+CFPS    AFB0;Disseny i gestió de la producció gràfica;0;2000;12/06/14;;AFB0004;MP4. Gestió de la producció en la indústria gràfica;132;132;12/06/14;;AFB000402;UF2. Elaboració de pressupostos de productes i serveis gràfics;40;N;N;N;N
+CFPS    AFB0;Disseny i gestió de la producció gràfica;0;2000;12/06/14;;AFB0004;MP4. Gestió de la producció en la indústria gràfica;132;132;12/06/14;;AFB000403;UF3. Planificació i control de la producció gràfica;40;N;N;N;N
+CFPS    AFB0;Disseny i gestió de la producció gràfica;0;2000;12/06/14;;AFB0004;MP4. Gestió de la producció en la indústria gràfica;132;132;12/06/14;;AFB000404;UF4. Gestió de la qualitat en l'empresa gràfica;26;N;N;N;N
+CFPS    AFB0;Disseny i gestió de la producció gràfica;0;2000;12/06/14;;AFB0005;MP5. Gestió del color;66;99;12/06/14;;AFB000501;UF1. Gestió del color en el flux de producció gràfica;26;N;N;N;N
+CFPS    AFB0;Disseny i gestió de la producció gràfica;0;2000;12/06/14;;AFB0005;MP5. Gestió del color;66;99;12/06/14;;AFB000502;UF2. Creació i linearització de perfils de color;40;N;N;N;N
+CFPS    AFB0;Disseny i gestió de la producció gràfica;0;2000;12/06/14;;AFB0006;MP6. Organització dels processos d'impressió gràfica;198;231;12/06/14;;AFB000601;UF1. Gestió dels recursos que intervenen en la impressió;78;N;N;N;N
+CFPS    AFB0;Disseny i gestió de la producció gràfica;0;2000;12/06/14;;AFB0006;MP6. Organització dels processos d'impressió gràfica;198;231;12/06/14;;AFB000602;UF2. Gestió i control dels processos d'impressió;90;N;N;N;N
+CFPS    AFB0;Disseny i gestió de la producció gràfica;0;2000;12/06/14;;AFB0006;MP6. Organització dels processos d'impressió gràfica;198;231;12/06/14;;AFB000603;UF3. Pla de manteniment i prevenció de riscos en impressió;30;N;N;N;N
+CFPS    AFB0;Disseny i gestió de la producció gràfica;0;2000;12/06/14;;AFB0007;MP7. Organització dels processos de postimpressió, transformats i acabats;132;165;12/06/14;;AFB000701;UF1. Planificació dels recursos en postimpressió, transformats i acabats;40;N;N;N;N
+CFPS    AFB0;Disseny i gestió de la producció gràfica;0;2000;12/06/14;;AFB0007;MP7. Organització dels processos de postimpressió, transformats i acabats;132;165;12/06/14;;AFB000702;UF2. Gestió dels processos de postimpressió i acabats;46;N;N;N;N
+CFPS    AFB0;Disseny i gestió de la producció gràfica;0;2000;12/06/14;;AFB0007;MP7. Organització dels processos de postimpressió, transformats i acabats;132;165;12/06/14;;AFB000703;UF3. Gestió dels processos de transformats;46;N;N;N;N
+CFPS    AFB0;Disseny i gestió de la producció gràfica;0;2000;12/06/14;;AFB0008;MP8. Comercialització de productes gràfics i atenció al client;99;99;12/06/14;;AFB000801;UF1. Comunicació i màrqueting en l'empresa gràfica;29;N;N;N;N
+CFPS    AFB0;Disseny i gestió de la producció gràfica;0;2000;12/06/14;;AFB0008;MP8. Comercialització de productes gràfics i atenció al client;99;99;12/06/14;;AFB000802;UF2. Servei d'atenció al client en l'empresa gràfica;25;N;N;N;N
+CFPS    AFB0;Disseny i gestió de la producció gràfica;0;2000;12/06/14;;AFB0008;MP8. Comercialització de productes gràfics i atenció al client;99;99;12/06/14;;AFB000803;UF3. Gestió de vendes de productes i serveis gràfics;25;N;N;N;N
+CFPS    AFB0;Disseny i gestió de la producció gràfica;0;2000;12/06/14;;AFB0008;MP8. Comercialització de productes gràfics i atenció al client;99;99;12/06/14;;AFB000804;UF4. Gestió de reclamacions i servei postvenda en l'empresa gràfica;20;N;N;N;N
+CFPS    AFB0;Disseny i gestió de la producció gràfica;0;2000;12/06/14;;AFB0009;MP9. Formació i orientació laboral;99;99;12/06/14;;AFB000901;UF1. Incorporació al treball;66;N;N;N;N
+CFPS    AFB0;Disseny i gestió de la producció gràfica;0;2000;12/06/14;;AFB0009;MP9. Formació i orientació laboral;99;99;12/06/14;;AFB000902;UF2. Prevenció de riscos laborals;33;N;N;N;N
+CFPS    AFB0;Disseny i gestió de la producció gràfica;0;2000;12/06/14;;AFB0010;MP10. Empresa i iniciativa emprenedora;66;66;12/06/14;;AFB001001;UF1. Empresa i iniciativa emprenedora;66;N;N;N;N
+CFPS    AFB0;Disseny i gestió de la producció gràfica;0;2000;12/06/14;;AFB0011;MP11. Projecte de disseny i gestió de la producció gràfica;99;99;12/06/14;;AFB001101;UF1. Projecte de disseny i gestió de la producció gràfica ;99;N;N;N;S
+CFPS    AFB0;Disseny i gestió de la producció gràfica;0;2000;12/06/14;;AFB0012;MP12. Formació en centres de treball;383;383;12/06/14;;AFB001201;Formació en centres de treball;383;S;N;N;N
+CFPS    AGA0;Assistència a la direcció ;0;2000;24/05/12;;AGA0001;MP1. Comunicació i atenció al client;99;132;03/06/15;;AGA000103;UF3. Gestió documental, arxiu i registre;33;N;N;N;N
+CFPS    AGA0;Assistència a la direcció ;0;2000;24/05/12;;AGA0001;MP1. Comunicació i atenció al client;99;132;03/06/15;;AGA000104;UF1. Procesos de comunicació oral i escrita a l'empresa;33;N;N;N;N
+CFPS    AGA0;Assistència a la direcció ;0;2000;24/05/12;;AGA0001;MP1. Comunicació i atenció al client;99;132;03/06/15;;AGA000105;UF2. Atenció al client;33;N;N;N;N
+CFPS    AGA0;Assistència a la direcció ;0;2000;24/05/12;;AGA0002;MP2. Gestió de la documentació jurídica i empresarial;99;132;;26/08/16;AGA000201;UF1. Organització de la documentació jurídica i empresarial;33;N;N;N;N
+CFPS    AGA0;Assistència a la direcció ;0;2000;24/05/12;;AGA0002;MP2. Gestió de la documentació jurídica i empresarial;99;132;;26/08/16;AGA000202;UF2. Contractació empresarial;33;N;N;N;N
+CFPS    AGA0;Assistència a la direcció ;0;2000;24/05/12;;AGA0002;MP2. Gestió de la documentació jurídica i empresarial;99;132;;26/08/16;AGA000203;UF3. Tramitació davant les Administracions Públiques;33;N;N;N;N
+CFPS    AGA0;Assistència a la direcció ;0;2000;24/05/12;;AGA0003;MP3. Procés integral de lactivitat comercial;231;264;03/06/15;;AGA000301;UF1. Patrimoni i metodologia comptable;33;N;N;N;N
+CFPS    AGA0;Assistència a la direcció ;0;2000;24/05/12;;AGA0003;MP3. Procés integral de lactivitat comercial;231;264;03/06/15;;AGA000302;UF2. Fiscalitat empresarial;33;N;N;N;N
+CFPS    AGA0;Assistència a la direcció ;0;2000;24/05/12;;AGA0003;MP3. Procés integral de lactivitat comercial;231;264;03/06/15;;AGA000303;UF3. Gestió administrativa de les operacions de compravenda i de tresoreria;66;N;N;N;N
+CFPS    AGA0;Assistència a la direcció ;0;2000;24/05/12;;AGA0003;MP3. Procés integral de lactivitat comercial;231;264;03/06/15;;AGA000304;UF4. Registre comptable i comptes anuals;99;N;N;N;N
+CFPS    AGA0;Assistència a la direcció ;0;2000;24/05/12;;AGA0004;MP4. Recursos humans i responsabilitat social corporativa;66;66;03/06/15;;AGA000401;UF1. Processos administratius de recursos humans;33;N;N;N;N
+CFPS    AGA0;Assistència a la direcció ;0;2000;24/05/12;;AGA0004;MP4. Recursos humans i responsabilitat social corporativa;66;66;03/06/15;;AGA000402;UF2. Reclutament i desenvolupament professional;33;N;N;N;N
+CFPS    AGA0;Assistència a la direcció ;0;2000;24/05/12;;AGA0005;MP5. Ofimàtica i procés de la informació;132;132;;26/08/16;AGA000501;UF1. Tecnologia i comunicacions digitals i processament de dades;33;N;N;N;N
+CFPS    AGA0;Assistència a la direcció ;0;2000;24/05/12;;AGA0005;MP5. Ofimàtica i procés de la informació;132;132;;26/08/16;AGA000502;UF2. Tractament avançat, arxiu i presentació de la informació escrita;33;N;N;N;N
+CFPS    AGA0;Assistència a la direcció ;0;2000;24/05/12;;AGA0005;MP5. Ofimàtica i procés de la informació;132;132;;26/08/16;AGA000503;UF3. Gestió de bases de dades, disseny de fulls de càlcul i integració daplicacions;66;N;N;N;N
+CFPS    AGA0;Assistència a la direcció ;0;2000;24/05/12;;AGA0006;MP6. Anglès;132;132;03/06/15;;AGA000601;UF1. Anglès tècnic;132;N;N;N;N
+CFPS    AGA0;Assistència a la direcció ;0;2000;24/05/12;;AGA0007;MP7. Segona llengua estrangera;132;132;03/06/15;;AGA000701;UF1. Segona llengua estrangera;132;N;N;N;N
+CFPS    AGA0;Assistència a la direcció ;0;2000;24/05/12;;AGA0008;MP8. Protocol empresarial;132;165;03/06/15;;AGA000801;UF1. Relacions públiques en lentorn empresarial;33;N;N;N;N
+CFPS    AGA0;Assistència a la direcció ;0;2000;24/05/12;;AGA0008;MP8. Protocol empresarial;132;165;03/06/15;;AGA000802;UF2. Tècniques de protocol, empresarial i institucional;66;N;N;N;N
+CFPS    AGA0;Assistència a la direcció ;0;2000;24/05/12;;AGA0008;MP8. Protocol empresarial;132;165;03/06/15;;AGA000803;UF3. Cartes de serveis i compromisos de qualitat;33;N;N;N;N
+CFPS    AGA0;Assistència a la direcció ;0;2000;24/05/12;;AGA0009;MP9. Organització desdeveniments empresarials ;165;198;03/06/15;;AGA000901;UF1. Coordinació i gestió dequips de treball;33;N;N;N;N
+CFPS    AGA0;Assistència a la direcció ;0;2000;24/05/12;;AGA0009;MP9. Organització desdeveniments empresarials ;165;198;03/06/15;;AGA000902;UF2. Organització i coordinació desdeveniments i projectes;99;N;N;N;N
+CFPS    AGA0;Assistència a la direcció ;0;2000;24/05/12;;AGA0009;MP9. Organització desdeveniments empresarials ;165;198;03/06/15;;AGA000903;UF3. Organització de viatges corporatius;33;N;N;N;N
+CFPS    AGA0;Assistència a la direcció ;0;2000;24/05/12;;AGA0010;MP10. Gestió avançada de la informació;99;99;03/06/15;;AGA001001;UF1. Sistemes de gestió documental;33;N;N;N;N
+CFPS    AGA0;Assistència a la direcció ;0;2000;24/05/12;;AGA0010;MP10. Gestió avançada de la informació;99;99;03/06/15;;AGA001002;UF2. Gestió informatitzada de projectes empresarials;66;N;N;N;N
+CFPS    AGA0;Assistència a la direcció ;0;2000;24/05/12;;AGA0011;MP11. Formació i orientació laboral;99;99;03/06/15;;AGA001101;UF1. Incorporació al treball;66;N;N;N;N
+CFPS    AGA0;Assistència a la direcció ;0;2000;24/05/12;;AGA0011;MP11. Formació i orientació laboral;99;99;03/06/15;;AGA001102;UF2. Prevenció de riscos laborals;33;N;N;N;N
+CFPS    AGA0;Assistència a la direcció ;0;2000;24/05/12;;AGA0012;MP12. Projecte dassistència a la direcció;99;99;03/06/15;;AGA001201;UF1. Projecte dassistència a la direcció;99;N;N;N;S
+CFPS    AGA0;Assistència a la direcció ;0;2000;24/05/12;;AGA0013;MP13. Formació en centres de treball;350;350;03/06/15;;AGA001301;Formació en centres de treball;350;S;N;N;N
+CFPS    AGA0;Assistència a la direcció ;0;2000;24/05/12;;AGA0014;MP2. Gestió de la documentació jurídica i empresarial;99;99;26/08/16;;AGA001401;UF1. Organització de la documentació jurídica i empresarial;33;N;N;N;N
+CFPS    AGA0;Assistència a la direcció ;0;2000;24/05/12;;AGA0014;MP2. Gestió de la documentació jurídica i empresarial;99;99;26/08/16;;AGA001402;UF2. Contractació empresarial;33;N;N;N;N
+CFPS    AGA0;Assistència a la direcció ;0;2000;24/05/12;;AGA0014;MP2. Gestió de la documentació jurídica i empresarial;99;99;26/08/16;;AGA001403;UF3. Tramitació davant les Administracions Públiques;33;N;N;N;N
+CFPS    AGA0;Assistència a la direcció ;0;2000;24/05/12;;AGA0015;MP5. Ofimàtica i procés de la informació;132;165;26/08/16;;AGA001501;UF1. Tecnologia i comunicacions digitals i processament de dades;33;N;N;N;N
+CFPS    AGA0;Assistència a la direcció ;0;2000;24/05/12;;AGA0015;MP5. Ofimàtica i procés de la informació;132;165;26/08/16;;AGA001502;UF2. Tractament avançat, arxiu i presentació de la informació escrita;33;N;N;N;N
+CFPS    AGA0;Assistència a la direcció ;0;2000;24/05/12;;AGA0015;MP5. Ofimàtica i procés de la informació;132;165;26/08/16;;AGA001503;UF3. Gestió de bases de dades, disseny de fulls de càlcul i integració d'aplicacions;66;N;N;N;N
+CFPS    AGB0;Administració i finances;0;2000;10/12/12;;AGB0001;MP1. Comunicació i atenció al client;99;132;10/12/12;;AGB000103;UF3. Gestió documental, arxiu i registre;33;N;N;N;N
+CFPS    AGB0;Administració i finances;0;2000;10/12/12;;AGB0001;MP1. Comunicació i atenció al client;99;132;10/12/12;;AGB000106;UF1. Procesos de comunicació oral i escrita a l'empresa;55;N;N;N;N
+CFPS    AGB0;Administració i finances;0;2000;10/12/12;;AGB0001;MP1. Comunicació i atenció al client;99;132;10/12/12;;AGB000107;UF2. Atenció al client;44;N;N;N;N
+CFPS    AGB0;Administració i finances;0;2000;10/12/12;;AGB0003;MP3. Procés integral de l'activitat comercial;231;264;10/12/12;;AGB000301;UF1. Patrimoni i metodologia comptable;33;N;N;N;N
+CFPS    AGB0;Administració i finances;0;2000;10/12/12;;AGB0003;MP3. Procés integral de l'activitat comercial;231;264;10/12/12;;AGB000302;UF2. Fiscalitat empresarial;33;N;N;N;N
+CFPS    AGB0;Administració i finances;0;2000;10/12/12;;AGB0003;MP3. Procés integral de l'activitat comercial;231;264;10/12/12;;AGB000304;UF4. Registre comptable i comptes anuals;99;N;N;N;N
+CFPS    AGB0;Administració i finances;0;2000;10/12/12;;AGB0003;MP3. Procés integral de l'activitat comercial;231;264;10/12/12;;AGB000305;UF3. Gestió administrativa de les operacions de compravenda i tresoreria;33;N;N;N;N
+CFPS    AGB0;Administració i finances;0;2000;10/12/12;;AGB0004;MP4. Recursos humans i responsabilitat social corporativa;66;66;10/12/12;;AGB000401;UF1. Processos administratius de recursos humans;33;N;N;N;N
+CFPS    AGB0;Administració i finances;0;2000;10/12/12;;AGB0004;MP4. Recursos humans i responsabilitat social corporativa;66;66;10/12/12;;AGB000402;UF2. Reclutament i desenvolupament professional;33;N;N;N;N
+CFPS    AGB0;Administració i finances;0;2000;10/12/12;;AGB0006;MP6. Anglès;132;132;10/12/12;;AGB000601;UF1. Anglès tècnic;132;N;N;N;N
+CFPS    AGB0;Administració i finances;0;2000;10/12/12;;AGB0007;MP7. Gestió de recursos humans;99;99;10/12/12;;AGB000701;UF1. Procés de contractació;33;N;N;N;N
+CFPS    AGB0;Administració i finances;0;2000;10/12/12;;AGB0007;MP7. Gestió de recursos humans;99;99;10/12/12;;AGB000702;UF2. Retribucions, nòmines i obligacions oficials;66;N;N;N;N
+CFPS    AGB0;Administració i finances;0;2000;10/12/12;;AGB0008;MP8. Gestió financera;132;165;10/12/12;;AGB000801;UF1. Anàlisi i previsió financeres;33;N;N;N;N
+CFPS    AGB0;Administració i finances;0;2000;10/12/12;;AGB0008;MP8. Gestió financera;132;165;10/12/12;;AGB000802;UF2. Productes del mercat financer i d'assegurances;33;N;N;N;N
+CFPS    AGB0;Administració i finances;0;2000;10/12/12;;AGB0008;MP8. Gestió financera;132;165;10/12/12;;AGB000803;UF3. Fonts de finançament i selecció d'inversions;66;N;N;N;N
+CFPS    AGB0;Administració i finances;0;2000;10/12/12;;AGB0009;MP9. Comptabilitat i fiscalitat;165;198;10/12/12;;AGB000901;UF1. Comptabilitat financera, fiscalitat i auditoria;99;N;N;N;N
+CFPS    AGB0;Administració i finances;0;2000;10/12/12;;AGB0009;MP9. Comptabilitat i fiscalitat;165;198;10/12/12;;AGB000902;UF2. Comptabilitat de costos;33;N;N;N;N
+CFPS    AGB0;Administració i finances;0;2000;10/12/12;;AGB0009;MP9. Comptabilitat i fiscalitat;165;198;10/12/12;;AGB000903;UF3. Anàlisi econòmic, patrimonial i financer;33;N;N;N;N
+CFPS    AGB0;Administració i finances;0;2000;10/12/12;;AGB0010;MP10. Gestió logística i comercial;99;99;10/12/12;;AGB001001;UF1. Planificació de l'aprovisionament;33;N;N;N;N
+CFPS    AGB0;Administració i finances;0;2000;10/12/12;;AGB0010;MP10. Gestió logística i comercial;99;99;10/12/12;;AGB001002;UF2. Selecció i control de proveïdors;33;N;N;N;N
+CFPS    AGB0;Administració i finances;0;2000;10/12/12;;AGB0010;MP10. Gestió logística i comercial;99;99;10/12/12;;AGB001003;UF3. Operativa i control de la cadena logística;33;N;N;N;N
+CFPS    AGB0;Administració i finances;0;2000;10/12/12;;AGB0011;MP11. Simulació empresarial;99;99;10/12/12;;AGB001101;UF1. Simulació empresarial;99;N;N;N;N
+CFPS    AGB0;Administració i finances;0;2000;10/12/12;;AGB0012;MP12. Formació i orientació laboral;99;99;10/12/12;;AGB001201;UF1. Incorporació al treball;66;N;N;N;N
+CFPS    AGB0;Administració i finances;0;2000;10/12/12;;AGB0012;MP12. Formació i orientació laboral;99;99;10/12/12;;AGB001202;UF2. Prevenció de riscos laborals;33;N;N;N;N
+CFPS    AGB0;Administració i finances;0;2000;10/12/12;;AGB0013;MP13. Projecte d'administració i finances;33;33;10/12/12;;AGB001301;UF1. Projecte d'administració i finances;33;N;N;N;S
+CFPS    AGB0;Administració i finances;0;2000;10/12/12;;AGB0014;MP14. Formació en centres de treball;350;350;10/12/12;;AGB001401;Formació en centres de treball ;350;S;N;N;N
+CFPS    AGB0;Administració i finances;0;2000;10/12/12;;AGB0015;MP2. Gestió de la documentació jurídica i empresarial;99;99;26/08/16;;AGB001501;UF1. Organització de la documentació jurídica i empresarial;33;N;N;N;N
+CFPS    AGB0;Administració i finances;0;2000;10/12/12;;AGB0015;MP2. Gestió de la documentació jurídica i empresarial;99;99;26/08/16;;AGB001502;UF2. Contractació empresarial;33;N;N;N;N
+CFPS    AGB0;Administració i finances;0;2000;10/12/12;;AGB0015;MP2. Gestió de la documentació jurídica i empresarial;99;99;26/08/16;;AGB001503;UF3. Tramitació davant les administracions públiques;33;N;N;N;N
+CFPS    AGB0;Administració i finances;0;2000;10/12/12;;AGB0016;MP5. Ofimàtica i procés de la informació;132;165;26/08/16;;AGB001601;UF1. Tecnologia i comunicacions digitals, i processament de dades;33;N;N;N;N
+CFPS    AGB0;Administració i finances;0;2000;10/12/12;;AGB0016;MP5. Ofimàtica i procés de la informació;132;165;26/08/16;;AGB001602;UF2. Tractament avançat de la informació, arxiu i registre;33;N;N;N;N
+CFPS    AGB0;Administració i finances;0;2000;10/12/12;;AGB0016;MP5. Ofimàtica i procés de la informació;132;165;26/08/16;;AGB001603;UF3. Gestió de bases de dades, disseny de fulls de càlcul i integració d'aplicacions;66;N;N;N;N
+CFPS    CMB0;Comerç internacional;0;2000;14/12/12;;CMB0001;MP1. Gestió administrativa del comerç internacional;198;231;14/12/12;;CMB000101;UF1. Organismes i normes internacionals;33;N;N;N;N
+CFPS    CMB0;Comerç internacional;0;2000;14/12/12;;CMB0001;MP1. Gestió administrativa del comerç internacional;198;231;14/12/12;;CMB000102;UF2. Intercanvis intracomunitaris;33;N;N;N;N
+CFPS    CMB0;Comerç internacional;0;2000;14/12/12;;CMB0001;MP1. Gestió administrativa del comerç internacional;198;231;14/12/12;;CMB000103;UF3. Operacions amb països tercers ;66;N;N;N;N
+CFPS    CMB0;Comerç internacional;0;2000;14/12/12;;CMB0001;MP1. Gestió administrativa del comerç internacional;198;231;14/12/12;;CMB000104;UF4. Gestió duanera;66;N;N;N;N
+CFPS    CMB0;Comerç internacional;0;2000;14/12/12;;CMB0003;MP3. Mitjans de pagament internacionals;99;99;14/12/12;;CMB000301;UF1. Selecció i gestió de mitjans de pagament simples;33;N;N;N;N
+CFPS    CMB0;Comerç internacional;0;2000;14/12/12;;CMB0003;MP3. Mitjans de pagament internacionals;99;99;14/12/12;;CMB000302;UF2. Selecció i gestió de mitjans de pagament documentaris;66;N;N;N;N
+CFPS    CMB0;Comerç internacional;0;2000;14/12/12;;CMB0004;MP4. Gestió econòmica i financera de l'empresa;99;132;14/12/12;;CMB000401;UF1. Emprenedoria, creació d'empresa, i inversió i finançament;33;N;N;N;N
+CFPS    CMB0;Comerç internacional;0;2000;14/12/12;;CMB0004;MP4. Gestió econòmica i financera de l'empresa;99;132;14/12/12;;CMB000402;UF2. Operativa de compravenda i tresoreria;33;N;N;N;N
+CFPS    CMB0;Comerç internacional;0;2000;14/12/12;;CMB0004;MP4. Gestió econòmica i financera de l'empresa;99;132;14/12/12;;CMB000403;UF3. Comptabilitat i fiscalitat empresarial;33;N;N;N;N
+CFPS    CMB0;Comerç internacional;0;2000;14/12/12;;CMB0005;MP5. Transport internacional de mercaderies;132;132;14/12/12;;CMB000501;UF1. Transport internacional terrestre: carretera i ferrocarril;66;N;N;N;N
+CFPS    CMB0;Comerç internacional;0;2000;14/12/12;;CMB0005;MP5. Transport internacional de mercaderies;132;132;14/12/12;;CMB000502;UF2. Transport internacional marítim i aeri;66;N;N;N;N
+CFPS    CMB0;Comerç internacional;0;2000;14/12/12;;CMB0006;MP6. Logística d'emmagatzematge;99;132;14/12/12;;CMB000601;UF1. Marc legal i règims d'emmagatzematge en el comerç nacional i internacional;33;N;N;N;N
+CFPS    CMB0;Comerç internacional;0;2000;14/12/12;;CMB0006;MP6. Logística d'emmagatzematge;99;132;14/12/12;;CMB000602;UF2. Organització dels espais i del procés d'emmagatzematge;33;N;N;N;N
+CFPS    CMB0;Comerç internacional;0;2000;14/12/12;;CMB0006;MP6. Logística d'emmagatzematge;99;132;14/12/12;;CMB000603;UF3. Gestió i supervisió d'estocs;33;N;N;N;N
+CFPS    CMB0;Comerç internacional;0;2000;14/12/12;;CMB0008;MP8. Sistema d'informació de mercats;66;99;16/12/12;;CMB000802;UF2. Explotació de la prospecció;33;N;N;N;N
+CFPS    CMB0;Comerç internacional;0;2000;14/12/12;;CMB0008;MP8. Sistema d'informació de mercats;66;99;16/12/12;;CMB000803;UF1. Prospecció de mercats internacionals;33;N;N;N;N
+CFPS    CMB0;Comerç internacional;0;2000;14/12/12;;CMB0009;MP9. Negociació internacional;99;99;16/12/12;;CMB000901;UF1. Contractació internacional;33;N;N;N;N
+CFPS    CMB0;Comerç internacional;0;2000;14/12/12;;CMB0009;MP9. Negociació internacional;99;99;16/12/12;;CMB000902;UF2. Estratègies de negociació internacional;66;N;N;N;N
+CFPS    CMB0;Comerç internacional;0;2000;14/12/12;;CMB0010;MP10. Comerç digital internacional;66;66;16/12/12;;CMB001001;UF1. Eines per al comerç digital internacional;45;N;N;N;N
+CFPS    CMB0;Comerç internacional;0;2000;14/12/12;;CMB0010;MP10. Comerç digital internacional;66;66;16/12/12;;CMB001002;UF2. El pla de màrqueting digital internacional;21;N;N;N;N
+CFPS    CMB0;Comerç internacional;0;2000;14/12/12;;CMB0011;MP11. Anglès;132;132;16/12/12;;CMB001101;UF1. Anglès tècnic;132;N;N;N;N
+CFPS    CMB0;Comerç internacional;0;2000;14/12/12;;CMB0012;MP12. Segona llengua estrangera;132;132;16/12/12;;CMB001201;UF1. Segona llengua estrangera ;132;N;N;N;N
+CFPS    CMB0;Comerç internacional;0;2000;14/12/12;;CMB0013;MP13. Formació i orientació laboral;99;99;16/12/12;;CMB001303;UF1. Incorporació al treball;66;N;N;N;N
+CFPS    CMB0;Comerç internacional;0;2000;14/12/12;;CMB0013;MP13. Formació i orientació laboral;99;99;16/12/12;;CMB001304;UF2. Prevenció de riscos laborals;33;N;N;N;N
+CFPS    CMB0;Comerç internacional;0;2000;14/12/12;;CMB0014;MP14. Projecte de comerç internacional;66;66;16/12/12;;CMB001401;UF1. Projecte de comerç internacional;66;N;N;N;S
+CFPS    CMB0;Comerç internacional;0;2000;14/12/12;;CMB0015;MP15. Formació en centres de treball;350;350;16/12/12;;CMB001501;Formació en centres de treball ;350;S;N;N;N
+CFPS    CMB0;Comerç internacional;0;2000;14/12/12;;CMB0016;MP2. Finançament internacional;0;99;14/12/12;;CMB001601;UF1. Instruments per a la gestió de riscos de canvi;33;N;N;N;N
+CFPS    CMB0;Comerç internacional;0;2000;14/12/12;;CMB0016;MP2. Finançament internacional;0;99;14/12/12;;CMB001602;UF2. Finançament del comerç exterior;33;N;N;N;N
+CFPS    CMB0;Comerç internacional;0;2000;14/12/12;;CMB0016;MP2. Finançament internacional;0;99;14/12/12;;CMB001603;UF3. Instruments financers de suport a l'exportació;33;N;N;N;N
+CFPS    CMB0;Comerç internacional;0;2000;14/12/12;;CMB0017;MP7. Màrqueting internacional;99;132;16/12/12;;CMB001701;UF1. Estratègies d'internacionalització de l'empresa;45;N;N;N;N
+CFPS    CMB0;Comerç internacional;0;2000;14/12/12;;CMB0017;MP7. Màrqueting internacional;99;132;16/12/12;;CMB001702;UF2. Màrqueting operacional;33;N;N;N;N
+CFPS    CMB0;Comerç internacional;0;2000;14/12/12;;CMB0017;MP7. Màrqueting internacional;99;132;16/12/12;;CMB001703;UF3. Pla de màrqueting internacional;21;N;N;N;N
+CFPS    EAD0;Gestió de l'aigua;0;2000;11/07/18;;EAD0001;MP1. Planificació i replanteig;132;132;11/07/18;;EAD000101;UF1. Projectes i obres de construcció;66;N;N;N;N
+CFPS    EAD0;Gestió de l'aigua;0;2000;11/07/18;;EAD0001;MP1. Planificació i replanteig;132;132;11/07/18;;EAD000102;UF2. Representació gràfica i replanteig d'elements de construcció;66;N;N;N;N
+CFPS    EAD0;Gestió de l'aigua;0;2000;11/07/18;;EAD0002;MP2. Qualitat i tractament d'aigües;99;132;11/07/18;;EAD000201;UF1. Principis bàsics de qualitat de l'aigua;33;N;N;N;N
+CFPS    EAD0;Gestió de l'aigua;0;2000;11/07/18;;EAD0002;MP2. Qualitat i tractament d'aigües;99;132;11/07/18;;EAD000202;UF2. Operacions de tractament de l'aigua;66;N;N;N;N
+CFPS    EAD0;Gestió de l'aigua;0;2000;11/07/18;;EAD0003;MP3. Gestió eficient de l'aigua;99;132;11/07/18;;EAD000301;UF1. Aigua, sostenibilitat i auditoria energètica;33;N;N;N;N
+CFPS    EAD0;Gestió de l'aigua;0;2000;11/07/18;;EAD0003;MP3. Gestió eficient de l'aigua;99;132;11/07/18;;EAD000302;UF2. Eficiència energètica de xarxes i instal·lacions d'aigua;66;N;N;N;N
+CFPS    EAD0;Gestió de l'aigua;0;2000;11/07/18;;EAD0004;MP4. Configuració de xarxes d'aigua;132;165;11/07/18;;EAD000401;UF1. Càlcul de paràmetres hidràulics;33;N;N;N;N
+CFPS    EAD0;Gestió de l'aigua;0;2000;11/07/18;;EAD0004;MP4. Configuració de xarxes d'aigua;132;165;11/07/18;;EAD000402;UF2. Configuració de xarxes;99;N;N;N;N
+CFPS    EAD0;Gestió de l'aigua;0;2000;11/07/18;;EAD0005;MP5. Sistemes elèctrics en instal·lacions d'aigua;99;99;11/07/18;;EAD000501;UF1. Caracterització dels sistemes elèctrics;66;N;N;N;N
+CFPS    EAD0;Gestió de l'aigua;0;2000;11/07/18;;EAD0005;MP5. Sistemes elèctrics en instal·lacions d'aigua;99;99;11/07/18;;EAD000502;UF2. Muntatges i connexió de màquines elèctriques;33;N;N;N;N
+CFPS    EAD0;Gestió de l'aigua;0;2000;11/07/18;;EAD0006;MP6. Automatismes i telecontrol en instal·lacions d'aigua;198;198;11/07/18;;EAD000601;UF1. Instrumentació i circuits de control;33;N;N;N;N
+CFPS    EAD0;Gestió de l'aigua;0;2000;11/07/18;;EAD0006;MP6. Automatismes i telecontrol en instal·lacions d'aigua;198;198;11/07/18;;EAD000602;UF2. Configuració, programació i muntatge d'equips;66;N;N;N;N
+CFPS    EAD0;Gestió de l'aigua;0;2000;11/07/18;;EAD0006;MP6. Automatismes i telecontrol en instal·lacions d'aigua;198;198;11/07/18;;EAD000603;UF3. Sistemes i xarxes de comunicació i control;33;N;N;N;N
+CFPS    EAD0;Gestió de l'aigua;0;2000;11/07/18;;EAD0006;MP6. Automatismes i telecontrol en instal·lacions d'aigua;198;198;11/07/18;;EAD000604;UF4. Operació des del centre de control;66;N;N;N;N
+CFPS    EAD0;Gestió de l'aigua;0;2000;11/07/18;;EAD0007;MP7. Operacions en xarxes i instal·lacions d'aigua;165;198;11/07/18;;EAD000701;UF1. Muntatge i posta en servei de xarxes i instal·lacions d'aigua;66;N;N;N;N
+CFPS    EAD0;Gestió de l'aigua;0;2000;11/07/18;;EAD0007;MP7. Operacions en xarxes i instal·lacions d'aigua;165;198;11/07/18;;EAD000702;UF2. Aplicació de plans de manteniment en xarxes d'aigua;66;N;N;N;N
+CFPS    EAD0;Gestió de l'aigua;0;2000;11/07/18;;EAD0007;MP7. Operacions en xarxes i instal·lacions d'aigua;165;198;11/07/18;;EAD000703;UF3. Documentació i prevenció de riscos;33;N;N;N;N
+CFPS    EAD0;Gestió de l'aigua;0;2000;11/07/18;;EAD0008;MP8. Gestió d'operacions qualitat i medi ambient;99;99;11/07/18;;EAD000801;UF1. Plans de treballs;66;N;N;N;N
+CFPS    EAD0;Gestió de l'aigua;0;2000;11/07/18;;EAD0008;MP8. Gestió d'operacions qualitat i medi ambient;99;99;11/07/18;;EAD000802;UF2. Gestió mediambiental;33;N;N;N;N
+CFPS    EAD0;Gestió de l'aigua;0;2000;11/07/18;;EAD0009;MP9. Tècniques de muntatge en instal·lacions d'aigua;132;165;11/07/18;;EAD000901;UF1. Materials, tractaments i tècniques de mecanització i conformació;66;N;N;N;N
+CFPS    EAD0;Gestió de l'aigua;0;2000;11/07/18;;EAD0009;MP9. Tècniques de muntatge en instal·lacions d'aigua;132;165;11/07/18;;EAD000902;UF2. Muntatge i execució d'unions;33;N;N;N;N
+CFPS    EAD0;Gestió de l'aigua;0;2000;11/07/18;;EAD0009;MP9. Tècniques de muntatge en instal·lacions d'aigua;132;165;11/07/18;;EAD000903;UF3. Muntatge i manteniment d'equips i instal·lacions;33;N;N;N;N
+CFPS    EAD0;Gestió de l'aigua;0;2000;11/07/18;;EAD0010;MP10. Tècniques de comunicació i relacions;66;66;11/07/18;;EAD001001;UF1. Tècniques de comunicació, empresa i atenció al client;33;N;N;N;N
+CFPS    EAD0;Gestió de l'aigua;0;2000;11/07/18;;EAD0010;MP10. Tècniques de comunicació i relacions;66;66;11/07/18;;EAD001002;UF2. Feedback amb clients i control de qualitat;33;N;N;N;N
+CFPS    EAD0;Gestió de l'aigua;0;2000;11/07/18;;EAD0011;MP11. Formació i orientació laboral;99;99;11/07/18;;EAD001101;UF1. Incorporació al treball;66;N;N;N;N
+CFPS    EAD0;Gestió de l'aigua;0;2000;11/07/18;;EAD0011;MP11. Formació i orientació laboral;99;99;11/07/18;;EAD001102;UF2. Prevenció de riscos laborals;33;N;N;N;N
+CFPS    EAD0;Gestió de l'aigua;0;2000;11/07/18;;EAD0012;MP12. Empresa i iniciativa emprenedora;66;66;11/07/18;;EAD001201;UF1. Empresa i iniciativa emprenedora;66;N;N;N;N
+CFPS    EAD0;Gestió de l'aigua;0;2000;11/07/18;;EAD0013;MP13. Projecte en gestió eficient de l'aigua;99;99;11/07/18;;EAD001301;UF1. Projecte en gestió eficient de l'aigua;99;N;N;N;S
+CFPS    EAD0;Gestió de l'aigua;0;2000;11/07/18;;EAD0014;MP14. Formació en centres de treball;350;350;11/07/18;;EAD001401;Formació en centres de treball;350;S;N;N;N
+CFPS    EEB0;Automatització i robòtica industrial;0;2000;08/02/13;;EEB0001;MP1. Sistemes elèctrics, pneumàtics i hidràulics;132;132;08/02/13;;EEB000101;UF1. Automatització elèctrica cablada;66;N;N;N;N
+CFPS    EEB0;Automatització i robòtica industrial;0;2000;08/02/13;;EEB0001;MP1. Sistemes elèctrics, pneumàtics i hidràulics;132;132;08/02/13;;EEB000102;UF2. Automatització pneumàtica i electropneumàtica;33;N;N;N;N
+CFPS    EEB0;Automatització i robòtica industrial;0;2000;08/02/13;;EEB0001;MP1. Sistemes elèctrics, pneumàtics i hidràulics;132;132;08/02/13;;EEB000103;UF3. Automatització hidràulica i electrohidràulica;33;N;N;N;N
+CFPS    EEB0;Automatització i robòtica industrial;0;2000;08/02/13;;EEB0002;MP2. Sistemes seqüencials programables;132;165;08/02/13;;EEB000201;UF1. Instal·lació i muntatge de PLC;22;N;N;N;N
+CFPS    EEB0;Automatització i robòtica industrial;0;2000;08/02/13;;EEB0002;MP2. Sistemes seqüencials programables;132;165;08/02/13;;EEB000202;UF2. Programació de PLC;55;N;N;N;N
+CFPS    EEB0;Automatització i robòtica industrial;0;2000;08/02/13;;EEB0002;MP2. Sistemes seqüencials programables;132;165;08/02/13;;EEB000203;UF3. Disseny de sistemes combinacionals i seqüencials;55;N;N;N;N
+CFPS    EEB0;Automatització i robòtica industrial;0;2000;08/02/13;;EEB0003;MP3. Sistemes de mesura i regulació;132;165;08/02/13;;EEB000301;UF1. Sensors, sistemes de condicionament i mesura i dispositius d'accionament;33;N;N;N;N
+CFPS    EEB0;Automatització i robòtica industrial;0;2000;08/02/13;;EEB0003;MP3. Sistemes de mesura i regulació;132;165;08/02/13;;EEB000302;UF2. Sistemes de regulació automàtica;66;N;N;N;N
+CFPS    EEB0;Automatització i robòtica industrial;0;2000;08/02/13;;EEB0003;MP3. Sistemes de mesura i regulació;132;165;08/02/13;;EEB000303;UF3. Sistemes de mesura virtual i adquisició de dades;33;N;N;N;N
+CFPS    EEB0;Automatització i robòtica industrial;0;2000;08/02/13;;EEB0004;MP4. Sistemes de potència;132;165;08/02/13;;EEB000401;UF1. Configuració d'instal·lacions elèctriques;44;N;N;N;N
+CFPS    EEB0;Automatització i robòtica industrial;0;2000;08/02/13;;EEB0004;MP4. Sistemes de potència;132;165;08/02/13;;EEB000402;UF2. Màquines elèctriques;55;N;N;N;N
+CFPS    EEB0;Automatització i robòtica industrial;0;2000;08/02/13;;EEB0004;MP4. Sistemes de potència;132;165;08/02/13;;EEB000403;UF3. Electrònica de potència;33;N;N;N;N
+CFPS    EEB0;Automatització i robòtica industrial;0;2000;08/02/13;;EEB0005;MP5. Documentació tècnica;99;99;08/02/13;;EEB000501;UF1. Documentació gràfica en projectes d'automatització i robòtica industrial;58;N;N;N;N
+CFPS    EEB0;Automatització i robòtica industrial;0;2000;08/02/13;;EEB0005;MP5. Documentació tècnica;99;99;08/02/13;;EEB000502;UF2. Documentació escrita en projectes d'automatització i robòtica industrial;23;N;N;N;N
+CFPS    EEB0;Automatització i robòtica industrial;0;2000;08/02/13;;EEB0005;MP5. Documentació tècnica;99;99;08/02/13;;EEB000503;UF3. Pressupostos en projectes d'automatització i robòtica industrial;18;N;N;N;N
+CFPS    EEB0;Automatització i robòtica industrial;0;2000;08/02/13;;EEB0006;MP6. Sistemes programables avançats;99;99;08/02/13;;EEB000603;UF1. Sistemes avançats de control industrial;66;N;N;N;N
+CFPS    EEB0;Automatització i robòtica industrial;0;2000;08/02/13;;EEB0006;MP6. Sistemes programables avançats;99;99;08/02/13;;EEB000604;UF2. Sensors avançats;33;N;N;N;N
+CFPS    EEB0;Automatització i robòtica industrial;0;2000;08/02/13;;EEB0007;MP7. Robòtica industrial;99;99;08/02/13;;EEB000701;UF1. Configuració de robots industrials;22;N;N;N;N
+CFPS    EEB0;Automatització i robòtica industrial;0;2000;08/02/13;;EEB0007;MP7. Robòtica industrial;99;99;08/02/13;;EEB000702;UF2. Programació de robots industrials;38;N;N;N;N
+CFPS    EEB0;Automatització i robòtica industrial;0;2000;08/02/13;;EEB0007;MP7. Robòtica industrial;99;99;08/02/13;;EEB000703;UF3. Manteniment de robots industrials;17;N;N;N;N
+CFPS    EEB0;Automatització i robòtica industrial;0;2000;08/02/13;;EEB0007;MP7. Robòtica industrial;99;99;08/02/13;;EEB000704;UF4. Servoaccionaments;22;N;N;N;N
+CFPS    EEB0;Automatització i robòtica industrial;0;2000;08/02/13;;EEB0008;MP8. Comunicacions industrials;165;198;08/02/13;;EEB000801;UF1. Estructures i protocols de comunicacions industrials;33;N;N;N;N
+CFPS    EEB0;Automatització i robòtica industrial;0;2000;08/02/13;;EEB0008;MP8. Comunicacions industrials;165;198;08/02/13;;EEB000802;UF2. Sistemes de control i supervisió de processos;33;N;N;N;N
+CFPS    EEB0;Automatització i robòtica industrial;0;2000;08/02/13;;EEB0008;MP8. Comunicacions industrials;165;198;08/02/13;;EEB000803;UF3. Xarxes industrials;66;N;N;N;N
+CFPS    EEB0;Automatització i robòtica industrial;0;2000;08/02/13;;EEB0008;MP8. Comunicacions industrials;165;198;08/02/13;;EEB000804;UF4. Sistemes d'accés remot a processos industrials;33;N;N;N;N
+CFPS    EEB0;Automatització i robòtica industrial;0;2000;08/02/13;;EEB0009;MP9. Integració de sistemes d'automatització industrial;165;198;08/02/13;;EEB000901;UF1. Sistemes d'automatització industrial;33;N;N;N;N
+CFPS    EEB0;Automatització i robòtica industrial;0;2000;08/02/13;;EEB0009;MP9. Integració de sistemes d'automatització industrial;165;198;08/02/13;;EEB000902;UF2. Muntatge, programació i ajust dels sistemes;66;N;N;N;N
+CFPS    EEB0;Automatització i robòtica industrial;0;2000;08/02/13;;EEB0009;MP9. Integració de sistemes d'automatització industrial;165;198;08/02/13;;EEB000903;UF3. Posada en marxa dels sistemes d'automatització;33;N;N;N;N
+CFPS    EEB0;Automatització i robòtica industrial;0;2000;08/02/13;;EEB0009;MP9. Integració de sistemes d'automatització industrial;165;198;08/02/13;;EEB000904;UF4. Planificació i gestió del manteniment dels sistemes d'automatització;33;N;N;N;N
+CFPS    EEB0;Automatització i robòtica industrial;0;2000;08/02/13;;EEB0010;MP10. Informàtica industrial;99;99;08/02/13;;EEB001001;UF1. Equips, xarxes locals i entorn Web;33;N;N;N;N
+CFPS    EEB0;Automatització i robòtica industrial;0;2000;08/02/13;;EEB0010;MP10. Informàtica industrial;99;99;08/02/13;;EEB001002;UF2. Programació d'equips i sistemes industrials;66;N;N;N;N
+CFPS    EEB0;Automatització i robòtica industrial;0;2000;08/02/13;;EEB0011;MP11. Formació i orientació laboral;99;99;08/02/13;;EEB001101;UF1. Incorporació al treball;66;N;N;N;N
+CFPS    EEB0;Automatització i robòtica industrial;0;2000;08/02/13;;EEB0011;MP11. Formació i orientació laboral;99;99;08/02/13;;EEB001102;UF2. Prevenció de riscos laborals;33;N;N;N;N
+CFPS    EEB0;Automatització i robòtica industrial;0;2000;08/02/13;;EEB0012;MP12. Empresa i iniciativa emprenedora;66;66;08/02/13;;EEB001201;UF1. Empresa i iniciativa emprenedora;66;N;N;N;N
+CFPS    EEB0;Automatització i robòtica industrial;0;2000;08/02/13;;EEB0013;MP13. Projecte d'automatització i robòtica industrial;66;66;08/02/13;;EEB001301;UF1. Projecte d'automatització i robòtica industrial;66;N;N;N;S
+CFPS    EEB0;Automatització i robòtica industrial;0;2000;08/02/13;;EEB0014;MP14. Formació en centres de treball;350;350;08/02/13;;EEB001401;Formació en centres de treball;350;S;N;N;N
+CFPS    FMB0;Programació de la producció en fabricació mecànica;0;2000;20/02/09;;FMB0002;MP2. Definició de processos de mecanització, conformació i muntatge;99;132;14/02/11;;FMB000201;UF1. Determinació de processos ;66;N;N;N;N
+CFPS    FMB0;Programació de la producció en fabricació mecànica;0;2000;20/02/09;;FMB0002;MP2. Definició de processos de mecanització, conformació i muntatge;99;132;14/02/11;;FMB000202;UF2. Organització de processos;33;N;N;N;N
+CFPS    FMB0;Programació de la producció en fabricació mecànica;0;2000;20/02/09;;FMB0003;MP3. Mecanització per control numèric;165;198;14/02/11;;FMB000301;UF1. Programació de màquines de CNC;99;N;N;N;N
+CFPS    FMB0;Programació de la producció en fabricació mecànica;0;2000;20/02/09;;FMB0003;MP3. Mecanització per control numèric;165;198;14/02/11;;FMB000302;UF2. Preparació de màquines de CNC;33;N;N;N;N
+CFPS    FMB0;Programació de la producció en fabricació mecànica;0;2000;20/02/09;;FMB0003;MP3. Mecanització per control numèric;165;198;14/02/11;;FMB000303;UF3. Mecanització amb màquines de CNC;33;N;N;N;N
+CFPS    FMB0;Programació de la producció en fabricació mecànica;0;2000;20/02/09;;FMB0005;MP5. Programació de sistemes automàtics de fabricació mecànica;132;165;14/02/11;;FMB000501;UF1. Automatismes elèctrics, pneumàtics i hidràulics;44;N;N;N;N
+CFPS    FMB0;Programació de la producció en fabricació mecànica;0;2000;20/02/09;;FMB0005;MP5. Programació de sistemes automàtics de fabricació mecànica;132;165;14/02/11;;FMB000502;UF2. Sistemes automatitzats;66;N;N;N;N
+CFPS    FMB0;Programació de la producció en fabricació mecànica;0;2000;20/02/09;;FMB0005;MP5. Programació de sistemes automàtics de fabricació mecànica;132;165;14/02/11;;FMB000503;UF3. Programació de robots industrials;22;N;N;N;N
+CFPS    FMB0;Programació de la producció en fabricació mecànica;0;2000;20/02/09;;FMB0006;MP6. Programació de la producció;99;132;14/02/11;;FMB000601;UF1. Gestió de la producció ;77;N;N;N;N
+CFPS    FMB0;Programació de la producció en fabricació mecànica;0;2000;20/02/09;;FMB0006;MP6. Programació de la producció;99;132;14/02/11;;FMB000602;UF2. Gestió de magatzems;22;N;N;N;N
+CFPS    FMB0;Programació de la producció en fabricació mecànica;0;2000;20/02/09;;FMB0007;MP7. Execució de processos de fabricació ;231;231;14/02/11;;FMB000701;UF1. Fabricació per arrencament de ferritja i procediments especials;165;N;N;N;N
+CFPS    FMB0;Programació de la producció en fabricació mecànica;0;2000;20/02/09;;FMB0007;MP7. Execució de processos de fabricació ;231;231;14/02/11;;FMB000702;UF2. Fabricació per tall i conformació;33;N;N;N;N
+CFPS    FMB0;Programació de la producció en fabricació mecànica;0;2000;20/02/09;;FMB0007;MP7. Execució de processos de fabricació ;231;231;14/02/11;;FMB000703;UF3. Aplicació de processos de soldadura i muntatge;33;N;N;N;N
+CFPS    FMB0;Programació de la producció en fabricació mecànica;0;2000;20/02/09;;FMB0008;MP8. Materials;66;66;17/02/11;;FMB000801;UF1. Propietats dels materials;22;N;N;N;N
+CFPS    FMB0;Programació de la producció en fabricació mecànica;0;2000;20/02/09;;FMB0008;MP8. Materials;66;66;17/02/11;;FMB000802;UF2. Tractaments tèrmics en materials metàl·lics;44;N;N;N;N
+CFPS    FMB0;Programació de la producció en fabricació mecànica;0;2000;20/02/09;;FMB0009;MP9. Gestió de la qualitat, prevenció de riscos laborals i protecció ambiental;99;99;14/02/11;;FMB000901;UF1. Gestió de la qualitat ;44;N;N;N;N
+CFPS    FMB0;Programació de la producció en fabricació mecànica;0;2000;20/02/09;;FMB0009;MP9. Gestió de la qualitat, prevenció de riscos laborals i protecció ambiental;99;99;14/02/11;;FMB000902;UF2. Gestió de la prevenció de riscos laborals;33;N;N;N;N
+CFPS    FMB0;Programació de la producció en fabricació mecànica;0;2000;20/02/09;;FMB0009;MP9. Gestió de la qualitat, prevenció de riscos laborals i protecció ambiental;99;99;14/02/11;;FMB000903;UF3. Gestió de la protecció ambiental ;22;N;N;N;N
+CFPS    FMB0;Programació de la producció en fabricació mecànica;0;2000;20/02/09;;FMB0010;MP10. Verificació de productes ;132;132;14/02/11;;FMB001001;UF1. Metrologia;66;N;N;N;N
+CFPS    FMB0;Programació de la producció en fabricació mecànica;0;2000;20/02/09;;FMB0010;MP10. Verificació de productes ;132;132;14/02/11;;FMB001002;UF2. Assajos mecànics, metal·logràfics i no destructius;33;N;N;N;N
+CFPS    FMB0;Programació de la producció en fabricació mecànica;0;2000;20/02/09;;FMB0010;MP10. Verificació de productes ;132;132;14/02/11;;FMB001003;UF3. Control de processos ;33;N;N;N;N
+CFPS    FMB0;Programació de la producció en fabricació mecànica;0;2000;20/02/09;;FMB0011;MP11. Formació i orientació laboral;99;99;14/02/11;;FMB001101;UF1. Incorporació al treball;66;N;N;N;N
+CFPS    FMB0;Programació de la producció en fabricació mecànica;0;2000;20/02/09;;FMB0011;MP11. Formació i orientació laboral;99;99;14/02/11;;FMB001102;UF2. Prevenció de riscos laborals;33;N;N;N;N
+CFPS    FMB0;Programació de la producció en fabricació mecànica;0;2000;20/02/09;;FMB0012;MP12. Empresa i iniciativa emprenedora;66;66;14/02/11;;FMB001201;UF1. Empresa i iniciativa emprenedora;66;N;N;N;N
+CFPS    FMB0;Programació de la producció en fabricació mecànica;0;2000;20/02/09;;FMB0013;MP13. Projecte de fabricació de productes mecànics;99;99;14/02/11;;FMB001301;UF1. Projecte de fabricació de productes mecànics;99;N;N;N;S
+CFPS    FMB0;Programació de la producció en fabricació mecànica;0;2000;20/02/09;;FMB0014;MP14. Formació en centres de treball;350;350;14/02/11;;FMB001401;Formació en centres de treball;350;S;N;N;N
+CFPS    FMB0;Programació de la producció en fabricació mecànica;0;2000;20/02/09;;FMB0015;MP1. Interpretació gràfica;99;132;14/02/11;;FMB001501;UF1. Interpretació i normalització gràfica;33;N;N;N;N
+CFPS    FMB0;Programació de la producció en fabricació mecànica;0;2000;20/02/09;;FMB0015;MP1. Interpretació gràfica;99;132;14/02/11;;FMB001502;UF2. Disseny assistit per ordinador (CAD);66;N;N;N;N
+CFPS    FMB0;Programació de la producció en fabricació mecànica;0;2000;20/02/09;;FMB0016;MP4.Fabricació assistida per ordinador (CAM);99;99;14/02/11;;FMB001601;UF1. CAD/CAM;66;N;N;N;N
+CFPS    FMB0;Programació de la producció en fabricació mecànica;0;2000;20/02/09;;FMB0016;MP4.Fabricació assistida per ordinador (CAM);99;99;14/02/11;;FMB001602;UF2. Organització i ajustatge de la mecanització;33;N;N;N;N
+CFPS    FMB1;Programació de la producció en fabricació mecànica (motlles i matrius);B1;2000;30/08/17;;FMB1001;MP1. Interpretació gràfica;132;132;30/08/17;;FMB100101;UF1. Interpretació i normalització gràfica;33;N;N;N;N
+CFPS    FMB1;Programació de la producció en fabricació mecànica (motlles i matrius);B1;2000;30/08/17;;FMB1001;MP1. Interpretació gràfica;132;132;30/08/17;;FMB100102;UF2. Disseny assistit per ordinador (CAD);66;N;N;N;N
+CFPS    FMB1;Programació de la producció en fabricació mecànica (motlles i matrius);B1;2000;30/08/17;;FMB1002;MP2. Definició de processos de mecanització, conformació i muntatge;99;99;31/08/17;;FMB100201;UF1. Determinació de processos;66;N;N;N;N
+CFPS    FMB1;Programació de la producció en fabricació mecànica (motlles i matrius);B1;2000;30/08/17;;FMB1002;MP2. Definició de processos de mecanització, conformació i muntatge;99;99;31/08/17;;FMB100202;UF2. Organització de processos;33;N;N;N;N
+CFPS    FMB1;Programació de la producció en fabricació mecànica (motlles i matrius);B1;2000;30/08/17;;FMB1003;MP3. Mecanització per control numèric;165;198;31/08/17;;FMB100301;UF1. Programació de màquines de CNC;99;N;N;N;N
+CFPS    FMB1;Programació de la producció en fabricació mecànica (motlles i matrius);B1;2000;30/08/17;;FMB1003;MP3. Mecanització per control numèric;165;198;31/08/17;;FMB100302;UF2. Preparació de màquines de CNC;33;N;N;N;N
+CFPS    FMB1;Programació de la producció en fabricació mecànica (motlles i matrius);B1;2000;30/08/17;;FMB1003;MP3. Mecanització per control numèric;165;198;31/08/17;;FMB100303;UF3. Mecanització amb màquines de CNC;33;N;N;N;N
+CFPS    FMB1;Programació de la producció en fabricació mecànica (motlles i matrius);B1;2000;30/08/17;;FMB1004;MP4. Fabricació assistida per ordinador (CAM);66;66;31/08/17;;FMB100401;UF1. CAD/CAM;33;N;N;N;N
+CFPS    FMB1;Programació de la producció en fabricació mecànica (motlles i matrius);B1;2000;30/08/17;;FMB1004;MP4. Fabricació assistida per ordinador (CAM);66;66;31/08/17;;FMB100402;UF2. Organització i ajustatge de la mecanització;33;N;N;N;N
+CFPS    FMB1;Programació de la producció en fabricació mecànica (motlles i matrius);B1;2000;30/08/17;;FMB1005;MP5. Programació de sistemes automàtics de fabricació mecànica;132;132;31/08/17;;FMB100501;UF1. Automatismes elèctrics, pneumàtics i hidràulics;44;N;N;N;N
+CFPS    FMB1;Programació de la producció en fabricació mecànica (motlles i matrius);B1;2000;30/08/17;;FMB1005;MP5. Programació de sistemes automàtics de fabricació mecànica;132;132;31/08/17;;FMB100502;UF2. Sistemes automatitzats;66;N;N;N;N
+CFPS    FMB1;Programació de la producció en fabricació mecànica (motlles i matrius);B1;2000;30/08/17;;FMB1005;MP5. Programació de sistemes automàtics de fabricació mecànica;132;132;31/08/17;;FMB100503;UF3. Programació de robots industrials;22;N;N;N;N
+CFPS    FMB1;Programació de la producció en fabricació mecànica (motlles i matrius);B1;2000;30/08/17;;FMB1006;MP6. Programació de la producció;66;66;31/08/17;;FMB100601;UF1. Gestió de la producció;44;N;N;N;N
+CFPS    FMB1;Programació de la producció en fabricació mecànica (motlles i matrius);B1;2000;30/08/17;;FMB1006;MP6. Programació de la producció;66;66;31/08/17;;FMB100602;UF2. Gestió de magatzems;22;N;N;N;N
+CFPS    FMB1;Programació de la producció en fabricació mecànica (motlles i matrius);B1;2000;30/08/17;;FMB1007;MP7. Execució de processos de fabricació;231;231;31/08/17;;FMB100701;UF1. Fabricació per arrencament de ferritja i procediments especials;165;N;N;N;N
+CFPS    FMB1;Programació de la producció en fabricació mecànica (motlles i matrius);B1;2000;30/08/17;;FMB1007;MP7. Execució de processos de fabricació;231;231;31/08/17;;FMB100702;UF2. Fabricació per tall i conformació;33;N;N;N;N
+CFPS    FMB1;Programació de la producció en fabricació mecànica (motlles i matrius);B1;2000;30/08/17;;FMB1007;MP7. Execució de processos de fabricació;231;231;31/08/17;;FMB100703;UF3. Aplicació de processos de soldadura i muntatge;33;N;N;N;N
+CFPS    FMB1;Programació de la producció en fabricació mecànica (motlles i matrius);B1;2000;30/08/17;;FMB1008;MP8. Materials;66;66;31/08/17;;FMB100801;UF1. Propietats dels materials;22;N;N;N;N
+CFPS    FMB1;Programació de la producció en fabricació mecànica (motlles i matrius);B1;2000;30/08/17;;FMB1008;MP8. Materials;66;66;31/08/17;;FMB100802;UF2. Tractaments tèrmics en materials metàl·lics;44;N;N;N;N
+CFPS    FMB1;Programació de la producció en fabricació mecànica (motlles i matrius);B1;2000;30/08/17;;FMB1009;MP9. Gestió de la qualitat, prevenció de riscos laborals i protecció ambiental;99;99;31/08/17;;FMB100901;UF 1: gestió de la qualitat;44;N;N;N;N
+CFPS    FMB1;Programació de la producció en fabricació mecànica (motlles i matrius);B1;2000;30/08/17;;FMB1009;MP9. Gestió de la qualitat, prevenció de riscos laborals i protecció ambiental;99;99;31/08/17;;FMB100902;UF2. Gestió de la prevenció de riscos laboral;33;N;N;N;N
+CFPS    FMB1;Programació de la producció en fabricació mecànica (motlles i matrius);B1;2000;30/08/17;;FMB1009;MP9. Gestió de la qualitat, prevenció de riscos laborals i protecció ambiental;99;99;31/08/17;;FMB100903;UF3. Gestió de la protecció ambiental;22;N;N;N;N
+CFPS    FMB1;Programació de la producció en fabricació mecànica (motlles i matrius);B1;2000;30/08/17;;FMB1010;MP10. Verificació de productes;99;99;31/08/17;;FMB101001;UF1. Metrologia;44;N;N;N;N
+CFPS    FMB1;Programació de la producció en fabricació mecànica (motlles i matrius);B1;2000;30/08/17;;FMB1010;MP10. Verificació de productes;99;99;31/08/17;;FMB101002;UF2. Assajos mecànics, metal·logràfics i no destructiu;33;N;N;N;N
+CFPS    FMB1;Programació de la producció en fabricació mecànica (motlles i matrius);B1;2000;30/08/17;;FMB1010;MP10. Verificació de productes;99;99;31/08/17;;FMB101003;UF3. Control de processos;22;N;N;N;N
+CFPS    FMB1;Programació de la producció en fabricació mecànica (motlles i matrius);B1;2000;30/08/17;;FMB1011;MP11. Formació i orientació laboral;99;99;31/08/17;;FMB101101;UF1. Incorporació al treball;66;N;N;N;N
+CFPS    FMB1;Programació de la producció en fabricació mecànica (motlles i matrius);B1;2000;30/08/17;;FMB1011;MP11. Formació i orientació laboral;99;99;31/08/17;;FMB101102;UF2. Prevenció de riscos laboral;33;N;N;N;N
+CFPS    FMB1;Programació de la producció en fabricació mecànica (motlles i matrius);B1;2000;30/08/17;;FMB1012;MP12. Empresa i inciativa emprenedora;66;66;31/08/17;;FMB101201;UF1. Empresa i iniciativa emprenedora;66;N;N;N;N
+CFPS    FMB1;Programació de la producció en fabricació mecànica (motlles i matrius);B1;2000;30/08/17;;FMB1013;MP13. Projecte de fabricació de productes mecànics;33;33;31/08/17;;FMB101301;UF1. Projecte de fabricació de productes mecànic;33;N;N;N;S
+CFPS    FMB1;Programació de la producció en fabricació mecànica (motlles i matrius);B1;2000;30/08/17;;FMB1014;MP14. Formació en centres de treball;350;350;31/08/17;;FMB101401;Formació en centres de treball;350;S;N;N;N
+CFPS    FMB1;Programació de la producció en fabricació mecànica (motlles i matrius);B1;2000;30/08/17;;FMB1015;MP15. Disseny industrial per procés de xapa i estampació;99;99;31/08/17;;FMB101501;UF1. Anàlisi per el disseny d'estris de processat de xapa i estampació;33;N;N;N;N
+CFPS    FMB1;Programació de la producció en fabricació mecànica (motlles i matrius);B1;2000;30/08/17;;FMB1015;MP15. Disseny industrial per procés de xapa i estampació;99;99;31/08/17;;FMB101502;UF2. Disseny d¿útils de processat de xapa i estampació;66;N;N;N;N
+CFPS    FMB1;Programació de la producció en fabricació mecànica (motlles i matrius);B1;2000;30/08/17;;FMB1016;MP16. Disseny de motllos per a productes polimèrics;99;99;31/08/17;;FMB101601;UF1. Anàlisis per al disseny de motlles de polímers;22;N;N;N;N
+CFPS    FMB1;Programació de la producció en fabricació mecànica (motlles i matrius);B1;2000;30/08/17;;FMB1016;MP16. Disseny de motllos per a productes polimèrics;99;99;31/08/17;;FMB101602;UF2. Disseny de motlles de polímers ;77;N;N;N;N
+CFPS    FMB1;Programació de la producció en fabricació mecànica (motlles i matrius);B1;2000;30/08/17;;FMB1017;MP17. Execució de processos de transformació de materials;99;99;31/08/17;;FMB101701;UF1. Manipulació d'estris de transformació de materials;18;N;N;N;N
+CFPS    FMB1;Programació de la producció en fabricació mecànica (motlles i matrius);B1;2000;30/08/17;;FMB1017;MP17. Execució de processos de transformació de materials;99;99;31/08/17;;FMB101702;UF2. Emmotllament tancat de termoplàstics;50;N;N;N;N
+CFPS    FMB1;Programació de la producció en fabricació mecànica (motlles i matrius);B1;2000;30/08/17;;FMB1017;MP17. Execució de processos de transformació de materials;99;99;31/08/17;;FMB101703;UF3. Emmotllament tancat de termostables i elastòmers;20;N;N;N;N
+CFPS    FMB1;Programació de la producció en fabricació mecànica (motlles i matrius);B1;2000;30/08/17;;FMB1017;MP17. Execució de processos de transformació de materials;99;99;31/08/17;;FMB101704;UF4. Emmotllament obert i fabricació additiva;11;N;N;N;N
+CFPS    ICA0;Administració de sistemes informàtics en xarxa;0;2000;28/05/10;;ICA0001;MP1. Implantació de sistemes operatius;198;231;17/02/11;;ICA000101;UF1. Instal·lació, configuració i explotació del sistema informàtic;60;N;N;N;N
+CFPS    ICA0;Administració de sistemes informàtics en xarxa;0;2000;28/05/10;;ICA0001;MP1. Implantació de sistemes operatius;198;231;17/02/11;;ICA000102;UF2. Gestió de la informació i de recursos en una xarxa;80;N;N;N;N
+CFPS    ICA0;Administració de sistemes informàtics en xarxa;0;2000;28/05/10;;ICA0001;MP1. Implantació de sistemes operatius;198;231;17/02/11;;ICA000103;UF3. Implantació de programari específic ;25;N;N;N;N
+CFPS    ICA0;Administració de sistemes informàtics en xarxa;0;2000;28/05/10;;ICA0001;MP1. Implantació de sistemes operatius;198;231;17/02/11;;ICA000104;UF4. Seguretat, rendiment i recursos;33;N;N;N;N
+CFPS    ICA0;Administració de sistemes informàtics en xarxa;0;2000;28/05/10;;ICA0002;MP2. Gestió de bases de dades;132;165;17/02/11;;ICA000201;UF1. Introducció a les bases de dades;33;N;N;N;N
+CFPS    ICA0;Administració de sistemes informàtics en xarxa;0;2000;28/05/10;;ICA0002;MP2. Gestió de bases de dades;132;165;17/02/11;;ICA000202;UF2. Llenguatges SQL: DML i DDL;66;N;N;N;N
+CFPS    ICA0;Administració de sistemes informàtics en xarxa;0;2000;28/05/10;;ICA0002;MP2. Gestió de bases de dades;132;165;17/02/11;;ICA000203;UF3. Assegurament de la informació;33;N;N;N;N
+CFPS    ICA0;Administració de sistemes informàtics en xarxa;0;2000;28/05/10;;ICA0003;MP3. Programació bàsica;165;165;17/02/11;;ICA000301;UF1. Programació estructurada;85;N;N;N;N
+CFPS    ICA0;Administració de sistemes informàtics en xarxa;0;2000;28/05/10;;ICA0003;MP3. Programació bàsica;165;165;17/02/11;;ICA000302;UF2. Disseny modular;50;N;N;N;N
+CFPS    ICA0;Administració de sistemes informàtics en xarxa;0;2000;28/05/10;;ICA0003;MP3. Programació bàsica;165;165;17/02/11;;ICA000303;UF3. Fonaments de gestió de fitxers;30;N;N;N;N
+CFPS    ICA0;Administració de sistemes informàtics en xarxa;0;2000;28/05/10;;ICA0004;MP4. Llenguatges de marques i sistemes de gestió d'informació;99;99;17/02/11;;ICA000401;UF1. Programació amb XML;45;N;N;N;N
+CFPS    ICA0;Administració de sistemes informàtics en xarxa;0;2000;28/05/10;;ICA0004;MP4. Llenguatges de marques i sistemes de gestió d'informació;99;99;17/02/11;;ICA000402;UF2. Àmbits d'aplicació de l'XML;27;N;N;N;N
+CFPS    ICA0;Administració de sistemes informàtics en xarxa;0;2000;28/05/10;;ICA0004;MP4. Llenguatges de marques i sistemes de gestió d'informació;99;99;17/02/11;;ICA000404;UF3. Sistemes de gestió d'informació empresarial;27;N;N;N;N
+CFPS    ICA0;Administració de sistemes informàtics en xarxa;0;2000;28/05/10;;ICA0005;MP5. Fonaments de maquinari;66;99;17/02/11;;ICA000501;UF1. Arquitectura de sistemes ;22;N;N;N;N
+CFPS    ICA0;Administració de sistemes informàtics en xarxa;0;2000;28/05/10;;ICA0005;MP5. Fonaments de maquinari;66;99;17/02/11;;ICA000502;UF2. Instal·lació, configuració i recuperació de programari;22;N;N;N;N
+CFPS    ICA0;Administració de sistemes informàtics en xarxa;0;2000;28/05/10;;ICA0005;MP5. Fonaments de maquinari;66;99;17/02/11;;ICA000503;UF3. Implantació i manteniment de CPD;22;N;N;N;N
+CFPS    ICA0;Administració de sistemes informàtics en xarxa;0;2000;28/05/10;;ICA0006;MP6. Administració de sistemes operatius;99;132;17/02/11;;ICA000601;UF1. Administració avançada de sistemes operatius;70;N;N;N;N
+CFPS    ICA0;Administració de sistemes informàtics en xarxa;0;2000;28/05/10;;ICA0006;MP6. Administració de sistemes operatius;99;132;17/02/11;;ICA000602;UF2. Automatització de tasques i llenguatges de guions;29;N;N;N;N
+CFPS    ICA0;Administració de sistemes informàtics en xarxa;0;2000;28/05/10;;ICA0007;MP7. Planificació i administració de xarxes;132;165;17/02/11;;ICA000701;UF1. Introducció a les xarxes;44;N;N;N;N
+CFPS    ICA0;Administració de sistemes informàtics en xarxa;0;2000;28/05/10;;ICA0007;MP7. Planificació i administració de xarxes;132;165;17/02/11;;ICA000702;UF2. Administració de dispositius de xarxa;44;N;N;N;N
+CFPS    ICA0;Administració de sistemes informàtics en xarxa;0;2000;28/05/10;;ICA0007;MP7. Planificació i administració de xarxes;132;165;17/02/11;;ICA000703;UF3. Administració avançada de xarxes;44;N;N;N;N
+CFPS    ICA0;Administració de sistemes informàtics en xarxa;0;2000;28/05/10;;ICA0008;MP8. Serveis de xarxa i internet;99;99;17/02/11;;ICA000801;UF1. Serveis de noms i configuració automàtica;25;N;N;N;N
+CFPS    ICA0;Administració de sistemes informàtics en xarxa;0;2000;28/05/10;;ICA0008;MP8. Serveis de xarxa i internet;99;99;17/02/11;;ICA000802;UF2. Serveis web i de transferència de fitxers;25;N;N;N;N
+CFPS    ICA0;Administració de sistemes informàtics en xarxa;0;2000;28/05/10;;ICA0008;MP8. Serveis de xarxa i internet;99;99;17/02/11;;ICA000803;UF3. Correu electrònic i missatgeria;25;N;N;N;N
+CFPS    ICA0;Administració de sistemes informàtics en xarxa;0;2000;28/05/10;;ICA0008;MP8. Serveis de xarxa i internet;99;99;17/02/11;;ICA000804;UF4. Serveis d'àudio i vídeo;24;N;N;N;N
+CFPS    ICA0;Administració de sistemes informàtics en xarxa;0;2000;28/05/10;;ICA0009;MP9. Implantació d'aplicacions web ;66;66;17/02/11;;ICA000901;UF1. Llenguatges de guions de servidor;33;N;N;N;N
+CFPS    ICA0;Administració de sistemes informàtics en xarxa;0;2000;28/05/10;;ICA0009;MP9. Implantació d'aplicacions web ;66;66;17/02/11;;ICA000902;UF2. Implantació de gestors de continguts;33;N;N;N;N
+CFPS    ICA0;Administració de sistemes informàtics en xarxa;0;2000;28/05/10;;ICA0010;MP10. Administració de sistemes gestors de bases de dades;99;99;17/02/11;;ICA001001;UF1. Llenguatges SQL: DCL i extensió procedimental;66;N;N;N;N
+CFPS    ICA0;Administració de sistemes informàtics en xarxa;0;2000;28/05/10;;ICA0010;MP10. Administració de sistemes gestors de bases de dades;99;99;17/02/11;;ICA001002;UF2. Instal·lació i ajustament de SGBD corporatiu;33;N;N;N;N
+CFPS    ICA0;Administració de sistemes informàtics en xarxa;0;2000;28/05/10;;ICA0011;MP11. Seguretat i alta disponibilitat ;99;99;17/02/11;;ICA001101;UF1. Seguretat física, lògica i legislació ;24;N;N;N;N
+CFPS    ICA0;Administració de sistemes informàtics en xarxa;0;2000;28/05/10;;ICA0011;MP11. Seguretat i alta disponibilitat ;99;99;17/02/11;;ICA001102;UF2. Seguretat activa i accés remot;24;N;N;N;N
+CFPS    ICA0;Administració de sistemes informàtics en xarxa;0;2000;28/05/10;;ICA0011;MP11. Seguretat i alta disponibilitat ;99;99;17/02/11;;ICA001103;UF3. Tallafocs i servidors intermediaris;27;N;N;N;N
+CFPS    ICA0;Administració de sistemes informàtics en xarxa;0;2000;28/05/10;;ICA0011;MP11. Seguretat i alta disponibilitat ;99;99;17/02/11;;ICA001104;UF4. Alta disponibilitat;24;N;N;N;N
+CFPS    ICA0;Administració de sistemes informàtics en xarxa;0;2000;28/05/10;;ICA0012;MP12. Formació i orientació laboral ;99;99;17/02/11;;ICA001201;UF1. Incorporació al treball;66;N;N;N;N
+CFPS    ICA0;Administració de sistemes informàtics en xarxa;0;2000;28/05/10;;ICA0012;MP12. Formació i orientació laboral ;99;99;17/02/11;;ICA001202;UF2. Prevenció de riscos laborals;33;N;N;N;N
+CFPS    ICA0;Administració de sistemes informàtics en xarxa;0;2000;28/05/10;;ICA0013;MP13. Empresa i iniciativa emprenedora;66;66;17/02/11;;ICA001301;UF1. Empresa i iniciativa emprenedora;66;N;N;N;N
+CFPS    ICA0;Administració de sistemes informàtics en xarxa;0;2000;28/05/10;;ICA0014;MP14. Projecte d'administració de sistemes informàtics en xarxa;99;99;17/02/11;;ICA001401;UF1. Projecte d'administració de sistemes informàtics en xarxa;99;N;N;N;S
+CFPS    ICA0;Administració de sistemes informàtics en xarxa;0;2000;28/05/10;;ICA0015;MP15. Formació en centres de treball;317;317;17/02/11;;ICA001501;Formació en centres de treball;317;S;N;N;N
+CFPS    ICA1;Administració de sistemes informàtics en xarxa (ciberseguretat);A1;2000;30/08/17;;ICA1001;MP1. Implantació de sistemes operatius;198;198;30/08/17;;ICA100101;UF1. Instal·lació, configuració i explotació del sistema informàtic;60;N;N;N;N
+CFPS    ICA1;Administració de sistemes informàtics en xarxa (ciberseguretat);A1;2000;30/08/17;;ICA1001;MP1. Implantació de sistemes operatius;198;198;30/08/17;;ICA100102;UF2. Gestió de la informació i de recursos en una xarxa;80;N;N;N;N
+CFPS    ICA1;Administració de sistemes informàtics en xarxa (ciberseguretat);A1;2000;30/08/17;;ICA1001;MP1. Implantació de sistemes operatius;198;198;30/08/17;;ICA100103;UF3. Implantació de programari específic;25;N;N;N;N
+CFPS    ICA1;Administració de sistemes informàtics en xarxa (ciberseguretat);A1;2000;30/08/17;;ICA1001;MP1. Implantació de sistemes operatius;198;198;30/08/17;;ICA100104;UF4. Seguretat, rendiment i recursos;33;N;N;N;N
+CFPS    ICA1;Administració de sistemes informàtics en xarxa (ciberseguretat);A1;2000;30/08/17;;ICA1002;MP2. Gestió de bases de dades;132;132;30/08/17;;ICA100201;UF1. Introducció a les bases de dades;33;N;N;N;N
+CFPS    ICA1;Administració de sistemes informàtics en xarxa (ciberseguretat);A1;2000;30/08/17;;ICA1002;MP2. Gestió de bases de dades;132;132;30/08/17;;ICA100202;UF2. Llenguatges SQL: DML i DDL;66;N;N;N;N
+CFPS    ICA1;Administració de sistemes informàtics en xarxa (ciberseguretat);A1;2000;30/08/17;;ICA1002;MP2. Gestió de bases de dades;132;132;30/08/17;;ICA100203;UF3. Assegurament de la informació;33;N;N;N;N
+CFPS    ICA1;Administració de sistemes informàtics en xarxa (ciberseguretat);A1;2000;30/08/17;;ICA1003;MP3. Programació bàsica;132;132;30/08/17;;ICA100301;UF1. Programació estructurada;68;N;N;N;N
+CFPS    ICA1;Administració de sistemes informàtics en xarxa (ciberseguretat);A1;2000;30/08/17;;ICA1003;MP3. Programació bàsica;132;132;30/08/17;;ICA100302;UF2. Disseny modular;40;N;N;N;N
+CFPS    ICA1;Administració de sistemes informàtics en xarxa (ciberseguretat);A1;2000;30/08/17;;ICA1003;MP3. Programació bàsica;132;132;30/08/17;;ICA100303;UF3. Fonaments de gestió de fitxers;24;N;N;N;N
+CFPS    ICA1;Administració de sistemes informàtics en xarxa (ciberseguretat);A1;2000;30/08/17;;ICA1004;MP4. Llenguatges de marques i sistemes de gestió d'informació;99;99;30/08/17;;ICA100401;UF1. Programació amb XML;45;N;N;N;N
+CFPS    ICA1;Administració de sistemes informàtics en xarxa (ciberseguretat);A1;2000;30/08/17;;ICA1004;MP4. Llenguatges de marques i sistemes de gestió d'informació;99;99;30/08/17;;ICA100402;UF2. Àmbits d'aplicació de l'XML;27;N;N;N;N
+CFPS    ICA1;Administració de sistemes informàtics en xarxa (ciberseguretat);A1;2000;30/08/17;;ICA1004;MP4. Llenguatges de marques i sistemes de gestió d'informació;99;99;30/08/17;;ICA100403;UF3. Sistemes de gestió d'informació empresarial;27;N;N;N;N
+CFPS    ICA1;Administració de sistemes informàtics en xarxa (ciberseguretat);A1;2000;30/08/17;;ICA1005;MP5. Fonaments de maquinari;66;66;30/08/17;;ICA100501;UF1. Arquitectura de sistemes;22;N;N;N;N
+CFPS    ICA1;Administració de sistemes informàtics en xarxa (ciberseguretat);A1;2000;30/08/17;;ICA1005;MP5. Fonaments de maquinari;66;66;30/08/17;;ICA100502;UF2. Instal·lació, configuració i recuperació de programari;22;N;N;N;N
+CFPS    ICA1;Administració de sistemes informàtics en xarxa (ciberseguretat);A1;2000;30/08/17;;ICA1005;MP5. Fonaments de maquinari;66;66;30/08/17;;ICA100503;UF3. Implantació i manteniment de CPD;22;N;N;N;N
+CFPS    ICA1;Administració de sistemes informàtics en xarxa (ciberseguretat);A1;2000;30/08/17;;ICA1006;MP6. Administració de sistemes operatius;99;99;30/08/17;;ICA100601;UF1. Administració avançada de sistemes operatius;70;N;N;N;N
+CFPS    ICA1;Administració de sistemes informàtics en xarxa (ciberseguretat);A1;2000;30/08/17;;ICA1006;MP6. Administració de sistemes operatius;99;99;30/08/17;;ICA100602;UF2. Automatització de tasques i llenguatges de guions;29;N;N;N;N
+CFPS    ICA1;Administració de sistemes informàtics en xarxa (ciberseguretat);A1;2000;30/08/17;;ICA1007;MP7. Planificació i administració de xarxes;132;132;30/08/17;;ICA100701;UF1. Introducció a les xarxes;44;N;N;N;N
+CFPS    ICA1;Administració de sistemes informàtics en xarxa (ciberseguretat);A1;2000;30/08/17;;ICA1007;MP7. Planificació i administració de xarxes;132;132;30/08/17;;ICA100702;UF2. Administració de dispositius de xarxa;44;N;N;N;N
+CFPS    ICA1;Administració de sistemes informàtics en xarxa (ciberseguretat);A1;2000;30/08/17;;ICA1007;MP7. Planificació i administració de xarxes;132;132;30/08/17;;ICA100703;UF3. Administració avançada de xarxes;44;N;N;N;N
+CFPS    ICA1;Administració de sistemes informàtics en xarxa (ciberseguretat);A1;2000;30/08/17;;ICA1008;MP8. Serveis de xarxa i internet;99;99;30/08/17;;ICA100801;UF1. Serveis de noms i configuració automàtica;25;N;N;N;N
+CFPS    ICA1;Administració de sistemes informàtics en xarxa (ciberseguretat);A1;2000;30/08/17;;ICA1008;MP8. Serveis de xarxa i internet;99;99;30/08/17;;ICA100802;UF2. Serveis web i de transferència de fitxers;25;N;N;N;N
+CFPS    ICA1;Administració de sistemes informàtics en xarxa (ciberseguretat);A1;2000;30/08/17;;ICA1008;MP8. Serveis de xarxa i internet;99;99;30/08/17;;ICA100803;UF3. Correu electrònic i missatgeria;25;N;N;N;N
+CFPS    ICA1;Administració de sistemes informàtics en xarxa (ciberseguretat);A1;2000;30/08/17;;ICA1008;MP8. Serveis de xarxa i internet;99;99;30/08/17;;ICA100804;UF4. Serveis d'àudio i vídeo;24;N;N;N;N
+CFPS    ICA1;Administració de sistemes informàtics en xarxa (ciberseguretat);A1;2000;30/08/17;;ICA1009;MP9. Implantació d'aplicacions web;66;66;30/08/17;;ICA100901;UF1. Llenguatges de guions de servidor;33;N;N;N;N
+CFPS    ICA1;Administració de sistemes informàtics en xarxa (ciberseguretat);A1;2000;30/08/17;;ICA1009;MP9. Implantació d'aplicacions web;66;66;30/08/17;;ICA100902;UF2. Implantació de gestors de continguts;33;N;N;N;N
+CFPS    ICA1;Administració de sistemes informàtics en xarxa (ciberseguretat);A1;2000;30/08/17;;ICA1010;MP10. Administració de sistemes gestors de bases de dades;99;99;30/08/17;;ICA101001;UF1. Llenguatges SQL: DCL i extensió procedimental;66;N;N;N;N
+CFPS    ICA1;Administració de sistemes informàtics en xarxa (ciberseguretat);A1;2000;30/08/17;;ICA1010;MP10. Administració de sistemes gestors de bases de dades;99;99;30/08/17;;ICA101002;UF2. Instal·lació i ajustament de SGBD corporatiu;33;N;N;N;N
+CFPS    ICA1;Administració de sistemes informàtics en xarxa (ciberseguretat);A1;2000;30/08/17;;ICA1011;MP11. Seguretat i alta disponibilitat;99;99;30/08/17;;ICA101101;UF1. Seguretat física, lògica i legislació;24;N;N;N;N
+CFPS    ICA1;Administració de sistemes informàtics en xarxa (ciberseguretat);A1;2000;30/08/17;;ICA1011;MP11. Seguretat i alta disponibilitat;99;99;30/08/17;;ICA101102;UF2. Seguretat activa i accés remot;24;N;N;N;N
+CFPS    ICA1;Administració de sistemes informàtics en xarxa (ciberseguretat);A1;2000;30/08/17;;ICA1011;MP11. Seguretat i alta disponibilitat;99;99;30/08/17;;ICA101103;UF3. Tallafocs i servidors intermediaris;27;N;N;N;N
+CFPS    ICA1;Administració de sistemes informàtics en xarxa (ciberseguretat);A1;2000;30/08/17;;ICA1011;MP11. Seguretat i alta disponibilitat;99;99;30/08/17;;ICA101104;UF4. Alta disponibilitat;24;N;N;N;N
+CFPS    ICA1;Administració de sistemes informàtics en xarxa (ciberseguretat);A1;2000;30/08/17;;ICA1012;MP12. Formació i orientació laboral;99;99;30/08/17;;ICA101201;UF1. Incorporació al treball;66;N;N;N;N
+CFPS    ICA1;Administració de sistemes informàtics en xarxa (ciberseguretat);A1;2000;30/08/17;;ICA1012;MP12. Formació i orientació laboral;99;99;30/08/17;;ICA101202;UF2. Prevenció de riscos laborals;33;N;N;N;N
+CFPS    ICA1;Administració de sistemes informàtics en xarxa (ciberseguretat);A1;2000;30/08/17;;ICA1013;MP13. Empresa i iniciativa emprenedora;66;66;30/08/17;;ICA101301;UF1. Empresa i iniciativa emprenedora;66;N;N;N;N
+CFPS    ICA1;Administració de sistemes informàtics en xarxa (ciberseguretat);A1;2000;30/08/17;;ICA1014;MP14. Projecte d'administració de sistemes informàtics en xarxa;66;66;30/08/17;;ICA101401;UF1. Projecte d'administració de sistemes informàtics en xarxa;66;N;N;N;N
+CFPS    ICA1;Administració de sistemes informàtics en xarxa (ciberseguretat);A1;2000;30/08/17;;ICA1015;MP15. Formació en centres de treball.;317;317;30/08/17;;ICA101501;Formació en centres de treball;317;S;N;N;N
+CFPS    ICA1;Administració de sistemes informàtics en xarxa (ciberseguretat);A1;2000;30/08/17;;ICA1016;MP16. Ciberseguretat i hacking ètic;99;99;30/08/17;;ICA101601;UF1. Hacking ètic ;66;N;N;N;N
+CFPS    ICA1;Administració de sistemes informàtics en xarxa (ciberseguretat);A1;2000;30/08/17;;ICA1016;MP16. Ciberseguretat i hacking ètic;99;99;30/08/17;;ICA101602;UF2. Ciberinteligencia i ciberseguretat;33;N;N;N;N
+CFPS    ICA1;Administració de sistemes informàtics en xarxa (ciberseguretat);A1;2000;30/08/17;;ICA1017;MP17. Seguretat en sistemes, xarxes i serveis;132;132;30/08/17;;ICA101701;UF1. Seguretat en dispositius mòbils i IoT;33;N;N;N;N
+CFPS    ICA1;Administració de sistemes informàtics en xarxa (ciberseguretat);A1;2000;30/08/17;;ICA1017;MP17. Seguretat en sistemes, xarxes i serveis;132;132;30/08/17;;ICA101702;UF2. Seguretat en serveis;33;N;N;N;N
+CFPS    ICA1;Administració de sistemes informàtics en xarxa (ciberseguretat);A1;2000;30/08/17;;ICA1017;MP17. Seguretat en sistemes, xarxes i serveis;132;132;30/08/17;;ICA101703;UF3. Seguretat en aplicacions;33;N;N;N;N
+CFPS    ICA1;Administració de sistemes informàtics en xarxa (ciberseguretat);A1;2000;30/08/17;;ICA1017;MP17. Seguretat en sistemes, xarxes i serveis;132;132;30/08/17;;ICA101704;UF4. Seguretat en xarxes;33;N;N;N;N
+CFPS    ICB0;Desenvolupament d'aplicacions multiplataforma;0;2000;28/05/10;;ICB0001;MP1. Sistemes informàtics;165;198;16/05/11;;ICB000101;UF1. Instal·lació, configuració i explotació del sistema informàtic;60;N;N;N;N
+CFPS    ICB0;Desenvolupament d'aplicacions multiplataforma;0;2000;28/05/10;;ICB0001;MP1. Sistemes informàtics;165;198;16/05/11;;ICB000102;UF2. Gestió de la informació i de recursos en una xarxa;80;N;N;N;N
+CFPS    ICB0;Desenvolupament d'aplicacions multiplataforma;0;2000;28/05/10;;ICB0001;MP1. Sistemes informàtics;165;198;16/05/11;;ICB000103;UF3. Implantació de programari específic;25;N;N;N;N
+CFPS    ICB0;Desenvolupament d'aplicacions multiplataforma;0;2000;28/05/10;;ICB0002;MP2. Bases de dades;198;231;03/05/13;;ICB000201;UF1. Introducció a les bases de dades;33;N;N;N;N
+CFPS    ICB0;Desenvolupament d'aplicacions multiplataforma;0;2000;28/05/10;;ICB0002;MP2. Bases de dades;198;231;03/05/13;;ICB000202;UF2. Llenguatges SQL: DML i DDL;66;N;N;N;N
+CFPS    ICB0;Desenvolupament d'aplicacions multiplataforma;0;2000;28/05/10;;ICB0002;MP2. Bases de dades;198;231;03/05/13;;ICB000203;UF3. Llenguatge SQL: DCL i extensió procedimental;66;N;N;N;N
+CFPS    ICB0;Desenvolupament d'aplicacions multiplataforma;0;2000;28/05/10;;ICB0002;MP2. Bases de dades;198;231;03/05/13;;ICB000204;UF4. Bases de dades objecte-relacionals;33;N;N;N;N
+CFPS    ICB0;Desenvolupament d'aplicacions multiplataforma;0;2000;28/05/10;;ICB0003;MP3. Programació;264;297;03/05/13;;ICB000301;UF1. Programació estructurada;85;N;N;N;N
+CFPS    ICB0;Desenvolupament d'aplicacions multiplataforma;0;2000;28/05/10;;ICB0003;MP3. Programació;264;297;03/05/13;;ICB000302;UF2. Disseny modular;50;N;N;N;N
+CFPS    ICB0;Desenvolupament d'aplicacions multiplataforma;0;2000;28/05/10;;ICB0003;MP3. Programació;264;297;03/05/13;;ICB000303;UF3. Fonaments de gestió de fitxers;30;N;N;N;N
+CFPS    ICB0;Desenvolupament d'aplicacions multiplataforma;0;2000;28/05/10;;ICB0003;MP3. Programació;264;297;03/05/13;;ICB000304;UF4. Programació orientada a objectes (POO). Fonaments;35;N;N;N;N
+CFPS    ICB0;Desenvolupament d'aplicacions multiplataforma;0;2000;28/05/10;;ICB0003;MP3. Programació;264;297;03/05/13;;ICB000305;UF5. POO. Llibreries de classes fonamentals;35;N;N;N;N
+CFPS    ICB0;Desenvolupament d'aplicacions multiplataforma;0;2000;28/05/10;;ICB0003;MP3. Programació;264;297;03/05/13;;ICB000306;UF6. POO. Introducció a la persistència en BD;29;N;N;N;N
+CFPS    ICB0;Desenvolupament d'aplicacions multiplataforma;0;2000;28/05/10;;ICB0004;MP4. Llenguatges de marques i sistemes de gestió de la informació;99;99;03/05/13;;ICB000401;UF1. Programació amb XML;45;N;N;N;N
+CFPS    ICB0;Desenvolupament d'aplicacions multiplataforma;0;2000;28/05/10;;ICB0004;MP4. Llenguatges de marques i sistemes de gestió de la informació;99;99;03/05/13;;ICB000402;UF2. Àmbits d'aplicació de l'XML;27;N;N;N;N
+CFPS    ICB0;Desenvolupament d'aplicacions multiplataforma;0;2000;28/05/10;;ICB0004;MP4. Llenguatges de marques i sistemes de gestió de la informació;99;99;03/05/13;;ICB000404;UF3. Sistemes de gestió d'informació empresarial;27;N;N;N;N
+CFPS    ICB0;Desenvolupament d'aplicacions multiplataforma;0;2000;28/05/10;;ICB0005;MP5. Entorns de desenvolupament.;66;66;03/05/13;;ICB000501;UF1. Desenvolupament de programari;20;N;N;N;N
+CFPS    ICB0;Desenvolupament d'aplicacions multiplataforma;0;2000;28/05/10;;ICB0005;MP5. Entorns de desenvolupament.;66;66;03/05/13;;ICB000502;UF2. Optimització del programari;20;N;N;N;N
+CFPS    ICB0;Desenvolupament d'aplicacions multiplataforma;0;2000;28/05/10;;ICB0005;MP5. Entorns de desenvolupament.;66;66;03/05/13;;ICB000503;UF3. Introducció al disseny orientat a objectes;26;N;N;N;N
+CFPS    ICB0;Desenvolupament d'aplicacions multiplataforma;0;2000;28/05/10;;ICB0006;MP6. Accés a dades;99;132;03/05/13;;ICB000601;UF1. Persistència en fitxers;24;N;N;N;N
+CFPS    ICB0;Desenvolupament d'aplicacions multiplataforma;0;2000;28/05/10;;ICB0006;MP6. Accés a dades;99;132;03/05/13;;ICB000602;UF2. Persistència en BDR-BDOR-BDOO;27;N;N;N;N
+CFPS    ICB0;Desenvolupament d'aplicacions multiplataforma;0;2000;28/05/10;;ICB0006;MP6. Accés a dades;99;132;03/05/13;;ICB000603;UF3. Persistència en BD natives XML;24;N;N;N;N
+CFPS    ICB0;Desenvolupament d'aplicacions multiplataforma;0;2000;28/05/10;;ICB0006;MP6. Accés a dades;99;132;03/05/13;;ICB000604;UF4. Components d'accés a dades;24;N;N;N;N
+CFPS    ICB0;Desenvolupament d'aplicacions multiplataforma;0;2000;28/05/10;;ICB0007;MP7. Desenvolupament d'interfícies;99;99;03/05/13;;ICB000701;UF1. Disseny i implementació d'interfícies;79;N;N;N;N
+CFPS    ICB0;Desenvolupament d'aplicacions multiplataforma;0;2000;28/05/10;;ICB0007;MP7. Desenvolupament d'interfícies;99;99;03/05/13;;ICB000702;UF2. Preparació i distribució d'aplicacions;20;N;N;N;N
+CFPS    ICB0;Desenvolupament d'aplicacions multiplataforma;0;2000;28/05/10;;ICB0008;MP8. Programació multimèdia i dispositius mòbils;99;99;03/05/13;;ICB000801;UF1. Desenvolupament d'aplicacions per a dispositius mòbils;45;N;N;N;N
+CFPS    ICB0;Desenvolupament d'aplicacions multiplataforma;0;2000;28/05/10;;ICB0008;MP8. Programació multimèdia i dispositius mòbils;99;99;03/05/13;;ICB000802;UF2. Programació multimèdia;24;N;N;N;N
+CFPS    ICB0;Desenvolupament d'aplicacions multiplataforma;0;2000;28/05/10;;ICB0008;MP8. Programació multimèdia i dispositius mòbils;99;99;03/05/13;;ICB000803;UF3. Desenvolupament de jocs per a dispositius mòbils;30;N;N;N;N
+CFPS    ICB0;Desenvolupament d'aplicacions multiplataforma;0;2000;28/05/10;;ICB0009;MP9. Programació de serveis i processos;99;99;03/05/13;;ICB000901;UF1. Seguretat i criptografia;25;N;N;N;N
+CFPS    ICB0;Desenvolupament d'aplicacions multiplataforma;0;2000;28/05/10;;ICB0009;MP9. Programació de serveis i processos;99;99;03/05/13;;ICB000902;UF2. Processos i fils;37;N;N;N;N
+CFPS    ICB0;Desenvolupament d'aplicacions multiplataforma;0;2000;28/05/10;;ICB0009;MP9. Programació de serveis i processos;99;99;03/05/13;;ICB000903;UF3. Sòcols i serveis;37;N;N;N;N
+CFPS    ICB0;Desenvolupament d'aplicacions multiplataforma;0;2000;28/05/10;;ICB0010;MP10. Sistemes de gestió empresarial;66;99;03/05/13;;ICB001001;UF1. Sistemes ERP-CRM. Implantació.;33;N;N;N;N
+CFPS    ICB0;Desenvolupament d'aplicacions multiplataforma;0;2000;28/05/10;;ICB0010;MP10. Sistemes de gestió empresarial;66;99;03/05/13;;ICB001002;UF2. Sistemes ERP-CRM. Explotació i adequació.;33;N;N;N;N
+CFPS    ICB0;Desenvolupament d'aplicacions multiplataforma;0;2000;28/05/10;;ICB0011;MP11. Formació i orientació laboral;99;99;03/05/13;;ICB001101;UF1. Incorporació al treball;66;N;N;N;N
+CFPS    ICB0;Desenvolupament d'aplicacions multiplataforma;0;2000;28/05/10;;ICB0011;MP11. Formació i orientació laboral;99;99;03/05/13;;ICB001102;UF2. Prevenció de riscos laborals;33;N;N;N;N
+CFPS    ICB0;Desenvolupament d'aplicacions multiplataforma;0;2000;28/05/10;;ICB0012;MP12. Empresa i iniciativa emprenedora;66;66;03/05/13;;ICB001201;UF1. Empresa i iniciativa emprenedora;66;N;N;N;N
+CFPS    ICB0;Desenvolupament d'aplicacions multiplataforma;0;2000;28/05/10;;ICB0013;MP13. Projecte de desenvolupament d'aplicacions multiplataforma;99;99;03/05/13;;ICB001301;UF1. Projecte de desenvolupament d'aplicacions multiplataforma;99;N;N;N;S
+CFPS    ICB0;Desenvolupament d'aplicacions multiplataforma;0;2000;28/05/10;;ICB0014;MP14. Formació en centres de treball;317;317;03/05/13;;ICB001401;Formació en centres de treball;317;S;N;N;N
+CFPS    ICC0;Desenvolupament d'aplicacions web;0;2000;28/05/10;;ICC0001;MP1. Sistemes informàtics;165;198;13/05/13;;ICC000101;UF1. Instal·lació, configuració i explotació del sistema informàtic;60;N;N;N;N
+CFPS    ICC0;Desenvolupament d'aplicacions web;0;2000;28/05/10;;ICC0001;MP1. Sistemes informàtics;165;198;13/05/13;;ICC000102;UF2. Gestió de la informació i de recursos en una xarxa;80;N;N;N;N
+CFPS    ICC0;Desenvolupament d'aplicacions web;0;2000;28/05/10;;ICC0001;MP1. Sistemes informàtics;165;198;13/05/13;;ICC000103;UF3. Implantació de programari específic;25;N;N;N;N
+CFPS    ICC0;Desenvolupament d'aplicacions web;0;2000;28/05/10;;ICC0002;MP2. Bases de dades;198;231;13/05/13;;ICC000201;UF1. Introducció a les bases de dades;33;N;N;N;N
+CFPS    ICC0;Desenvolupament d'aplicacions web;0;2000;28/05/10;;ICC0002;MP2. Bases de dades;198;231;13/05/13;;ICC000202;UF2. Llenguatges SQL: DML i DDL;66;N;N;N;N
+CFPS    ICC0;Desenvolupament d'aplicacions web;0;2000;28/05/10;;ICC0002;MP2. Bases de dades;198;231;13/05/13;;ICC000203;UF3. Llenguatge SQL: DCL i extensió procedimental;66;N;N;N;N
+CFPS    ICC0;Desenvolupament d'aplicacions web;0;2000;28/05/10;;ICC0002;MP2. Bases de dades;198;231;13/05/13;;ICC000204;UF4. Bases de dades objecte-relacionals;33;N;N;N;N
+CFPS    ICC0;Desenvolupament d'aplicacions web;0;2000;28/05/10;;ICC0003;MP3. Programació;264;297;13/05/13;;ICC000301;UF1. Programació estructurada;85;N;N;N;N
+CFPS    ICC0;Desenvolupament d'aplicacions web;0;2000;28/05/10;;ICC0003;MP3. Programació;264;297;13/05/13;;ICC000302;UF2. Disseny modular;50;N;N;N;N
+CFPS    ICC0;Desenvolupament d'aplicacions web;0;2000;28/05/10;;ICC0003;MP3. Programació;264;297;13/05/13;;ICC000303;UF3. Fonaments de gestió de fitxers;30;N;N;N;N
+CFPS    ICC0;Desenvolupament d'aplicacions web;0;2000;28/05/10;;ICC0003;MP3. Programació;264;297;13/05/13;;ICC000304;UF4. Programació orientada a objectes (POO). Fonaments;35;N;N;N;N
+CFPS    ICC0;Desenvolupament d'aplicacions web;0;2000;28/05/10;;ICC0003;MP3. Programació;264;297;13/05/13;;ICC000305;UF5. POO. Llibreries de classes fonamentals;35;N;N;N;N
+CFPS    ICC0;Desenvolupament d'aplicacions web;0;2000;28/05/10;;ICC0003;MP3. Programació;264;297;13/05/13;;ICC000306;UF6. POO. Introducció a la persistència en BD;29;N;N;N;N
+CFPS    ICC0;Desenvolupament d'aplicacions web;0;2000;28/05/10;;ICC0004;MP4. Llenguatges de marques i sistemes de gestió de la informació;99;99;13/05/13;;ICC000401;UF1. Programació amb XML;45;N;N;N;N
+CFPS    ICC0;Desenvolupament d'aplicacions web;0;2000;28/05/10;;ICC0004;MP4. Llenguatges de marques i sistemes de gestió de la informació;99;99;13/05/13;;ICC000402;UF2. Àmbits d'aplicació de l'XML;27;N;N;N;N
+CFPS    ICC0;Desenvolupament d'aplicacions web;0;2000;28/05/10;;ICC0004;MP4. Llenguatges de marques i sistemes de gestió de la informació;99;99;13/05/13;;ICC000404;UF3. Sistemes de gestió d'informació empresarial;27;N;N;N;N
+CFPS    ICC0;Desenvolupament d'aplicacions web;0;2000;28/05/10;;ICC0005;MP5. Entorns de desenvolupament;66;66;13/05/13;;ICC000501;UF1. Desenvolupament de programari;20;N;N;N;N
+CFPS    ICC0;Desenvolupament d'aplicacions web;0;2000;28/05/10;;ICC0005;MP5. Entorns de desenvolupament;66;66;13/05/13;;ICC000502;UF2. Optimització de programari;20;N;N;N;N
+CFPS    ICC0;Desenvolupament d'aplicacions web;0;2000;28/05/10;;ICC0005;MP5. Entorns de desenvolupament;66;66;13/05/13;;ICC000503;UF3. Introducció al disseny orientat a objectes;26;N;N;N;N
+CFPS    ICC0;Desenvolupament d'aplicacions web;0;2000;28/05/10;;ICC0006;MP6. Desenvolupament web en entorn client;132;165;13/05/13;;ICC000601;UF1. Sintaxi del llenguatge. Objectes predefinits del llenguatge.;30;N;N;N;N
+CFPS    ICC0;Desenvolupament d'aplicacions web;0;2000;28/05/10;;ICC0006;MP6. Desenvolupament web en entorn client;132;165;13/05/13;;ICC000602;UF2. Estructures definides pel programador. Objectes.;30;N;N;N;N
+CFPS    ICC0;Desenvolupament d'aplicacions web;0;2000;28/05/10;;ICC0006;MP6. Desenvolupament web en entorn client;132;165;13/05/13;;ICC000603;UF3. Esdeveniments. Manejament de formularis. Model d'objectes del document;42;N;N;N;N
+CFPS    ICC0;Desenvolupament d'aplicacions web;0;2000;28/05/10;;ICC0006;MP6. Desenvolupament web en entorn client;132;165;13/05/13;;ICC000604;UF4. Comunicació asíncrona client-servidor ;30;N;N;N;N
+CFPS    ICC0;Desenvolupament d'aplicacions web;0;2000;28/05/10;;ICC0007;MP7. Desenvolupament web en entorn servidor;132;165;13/05/13;;ICC000701;UF1. Desenvolupament web en entorn servidor;30;N;N;N;N
+CFPS    ICC0;Desenvolupament d'aplicacions web;0;2000;28/05/10;;ICC0007;MP7. Desenvolupament web en entorn servidor;132;165;13/05/13;;ICC000702;UF2. Generació dinàmica de pàgines web;30;N;N;N;N
+CFPS    ICC0;Desenvolupament d'aplicacions web;0;2000;28/05/10;;ICC0007;MP7. Desenvolupament web en entorn servidor;132;165;13/05/13;;ICC000704;UF4. Serveis web. Pàgines dinàmiques interactives. Webs híbrids;42;N;N;N;N
+CFPS    ICC0;Desenvolupament d'aplicacions web;0;2000;28/05/10;;ICC0007;MP7. Desenvolupament web en entorn servidor;132;165;13/05/13;;ICC000706;UF3. Tècniques d'accés a dades;30;N;N;N;N
+CFPS    ICC0;Desenvolupament d'aplicacions web;0;2000;28/05/10;;ICC0008;MP8. Desplegament d'aplicacions web;99;99;13/05/13;;ICC000801;UF1. Servidors web i de transferència de fitxers;39;N;N;N;N
+CFPS    ICC0;Desenvolupament d'aplicacions web;0;2000;28/05/10;;ICC0008;MP8. Desplegament d'aplicacions web;99;99;13/05/13;;ICC000802;UF2. Servidors d'aplicacions web;20;N;N;N;N
+CFPS    ICC0;Desenvolupament d'aplicacions web;0;2000;28/05/10;;ICC0008;MP8. Desplegament d'aplicacions web;99;99;13/05/13;;ICC000804;UF4. Control de versions i documentació;20;N;N;N;N
+CFPS    ICC0;Desenvolupament d'aplicacions web;0;2000;28/05/10;;ICC0008;MP8. Desplegament d'aplicacions web;99;99;13/05/13;;ICC000805;UF3. Aplicacions web;20;N;N;N;N
+CFPS    ICC0;Desenvolupament d'aplicacions web;0;2000;28/05/10;;ICC0009;MP9. Disseny d'interfícies web;99;99;13/05/13;;ICC000901;UF1. Disseny de la interfície. Estils;39;N;N;N;N
+CFPS    ICC0;Desenvolupament d'aplicacions web;0;2000;28/05/10;;ICC0009;MP9. Disseny d'interfícies web;99;99;13/05/13;;ICC000902;UF2. Elements multimèdia: creació i integració;30;N;N;N;N
+CFPS    ICC0;Desenvolupament d'aplicacions web;0;2000;28/05/10;;ICC0009;MP9. Disseny d'interfícies web;99;99;13/05/13;;ICC000903;UF3. Accessibilitat i usabilitat;30;N;N;N;N
+CFPS    ICC0;Desenvolupament d'aplicacions web;0;2000;28/05/10;;ICC0010;MP10. Formació i orientació laboral;99;99;13/05/13;;ICC001001;UF1. Incorporació al treball;66;N;N;N;N
+CFPS    ICC0;Desenvolupament d'aplicacions web;0;2000;28/05/10;;ICC0010;MP10. Formació i orientació laboral;99;99;13/05/13;;ICC001002;UF2. Prevenció de riscos laborals;33;N;N;N;N
+CFPS    ICC0;Desenvolupament d'aplicacions web;0;2000;28/05/10;;ICC0011;MP11. Empresa i iniciativa emprenedora;66;66;13/05/13;;ICC001101;UF1. Empresa i iniciativa emprenedora;66;N;N;N;N
+CFPS    ICC0;Desenvolupament d'aplicacions web;0;2000;28/05/10;;ICC0012;MP12. Projecte de desenvolupament d'aplicacions web;99;99;13/05/13;;ICC001201;UF1. Projecte de desenvolupament d'aplicacions web;99;N;N;N;S
+CFPS    ICC0;Desenvolupament d'aplicacions web;0;2000;28/05/10;;ICC0013;MP13. Formació en centres de treball;317;317;13/05/13;;ICC001301;Formació en centres de treball;317;S;N;N;N
+CFPS    IMC0;Mecatrònica industrial;0;2000;29/04/13;;IMC0001;MP1. Sistemes mecànics;132;132;29/04/13;;IMC000101;UF1. Muntatge i ajust d'elements mecànics;40;N;N;N;N
+CFPS    IMC0;Mecatrònica industrial;0;2000;29/04/13;;IMC0001;MP1. Sistemes mecànics;132;132;29/04/13;;IMC000102;UF2. Manteniment correctiu;50;N;N;N;N
+CFPS    IMC0;Mecatrònica industrial;0;2000;29/04/13;;IMC0001;MP1. Sistemes mecànics;132;132;29/04/13;;IMC000103;UF3. Manteniment preventiu;42;N;N;N;N
+CFPS    IMC0;Mecatrònica industrial;0;2000;29/04/13;;IMC0002;MP2. Sistemes hidràulics i pneumàtics;99;132;29/04/13;;IMC000201;UF1. Sistemes pneumàtics;54;N;N;N;N
+CFPS    IMC0;Mecatrònica industrial;0;2000;29/04/13;;IMC0002;MP2. Sistemes hidràulics i pneumàtics;99;132;29/04/13;;IMC000202;UF2. Sistemes hidràulics;25;N;N;N;N
+CFPS    IMC0;Mecatrònica industrial;0;2000;29/04/13;;IMC0002;MP2. Sistemes hidràulics i pneumàtics;99;132;29/04/13;;IMC000203;UF3. Manteniment dels sistemes pneumàtics i hidràulics;20;N;N;N;N
+CFPS    IMC0;Mecatrònica industrial;0;2000;29/04/13;;IMC0003;MP3. Sistemes elèctrics i electrònics;165;165;29/04/13;;IMC000301;UF1. Electricitat industrial;50;N;N;N;N
+CFPS    IMC0;Mecatrònica industrial;0;2000;29/04/13;;IMC0003;MP3. Sistemes elèctrics i electrònics;165;165;29/04/13;;IMC000302;UF2. Configuració i muntatge de sistemes elèctrics i electrònics;75;N;N;N;N
+CFPS    IMC0;Mecatrònica industrial;0;2000;29/04/13;;IMC0003;MP3. Sistemes elèctrics i electrònics;165;165;29/04/13;;IMC000303;UF3. Diagnosi d'avaries i manteniment en sistemes elèctrics i electrònics;40;N;N;N;N
+CFPS    IMC0;Mecatrònica industrial;0;2000;29/04/13;;IMC0004;MP4. Elements de màquines;132;132;29/04/13;;IMC000401;UF1. Materials i tractaments;44;N;N;N;N
+CFPS    IMC0;Mecatrònica industrial;0;2000;29/04/13;;IMC0004;MP4. Elements de màquines;132;132;29/04/13;;IMC000402;UF2. Cinemàtica de sistemes mecànics;33;N;N;N;N
+CFPS    IMC0;Mecatrònica industrial;0;2000;29/04/13;;IMC0004;MP4. Elements de màquines;132;132;29/04/13;;IMC000403;UF3. Disseny de màquines;55;N;N;N;N
+CFPS    IMC0;Mecatrònica industrial;0;2000;29/04/13;;IMC0005;MP5. Processos de fabricació;132;165;29/04/13;;IMC000501;UF1. Determinació de processos de fabricació;20;N;N;N;N
+CFPS    IMC0;Mecatrònica industrial;0;2000;29/04/13;;IMC0005;MP5. Processos de fabricació;132;165;29/04/13;;IMC000502;UF2. Mecanització;58;N;N;N;N
+CFPS    IMC0;Mecatrònica industrial;0;2000;29/04/13;;IMC0005;MP5. Processos de fabricació;132;165;29/04/13;;IMC000503;UF3. Soldadura;54;N;N;N;N
+CFPS    IMC0;Mecatrònica industrial;0;2000;29/04/13;;IMC0006;MP6. Representació gràfica de sistemes mecatrònics;132;132;29/04/13;;IMC000601;UF1. Representació gràfica;33;N;N;N;N
+CFPS    IMC0;Mecatrònica industrial;0;2000;29/04/13;;IMC0006;MP6. Representació gràfica de sistemes mecatrònics;132;132;29/04/13;;IMC000602;UF2. Disseny assistit per ordinador (CAD);99;N;N;N;N
+CFPS    IMC0;Mecatrònica industrial;0;2000;29/04/13;;IMC0007;MP7. Configuració de sistemes mecatrònics;99;132;29/04/13;;IMC000701;UF1. Documentació de projectes mecatrònics;33;N;N;N;N
+CFPS    IMC0;Mecatrònica industrial;0;2000;29/04/13;;IMC0007;MP7. Configuració de sistemes mecatrònics;99;132;29/04/13;;IMC000702;UF2. Desenvolupament de sistemes mecatrònics;66;N;N;N;N
+CFPS    IMC0;Mecatrònica industrial;0;2000;29/04/13;;IMC0008;MP8. Processos i gestió de manteniment i qualitat;99;99;29/04/13;;IMC000801;UF1. Gestió del manteniment;55;N;N;N;N
+CFPS    IMC0;Mecatrònica industrial;0;2000;29/04/13;;IMC0008;MP8. Processos i gestió de manteniment i qualitat;99;99;29/04/13;;IMC000802;UF2. Gestió de la qualitat;44;N;N;N;N
+CFPS    IMC0;Mecatrònica industrial;0;2000;29/04/13;;IMC0009;MP9. Integració de sistemes;165;198;29/04/13;;IMC000901;UF1. Regulació i control de sistemes;22;N;N;N;N
+CFPS    IMC0;Mecatrònica industrial;0;2000;29/04/13;;IMC0009;MP9. Integració de sistemes;165;198;29/04/13;;IMC000902;UF2. Programació de PLC;55;N;N;N;N
+CFPS    IMC0;Mecatrònica industrial;0;2000;29/04/13;;IMC0009;MP9. Integració de sistemes;165;198;29/04/13;;IMC000903;UF3. Comunicacions industrials;33;N;N;N;N
+CFPS    IMC0;Mecatrònica industrial;0;2000;29/04/13;;IMC0009;MP9. Integració de sistemes;165;198;29/04/13;;IMC000904;UF4. Manipuladors i robots;33;N;N;N;N
+CFPS    IMC0;Mecatrònica industrial;0;2000;29/04/13;;IMC0009;MP9. Integració de sistemes;165;198;29/04/13;;IMC000905;UF5. Posada en marxa i manteniment de sistemes mecatrònics;22;N;N;N;N
+CFPS    IMC0;Mecatrònica industrial;0;2000;29/04/13;;IMC0010;MP10. Simulació de sistemes mecatrònics;66;99;29/04/13;;IMC001001;UF1. Simulació de cèl·lules robotitzades i prototips mecatrònics;33;N;N;N;N
+CFPS    IMC0;Mecatrònica industrial;0;2000;29/04/13;;IMC0010;MP10. Simulació de sistemes mecatrònics;66;99;29/04/13;;IMC001002;UF2. Simulació d'estacions automatitzades;33;N;N;N;N
+CFPS    IMC0;Mecatrònica industrial;0;2000;29/04/13;;IMC0011;MP11. Formació i orientació laboral;99;99;29/04/13;;IMC001101;UF1. Incorporació al treball;66;N;N;N;N
+CFPS    IMC0;Mecatrònica industrial;0;2000;29/04/13;;IMC0011;MP11. Formació i orientació laboral;99;99;29/04/13;;IMC001102;UF2. Prevenció de riscos laborals;33;N;N;N;N
+CFPS    IMC0;Mecatrònica industrial;0;2000;29/04/13;;IMC0012;MP12. Empresa i iniciativa emprenedora;66;66;29/04/13;;IMC001201;UF1. Empresa i iniciativa emprenedora;66;N;N;N;N
+CFPS    IMC0;Mecatrònica industrial;0;2000;29/04/13;;IMC0013;MP13. Projecte de mecatrònica industrial;99;99;29/04/13;;IMC001301;UF1. Projecte de mecatrònica industrial;99;N;N;N;S
+CFPS    IMC0;Mecatrònica industrial;0;2000;29/04/13;;IMC0014;MP14. Formació en centres de treball;350;350;29/04/13;;IMC001401;Formació en centres de treball;350;S;N;N;N
+CFPS    TMA0;Automoció;0;2000;20/02/09;;TMA0001;MP1. Sistemes elèctrics, de seguretat i confortabilitat;198;231;02/02/10;;TMA000101;UF1. Muntatge de circuits;33;N;N;N;N
+CFPS    TMA0;Automoció;0;2000;20/02/09;;TMA0001;MP1. Sistemes elèctrics, de seguretat i confortabilitat;198;231;02/02/10;;TMA000102;UF2. Elements electroelectrònics;33;N;N;N;N
+CFPS    TMA0;Automoció;0;2000;20/02/09;;TMA0001;MP1. Sistemes elèctrics, de seguretat i confortabilitat;198;231;02/02/10;;TMA000107;UF3. Diagnosi i reparació d'avaries elèctriques;66;N;N;N;N
+CFPS    TMA0;Automoció;0;2000;20/02/09;;TMA0001;MP1. Sistemes elèctrics, de seguretat i confortabilitat;198;231;02/02/10;;TMA000108;UF4. Manteniment dels sistemes elèctrics ;33;N;N;N;N
+CFPS    TMA0;Automoció;0;2000;20/02/09;;TMA0001;MP1. Sistemes elèctrics, de seguretat i confortabilitat;198;231;02/02/10;;TMA000109;UF5. Reformes elèctriques;33;N;N;N;N
+CFPS    TMA0;Automoció;0;2000;20/02/09;;TMA0002;MP2. Sistemes de transmissió de forces i trens de rodatge;165;198;02/02/10;;TMA000201;UF1. Instal·lacions pneumàtiques i hidràuliques;33;N;N;N;N
+CFPS    TMA0;Automoció;0;2000;20/02/09;;TMA0002;MP2. Sistemes de transmissió de forces i trens de rodatge;165;198;02/02/10;;TMA000205;UF2. Transmissió de força i trens de rodatge: funcionament i avaries;66;N;N;N;N
+CFPS    TMA0;Automoció;0;2000;20/02/09;;TMA0002;MP2. Sistemes de transmissió de forces i trens de rodatge;165;198;02/02/10;;TMA000206;UF3. Reparació de transmissions i trens de rodatge;66;N;N;N;N
+CFPS    TMA0;Automoció;0;2000;20/02/09;;TMA0003;MP3. Motors tèrmics i els seus sistemes auxiliars;198;231;02/02/10;;TMA000307;UF1. Motors: funcionament, components i verificacions;66;N;N;N;N
+CFPS    TMA0;Automoció;0;2000;20/02/09;;TMA0003;MP3. Motors tèrmics i els seus sistemes auxiliars;198;231;02/02/10;;TMA000308;UF2. Sistemes auxiliars del motor i diagnosi;66;N;N;N;N
+CFPS    TMA0;Automoció;0;2000;20/02/09;;TMA0003;MP3. Motors tèrmics i els seus sistemes auxiliars;198;231;02/02/10;;TMA000309;UF3. Procediments i tècniques de reparació de motors;66;N;N;N;N
+CFPS    TMA0;Automoció;0;2000;20/02/09;;TMA0004;MP4. Elements amovibles i fixos no estructurals;165;198;03/02/10;;TMA000401;UF1. Representacions gràfiques i mecanització;33;N;N;N;N
+CFPS    TMA0;Automoció;0;2000;20/02/09;;TMA0004;MP4. Elements amovibles i fixos no estructurals;165;198;03/02/10;;TMA000402;UF2. Elements amovibles;33;N;N;N;N
+CFPS    TMA0;Automoció;0;2000;20/02/09;;TMA0004;MP4. Elements amovibles i fixos no estructurals;165;198;03/02/10;;TMA000403;UF3. Elements metàl·lics i sintètics;33;N;N;N;N
+CFPS    TMA0;Automoció;0;2000;20/02/09;;TMA0004;MP4. Elements amovibles i fixos no estructurals;165;198;03/02/10;;TMA000404;UF4. Unió d'elements fixos;46;N;N;N;N
+CFPS    TMA0;Automoció;0;2000;20/02/09;;TMA0004;MP4. Elements amovibles i fixos no estructurals;165;198;03/02/10;;TMA000405;UF5. Transformacions opcionals;20;N;N;N;N
+CFPS    TMA0;Automoció;0;2000;20/02/09;;TMA0005;MP5. Tractament i recobriment de superfícies;165;198;03/02/10;;TMA000506;UF1. Protecció i preparació de superfícies;66;N;N;N;N
+CFPS    TMA0;Automoció;0;2000;20/02/09;;TMA0005;MP5. Tractament i recobriment de superfícies;165;198;03/02/10;;TMA000507;UF2. Pintat d'acabat;46;N;N;N;N
+CFPS    TMA0;Automoció;0;2000;20/02/09;;TMA0005;MP5. Tractament i recobriment de superfícies;165;198;03/02/10;;TMA000508;UF3. Decoració i retolació de superfícies;33;N;N;N;N
+CFPS    TMA0;Automoció;0;2000;20/02/09;;TMA0005;MP5. Tractament i recobriment de superfícies;165;198;03/02/10;;TMA000509;UF4. Correcció de defectes;20;N;N;N;N
+CFPS    TMA0;Automoció;0;2000;20/02/09;;TMA0006;MP6. Estructures del vehicle;99;99;05/02/10;;TMA000601;UF1. Processos de fabricació i danys en l'estructura;30;N;N;N;N
+CFPS    TMA0;Automoció;0;2000;20/02/09;;TMA0006;MP6. Estructures del vehicle;99;99;05/02/10;;TMA000602;UF2. Diagnosi i valoració de danys;35;N;N;N;N
+CFPS    TMA0;Automoció;0;2000;20/02/09;;TMA0006;MP6. Estructures del vehicle;99;99;05/02/10;;TMA000603;UF3. Raparacions en bancades i reformes;34;N;N;N;N
+CFPS    TMA0;Automoció;0;2000;20/02/09;;TMA0007;MP7. Gestió i logística del manteniment de vehicles;99;99;05/02/10;;TMA000705;UF1. Processos de manteniment de vehicles i grans flotes;50;N;N;N;N
+CFPS    TMA0;Automoció;0;2000;20/02/09;;TMA0007;MP7. Gestió i logística del manteniment de vehicles;99;99;05/02/10;;TMA000706;UF2. Emmagatzematge  i control del magatzem;27;N;N;N;N
+CFPS    TMA0;Automoció;0;2000;20/02/09;;TMA0007;MP7. Gestió i logística del manteniment de vehicles;99;99;05/02/10;;TMA000707;UF3. Recepció;22;N;N;N;N
+CFPS    TMA0;Automoció;0;2000;20/02/09;;TMA0008;MP8. Tècniques de comunicació i de relacions;66;66;05/02/10;;TMA000801;UF1. Tècniques de comunicació, empresa i atenció al client;33;N;N;N;N
+CFPS    TMA0;Automoció;0;2000;20/02/09;;TMA0008;MP8. Tècniques de comunicació i de relacions;66;66;05/02/10;;TMA000802;UF2. Feedback amb clients i control de qualitat;33;N;N;N;N
+CFPS    TMA0;Automoció;0;2000;20/02/09;;TMA0009;MP9. Formació i orientació laboral;99;99;05/02/10;;TMA000901;UF1. Incorporació al treball;66;N;N;N;N
+CFPS    TMA0;Automoció;0;2000;20/02/09;;TMA0009;MP9. Formació i orientació laboral;99;99;05/02/10;;TMA000902;UF2. Prevenció de riscos laborals;33;N;N;N;N
+CFPS    TMA0;Automoció;0;2000;20/02/09;;TMA0010;MP10. Empresa i iniciativa emprenedora;66;66;05/02/10;;TMA001001;UF1. Empresa i iniciativa emprenedora;66;N;N;N;N
+CFPS    TMA0;Automoció;0;2000;20/02/09;;TMA0011;MP11. Projecte en automoció;99;99;05/02/10;;TMA001101;UF1. Projecte en automoció;99;N;N;N;S
+CFPS    TMA0;Automoció;0;2000;20/02/09;;TMA0012;MP12. Formació en centres de treball;416;416;05/02/10;;TMA001201;Formació en centres de treball;416;S;N;N;N
