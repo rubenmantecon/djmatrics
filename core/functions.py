@@ -3,19 +3,22 @@ import datetime
 
 public_price = 360
 material = 70
-assurance = 1.12
+insurance = 1.12
 
 enrolment = Enrolment.objects.get(dni='12345678Z')
 ufs_of_enrolment = UF.objects.filter(
-    term=Enrolment.objects.get(dni='12345678Z').term)
+    term=enrolment.term)
 ufs_prices = sum([x.price for x in ufs_of_enrolment])
-birthday = enrolment.birthday
-age = datetime.datetime.now()
+
+age = int((datetime.date.today() - enrolment.birthday).total_seconds() / 31557600)
+
+
 if age > 28:
-    assurance = 20
+    insurance = 20
 
 if ufs_prices > public_price:
-    final_price = public_price + material + assurance
+    final_price = public_price + material + insurance
 else:
-    final_price = ufs_prices + material + assurance
-print(ufs_prices)
+    final_price = ufs_prices + material + insurance
+print("Calculated age:", age)
+print("Calculated price:", final_price)
