@@ -23,4 +23,5 @@ from core import views as coreviews
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include("core.urls")),
+    path('api/', include('api.urls'))
 ]
