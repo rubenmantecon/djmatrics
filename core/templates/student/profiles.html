@@ -12,14 +12,20 @@
 						{{ profile.name }} <i class="material-icons">expand_more</i>
 						<div class="input-fl-right">
 							<label>
-								<input class="with-gap" name="{{ profile.profile_type }}" type="radio"/>
+								<input class="with-gap" name="profile" value="{{ profile.id }}" type="radio"/>
 								<span></span> 
 							</label>
 						</div>
 					</div>
 					<div class="collapsible-body">
-						<span>{{ profile.description }}</span>
-						<p><strong>Documentació acreditativa</strong>: {{ requirements.get(profile_id=profile.id) }}</p>
+						<span>{% if profile.description %}{{ profile.description }}{% endif %}</span>
+						<p> 
+						{% for requirement in requirements %}
+							{% if requirement.profile_id == profile.id %}
+								{% if requirement.name %}<strong>Documentació acreditativa</strong>: {{ requirement.name }}{% endif %}
+							{% endif %}
+						{% endfor %}
+						</p>
 					</div>
 				</li>
 				{% endif %}
@@ -39,14 +45,20 @@
 						{{ profile.name }} <i class="material-icons">expand_more</i>
 						<div class="input-fl-right">
 							<label>
-								<input class="with-gap" name="exempcio" type="radio"/>
+								<input class="with-gap" name="profile" value="{{ profile.id }}" type="radio"/>
 								<span></span> 
 							</label>
 						</div>
 					</div>
 					<div class="collapsible-body">
-						<span>{{ profile.description }}</span>
-						<p><strong>Documentació acreditativa</strong>: </p>
+						<span>{% if profile.description %}{{ profile.description }}{% endif %}</span>
+						<p> 
+						{% for requirement in requirements %}
+							{% if requirement.profile_id == profile.id %}
+								{% if requirement.name %}<strong>Documentació acreditativa</strong>: {{ requirement.name }}{% endif %}
+							{% endif %}
+						{% endfor %}
+						</p>
 					</div>
 				</li>
 				{% endif %}
@@ -66,13 +78,13 @@
 						</div>
 						<div class="col s1">
 							<label>
-								<input class="with-gap" name="drets_imatge" type="radio" required/>
+								<input class="with-gap" name="drets_imatge" value="1" type="radio" required/>
 								<span class="black-text">SI</span> 
 							</label>
 						</div>
 						<div class="col s1">
 							<label>
-								<input class="with-gap" name="drets_imatge" type="radio" required/>
+								<input class="with-gap" name="drets_imatge" value="0" type="radio" required/>
 								<span class="black-text">NO</span> 
 							</label>
 						</div>
@@ -85,13 +97,13 @@
 						</div>
 						<div class="col s1">
 							<label>
-								<input class="with-gap" name="salides_excursio" type="radio" required/>
+								<input class="with-gap" name="salides_excursio" value="1" type="radio" required/>
 								<span class="black-text">SI</span> 
 							</label>
 						</div>
 						<div class="col s1">
 							<label>
-								<input class="with-gap" name="salides_excursio" type="radio" required/>
+								<input class="with-gap" name="salides_excursio" value="0" type="radio" required/>
 								<span class="black-text">NO</span> 
 							</label>
 						</div>
@@ -104,13 +116,13 @@
 						</div>
 						<div class="col s1">
 							<label>
-								<input class="with-gap" name="salides_extra" type="radio" required/>
+								<input class="with-gap" name="salides_extra" value="1" type="radio" required/>
 								<span class="black-text">SI</span> 
 							</label>
 						</div>
 						<div class="col s1">
 							<label>
-								<input class="with-gap" name="salides_extra" type="radio" required/>
+								<input class="with-gap" name="salides_extra" value="0" type="radio" required/>
 								<span class="black-text">NO</span> 
 							</label>
 						</div>
