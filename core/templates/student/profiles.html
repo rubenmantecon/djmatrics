@@ -10,10 +10,12 @@
 				<li>
 					<div class="collapsible-header collection-bonification">
 						{{ profile.name }} <i class="material-icons">expand_more</i>
+						<div class="input-fl-right">
 							<label>
 								<input class="with-gap" name="profile" value="{{ profile.id }}" type="radio"/>
 								<span></span> 
 							</label>
+						</div>
 					</div>
 					<div class="collapsible-body">
 						<span>{% if profile.description %}{{ profile.description }}{% endif %}</span>
@@ -41,10 +43,12 @@
 				<li>
 					<div class="collapsible-header collection-bonification">
 						{{ profile.name }} <i class="material-icons">expand_more</i>
+						<div class="input-fl-right">
 							<label>
 								<input class="with-gap" name="profile" value="{{ profile.id }}" type="radio"/>
 								<span></span> 
 							</label>
+						</div>
 					</div>
 					<div class="collapsible-body">
 						<span>{% if profile.description %}{{ profile.description }}{% endif %}</span>
