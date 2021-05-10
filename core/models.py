@@ -89,6 +89,7 @@ class Enrolment(models.Model):
     )
     role = models.OneToOneField(
         User, on_delete=models.RESTRICT, primary_key=True)
+    uf = models.ManyToManyField(UF)
     dni = models.CharField("dni", max_length=9)
     state = models.CharField("estat de matrícula",
                              max_length=20, choices=CHOICES, default=None)
@@ -116,11 +117,6 @@ class Enrolment(models.Model):
 
     def __str__(self):
         return self.email
-
-
-class EnrolmentUF(models.Model):
-    uf = models.ForeignKey(UF, on_delete=models.RESTRICT)
-    enrolment = models.ForeignKey(Enrolment, on_delete=models.RESTRICT)
 
 
 class Record(models.Model):
