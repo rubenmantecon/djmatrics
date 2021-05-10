@@ -35,46 +35,103 @@ def GetUserInfo(request):
     
     user = User.objects.get(id=request.user.id)
 
-    UserInfoFields = ['email','username','first_name','last_name']
-    UserInfo= {}
+    userinfofields = ['email','username','first_name','last_name']
+    userinfo= {}
 
     for attr, value in user.__dict__.items():
-        if attr in UserInfoFields:
-            UserInfo[attr] = value
+        if attr in userinfofields:
+            userinfo[attr] = value
 
-    return Response(UserInfo)
+    return Response(userinfo)
 
 
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
 def GetProfilesAndRequirements(request):
 
-    ProfileRequirements = ProfileRequirement.objects.all()
-    Requirements = Requirement.objects.all()
+    profilerequirements = ProfileRequirement.objects.all()
+    requirements = Requirement.objects.all()
 
-    ProfilesAndRequirements = {}
+    profilesandrequirements = {}
 
-    ProfileRequirementFields = ['id','name','description']
-    RequirementsFields = ['name','profile_id']
+    profilerequirementfields = ['id','name','description']
+    requirementsfields = ['name','profile_id']
     
-    for PR in ProfileRequirements:
-        for attrPR, valuePR in PR.__dict__.items():
-            if attrPR in ProfileRequirementFields:
-                if attrPR == 'id':
-                    id = valuePR
-                    ProfilesAndRequirements[id] = {}
+    for pr in profilerequirements:
+        for attrpr, valuepr in pr.__dict__.items():
+            if attrpr in profilerequirementfields:
+                if attrpr == 'id':
+                    id = valuepr
+                    profilesandrequirements[id] = {}
                 else:
-                    ProfilesAndRequirements[id][attrPR] = valuePR
+                    profilesandrequirements[id][attrpr] = valuepr
     
-    for R in Requirements:
-        for attrR, valueR in R.__dict__.items():
-            if attrR in RequirementsFields:
-                if attrR == 'profile_id':
-                    profile_id = valueR
-                    if not 'requirements' in ProfilesAndRequirements[profile_id].keys():
-                        ProfilesAndRequirements[profile_id]['requirements'] = []
+    for r in requirements:
+        for attrr, valuer in r.__dict__.items():
+            if attrr in requirementsfields:
+                if attrr == 'profile_id':
+                    profile_id = valuer
+                    if not 'requirements' in profilesandrequirements[profile_id].keys():
+                        profilesandrequirements[profile_id]['requirements'] = []
                 else:
-                    ProfilesAndRequirements[profile_id]['requirements'].append(valueR)
+                    profilesandrequirements[profile_id]['requirements'].append(valuer)
 
 
-    return Response(ProfilesAndRequirements)
+    return Response(profilesandrequirements)
+
+
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def GetCareer(request):
+
+    enrolment = Enrolment.objects.get(role_id=request.user.id)
+    careerid = enrolment.career_id
+
+    career = Career.objects.get(id=careerid)
+    mps = MP.objects.filter(career_id=careerid)
+
+    mpsid = []
+
+    for mp in mps:
+        mpsid.append(mp.id)
+
+    ufs = UF.objects.filter(mp_id__in=mpsid)
+
+    careermpsufs = {}
+
+    careerinfofields = ['name','code','desc','hours','start','end']
+    mpsinfofields = ['name','code','desc']
+    ufsinfofields = ['id','name','code','desc'] 
+    
+
+    for attrc, valuec in career.__dict__.items():
+        if attrc in careerinfofields:
+            careermpsufs[attrc] = valuec
+    if 'modules' not in careermpsufs.keys():
+            careermpsufs['modules'] = {}
+
+
+    for mp in mps:
+        mpid = mp.id
+        careermpsufs['modules'][mpid] = {}
+        for attrmp, valuemp in mp.__dict__.items():
+            if attrmp in mpsinfofields:
+                careermpsufs['modules'][mpid][attrmp] = valuemp
+    mpkeys = careermpsufs['modules'].keys()
+    for mpkey in mpkeys:
+        if 'ufs' not in careermpsufs['modules'][mpkey]:
+            careermpsufs['modules'][mpkey]['ufs'] = {}
+     
+
+
+    for uf in ufs:
+        mp_id = uf.mp_id
+        ufid = uf.id
+        careermpsufs['modules'][mp_id]['ufs'][ufid] = {}
+        for attruf, valueuf in uf.__dict__.items():
+            if attruf in ufsinfofields:
+                careermpsufs['modules'][mp_id]['ufs'][ufid][attruf] = valueuf
+
+
+    return Response(careermpsufs)
