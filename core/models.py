@@ -75,6 +75,20 @@ class UF(models.Model):
     def __str__(self):
         return self.name
 
+class ProfileRequirement(models.Model):
+
+    class Meta:
+        verbose_name = "Perfil de requeriments"
+        verbose_name_plural = "Perfils de requeriment"
+        
+    class ProfileChoices(Enum):
+        EX = 'exemption'
+        BO = 'bonus'
+
+    name = models.CharField("nom", max_length=255)
+    description = models.TextField("descripció", null=True)
+    profile_type = models.CharField('profile_type', max_length=9, choices=[(
+        val_state, val_state.value) for val_state in ProfileChoices], default=None, null=False)
 
 class Enrolment(models.Model):
     class Meta:
@@ -95,12 +109,12 @@ class Enrolment(models.Model):
     birthplace = models.CharField(
         "lloc de naixement", max_length=50, null=True, default=None)
     birthday = models.DateField("data de naixement", null=True, default=None)
-    address = models.CharField("adreça", max_length=255)
-    city = models.CharField("ciutat", max_length=150)
-    postal_code = models.CharField("codi postal", max_length=5)
-    phone_number = models.CharField("número de telèfon", max_length=14)
-    email = models.EmailField("correu", max_length=254, null=False)
-    emergency_number = models.CharField("número d'emergència", max_length=14)
+    address = models.CharField("adreça", max_length=255, null=True)
+    city = models.CharField("ciutat", max_length=150, null=True)
+    postal_code = models.CharField("codi postal", null=True, max_length=5)
+    phone_number = models.CharField("número de telèfon", null=True, max_length=14)
+    email = models.EmailField("correu", max_length=254, null=True)
+    emergency_number = models.CharField("número d'emergència", null=True, max_length=14)
     tutor_1 = models.CharField(
         "nom del pare/mare o tutor/a legal", max_length=50, null=True, default=None)
     tutor_2 = models.CharField(
@@ -109,10 +123,14 @@ class Enrolment(models.Model):
         "dni del pare/mare o tutor/a legal", max_length=9, null=True, default=None)
     tutor_2_dni = models.CharField(
         "dni del pare/mare o tutor/a legal (2)", max_length=9, null=True, default=None)
-    term = models.ForeignKey(Term, on_delete=models.RESTRICT)
-    profile_req = models.ForeignKey(
-        ProfileRequirement, on_delete=models.RESTRICT)
-    career = models.ForeignKey(Career, on_delete=models.RESTRICT)
+    image_rights = models.BooleanField("Drets d'imatge", null=True)
+    excursions = models.BooleanField("Salides d'excursio", null=True)
+    extracurricular = models.BooleanField("Salides extraescolars", null=True)
+    profile = models.ForeignKey(ProfileRequirement, on_delete=models.RESTRICT, null=True)
+    
+    # user = models.ForeignKey(User, on_delete=models.RESTRICT)
+    term = models.ForeignKey(Term, on_delete=models.RESTRICT, null=True)
+    career = models.ForeignKey(Career, on_delete=models.RESTRICT, null=True)
 
     def __str__(self):
         return self.email
@@ -121,7 +139,6 @@ class Enrolment(models.Model):
 class EnrolmentUF(models.Model):
     uf = models.ForeignKey(UF, on_delete=models.RESTRICT)
     enrolment = models.ForeignKey(Enrolment, on_delete=models.RESTRICT)
-
 
 class Record(models.Model):
     uf = models.ForeignKey(UF, on_delete=models.RESTRICT)
@@ -133,6 +150,7 @@ class Requirement(models.Model):
 
     class Meta:
         verbose_name = "Requeriment"
+
     profile = models.ForeignKey(
         ProfileRequirement, on_delete=models.RESTRICT)
     name = models.CharField("nom", max_length=255)
