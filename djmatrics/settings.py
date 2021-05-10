@@ -59,6 +59,14 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'core',
     'api',
+    
+    #Allauth apps (Social Login)
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account', 
+    'allauth.socialaccount',
+    'allauth_office365',
+    'allauth.socialaccount.providers.google',
 ]
 
 REST_FRAMEWORK = {
@@ -141,3 +149,15 @@ STATIC_ROOT = 'static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+#Socia Login configuration
+AUTHENTICATION_BACKENDS = (
+    "allauth.account.auth_backends.AuthenticationBackend",
+)
+
+SITE_ID = 1
+ACCOUNT_EMAIL_VERIFICATION = "none"
+LOGIN_REDIRECT_URL = "/"
+ACCOUNT_LOGOUT_ON_GET = True
+#The config below disables the signup option
+ACCOUNT_ADAPTER = 'core.adapter.NoNewUsersAccountAdapter'
