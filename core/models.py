@@ -63,8 +63,13 @@ class MP(models.Model):
 class UF(models.Model):
     class Meta:
         verbose_name_plural = "UFs"
+    CHOICES = (
+        ('1', 'Primer'),
+        ('2', 'Segon'),
+    )
     name = models.CharField("nom", max_length=255)
     code = models.CharField("codi", max_length=20)
+    course = models.CharField("primer o segon", max_length=20, choices=CHOICES, default=None, null=True)
     desc = models.CharField(
         "descripcio", max_length=300, blank=True, null=True)
     price = models.IntegerField("preu", default=25)
@@ -110,7 +115,18 @@ class Enrolment(models.Model):
         "dni del pare/mare o tutor/a legal", max_length=9, null=True, default=None)
     tutor_2_dni = models.CharField(
         "dni del pare/mare o tutor/a legal (2)", max_length=9, null=True, default=None)
-    term = models.ForeignKey(Term, on_delete=models.RESTRICT)
+    tutor_1_name = models.CharField(
+        "nom del pare/mare o tutor/a legal (2)", max_length=50, null=True, default=None)
+    tutor_1_lastname1 = models.CharField(
+        "cognoms del pare/mare o tutor/a legal (2)", max_length=50, null=True, default=None)
+    tutor_1_lastname2 = models.CharField(
+        "cognoms del pare/mare o tutor/a legal (2)", max_length=50, null=True, default=None)
+    tutor_2_name = models.CharField(
+        "cognoms del pare/mare o tutor/a legal (2)", max_length=50, null=True, default=None)
+    tutor_2_lastname1 = models.CharField(
+        "cognoms del pare/mare o tutor/a legal (2)", max_length=50, null=True, default=None)
+    tutor_2_lastname2 = models.CharField(
+        "cognoms del pare/mare o tutor/a legal (2)", max_length=50, null=True, default=None)
     profile_req = models.ForeignKey(
         ProfileRequirement, on_delete=models.RESTRICT)
     career = models.ForeignKey(Career, on_delete=models.RESTRICT)
