@@ -1,5 +1,4 @@
 from django.db import models
-from enum import Enum
 import django.utils.timezone as timezone
 from django.core.files.storage import FileSystemStorage
 from django.contrib.auth.models import User
@@ -38,42 +37,15 @@ class Career(models.Model):
         return self.name
 
 
-class ValidationState(Enum):
-    P = "Pendent"
-    V = "Validat"
-    U = "Failed"  # TODO: i18 it
-
-
-class Enrolment(models.Model):
+class ProfileRequirement(models.Model):
     class Meta:
-        verbose_name = "Matrícula"
-        verbose_name_plural = "Matricules"
+        verbose_name = "Perfil de requeriments"
+        verbose_name_plural = "Perfils de requeriment"
+    name = models.CharField("nom", max_length=50)
+    description = models.TextField("descripció", null=True)
 
-    role = models.OneToOneField(
-        User, on_delete=models.RESTRICT, primary_key=True)
-    dni = models.CharField("dni", max_length=9)
-    state = models.CharField("estat de matrícula", max_length=20, choices=[(
-        val_state, val_state.value) for val_state in ValidationState], default=None)
-    birthplace = models.CharField(
-        "lloc de naixement", max_length=50, null=True, default=None)
-    birthday = models.DateField("data de naixement", null=True, default=None)
-    address = models.CharField("adreça", max_length=255)
-    city = models.CharField("ciutat", max_length=150)
-    postal_code = models.CharField("codi postal", max_length=5)
-    phone_number = models.CharField("número de telèfon", max_length=14)
-    email = models.EmailField("correu", max_length=254, null=False)
-    emergency_number = models.CharField("número d'emergència", max_length=14)
-    tutor_1 = models.CharField(
-        "nom del pare/mare o tutor/a legal", max_length=50, null=True, default=None)
-    tutor_2 = models.CharField(
-        "nom del pare/mare o tutor/a legal (2)", max_length=50, null=True, default=None)
-    tutor_1_dni = models.CharField(
-        "dni del pare/mare o tutor/a legal", max_length=9, null=True, default=None)
-    tutor_2_dni = models.CharField(
-        "dni del pare/mare o tutor/a legal (2)", max_length=9, null=True, default=None)
-    # user = models.ForeignKey(User, on_delete=models.RESTRICT)
-    term = models.ForeignKey(Term, on_delete=models.RESTRICT)
-    career = models.ForeignKey(Career, on_delete=models.RESTRICT)
+    def __str__(self):
+        return self.name
 
 
 class MP(models.Model):
@@ -95,11 +67,55 @@ class UF(models.Model):
     code = models.CharField("codi", max_length=20)
     desc = models.CharField(
         "descripcio", max_length=300, blank=True, null=True)
+    price = models.IntegerField("preu", default=25)
     mp = models.ForeignKey(MP, on_delete=models.RESTRICT)
+    term = models.ForeignKey(Term, on_delete=models.RESTRICT)
     active = models.BooleanField("és actiu", default=True)
 
     def __str__(self):
         return self.name
+
+
+class Enrolment(models.Model):
+    class Meta:
+        verbose_name = "Matrícula"
+        verbose_name_plural = "Matricules"
+
+    CHOICES = (
+        ('P', 'Pendent'),
+        ('V', 'Validat'),
+        ('R', 'Rebutjat'),
+        ('B', 'Buit')
+    )
+    role = models.OneToOneField(
+        User, on_delete=models.RESTRICT, primary_key=True)
+    dni = models.CharField("dni", max_length=9)
+    state = models.CharField("estat de matrícula",
+                             max_length=20, choices=CHOICES, default=None)
+    birthplace = models.CharField(
+        "lloc de naixement", max_length=50, null=True, default=None)
+    birthday = models.DateField("data de naixement", null=True, default=None)
+    address = models.CharField("adreça", max_length=255)
+    city = models.CharField("ciutat", max_length=150)
+    postal_code = models.CharField("codi postal", max_length=5)
+    phone_number = models.CharField("número de telèfon", max_length=14)
+    email = models.EmailField("correu", max_length=254, null=False)
+    emergency_number = models.CharField("número d'emergència", max_length=14)
+    tutor_1 = models.CharField(
+        "nom del pare/mare o tutor/a legal", max_length=50, null=True, default=None)
+    tutor_2 = models.CharField(
+        "nom del pare/mare o tutor/a legal (2)", max_length=50, null=True, default=None)
+    tutor_1_dni = models.CharField(
+        "dni del pare/mare o tutor/a legal", max_length=9, null=True, default=None)
+    tutor_2_dni = models.CharField(
+        "dni del pare/mare o tutor/a legal (2)", max_length=9, null=True, default=None)
+    term = models.ForeignKey(Term, on_delete=models.RESTRICT)
+    profile_req = models.ForeignKey(
+        ProfileRequirement, on_delete=models.RESTRICT)
+    career = models.ForeignKey(Career, on_delete=models.RESTRICT)
+
+    def __str__(self):
+        return self.email
 
 
 class EnrolmentUF(models.Model):
@@ -107,24 +123,8 @@ class EnrolmentUF(models.Model):
     enrolment = models.ForeignKey(Enrolment, on_delete=models.RESTRICT)
 
 
-class ProfileRequirement(models.Model):
-    class Meta:
-        verbose_name = "Perfil de requeriments"
-        verbose_name_plural = "Perfils de requeriment"
-    name = models.CharField("nom", max_length=50)
-    description = models.TextField("descripció", null=True)
-
-
 class Record(models.Model):
-    # user = models.ForeignKey(User, on_delete=models.RESTRICT)
     uf = models.ForeignKey(UF, on_delete=models.RESTRICT)
-
-
-class Req_EnrolState(Enum):
-    P = "Pending"
-    V = "Validated"
-    R = "Rejected"
-    E = "Empty"
 
 
 class Requirement(models.Model):
@@ -144,11 +144,16 @@ class Requirement(models.Model):
 class Req_enrol(models.Model):
     class Meta:
         verbose_name = "Requeriments matricula"
-        verbose_name_plural = "Requeriments matricula"
+
+    CHOICES = (
+        ('P', 'Pendent'),
+        ('V', 'Validat'),
+        ('R', 'Rebutjat'),
+        ('B', 'Buit')
+    )
     requirement = models.ForeignKey(Requirement, on_delete=models.RESTRICT)
     enrolment = models.ForeignKey(Enrolment, on_delete=models.RESTRICT)
-    state = models.CharField(max_length=20, choices=[(
-        val_state, val_state.value) for val_state in Req_EnrolState], default=None)
+    state = models.CharField(max_length=20, choices=CHOICES, default=None)
 
 
 fs = FileSystemStorage(location='')
