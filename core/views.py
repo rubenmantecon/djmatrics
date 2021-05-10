@@ -2,13 +2,14 @@ from django.shortcuts import render, HttpResponseRedirect
 from django.core.exceptions import ValidationError
 from .models import ProfileRequirement, Requirement, Enrolment
 from .forms import SaveProfiles
+import datetime
 
 def index (request):
     return render(request, "base.html", {'title':"INS Institut Esteve Terradas i Illa", 'user': "Enric"})
 
 #@login_required
 def dashboardStudent (request):
-	return render(request, "student/dashboard.html", {'title': 'Dashboard | Matriculacions - INS Institut Esteve Terradas i Illa'});
+	return render(request, "student/dashboard.html", {'title': 'Dashboard | Matriculacions - INS Institut Esteve Terradas i Illa', 'breadcrum': [{'link': '/student/dashboard', 'text': 'Inici'},{'link': '#', 'text': 'Dashboard'}]});
 
 #@login_required
 def profiles (request):
@@ -46,9 +47,9 @@ def profiles (request):
 		'title': 'Perfils d\'usuari | Matriculacions - INS Institut Esteve Terradas i Illa',
 		'profiles': ProfileRequirement.objects.all(),
 		'requirements': Requirement.objects.all(),
+		'breadcrum': [{'link': '/student/dashboard', 'text': 'Inici'},{'link': '#', 'text': 'Matriculació'},{'link': '/student/profiles', 'text': 'Perfils'}]
 	});
 	
 #@login_required
 def prices (request):
 	return render(request, 'student/prices.html')
-

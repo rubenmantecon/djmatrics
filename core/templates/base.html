@@ -43,9 +43,11 @@
 		<nav class="blue darken-3">
 			<div class="nav-wrapper">
 				<div class="col s12">
-					<a href="#!" class="breadcrumb">First</a>
-					<a href="#!" class="breadcrumb">Second</a>
-					<a href="#!" class="breadcrumb">Third</a>
+					{% if breadcrum %}
+					{% for item in breadcrum %}
+						<a href="{{ item.link }}" class="breadcrumb">{{ item.text }}</a>
+					{% endfor %}
+					{% endif %}
 					<ul class="col s12 right hide-on-med-and-down">
 						<li><a href="#">Inici</a></li>
 						<li><a href="#">Dades personals</a></li>
@@ -58,15 +60,11 @@
 	<main class="background container">
 		{% block content %}{% endblock %}
 	</main>
-	<footer class="page-footer blue darken-4">
-		<div class="container">
+	<footer class="blue darken-4">
+		
 			<i class="material-icons right">timelapse</i>
-		</div>
-		<div class="footer-copyright">
-			<div class="container">
+
 				© 2021 INS Esteve Terradas i Illa
-			</div>
-		</div>
 	</footer>
 </body>
 
