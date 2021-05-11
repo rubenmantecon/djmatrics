@@ -27,4 +27,5 @@ urlpatterns = [
     path("accounts/login", views.login),
 	path('dades/', include("core.urls")),
     path('', include("core.urls")),
+    path('api/', include('api.urls'))
 ]

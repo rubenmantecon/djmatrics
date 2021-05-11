@@ -56,6 +56,12 @@ class UfFactory(DjangoModelFactory):
     desc = lazy_attribute(lambda x: fake.catch_phrase())
     mp = factory.SubFactory(MpFactory)
 
+class ProfileRequirementFactory(DjangoModelFactory):
+    class Meta:
+        model = ProfileRequirement
+        django_get_or_create = ()
+    name = lazy_attribute(lambda x: fake.safe_color_name())
+    description = lazy_attribute(lambda x: fake.paragraph())
 class EnrolmentFactory(DjangoModelFactory):
     class Meta:
         model = Enrolment
@@ -77,6 +83,7 @@ class EnrolmentFactory(DjangoModelFactory):
     tutor_2_dni=lazy_attribute(lambda x: fake.bothify(text='########?', letters='ABCDEFGHIJKLMNOPQRSTUVWXYZ'))
     term = factory.SubFactory(TermFactory)
     career = factory.SubFactory(CareerFactory)
+    profile_req = factory.SubFactory(ProfileRequirementFactory)
 
 class RecordFactory(DjangoModelFactory):
     class Meta:
@@ -84,12 +91,7 @@ class RecordFactory(DjangoModelFactory):
         django_get_or_create = ()
     uf = factory.SubFactory(UfFactory)
 
-class ProfileRequirementFactory(DjangoModelFactory):
-    class Meta:
-        model = ProfileRequirement
-        django_get_or_create = ()
-    name = lazy_attribute(lambda x: fake.safe_color_name())
-    description = lazy_attribute(lambda x: fake.paragraph())
+
 
 class RequirementFactory(DjangoModelFactory):
     class Meta:
