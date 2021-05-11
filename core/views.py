@@ -1,4 +1,5 @@
 from django.shortcuts import render, HttpResponseRedirect
+from django.contrib.auth.decorators import login_required
 from django.core.exceptions import ValidationError
 from .models import ProfileRequirement, Requirement, Enrolment
 from .forms import SaveProfiles
@@ -7,11 +8,14 @@ import datetime
 def index (request):
     return render(request, "base.html", {'title':"INS Institut Esteve Terradas i Illa", 'user': "Enric"})
 
-#@login_required
+def login (request):
+    return render(request, "accounts/login.html")
+
+@login_required
 def dashboardStudent (request):
 	return render(request, "student/dashboard.html", {'title': 'Dashboard | Matriculacions - INS Institut Esteve Terradas i Illa', 'breadcrumb': [{'link': '/student/dashboard', 'text': 'Inici'},{'link': '#', 'text': 'Dashboard'}]});
 
-#@login_required
+@login_required
 def profiles (request):
 	if request.method == 'POST':
 		form = SaveProfiles(request.POST)
@@ -50,6 +54,6 @@ def profiles (request):
 		'breadcrumb': [{'link': '/student/dashboard', 'text': 'Inici'},{'link': '#', 'text': 'Matriculació'},{'link': '/student/profiles', 'text': 'Perfils'}]
 	});
 	
-#@login_required
+@login_required
 def prices (request):
 	return render(request, 'student/prices.html')
