@@ -1,5 +1,6 @@
 {
 	"python.linting.enabled": false,
 	"python.linting.pylintEnabled": false,
-	"python.linting.pycodestyleEnabled": true
+	"python.linting.pycodestyleEnabled": true,
+	"python.pythonPath": "/home/ruben/.virtualenvs/matrics/bin/python"
 }
