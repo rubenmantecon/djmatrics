@@ -5,6 +5,14 @@ body {
 	background: white;
 }
 
+header {
+	background: #1D4092;
+}
+
+nav {
+	background: #4B64A6;
+}
+
 main {
 	height: auto;
 	overflow: hidden;
@@ -16,6 +24,7 @@ main {
 footer {
 	height: 130px;
 	color: white;
+	background: #214093;
 }
 
 section {
@@ -113,4 +122,67 @@ section {
 
 .disable-mg {
 	margin: 0;
+}
+
+.brand-logo {
+	float: left;
+	width: 12%;
+}
+
+.breadcrumb {
+	background: #AAB6D6;
+	padding: 17px 12px 17px 12px;
+	color: black;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+.breadcrumb:first-of-type {
+	border-radius: 5px 0px 0px 5px;
+	margin-left: 5px;
+}
+
+.breadcrumb:last-of-type {
+	border-radius: 0px 5px 5px 0px;
+}
+
+.breadcrumb:before {
+	content: '';
+	margin: 0;
+}
+
+.image-logo {
+	width: 100px;
+	height: 100px;
+	margin: 15px;
+}
+
+.al-it-center {
+	display: flex;
+	align-items: center;
+}
+
+.title {
+	padding: 25px 0 25px 0;
+	float: left;
+	width: 50%;
+}
+
+.title > h2 {
+	margin: 0 0 0 0;
+	font-size: 42px;
+}
+
+.title > h4 {
+	margin: 0 0 0 0;
+	font-size: 36px;
+	text-transform: uppercase;
+}
+
+.user-content {
+	display: flex;
+	width: 38%;
+	align-items: flex-end;
+	flex-direction: column;
+	padding-right: 20px;
 }
