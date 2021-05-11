@@ -43,8 +43,8 @@
 		<nav class="blue darken-3">
 			<div class="nav-wrapper">
 				<div class="col s12">
-					{% if breadcrum %}
-					{% for item in breadcrum %}
+					{% if breadcrumb %}
+					{% for item in breadcrumb %}
 						<a href="{{ item.link }}" class="breadcrumb">{{ item.text }}</a>
 					{% endfor %}
 					{% endif %}

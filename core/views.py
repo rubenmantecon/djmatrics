@@ -47,7 +47,7 @@ def profiles (request):
 		'title': 'Perfils d\'usuari | Matriculacions - INS Institut Esteve Terradas i Illa',
 		'profiles': ProfileRequirement.objects.all(),
 		'requirements': Requirement.objects.all(),
-		'breadcrum': [{'link': '/student/dashboard', 'text': 'Inici'},{'link': '#', 'text': 'Matriculació'},{'link': '/student/profiles', 'text': 'Perfils'}]
+		'breadcrumb': [{'link': '/student/dashboard', 'text': 'Inici'},{'link': '#', 'text': 'Matriculació'},{'link': '/student/profiles', 'text': 'Perfils'}]
 	});
 	
 #@login_required
