@@ -31,7 +31,7 @@ class Career(models.Model):
     start = models.DateField("data inici", null=False, default=timezone.now)
     end = models.DateField("data finalització", null=True, default=None)
     active = models.BooleanField("és actiu", default=False)
-    term = models.ForeignKey(Term, on_delete=models.RESTRICT)
+    term = models.ForeignKey(Term, on_delete=models.SET_NULL, null=True)
 
     def __str__(self):
         return self.name
@@ -74,7 +74,7 @@ class UF(models.Model):
     desc = models.CharField(
         "descripcio", max_length=300, blank=True, null=True)
     price = models.IntegerField("preu", default=25)
-    mp = models.ForeignKey(MP, on_delete=models.RESTRICT)
+    mp = models.ForeignKey(MP, on_delete=models.SET_NULL, null=True)
     active = models.BooleanField("és actiu", default=True)
 
     def __str__(self):
@@ -92,8 +92,8 @@ class Enrolment(models.Model):
         ('R', 'Rebutjat'),
         ('B', 'Buit')
     )
-    role = models.OneToOneField(
-        User, on_delete=models.RESTRICT, primary_key=True)
+    user = models.OneToOneField(
+        User, on_delete=models.SET_NULL, null=True, blank=True)
     uf = models.ManyToManyField(UF)
     dni = models.CharField("dni", max_length=30)
     state = models.CharField("estat de matrícula",
@@ -108,10 +108,6 @@ class Enrolment(models.Model):
     email = models.EmailField("correu", max_length=255, null=False)
     emergency_number = models.CharField("número d'emergència", max_length=14)
 
-    tutor_1 = models.CharField(
-        "nom del pare/mare o tutor/a legal", max_length=50, null=True, default=None)
-    tutor_2 = models.CharField(
-        "nom del pare/mare o tutor/a legal (2)", max_length=50, null=True, default=None)
     tutor_1_dni = models.CharField(
         "dni del pare/mare o tutor/a legal", max_length=30, null=True, default=None)
     tutor_2_dni = models.CharField(
@@ -130,22 +126,24 @@ class Enrolment(models.Model):
         "cognoms del pare/mare o tutor/a legal (2)", max_length=50, null=True, default=None)
 
     profile_req = models.ForeignKey(
-        ProfileRequirement, on_delete=models.RESTRICT)
-    career = models.ForeignKey(Career, on_delete=models.RESTRICT)
+        ProfileRequirement, on_delete=models.SET_NULL, null=True)
+    career = models.ForeignKey(Career, on_delete=models.SET_NULL, null=True)
 
     def __str__(self):
         return self.email
 
 
 class Record(models.Model):
-    uf = models.ForeignKey(UF, on_delete=models.RESTRICT)
-    uf_name = models.CharField(verbose_name="nom de la unitat formativa", max_length=80)
+    uf = models.ForeignKey(UF, on_delete=models.SET_NULL, null=True)
+    uf_name = models.CharField(
+        verbose_name="nom de la unitat formativa", max_length=80)
     uf_code = models.CharField(
         verbose_name="codi de la unitat formativa", max_length=12)
-    student_id = models.CharField(verbose_name="DNI de l'estudiant", max_length=30)
+    student_id = models.CharField(
+        verbose_name="DNI de l'estudiant", max_length=30)
     term = models.CharField(verbose_name="any escolar", max_length=50)
-    career_code = models.CharField(verbose_name="codi del cicle formatiu", max_length=12)
-    
+    career_code = models.CharField(
+        verbose_name="codi del cicle formatiu", max_length=12)
 
 
 class Requirement(models.Model):
@@ -155,7 +153,7 @@ class Requirement(models.Model):
     class Meta:
         verbose_name = "Requeriment"
     profile = models.ForeignKey(
-        ProfileRequirement, on_delete=models.RESTRICT)
+        ProfileRequirement, on_delete=models.SET_NULL, null=True)
     name = models.CharField("nom", max_length=255)
 
     def __str__(self):
@@ -172,10 +170,9 @@ class Req_enrol(models.Model):
         ('R', 'Rebutjat'),
         ('B', 'Buit')
     )
-    requirement = models.ForeignKey(Requirement, on_delete=models.RESTRICT)
-    enrolment = models.ForeignKey(Enrolment, on_delete=models.RESTRICT)
+    requirement = models.ForeignKey(Requirement, on_delete=models.SET_NULL, null=True)
+    enrolment = models.ForeignKey(Enrolment, on_delete=models.SET_NULL, null=True)
     state = models.CharField(max_length=20, choices=CHOICES, default=None)
-
 
 
 class Upload(models.Model):
@@ -183,4 +180,4 @@ class Upload(models.Model):
         verbose_name = "Pujades"
         verbose_name_plural = "Pujades"
     data = models.FileField(null=True, blank=True)
-    req_enrol = models.ForeignKey(Req_enrol, on_delete=models.RESTRICT)
+    req_enrol = models.ForeignKey(Req_enrol, on_delete=models.SET_NULL, null=True)
