@@ -11,4 +11,6 @@ $(document).ready(function(){
 			$(icon).rotate({animateTo: 0});
 		}
 	});
+
+	$('.tooltipped, .trafficlight').tooltip();
 });
