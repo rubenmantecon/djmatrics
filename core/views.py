@@ -20,7 +20,6 @@ def dashboardStudent (request):
 
 		count += 1
 
-
 	return render(request, "student/dashboard.html", {
 		'title': 'Dashboard | Matriculacions - INS Institut Esteve Terradas i Illa', 
 		'breadcrumb': [{'link': '/student/dashboard', 'text': 'Inici'},{'link': '#', 'text': 'Dashboard'}],
