@@ -1,19 +1,33 @@
 from django.shortcuts import render, HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
 from django.core.exceptions import ValidationError
-from .models import ProfileRequirement, Requirement, Enrolment
+from .models import ProfileRequirement, Req_enrol, Requirement, Enrolment
 from .forms import SaveProfiles
-import datetime
 
 def index (request):
     return render(request, "base.html", {'title':"INS Institut Esteve Terradas i Illa", 'user': "Enric"})
 
-def login (request):
-    return render(request, "accounts/login.html")
-
 @login_required
 def dashboardStudent (request):
-	return render(request, "student/dashboard.html", {'title': 'Dashboard | Matriculacions - INS Institut Esteve Terradas i Illa', 'breadcrumb': [{'link': '/student/dashboard', 'text': 'Inici'},{'link': '#', 'text': 'Dashboard'}]});
+	documentsQuery = Req_enrol.objects.filter(enrolment_id=request.user.id)
+
+	documents = []
+	count = 0
+	for document in documentsQuery:
+		documents.append([])
+		documents[count].append(Requirement.objects.get(id=document.requirement_id).name)
+		documents[count].append(document.state)
+
+		count += 1
+
+
+	return render(request, "student/dashboard.html", {
+		'title': 'Dashboard | Matriculacions - INS Institut Esteve Terradas i Illa', 
+		'breadcrumb': [{'link': '/student/dashboard', 'text': 'Inici'},{'link': '#', 'text': 'Dashboard'}],
+		'enrolmentStatus': Enrolment.objects.get(role_id=request.user.id).state,
+		'documents': documents,
+		}
+	);
 
 @login_required
 def profiles (request):
@@ -28,7 +42,7 @@ def profiles (request):
 						image_rights = int(form.data['drets_imatge']),
 						extracurricular = int(form.data['salides_extra']),
 						excursions = int(form.data['salides_excursio']),
-						state = 'Empty'
+						state = 'P'
 					)
 				else:
 					toSaveEnrolment = Enrolment.objects.get(role_id=request.user.id)
@@ -56,4 +70,6 @@ def profiles (request):
 	
 @login_required
 def prices (request):
-	return render(request, 'student/prices.html')
+	return render(request, 'student/prices.html',
+		{'breadcrumb': [{'link': '/student/dashboard', 'text': 'Inici'},{'link': '#', 'text': 'Matriculació'},{'link': '/student/prices', 'text': 'Preu'}]}
+	)

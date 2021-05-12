@@ -99,7 +99,7 @@ section {
 
 .trafficlight-input {
 	display: flex;
-	justify-content: flex-end;
+	justify-content: flex-end !important;
 	align-items: center;
 }
 
@@ -114,6 +114,7 @@ section {
 	border-radius: 100%;
 	margin: 0px 5px 0px 0px;
 	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+	opacity: .15;
 }
 
 .disable-pd {
@@ -185,4 +186,20 @@ section {
 	align-items: flex-end;
 	flex-direction: column;
 	padding-right: 20px;
+}
+
+.header-section {
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-section > .trafficlight-input {
+	margin: 0 0 -15px 0;
+}
+
+.turnon {
+	opacity: 1;
 }

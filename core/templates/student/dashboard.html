@@ -4,44 +4,29 @@
 <section>
 	<div class="row">
 		<div class="col s8">
-			<h1 class="title-section">Estat de la matricula</h1>
+			<div class="header-section">
+				<h1 class="title-section">Estat de la matricula</h1>
+				<div class="trafficlight-input">
+					<div class="trafficlight red waves-effect waves-light {% if enrolmentStatus == 'U' %}turnon{% endif %}" data-position="bottom" data-tooltip="Denegat"></div>
+					<div class="trafficlight orange waves-effect waves-light {% if enrolmentStatus == 'P' %}turnon{% endif %}" data-position="bottom" data-tooltip="Pendent"></div>
+					<div class="trafficlight green waves-effect waves-light {% if enrolmentStatus == 'V' %}turnon{% endif %}" data-position="bottom" data-tooltip="Acceptat"></div>
+				</div>
+			</div>
 			<ul class="collection disable-pd disable-mg">
+				{% for document in documents %}
 				<li class="collection-item">
 					<div class="row disable-pd disable-mg">
 						<div class="col s8">
-							Document a verificar
+							{{ document.0 }}
 						</div>
 						<div class="col s4 trafficlight-input">
-							<div class="trafficlight red" data-position="bottom" data-tooltip="Denegat"></div>
-							<div class="trafficlight orange" data-position="bottom" data-tooltip="Pendent de verificar"></div>
-							<div class="trafficlight green" data-position="bottom" data-tooltip="Acceptat"></div>
+							<div class="trafficlight red waves-effect waves-light {% if document.1 == 'R' %}turnon{% endif %}" data-position="bottom" data-tooltip="Denegat"></div>
+							<div class="trafficlight orange waves-effect waves-light {% if document.1 == 'P' %}turnon{% endif %}" data-position="bottom" data-tooltip="Pendent"></div>
+							<div class="trafficlight green waves-effect waves-light {% if document.1 == 'V' %}turnon{% endif %}" data-position="bottom" data-tooltip="Acceptat"></div>
 						</div>
 					</div>
 				</li>
-				<li class="collection-item">
-					<div class="row disable-pd disable-mg">
-						<div class="col s8">
-							Document a verificar
-						</div>
-						<div class="col s4 trafficlight-input">
-							<div class="trafficlight red" data-position="bottom" data-tooltip="Denegat"></div>
-							<div class="trafficlight orange" data-position="bottom" data-tooltip="Pendent de verificar"></div>
-							<div class="trafficlight green" data-position="bottom" data-tooltip="Acceptat"></div>
-						</div>
-					</div>
-				</li>
-				<li class="collection-item">
-					<div class="row disable-pd disable-mg">
-						<div class="col s8">
-							Document a verificar
-						</div>
-						<div class="col s4 trafficlight-input">
-							<div class="trafficlight red" data-position="bottom" data-tooltip="Denegat"></div>
-							<div class="trafficlight orange" data-position="bottom" data-tooltip="Pendent de verificar"></div>
-							<div class="trafficlight green" data-position="bottom" data-tooltip="Acceptat"></div>
-						</div>
-					</div>
-				</li>
+				{% endfor %}
 			</ul>
 		</div>
 		<div class="col s4">
@@ -53,11 +38,11 @@
 				</li>
 				<li class="collection-item collection-middle">
 					<img src="{% static 'images/icons/calculator.png' %}" alt="" class="nav-icon">
-					<a href="#" class="black-text">Recalcula matricula</a>
+					<a href="/student/prices" class="black-text">Recalcula matricula</a>
 				</li>
 				<li class="collection-item collection-middle">
 					<img src="{% static 'images/icons/document.png' %}" alt="" class="nav-icon">
-					<a href="#" class="black-text">Documents</a>
+					<a href="/student/documents" class="black-text">Documents</a>
 				</li>
 			</ul>
 		</div>
