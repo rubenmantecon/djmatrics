@@ -33,7 +33,7 @@ def GetAccessToken(request):
 
     enrolment = Enrolment.objects.get(role_id=user.id)
 
-    return Response({ 'Token': token.key, 'StatusEnrolment': enrolment.state })
+    return Response({ 'Token': token.key, 'StatusEnrolment': enrolment.state, 'BoolWizard': True })
 
 
 @api_view(['GET'])
