@@ -10,7 +10,7 @@ class Term(models.Model):
         verbose_name_plural = "Cursos"
     name = models.CharField("nom", max_length=200)
     desc = models.TextField(
-        "descripció", max_length=300, blank=True, null=True)
+        "descripció", max_length=255, blank=True, null=True)
     start = models.DateField("data inici", null=False)
     end = models.DateField("data finalització", null=True, default=None)
     active = models.BooleanField("és actiu", default=False)
@@ -31,7 +31,7 @@ class Career(models.Model):
     start = models.DateField("data inici", null=False, default=timezone.now)
     end = models.DateField("data finalització", null=True, default=None)
     active = models.BooleanField("és actiu", default=False)
-    term = models.ForeignKey(Term, on_delete=models.RESTRICT)
+    term = models.ForeignKey(Term, on_delete=models.SET_NULL, null=True)
 
     def __str__(self):
         return self.name
@@ -63,12 +63,18 @@ class MP(models.Model):
 class UF(models.Model):
     class Meta:
         verbose_name_plural = "UFs"
+    CHOICES = (
+        ('1', 'Primer'),
+        ('2', 'Segon'),
+    )
     name = models.CharField("nom", max_length=255)
     code = models.CharField("codi", max_length=20)
+    course = models.CharField(
+        "primer o segon", max_length=20, choices=CHOICES, default=None, null=True)
     desc = models.CharField(
         "descripcio", max_length=300, blank=True, null=True)
     price = models.IntegerField("preu", default=25)
-    mp = models.ForeignKey(MP, on_delete=models.RESTRICT)
+    mp = models.ForeignKey(MP, on_delete=models.SET_NULL, null=True)
     active = models.BooleanField("és actiu", default=True)
 
     def __str__(self):
@@ -86,9 +92,10 @@ class Enrolment(models.Model):
         ('R', 'Rebutjat'),
         ('B', 'Buit')
     )
-    role = models.OneToOneField(
-        User, on_delete=models.RESTRICT, primary_key=True)
-    dni = models.CharField("dni", max_length=9)
+    user = models.OneToOneField(
+        User, on_delete=models.SET_NULL, null=True, blank=True)
+    uf = models.ManyToManyField(UF)
+    dni = models.CharField("dni", max_length=30)
     state = models.CharField("estat de matrícula",
                              max_length=20, choices=CHOICES, default=None)
     birthplace = models.CharField(
@@ -98,32 +105,45 @@ class Enrolment(models.Model):
     city = models.CharField("ciutat", max_length=150)
     postal_code = models.CharField("codi postal", max_length=5)
     phone_number = models.CharField("número de telèfon", max_length=14)
-    email = models.EmailField("correu", max_length=254, null=False)
+    email = models.EmailField("correu", max_length=255, null=False)
     emergency_number = models.CharField("número d'emergència", max_length=14)
-    tutor_1 = models.CharField(
-        "nom del pare/mare o tutor/a legal", max_length=50, null=True, default=None)
-    tutor_2 = models.CharField(
-        "nom del pare/mare o tutor/a legal (2)", max_length=50, null=True, default=None)
+
     tutor_1_dni = models.CharField(
-        "dni del pare/mare o tutor/a legal", max_length=9, null=True, default=None)
+        "dni del pare/mare o tutor/a legal", max_length=30, null=True, default=None)
     tutor_2_dni = models.CharField(
-        "dni del pare/mare o tutor/a legal (2)", max_length=9, null=True, default=None)
-    term = models.ForeignKey(Term, on_delete=models.RESTRICT)
+        "dni del pare/mare o tutor/a legal (2)", max_length=30, null=True, default=None)
+    tutor_1_name = models.CharField(
+        "nom del pare/mare o tutor/a legal (2)", max_length=50, null=True, default=None)
+    tutor_1_lastname1 = models.CharField(
+        "cognoms del pare/mare o tutor/a legal (2)", max_length=50, null=True, default=None)
+    tutor_1_lastname2 = models.CharField(
+        "cognoms del pare/mare o tutor/a legal (2)", max_length=50, null=True, default=None)
+    tutor_2_name = models.CharField(
+        "cognoms del pare/mare o tutor/a legal (2)", max_length=50, null=True, default=None)
+    tutor_2_lastname1 = models.CharField(
+        "cognoms del pare/mare o tutor/a legal (2)", max_length=50, null=True, default=None)
+    tutor_2_lastname2 = models.CharField(
+        "cognoms del pare/mare o tutor/a legal (2)", max_length=50, null=True, default=None)
+
     profile_req = models.ForeignKey(
-        ProfileRequirement, on_delete=models.RESTRICT)
-    career = models.ForeignKey(Career, on_delete=models.RESTRICT)
+        ProfileRequirement, on_delete=models.SET_NULL, null=True)
+    career = models.ForeignKey(Career, on_delete=models.SET_NULL, null=True)
 
     def __str__(self):
         return self.email
 
 
-class EnrolmentUF(models.Model):
-    uf = models.ForeignKey(UF, on_delete=models.RESTRICT)
-    enrolment = models.ForeignKey(Enrolment, on_delete=models.RESTRICT)
-
-
 class Record(models.Model):
-    uf = models.ForeignKey(UF, on_delete=models.RESTRICT)
+    uf = models.ForeignKey(UF, on_delete=models.SET_NULL, null=True)
+    uf_name = models.CharField(
+        verbose_name="nom de la unitat formativa", max_length=80)
+    uf_code = models.CharField(
+        verbose_name="codi de la unitat formativa", max_length=12)
+    student_id = models.CharField(
+        verbose_name="DNI de l'estudiant", max_length=30)
+    term = models.CharField(verbose_name="any escolar", max_length=50)
+    career_code = models.CharField(
+        verbose_name="codi del cicle formatiu", max_length=12)
 
 
 class Requirement(models.Model):
@@ -133,7 +153,7 @@ class Requirement(models.Model):
     class Meta:
         verbose_name = "Requeriment"
     profile = models.ForeignKey(
-        ProfileRequirement, on_delete=models.RESTRICT)
+        ProfileRequirement, on_delete=models.SET_NULL, null=True)
     name = models.CharField("nom", max_length=255)
 
     def __str__(self):
@@ -150,17 +170,14 @@ class Req_enrol(models.Model):
         ('R', 'Rebutjat'),
         ('B', 'Buit')
     )
-    requirement = models.ForeignKey(Requirement, on_delete=models.RESTRICT)
-    enrolment = models.ForeignKey(Enrolment, on_delete=models.RESTRICT)
+    requirement = models.ForeignKey(Requirement, on_delete=models.SET_NULL, null=True)
+    enrolment = models.ForeignKey(Enrolment, on_delete=models.SET_NULL, null=True)
     state = models.CharField(max_length=20, choices=CHOICES, default=None)
-
-
-fs = FileSystemStorage(location='')
 
 
 class Upload(models.Model):
     class Meta:
         verbose_name = "Pujades"
         verbose_name_plural = "Pujades"
-    data = models.FileField(storage=fs, null=True)
-    req_enrol = models.ForeignKey(Req_enrol, on_delete=models.RESTRICT)
+    data = models.FileField(null=True, blank=True)
+    req_enrol = models.ForeignKey(Req_enrol, on_delete=models.SET_NULL, null=True)
