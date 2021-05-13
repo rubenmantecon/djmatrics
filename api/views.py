@@ -8,6 +8,7 @@ from django.contrib.auth.models import User
 from core.models import *
 from django.contrib.auth.hashers import check_password
 
+
 @api_view(['POST'])
 def GetAccessToken(request):
     
@@ -90,7 +91,6 @@ def GetProfilesAndRequirements(request):
                     profilesandrequirements[profile_id]['requirements'].append(valuer)
 
     return Response(profilesandrequirements)
-
 
 
 @api_view(['GET'])
