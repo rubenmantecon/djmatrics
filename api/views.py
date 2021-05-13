@@ -11,22 +11,28 @@ from django.contrib.auth.hashers import check_password
 @api_view(['POST'])
 def GetAccessToken(request):
     
-    username = request.POST.get('username')
+    email = request.POST.get('email')
     password = request.POST.get('password')
 
     try:
-        user = User.objects.get(username=username)
+        user = User.objects.get(email=email)
     except User.DoesNotExist:
-        return Response({ detail: "No s'ha trobat l'usuari" })
+        return Response({ 'detail': "No s'ha trobat l'usuari" }, status=401)
     
     pwd_valid = check_password(password,user.password)
 
     if not pwd_valid:
-        return Response({ detail: "Contrasenya incorrecta" })
+        return Response({ 'detail': "Contrasenya incorrecta" }, status=401)
     
-    token, created = Token.objects.get_or_create(user=user)
+    try:
+        Token.objects.get(user=user).delete()
+        token = Token.objects.create(user=user)
+    except Token.DoesNotExist:
+        token = Token.objects.create(user=user)
 
-    return Response({ "Token": token.key })
+    enrolment = Enrolment.objects.get(role_id=user.id)
+
+    return Response({ 'Token': token.key, 'StatusEnrolment': enrolment.state })
 
 
 @api_view(['GET'])
@@ -34,12 +40,19 @@ def GetAccessToken(request):
 def GetUserInfo(request):
     
     user = User.objects.get(id=request.user.id)
+    enrolment = Enrolment.objects.get(role_id=user.id)
 
-    userinfofields = ['email','username','first_name','last_name']
+    userinfofields = ['username','first_name','last_name']
+    enrolmentinfofields = ['dni','birthplace','birthday','address','city','postal_code','phone_number','emergency_number','tutor_1','tutor_2']
+
     userinfo= {}
 
     for attr, value in user.__dict__.items():
         if attr in userinfofields:
+            userinfo[attr] = value
+    
+    for attr, value in enrolment.__dict__.items():
+        if attr in enrolmentinfofields:
             userinfo[attr] = value
 
     return Response(userinfo)
@@ -76,7 +89,6 @@ def GetProfilesAndRequirements(request):
                 else:
                     profilesandrequirements[profile_id]['requirements'].append(valuer)
 
-
     return Response(profilesandrequirements)
 
 
@@ -103,14 +115,12 @@ def GetCareer(request):
     careerinfofields = ['name','code','desc','hours','start','end']
     mpsinfofields = ['name','code','desc']
     ufsinfofields = ['id','name','code','desc'] 
-    
 
     for attrc, valuec in career.__dict__.items():
         if attrc in careerinfofields:
             careermpsufs[attrc] = valuec
     if 'modules' not in careermpsufs.keys():
             careermpsufs['modules'] = {}
-
 
     for mp in mps:
         mpid = mp.id
@@ -122,8 +132,6 @@ def GetCareer(request):
     for mpkey in mpkeys:
         if 'ufs' not in careermpsufs['modules'][mpkey]:
             careermpsufs['modules'][mpkey]['ufs'] = {}
-     
-
 
     for uf in ufs:
         mp_id = uf.mp_id
@@ -132,6 +140,5 @@ def GetCareer(request):
         for attruf, valueuf in uf.__dict__.items():
             if attruf in ufsinfofields:
                 careermpsufs['modules'][mp_id]['ufs'][ufid][attruf] = valueuf
-
 
     return Response(careermpsufs)

@@ -6,6 +6,7 @@ defusedxml==0.7.1
 Django==3.2
 django-allauth==0.44.0
 django-allauth-office365 @ git+https://github.com/Lamelos/django-allauth-office365.git@bea948edd5d63918834e3a4520b611b6109ce399
+django-cors-headers==3.7.0
 django-environ==0.4.5
 djangorestframework==3.12.4
 django-sermepa==1.1.3
