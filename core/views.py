@@ -29,6 +29,15 @@ def dashboardStudent (request):
 	);
 
 @login_required
+def personaldata (request):
+	return render(request, 'student/personaldata.html', {
+		'title': 'Data personal | Matriculacions - INS Institut Esteve Terradas i Illa',
+		'profiles': ProfileRequirement.objects.all(),
+		'requirements': Requirement.objects.all(),
+		'breadcrumb': [{'link': '/student/dashboard', 'text': 'Inici'},{'link': '#', 'text': 'Alumne'},{'link': '/student/personaldata', 'text': 'Data personal'}]
+	});
+
+@login_required
 def profiles (request):
 	if request.method == 'POST':
 		form = SaveProfiles(request.POST)
