@@ -11,8 +11,8 @@ admin.site.register(models.Enrolment)
 admin.site.register(models.ProfileRequirement)
 #admin.site.register(models.Record)
 admin.site.register(models.Requirement)
-#admin.site.register(models.Req_enrol)
-#admin.site.register(models.Upload)
+admin.site.register(models.Req_enrol)
+admin.site.register(models.Upload)
 
 class CareerInline(admin.TabularInline):
 	model = models.Career

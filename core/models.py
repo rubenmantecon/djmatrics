@@ -179,5 +179,5 @@ class Upload(models.Model):
     class Meta:
         verbose_name = "Pujades"
         verbose_name_plural = "Pujades"
-    data = models.FileField(null=True, blank=True)
+    data = models.FileField(upload_to="uploads/", null=True, blank=True)
     req_enrol = models.ForeignKey(Req_enrol, on_delete=models.SET_NULL, null=True)
