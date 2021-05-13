@@ -10,7 +10,9 @@ class UserFactory(DjangoModelFactory):
     class Meta:
         model = User
         django_get_or_create = ()
-    email = lazy_attribute(lambda x:  fake.language_name()+ "@"+fake.random_element(elements=('gmail', 'hotmail', 'outlook'))+ fake.random_element(elements=('.com', '.cat', '.es')))
+    first_name = fake.first_name()
+    last_name = fake.last_name()
+    email = lazy_attribute(lambda x:  fake.language_name()+ "@"+fake.random_element(elements=('gmail', 'hotmail', 'outlook', 'protonmail'))+ fake.random_element(elements=('.com', '.cat', '.es', '.ch')))
     username = lazy_attribute(lambda x: fake.first_name()+fake.last_name()+"_student")
     password= factory.PostGenerationMethodCall('set_password','student')
     
