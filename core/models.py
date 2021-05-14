@@ -2,6 +2,7 @@ from django.db import models
 import django.utils.timezone as timezone
 from django.core.files.storage import FileSystemStorage
 from django.contrib.auth.models import User
+from enum import Enum
 
 
 class Term(models.Model):
