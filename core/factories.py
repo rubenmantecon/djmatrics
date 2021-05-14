@@ -12,8 +12,8 @@ class UserFactory(DjangoModelFactory):
         django_get_or_create = ()
     first_name = fake.first_name()
     last_name = fake.last_name()
-    email = lazy_attribute(lambda x:  fake.language_name()+ "@"+fake.random_element(elements=('gmail', 'hotmail', 'outlook', 'protonmail'))+ fake.random_element(elements=('.com', '.cat', '.es', '.ch')))
-    username = lazy_attribute(lambda x: fake.first_name()+fake.last_name()+"_student")
+    email = lazy_attribute(lambda x:  x.first_name + x.last_name + "@" + fake.random_element(elements=('gmail', 'hotmail', 'outlook', 'protonmail'))+ fake.random_element(elements=('.com', '.cat', '.es', '.ch')))
+    username = lazy_attribute(lambda x: x.first_name[0].lower()+x.last_name.lower()+"_student")
     password= factory.PostGenerationMethodCall('set_password','student')
     
 
@@ -21,11 +21,11 @@ class TermFactory(DjangoModelFactory):
     class Meta:
         model = Term
         django_get_or_create = ()
-
-    name = lazy_attribute(lambda x: "Curs " +fake.year()+ "/"+fake.year())
+    
+    start = lazy_attribute(lambda x: fake.year()+'-9-15')
+    end = lazy_attribute(lambda x: str(int(x.start.split('-')[0])+1)+'-6-10')
+    name = lazy_attribute(lambda x: "Curs " +x.start.split('-')[0]+ "/"+x.end.split('-')[0])
     desc = lazy_attribute(lambda x: fake.paragraph())
-    start = lazy_attribute(lambda x: fake.date_time_between(start_date='now', end_date='+10d', tzinfo=None))
-    end = lazy_attribute(lambda x: fake.date_time_between(start_date='+11d', end_date='+30d', tzinfo=None))
     
 class CareerFactory(DjangoModelFactory):
     class Meta:
@@ -38,7 +38,7 @@ class CareerFactory(DjangoModelFactory):
     hours = lazy_attribute(lambda x: fake.random_number(digits=3, fix_len=True))
     start = lazy_attribute(lambda x: fake.date_time_between(start_date='now', end_date='+10d', tzinfo=None))
     end = lazy_attribute(lambda x: fake.date_time_between(start_date='+11d', end_date='+30d', tzinfo=None))
-    term = factory.SubFactory(TermFactory)
+    term = factory.Iterator(models.Term.objects.all())
 
 class MpFactory(DjangoModelFactory):
     class Meta:
