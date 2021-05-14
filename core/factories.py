@@ -87,7 +87,7 @@ class EnrolmentFactory(DjangoModelFactory):
     excursions = lazy_attribute(lambda x: fake.random_element(elements=(1, 0)))
     extracurricular = lazy_attribute(lambda x: fake.random_element(elements=(1, 0)))
     image_rights = lazy_attribute(lambda x: fake.random_element(elements=(1, 0)))
-    profile_id = 1
+    profile_req = factory.SubFactory(ProfileRequirementFactory)
 
 class RecordFactory(DjangoModelFactory):
     class Meta:

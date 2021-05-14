@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-	{% load static %}
-
 	<head>
 		{% load static %}
 		<meta charset="UTF-8">
@@ -57,12 +55,22 @@
 				</div>
 			</div>
 		</nav>
-		<main class="background container">
-			{% block content %}{% endblock %}
-		</main>
-		<footer>
+	{% endblock %}
+	<main class="background container">
+		{% block content %}{% endblock %}
+	</main>
+	{% block footer %}
+	<footer class="page-footer blue darken-4">
+		<div class="container">
 			<i class="material-icons right">timelapse</i>
-			© 2021 INS Esteve Terradas i Illa
-		</footer>
-	</body>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				© 2021 INS Esteve Terradas i Illa
+			</div>
+		</div>
+	</footer>
+	{% endblock %}
+</body>
+
 </html>

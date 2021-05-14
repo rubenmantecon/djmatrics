@@ -38,6 +38,10 @@ def personaldata (request):
 	});
 
 @login_required
+def login (request):
+    return render(request,"login.html")
+
+@login_required
 def profiles (request):
 	if request.method == 'POST':
 		form = SaveProfiles(request.POST)
