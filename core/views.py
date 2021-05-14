@@ -23,7 +23,7 @@ def dashboardStudent (request):
 	return render(request, "student/dashboard.html", {
 		'title': 'Dashboard | Matriculacions - INS Institut Esteve Terradas i Illa', 
 		'breadcrumb': [{'link': '/student/dashboard', 'text': 'Inici'},{'link': '#', 'text': 'Dashboard'}],
-		'enrolmentStatus': Enrolment.objects.get(role_id=request.user.id).state,
+		'enrolmentStatus': Enrolment.objects.get(id=request.user.id).state,
 		'documents': documents,
 		}
 	);
@@ -52,16 +52,16 @@ def profiles (request):
 		if form.is_valid():
 			if int(form.data['drets_imatge']) in [0, 1] and int(form.data['salides_excursio']) in [0, 1] and int(form.data['salides_extra']) in [0, 1]:
 				
-				if not Enrolment.objects.filter(role_id=request.user.id).exists():
+				if not Enrolment.objects.filter(id=request.user.id).exists():
 					toSaveEnrolment = Enrolment.objects.create(
-						role_id = request.user.id,
+						id = request.user.id,
 						image_rights = int(form.data['drets_imatge']),
 						extracurricular = int(form.data['salides_extra']),
 						excursions = int(form.data['salides_excursio']),
 						state = 'P'
 					)
 				else:
-					toSaveEnrolment = Enrolment.objects.get(role_id=request.user.id)
+					toSaveEnrolment = Enrolment.objects.get(id=request.user.id)
 					toSaveEnrolment.image_rights = int(form.data['drets_imatge'])
 					toSaveEnrolment.extracurricular = int(form.data['salides_extra'])
 					toSaveEnrolment.excursions = int(form.data['salides_excursio'])

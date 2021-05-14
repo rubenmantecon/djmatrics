@@ -13,9 +13,10 @@ cryptography==3.4.7
 defusedxml==0.7.1
 Django==3.2
 django-allauth==0.44.0
-django-allauth-office365==0.0.1
 django-anymail==8.2
 django-bootstrap-breadcrumbs==0.9.2
+django-allauth-office365 @ git+https://github.com/Lamelos/django-allauth-office365.git@bea948edd5d63918834e3a4520b611b6109ce399
+django-cors-headers==3.7.0
 django-environ==0.4.5
 django-microsoft-auth==2.4.0
 django-sermepa==1.1.3

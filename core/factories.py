@@ -2,7 +2,7 @@ import factory
 from factory import Factory,lazy_attribute
 from faker import Faker
 from factory.django import DjangoModelFactory
-from core.models import User,Term, Career, MP, UF, Enrolment, Record, Requirement, Req_enrol, ProfileRequirement,EnrolmentUF, Upload
+from core.models import *
 
 fake=Faker()
 
@@ -10,7 +10,9 @@ class UserFactory(DjangoModelFactory):
     class Meta:
         model = User
         django_get_or_create = ()
-    email = lazy_attribute(lambda x:  fake.language_name()+ "@"+fake.random_element(elements=('gmail', 'hotmail', 'outlook'))+ fake.random_element(elements=('.com', '.cat', '.es')))
+    first_name = fake.first_name()
+    last_name = fake.last_name()
+    email = lazy_attribute(lambda x:  fake.language_name()+ "@"+fake.random_element(elements=('gmail', 'hotmail', 'outlook', 'protonmail'))+ fake.random_element(elements=('.com', '.cat', '.es', '.ch')))
     username = lazy_attribute(lambda x: fake.first_name()+fake.last_name()+"_student")
     password= factory.PostGenerationMethodCall('set_password','student')
     
@@ -67,7 +69,7 @@ class EnrolmentFactory(DjangoModelFactory):
     class Meta:
         model = Enrolment
         django_get_or_create = ()
-    role = factory.SubFactory(UserFactory)
+    user = factory.SubFactory(UserFactory)
     dni = lazy_attribute(lambda x: fake.bothify(text='########?', letters='ABCDEFGHIJKLMNOPQRSTUVWXYZ'))
     state = lazy_attribute(lambda x: fake.random_element(elements=('P', 'V', 'U')))
     birthplace = lazy_attribute(lambda x: fake.country())
@@ -78,11 +80,14 @@ class EnrolmentFactory(DjangoModelFactory):
     phone_number = lazy_attribute(lambda x: fake.bothify(text='#########'))
     email = lazy_attribute(lambda x: fake.language_name()+ "@"+fake.random_element(elements=('gmail', 'hotmail', 'outlook'))+ fake.random_element(elements=('.com', '.cat', '.es')))
     emergency_number= lazy_attribute(lambda x: fake.bothify(text='#########'))
-    tutor_1=lazy_attribute(lambda x: fake.name())
-    tutor_2=lazy_attribute(lambda x: fake.name())
+    tutor_1_name = lazy_attribute(lambda x: fake.first_name())
+    tutor_2_name = lazy_attribute(lambda x: fake.first_name())
+    tutor_1_lastname1 = lazy_attribute(lambda x: fake.last_name())
+    tutor_2_lastname1 = lazy_attribute(lambda x: fake.last_name())
+    tutor_1_lastname2 = lazy_attribute(lambda x: fake.last_name())
+    tutor_2_lastname2 = lazy_attribute(lambda x: fake.last_name())
     tutor_1_dni=lazy_attribute(lambda x: fake.bothify(text='########?', letters='ABCDEFGHIJKLMNOPQRSTUVWXYZ'))
     tutor_2_dni=lazy_attribute(lambda x: fake.bothify(text='########?', letters='ABCDEFGHIJKLMNOPQRSTUVWXYZ'))
-    term = factory.SubFactory(TermFactory)
     career = factory.SubFactory(CareerFactory)
     excursions = lazy_attribute(lambda x: fake.random_element(elements=(1, 0)))
     extracurricular = lazy_attribute(lambda x: fake.random_element(elements=(1, 0)))
@@ -110,11 +115,4 @@ class Req_enrolFactory(DjangoModelFactory):
         django_get_or_create = ()
     state = lazy_attribute(lambda x: fake.random_element(elements=('P', 'V', 'R','E')))
     requirement = factory.SubFactory(RequirementFactory)
-    enrolment = factory.SubFactory(EnrolmentFactory)
-
-class EnrolmentUFFactory(DjangoModelFactory):
-    class Meta:
-        model = EnrolmentUF
-        django_get_or_create = ()
-    uf = factory.SubFactory(UfFactory)
     enrolment = factory.SubFactory(EnrolmentFactory)
