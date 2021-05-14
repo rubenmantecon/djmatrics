@@ -32,10 +32,14 @@
 
 <section>
 	<h1 class="title-section">Solicitar canvis</h1>
-	<div class="input-field col s12">
-		<textarea id="textarea2" class="textarea-form" data-length="120"></textarea>
-	  </div>
+	<form method="post">
+		<div class="input-field col s12">
+			<textarea id="textarea2" class="textarea-form" data-length="120"></textarea>
+		</div>
 
-	  <button class="waves-effect waves-light btn fl-right">Desa els canvis</button>
+		{% csrf_token %}
+
+		<button class="waves-effect waves-light btn fl-right">Desa els canvis</button>
+	</form>
 </section>
 {% endblock %}

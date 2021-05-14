@@ -98,6 +98,10 @@ section {
 	justify-content: space-between;
 }
 
+.collection-sides > div:first-of-type {
+	font-weight: bold;
+}
+
 .collection-item:nth-child(2n) {
 	background: #E0E0E0 !important;
 }
