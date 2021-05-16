@@ -2,10 +2,50 @@ body {
 	display: flex;
 	min-height: 100vh;
 	flex-direction: column;
+	background: white;
+}
+
+header {
+	background: #1D4092;
+}
+
+nav {
+	background: #4B64A6;
 }
 
 main {
+	height: auto;
+	overflow: hidden;
 	flex: 1 0 auto;
+	background: #F2F2F2;
+	padding: 30px 80px 30px 80px;
+}
+
+footer {
+	height: 130px;
+	color: white;
+	background: #214093;
+}
+
+section {
+	margin-top: 0px;
+}
+
+section > .title-section {
+	margin: 30px 0px 10px 0px;
+}
+
+section {
+	margin: 0;
+}
+
+.nav-icon {
+	background: #C4C4C4;
+	width: auto;
+	height: 80px;
+	padding: 10px;
+	margin: 0px 20px 0 0;
+	border-radius: 10px;
 }
 
 .title-section {
@@ -30,7 +70,149 @@ main {
 	position: absolute;
 }
 
+.collapsible-body {
+	background: white;
+}
+
 .collection-bonification {
 	background: #E7E7E7;
 	font-weight: 500;
+}
+
+.collection {
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 10px;
+}
+
+.collection-item {
+	background: #E7E7E7 !important;
+}
+
+.collection-middle {
+	align-items: center;
+	display: flex;
+}
+
+.collection-sides {
+	display: flex;
+	justify-content: space-between;
+}
+
+.collection-sides > div:first-of-type {
+	font-weight: bold;
+}
+
+.collection-item:nth-child(2n) {
+	background: #E0E0E0 !important;
+}
+
+.trafficlight-input {
+	display: flex;
+	justify-content: flex-end !important;
+	align-items: center;
+}
+
+.trafficlight-input > i {
+	margin: 0 10px 0 0;
+	cursor: pointer;
+}
+
+.trafficlight {
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	margin: 0px 5px 0px 0px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+	opacity: .15;
+}
+
+.disable-pd {
+	padding:0;
+}
+
+.disable-mg {
+	margin: 0;
+}
+
+.brand-logo {
+	float: left;
+	width: 12%;
+}
+
+.breadcrumb {
+	background: #AAB6D6;
+	padding: 17px 12px 17px 12px;
+	color: black;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+.breadcrumb:first-of-type {
+	border-radius: 5px 0px 0px 5px;
+	margin-left: 5px;
+}
+
+.breadcrumb:last-of-type {
+	border-radius: 0px 5px 5px 0px;
+}
+
+.breadcrumb:before {
+	content: '';
+	margin: 0;
+}
+
+.image-logo {
+	width: 100px;
+	height: 100px;
+	margin: 15px;
+}
+
+.al-it-center {
+	display: flex;
+	align-items: center;
+}
+
+.title {
+	padding: 25px 0 25px 0;
+	float: left;
+	width: 50%;
+}
+
+.title > h2 {
+	margin: 0 0 0 0;
+	font-size: 42px;
+}
+
+.title > h4 {
+	margin: 0 0 0 0;
+	font-size: 36px;
+	text-transform: uppercase;
+}
+
+.user-content {
+	display: flex;
+	width: 38%;
+	align-items: flex-end;
+	flex-direction: column;
+	padding-right: 20px;
+}
+
+.header-section {
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-section > .trafficlight-input {
+	margin: 0 0 -15px 0;
+}
+
+.turnon {
+	opacity: 1;
+}
+
+.textarea-form {
+	
 }

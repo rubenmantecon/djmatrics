@@ -11,7 +11,7 @@ from django.contrib.auth.hashers import check_password
 
 @api_view(['POST'])
 def GetAccessToken(request):
-    
+
     email = request.POST.get('email')
     password = request.POST.get('password')
 
@@ -31,7 +31,8 @@ def GetAccessToken(request):
     except Token.DoesNotExist:
         token = Token.objects.create(user=user)
 
-    enrolment = Enrolment.objects.get(role_id=user.id)
+    enrolment = Enrolment.objects.get(id=user.id)
+
 
     return Response({ 'Token': token.key, 'StatusEnrolment': enrolment.state, 'BoolWizard': True })
 
@@ -41,7 +42,7 @@ def GetAccessToken(request):
 def GetUserInfo(request):
     
     user = User.objects.get(id=request.user.id)
-    enrolment = Enrolment.objects.get(role_id=user.id)
+    enrolment = Enrolment.objects.get(id=user.id)
 
     userinfofields = ['username','first_name','last_name']
     enrolmentinfofields = ['dni','birthplace','birthday','address','city','postal_code','phone_number','emergency_number','tutor_1','tutor_2']
@@ -97,7 +98,7 @@ def GetProfilesAndRequirements(request):
 @permission_classes([IsAuthenticated])
 def GetCareer(request):
 
-    enrolment = Enrolment.objects.get(role_id=request.user.id)
+    enrolment = Enrolment.objects.get(id=request.user.id)
     careerid = enrolment.career_id
 
     career = Career.objects.get(id=careerid)

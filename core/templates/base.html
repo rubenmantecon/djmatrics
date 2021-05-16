@@ -1,63 +1,60 @@
 <!DOCTYPE html>
 <html lang="es">
-{% load static %}
+	<head>
+		{% load static %}
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{% block title %}{{title}}{% endblock %}</title>
 
-<html lang="es">
-<head>
-	{% load static %}
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>{% block title %}{{title}}{% endblock %}</title>
+		<!-- Styles -->
+		<link rel="stylesheet" href="{% static 'css/materialize.css' %}">
+		<link rel="stylesheet" href="{% static 'css/style.css' %}">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-	<!-- Styles -->
-	<link rel="stylesheet" href="{% static 'css/materialize.css' %}">
-	<link rel="stylesheet" href="{% static 'css/style.css' %}">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
 
-	<!-- Fonts -->
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+		<!-- Javascript -->
+		<script src="{% static 'js/jquery.js' %}"></script>
+		<script src="{% static 'js/jquery-plugins/jquery-rotate.js' %}"></script>
+		<script src="{% static 'js/materialize.js' %}"></script>
+		<script src="{% static 'js/script.js' %}"></script>
+	</head>
 
-	<!-- Javascript -->
-	<script src="{% static 'js/jquery.js' %}"></script>
-	<script src="{% static 'js/jquery-plugins/jquery-rotate.js' %}"></script>
-	<script src="{% static 'js/materialize.js' %}"></script>
-	<script src="{% static 'js/script.js' %}"></script>
-</head>
-
-<body>
-{% block header %}
-	<header>
+	<body>
 		<header>
-			<nav class="blue darken-4">
-				<div class="nav-wrapper">
-					<a href="#" class="brand-logo">Logo</a>
-					<ul class="right hide-on-med-and-down">
-						<li><a href="#">Inici</a></li>
-						<li><a href="#">{% block user %}{{user}}{% endblock %}</a></li>
-						<li><a href="#"><i class="material-icons">exit_to_app</i></a></li>
-					</ul>
-				</div>
-			</nav>
+			<a href="#" class="brand-logo">
+				<img src="{% static 'images/logo-ieti.png' %}" class="image-logo"/>
+			</a>
+			<div class="title white-text">
+				<h2>INS Esteve Terradas i Illa</h2>
+				<h4>Matriculacions</h4>
+			</div>
+			<ul class="user-content white-text">
+				<li><i class="material-icons">person</i> {% if request.user.first_name %}{{ request.user.first_name }}{% else %}{{ request.user.username }}{% endif %}</li>
+				<li><i class="material-icons red-text text-darken-4">exit_to_app</i></li>
+				<li>{% if request.user.is_staff == 1 %}admin{% else %}alumne{% endif %}</li>
+			</ul>
 		</header>
-		<nav class="blue darken-3">
+		<nav>
 			<div class="nav-wrapper">
 				<div class="col s12">
-					<a href="#!" class="breadcrumb">First</a>
-					<a href="#!" class="breadcrumb">Second</a>
-					<a href="#!" class="breadcrumb">Third</a>
+					{% if breadcrumb %}
+					{% for item in breadcrumb %}
+						<a href="{{ item.link }}" class="breadcrumb">{{ item.text }}</a>
+					{% endfor %}
+					{% endif %}
 					<ul class="col s12 right hide-on-med-and-down">
-						<li><a href="#">Inici</a></li>
-						<li><a href="#">Dades personals</a></li>
+						<li><a href="/student/dashboard">Inici</a></li>
+						<li><a href="/student/personaldata">Dades personals</a></li>
 						<li><a href="#">Documents</a></li>
 					</ul>
 				</div>
 			</div>
 		</nav>
-	</header>
-	{% endblock %}
 	<main class="background container">
 		{% block content %}{% endblock %}
 	</main>

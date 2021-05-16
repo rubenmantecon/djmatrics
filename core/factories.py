@@ -64,6 +64,7 @@ class ProfileRequirementFactory(DjangoModelFactory):
         django_get_or_create = ()
     name = lazy_attribute(lambda x: fake.safe_color_name())
     description = lazy_attribute(lambda x: fake.paragraph())
+    profile_type = lazy_attribute(lambda x: fake.random_element(elements=('bonus', 'exemption')))
 class EnrolmentFactory(DjangoModelFactory):
     class Meta:
         model = Enrolment
@@ -88,6 +89,9 @@ class EnrolmentFactory(DjangoModelFactory):
     tutor_1_dni=lazy_attribute(lambda x: fake.bothify(text='########?', letters='ABCDEFGHIJKLMNOPQRSTUVWXYZ'))
     tutor_2_dni=lazy_attribute(lambda x: fake.bothify(text='########?', letters='ABCDEFGHIJKLMNOPQRSTUVWXYZ'))
     career = factory.SubFactory(CareerFactory)
+    excursions = lazy_attribute(lambda x: fake.random_element(elements=(1, 0)))
+    extracurricular = lazy_attribute(lambda x: fake.random_element(elements=(1, 0)))
+    image_rights = lazy_attribute(lambda x: fake.random_element(elements=(1, 0)))
     profile_req = factory.SubFactory(ProfileRequirementFactory)
 
 class RecordFactory(DjangoModelFactory):
@@ -112,10 +116,3 @@ class Req_enrolFactory(DjangoModelFactory):
     state = lazy_attribute(lambda x: fake.random_element(elements=('P', 'V', 'R','E')))
     requirement = factory.SubFactory(RequirementFactory)
     enrolment = factory.SubFactory(EnrolmentFactory)
-
-    
-
-
-
-    
-
