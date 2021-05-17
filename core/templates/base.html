@@ -35,7 +35,7 @@
 			</div>
 			<ul class="user-content white-text">
 				<li><i class="material-icons">person</i> {% if request.user.first_name %}{{ request.user.first_name }}{% else %}{{ request.user.username }}{% endif %}</li>
-				<li><i class="material-icons red-text text-darken-4">exit_to_app</i></li>
+				<li><a href="/accounts/logout"><i class="material-icons red-text text-darken-4">exit_to_app</i></a></li>
 				<li>{% if request.user.is_staff == 1 %}admin{% else %}alumne{% endif %}</li>
 			</ul>
 		</header>

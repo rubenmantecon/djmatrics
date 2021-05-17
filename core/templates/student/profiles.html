@@ -5,8 +5,8 @@
 		<h1 class="title-section">Bonificació 50% del preu públic</h1>
 		<div class="section-content">
 			<ul class="collapsible">
-				{% for profile in profiles %}
-				{% if profile.profile_type == 'bonus' %}
+				{% for profile in profilesBonus %}
+				{% if profile.profile_type == 'bonificació del 50%' %}
 				<li>
 					<div class="collapsible-header collection-bonification">
 						{{ profile.name }} <i class="material-icons">expand_more</i>
@@ -38,8 +38,8 @@
 		<h1 class="title-section">Exempció del preu públic</h1>
 		<div class="section-content">
 			<ul class="collapsible">
-				{% for profile in profiles %}
-				{% if profile.profile_type == 'exemption' %}
+				{% for profile in profilesExemption %}
+				{% if profile.profile_type == 'exempció' %}
 				<li>
 					<div class="collapsible-header collection-bonification">
 						{{ profile.name }} <i class="material-icons">expand_more</i>
@@ -71,6 +71,8 @@
 		<h1 class="title-section">Autoritzacions</h1>
 		<div class="section-content">
 			<ul class="collection">
+				{% for profile in profilesMandatory %}
+				{% endfor %}
 				<li class="collection-item" style="height: 50px;">
 					<div class="row">
 						<div class="col s10">

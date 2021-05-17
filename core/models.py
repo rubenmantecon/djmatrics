@@ -78,8 +78,9 @@ class ProfileRequirement(models.Model):
         verbose_name_plural = "Perfils de requeriment"
 
     class ProfileChoices(Enum):
-        EX = 'exemption'
-        BO = 'bonus'
+        OB = 'obligatori'
+        EX = 'exempció'
+        BO = 'bonificació del 50%'
 
     name = models.CharField("nom", max_length=255)
     description = models.TextField("descripció", null=True)
