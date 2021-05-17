@@ -1,4 +1,4 @@
-import factory
+import factory, factory.django
 from factory import Factory,lazy_attribute
 from faker import Faker
 from factory.django import DjangoModelFactory
@@ -12,8 +12,8 @@ class UserFactory(DjangoModelFactory):
         django_get_or_create = ()
     first_name = fake.first_name()
     last_name = fake.last_name()
-    email = lazy_attribute(lambda x:  x.first_name + x.last_name + "@" + fake.random_element(elements=('gmail', 'hotmail', 'outlook', 'protonmail'))+ fake.random_element(elements=('.com', '.cat', '.es', '.ch')))
-    username = lazy_attribute(lambda x: x.first_name[0].lower()+x.last_name.lower()+"_student")
+    email = lazy_attribute(lambda x:  x.first_name.lower()+x.last_name.lower()+"@"+fake.random_element(elements=('gmail', 'hotmail', 'outlook', 'protonmail'))+ fake.random_element(elements=('.com', '.cat', '.es', '.ch')))
+    username = lazy_attribute(lambda x: x.first_name+x.last_name+"_student")
     password= factory.PostGenerationMethodCall('set_password','student')
     
 
@@ -21,10 +21,10 @@ class TermFactory(DjangoModelFactory):
     class Meta:
         model = Term
         django_get_or_create = ()
-    
+
     start = lazy_attribute(lambda x: fake.year()+'-9-15')
     end = lazy_attribute(lambda x: str(int(x.start.split('-')[0])+1)+'-6-10')
-    name = lazy_attribute(lambda x: "Curs " +x.start.split('-')[0]+ "/"+x.end.split('-')[0])
+    name = lazy_attribute(lambda x: "Curs " +x.start.split('-')[0]+ "/" +x.end.split('-')[0])
     desc = lazy_attribute(lambda x: fake.paragraph())
     
 class CareerFactory(DjangoModelFactory):
@@ -36,9 +36,7 @@ class CareerFactory(DjangoModelFactory):
     code = lazy_attribute(lambda x: fake.bothify(text='???##S', letters='ABCDEFGHIJKLMNOPQRSTUVWXYZ'))
     desc = lazy_attribute(lambda x: fake.catch_phrase())
     hours = lazy_attribute(lambda x: fake.random_number(digits=3, fix_len=True))
-    start = lazy_attribute(lambda x: fake.date_time_between(start_date='now', end_date='+10d', tzinfo=None))
-    end = lazy_attribute(lambda x: fake.date_time_between(start_date='+11d', end_date='+30d', tzinfo=None))
-    term = factory.Iterator(models.Term.objects.all())
+    term = Term.objects.get(id = fake.random_element(elements=Term.objects.values_list('id',flat=True)))
 
 class MpFactory(DjangoModelFactory):
     class Meta:
@@ -64,6 +62,7 @@ class ProfileRequirementFactory(DjangoModelFactory):
         django_get_or_create = ()
     name = lazy_attribute(lambda x: fake.safe_color_name())
     description = lazy_attribute(lambda x: fake.paragraph())
+    profile_type = lazy_attribute(lambda x: fake.random_element(elements=('bonus', 'exemption')))
 class EnrolmentFactory(DjangoModelFactory):
     class Meta:
         model = Enrolment
@@ -88,6 +87,9 @@ class EnrolmentFactory(DjangoModelFactory):
     tutor_1_dni=lazy_attribute(lambda x: fake.bothify(text='########?', letters='ABCDEFGHIJKLMNOPQRSTUVWXYZ'))
     tutor_2_dni=lazy_attribute(lambda x: fake.bothify(text='########?', letters='ABCDEFGHIJKLMNOPQRSTUVWXYZ'))
     career = factory.SubFactory(CareerFactory)
+    excursions = lazy_attribute(lambda x: fake.random_element(elements=(1, 0)))
+    extracurricular = lazy_attribute(lambda x: fake.random_element(elements=(1, 0)))
+    image_rights = lazy_attribute(lambda x: fake.random_element(elements=(1, 0)))
     profile_req = factory.SubFactory(ProfileRequirementFactory)
 
 class RecordFactory(DjangoModelFactory):
@@ -112,10 +114,3 @@ class Req_enrolFactory(DjangoModelFactory):
     state = lazy_attribute(lambda x: fake.random_element(elements=('P', 'V', 'R','E')))
     requirement = factory.SubFactory(RequirementFactory)
     enrolment = factory.SubFactory(EnrolmentFactory)
-
-    
-
-
-
-    
-

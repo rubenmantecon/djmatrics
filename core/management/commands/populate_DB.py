@@ -15,8 +15,9 @@ class Command(BaseCommand):
     def handle(self, *args, **kwargs):
         self.stdout.write("Deleting old data...")
         models = [User,Term,Career,MP,UF,Enrolment,Record,ProfileRequirement,Requirement,Req_enrol]
-        for m in models:
-            m.objects.all().delete()
+        
+        #for m in models:
+        #    m.objects.all().delete()
 
         self.stdout.write("Creating new data...")
         

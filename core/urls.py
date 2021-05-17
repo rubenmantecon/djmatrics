@@ -7,5 +7,8 @@ from core import views
 urlpatterns = [
     path('', views.index),
 	# Students
+	path('student/dashboard', views.dashboardStudent),
 	path('student/profiles', views.profiles),
+	path('student/prices', views.prices),
+	path('student/personaldata', views.personaldata),
 ]
