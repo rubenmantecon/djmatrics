@@ -64,7 +64,7 @@ class ProfileRequirementFactory(DjangoModelFactory):
         django_get_or_create = ()
     name = lazy_attribute(lambda x: fake.safe_color_name())
     description = lazy_attribute(lambda x: fake.paragraph())
-    profile_type = lazy_attribute(lambda x: fake.random_element(elements=('bonus', 'exemption')))
+    profile_type = lazy_attribute(lambda x: fake.random_element(elements=('obligatori', 'exempció', 'bonificació del 50%')))
 class EnrolmentFactory(DjangoModelFactory):
     class Meta:
         model = Enrolment
