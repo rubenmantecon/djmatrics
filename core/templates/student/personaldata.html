@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block content %}
+<section>
+	<h1 class="title-section">Dades personals</h1>
+	<ul class="collection">
+		<li class="collection-item collection-sides">
+			<div>
+				Nom de l’usuari
+			</div>
+			<div>
+				{{ request. }}
+			</div>
+		</li>
+		<li class="collection-item collection-sides">
+			<div>
+				Cognoms de l'usuari
+			</div>
+			<div>
+				Mieza Jurado
+			</div>
+		</li>
+		<li class="collection-item collection-sides">
+			<div>
+				Correu electrónic
+			</div>
+			<div>
+				emieza@xtec.cat
+			</div>
+		</li>
+	</ul>
+</section>
+
+<section>
+	<h1 class="title-section">Solicitar canvis</h1>
+	<form method="post">
+		<div class="input-field col s12">
+			<textarea id="textarea2" class="textarea-form" data-length="120"></textarea>
+		</div>
+
+		{% csrf_token %}
+
+		<button class="waves-effect waves-light btn fl-right">Desa els canvis</button>
+	</form>
+</section>
+{% endblock %}

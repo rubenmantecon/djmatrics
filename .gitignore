@@ -49,6 +49,9 @@ wheels/
 *.manifest 
 *.spec 
 
+# Tmp shell log output
+log_shell_output.txt
+
 # Installer logs 
 pip-log.txt 
 pip-delete-this-directory.txt 
@@ -116,3 +119,4 @@ GitHub.sublime-settings
 !.vscode/launch.json 
 !.vscode/extensions.json 
 .history
+.vscode/settings.json

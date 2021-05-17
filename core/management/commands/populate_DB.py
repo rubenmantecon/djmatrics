@@ -1,22 +1,10 @@
 import random
 from django.db import transaction
 from django.core.management.base import BaseCommand
-from core.models import User,Term, Career, MP, UF, Enrolment, Record, Requirement, Req_enrol, ProfileRequirement,EnrolmentUF, Upload
-from core.factories import (
-    UserFactory,
-    TermFactory,
-    CareerFactory,
-    MpFactory,
-    UfFactory,
-    EnrolmentFactory,
-    RecordFactory,
-    ProfileRequirementFactory,
-    RequirementFactory,
-    Req_enrolFactory,
-    EnrolmentUFFactory
-)
+from core.models import *
+from core.factories import *
 
-REGISTERS = 10
+REGISTERS = 1
 
 
 
@@ -26,7 +14,7 @@ class Command(BaseCommand):
     @transaction.atomic
     def handle(self, *args, **kwargs):
         self.stdout.write("Deleting old data...")
-        models = [User,Term,Career,MP,UF,Enrolment,Record,ProfileRequirement,Requirement,Req_enrol,EnrolmentUF]
+        models = [User,Term,Career,MP,UF,Enrolment,Record,ProfileRequirement,Requirement,Req_enrol]
         #for m in models:
             #m.objects.all().delete()
 
@@ -34,7 +22,7 @@ class Command(BaseCommand):
         
         for _ in range(REGISTERS):
             #Another iteration is needed in order to add real information to: requirements, profile requirements...
-            user= UserFactory()
+            """user= UserFactory()
             term = TermFactory()
             career = CareerFactory()
             mp=MpFactory()
@@ -44,7 +32,8 @@ class Command(BaseCommand):
             record = RecordFactory()
             requirement=RequirementFactory()
             req_enrol=Req_enrolFactory()
-            enrolmentUF=EnrolmentUFFactory()
+            enrolment=EnrolmentFactory()"""
+            req_enrol=Req_enrolFactory()
 
         
 
