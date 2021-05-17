@@ -15,17 +15,16 @@ class Command(BaseCommand):
     def handle(self, *args, **kwargs):
         self.stdout.write("Deleting old data...")
         models = [User,Term,Career,MP,UF,Enrolment,Record,ProfileRequirement,Requirement,Req_enrol]
-        
         #for m in models:
-        #    m.objects.all().delete()
+            #m.objects.all().delete()
 
         self.stdout.write("Creating new data...")
         
         for _ in range(REGISTERS):
             #Another iteration is needed in order to add real information to: requirements, profile requirements...
-            user= UserFactory()
+            """user= UserFactory()
             term = TermFactory()
-            """career = CareerFactory()
+            career = CareerFactory()
             mp=MpFactory()
             uf=UfFactory()
             profilerequirement=ProfileRequirementFactory()
@@ -33,12 +32,5 @@ class Command(BaseCommand):
             record = RecordFactory()
             requirement=RequirementFactory()
             req_enrol=Req_enrolFactory()
-            enrolment=EnrolmentFactory()
-            req_enrol=Req_enrolFactory()"""
-
-        
-
-        
-        
-
-        
+            enrolment=EnrolmentFactory()"""
+            req_enrol=Req_enrolFactory()

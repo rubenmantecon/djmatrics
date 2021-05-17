@@ -1,4 +1,4 @@
-from rest_framework.decorators import api_view, permission_classes
+from rest_framework.decorators import api_view, permission_classes, authentication_classes
 from rest_framework.authtoken.models import Token
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
@@ -33,8 +33,7 @@ def GetAccessToken(request):
 
     enrolment = Enrolment.objects.get(id=user.id)
 
-
-    return Response({ 'Token': token.key, 'StatusEnrolment': enrolment.state, 'BoolWizard': True })
+    return Response({ 'Token': token.key, 'StatusEnrolment': enrolment.state, 'BoolWizard': True if enrolment.profile_req_id else False, 'UserId': user.id })
 
 
 @api_view(['GET'])
@@ -143,3 +142,29 @@ def GetCareer(request):
                 careermpsufs['modules'][mp_id]['ufs'][ufid][attruf] = valueuf
 
     return Response(careermpsufs)
+
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def GetImageRights(request):
+
+    enrolment = Enrolment.objects.get(id=request.user.id)
+
+    return Response({ 'ImageRights': enrolment.image_rights })
+
+
+@api_view(['GET'])
+@authentication_classes([])
+@permission_classes([])
+def VerifyToken(request):
+    
+    userid = request.headers['UID']
+    tokenid = request.headers['Authorization'].split()[-1]
+    
+    try:
+        token = Token.objects.get(user_id=userid,key=tokenid)
+        authbool = True
+    except Token.DoesNotExist:
+        authbool = False
+    
+    return Response({ 'Authenticated': authbool })
