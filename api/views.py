@@ -16,7 +16,7 @@ def GetAccessToken(request):
     password = request.POST.get('password')
 
     try:
-        user = User.objects.get(email=email)
+        user = User.objects.get(email=email, is_superuser=0, is_staff=0)
     except User.DoesNotExist:
         return Response({ 'detail': "No s'ha trobat l'usuari" }, status=401)
     

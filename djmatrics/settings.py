@@ -44,7 +44,7 @@ DATABASES = {
     'extra': env.db('SQLITE_URL', default='sqlite:////tmp/my-tmp-sqlite.db')
 }
 
-ALLOWED_HOSTS = [env('DOMAIN'),]
+ALLOWED_HOSTS = []
 
 # Application definition
 
