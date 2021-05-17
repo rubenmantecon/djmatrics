@@ -84,7 +84,7 @@ class ProfileRequirement(models.Model):
 
     name = models.CharField("nom", max_length=255)
     description = models.TextField("descripció", null=True)
-    profile_type = models.CharField('profile_type', max_length=9, choices=[(
+    profile_type = models.CharField('profile_type', max_length=30, choices=[(
         val_state, val_state.value) for val_state in ProfileChoices], default=None, null=False)
 
 
