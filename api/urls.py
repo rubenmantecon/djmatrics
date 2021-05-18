@@ -9,7 +9,7 @@ urlpatterns = route.urls
 
 urlpatterns += path('token', views.GetAccessToken),
 urlpatterns += path('user', views.GetUserInfo),
-urlpatterns += path('profilesandrequirements', views.GetProfilesAndRequirements),
+urlpatterns += path('profilesandrequirements', views.GetProfileAndRequirements),
 urlpatterns += path('career', views.GetCareer),
 urlpatterns += path('imagerights', views.GetImageRights),
 urlpatterns += path('check', views.VerifyToken),

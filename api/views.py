@@ -37,6 +37,64 @@ def GetAccessToken(request):
 
 
 @api_view(['GET'])
+@authentication_classes([])
+@permission_classes([])
+def VerifyToken(request):
+    
+    userid = request.headers['UID']
+    tokenid = request.headers['Authorization'].split()[-1]
+    
+    try:
+        token = Token.objects.get(user_id=userid,key=tokenid)
+        authbool = True
+    except Token.DoesNotExist:
+        authbool = False
+    
+    return Response(authbool)
+
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def UpdateWizard(request):
+
+    enrolment = Enrolment.objects.get(id=request.user.id)
+
+    for key, value in request.POST.items():
+        if key == 'ImageRights':
+            enrolment.image_rights = True if value == True else False
+        elif key == 'Excursions':
+            enrolment.excursions = True if value == True else False
+        elif key == 'Extracurriculars':
+            enrolment.extracurricular = True if value == True else False
+
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def GetWizard(request):
+
+    enrolment = Enrolment.objects.get(id=request.user.id)
+    enrolmentinfofields = ['image_rights','excursions','extracurricular']
+
+    wizard = {}
+
+    for attr, value in enrolment.__dict__.items():
+        if attr in enrolmentinfofields:
+            wizard[attr] = value
+        
+    return Response(wizard)
+        
+
+"""
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def GetImageRights(request):
+
+    enrolment = Enrolment.objects.get(id=request.user.id)
+
+    return Response({ 'ImageRights': enrolment.image_rights })"""
+
+
+@api_view(['GET'])
 @permission_classes([IsAuthenticated])
 def GetUserInfo(request):
     
@@ -61,9 +119,21 @@ def GetUserInfo(request):
 
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
-def GetProfilesAndRequirements(request):
+def GetProfileAndRequirements(request):
+        
+    enrolment = Enrolment.objects.get(id=request.user.id)
+    profilerequirement = ProfileRequirement.objects.get(id=enrolment.profile_req_id)
+    reqenrol = Req_enrol.objects.filter(id=profilerequirement.id)
 
-    profilerequirements = ProfileRequirement.objects.all()
+    profileandrequirements = { 'ProfileName': profilerequirement.name, 'Description': profilerequirement.description, 'Requirements': {} }
+
+    for item in reqenrol:
+        profileandrequirements['Requirements'][item.id] = { 'Name': item.name }
+        Req_enrol.objects.create(state='P', enrolment_id=request.user.id, requirement_id=item.id)
+    
+    return Response(profileandrequirements)
+
+    """profilerequirements = ProfileRequirement.objects.all()
     requirements = Requirement.objects.all()
 
     profilesandrequirements = {}
@@ -90,7 +160,7 @@ def GetProfilesAndRequirements(request):
                 else:
                     profilesandrequirements[profile_id]['requirements'].append(valuer)
 
-    return Response(profilesandrequirements)
+    return Response(profilesandrequirements)"""
 
 
 @api_view(['GET'])
@@ -144,27 +214,23 @@ def GetCareer(request):
     return Response(careermpsufs)
 
 
-@api_view(['GET'])
+@api_view(['POST'])
 @permission_classes([IsAuthenticated])
-def GetImageRights(request):
+def UploadReqFiles(request):
 
-    enrolment = Enrolment.objects.get(id=request.user.id)
+    enrolmentid = request.user.id()
 
-    return Response({ 'ImageRights': enrolment.image_rights })
-
-
-@api_view(['GET'])
-@authentication_classes([])
-@permission_classes([])
-def VerifyToken(request):
-    
-    userid = request.headers['UID']
-    tokenid = request.headers['Authorization'].split()[-1]
-    
     try:
-        token = Token.objects.get(user_id=userid,key=tokenid)
-        authbool = True
-    except Token.DoesNotExist:
-        authbool = False
+        resultquery = Req_enrol.objects.filter(enrolment_id=enrolmentid)
+        for item in resultquery:
+            item.state = 'P'
+            item.save()
+    except Req_enrol.DoesNotExist:
+        for key, value in request.POST.items():
+            if key == 'DNI-front':
+                Req_enrol.objects.create(state='P', enrolment_id=enrolmentid, requirement_id=1)
+            elif key == 'DNI-rear':
+                Req_enrol.objects.create(state='P', enrolment_id=enrolmentid, requirement_id=2)
+            elif key == 'Health-ID':
+                Req_enrol.objects.create(state='P', enrolment_id=enrolmentid, requirement_id=3)
     
-    return Response({ 'Authenticated': authbool })
