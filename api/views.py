@@ -58,26 +58,42 @@ def VerifyToken(request):
 def UpdateWizard(request):
 
     enrolment = Enrolment.objects.get(id=request.user.id)
-
+    beforeprofileid = enrolment.profile_req_id
+    
     for key, value in request.POST.items():
+        value = value.lower()
         if key == 'ImageRights':
-            enrolment.image_rights = True if value == True else False
+            enrolment.image_rights = True if value == 'true' else False
         elif key == 'Excursions':
-            enrolment.excursions = True if value == True else False
+            enrolment.excursions = True if value == 'true' else False
         elif key == 'Extracurriculars':
-            enrolment.extracurricular = True if value == True else False
-        elif key == 'Profile':
-            if value == 'Standard':
+            enrolment.extracurricular = True if value == 'true' else False
+        elif key == 'Profile': 
+            if value == 'standard':
                 enrolment.profile_req_id = 1
-            elif value == 'Bonus':
+            elif value == 'bonus':
                 enrolment.profile_req_id = 2
-            elif value == 'Exception':
+            elif value == 'exception':
                 enrolment.profile_req_id = 3
+            sameprofile = True if enrolment.profile_req_id == beforeprofileid else False
     
     enrolment.save()
-        
 
-"""
+    if sameprofile == False:
+        enrolment = Enrolment.objects.get(id=request.user.id)
+        reqenrol = Req_enrol.objects.filter(enrolment_id=enrolment.id)
+        
+        for rq in reqenrol:
+            rq.delete()
+        
+        requirements = Requirement.objects.filter(profile_id=enrolment.profile_req_id)
+
+        for requirement in requirements:
+            Req_enrol.objects.create(state='B', enrolment_id=enrolment.id, requirement_id=requirement.id)
+        
+    return Response(sameprofile)    
+
+
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
 def GetWizard(request):
@@ -92,15 +108,6 @@ def GetWizard(request):
             wizard[attr] = value
         
     return Response(wizard)
-        
-
-@api_view(['GET'])
-@permission_classes([IsAuthenticated])
-def GetImageRights(request):
-
-    enrolment = Enrolment.objects.get(id=request.user.id)
-
-    return Response({ 'ImageRights': enrolment.image_rights })"""
 
 
 @api_view(['GET'])
@@ -132,17 +139,22 @@ def GetProfileAndRequirements(request):
         
     enrolment = Enrolment.objects.get(id=request.user.id)
     profilerequirement = ProfileRequirement.objects.get(id=enrolment.profile_req_id)
-    reqenrol = Req_enrol.objects.filter(id=profilerequirement.id)
+    requirements = Requirement.objects.filter(profile_id=profilerequirement.id)
 
-    profileandrequirements = { 'ProfileName': profilerequirement.name, 'Description': profilerequirement.description, 'Requirements': {} }
+    profileandrequirements = { "Name":  profilerequirement.name , "Description": profilerequirement.description , "Type": profilerequirement.profile_type, "Requirements": {} }
 
-    for item in reqenrol:
-        profileandrequirements['Requirements'][item.id] = { 'Name': item.name }
-        Req_enrol.objects.create(state='P', enrolment_id=request.user.id, requirement_id=item.id)
+    for requirement in requirements:
+        profileandrequirements['Requirements'][requirement.id] = requirement.name
     
     return Response(profileandrequirements)
 
-    """profilerequirements = ProfileRequirement.objects.all()
+
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def GetProfilesAndRequirements(request):
+
+    profilerequirements = ProfileRequirement.objects.all()
     requirements = Requirement.objects.all()
 
     profilesandrequirements = {}
@@ -169,7 +181,7 @@ def GetProfileAndRequirements(request):
                 else:
                     profilesandrequirements[profile_id]['requirements'].append(valuer)
 
-    return Response(profilesandrequirements)"""
+    return Response(profilesandrequirements)
 
 
 @api_view(['GET'])
@@ -226,20 +238,15 @@ def GetCareer(request):
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
 def UploadReqFiles(request):
+    
+    enrolmentid = Enrolment.objects.get(id=request.user.id)
 
-    enrolmentid = request.user.id()
-
-    try:
-        resultquery = Req_enrol.objects.filter(enrolment_id=enrolmentid)
-        for item in resultquery:
-            item.state = 'P'
-            item.save()
-    except Req_enrol.DoesNotExist:
-        for key, value in request.POST.items():
-            if key == 'DNI-front':
-                Req_enrol.objects.create(state='P', enrolment_id=enrolmentid, requirement_id=1)
-            elif key == 'DNI-rear':
-                Req_enrol.objects.create(state='P', enrolment_id=enrolmentid, requirement_id=2)
-            elif key == 'Health-ID':
-                Req_enrol.objects.create(state='P', enrolment_id=enrolmentid, requirement_id=3)
+    for key, value in request.POST.items():
+        if key == '1':
+            
+            Req_enrol.objects.update(state='P')
+        elif key == '2':
+            Req_enrol.objects.update(state='P')
+        elif key == '3':
+            Req_enrol.objects.update(state='P')
     
