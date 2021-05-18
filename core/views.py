@@ -4,8 +4,10 @@ from django.core.exceptions import ValidationError
 from django.contrib.auth.decorators import user_passes_test
 from .models import ProfileRequirement, Req_enrol, Requirement, Enrolment, User
 from .forms import SaveProfiles
+from django.contrib import messages
 
 def index (request):
+    messages.add_message(request, messages.INFO, 'Hello world.')
     return render(request, "landingpage.html", {'title':"INS Institut Esteve Terradas i Illa", 'user': "Enric"})
 
 @login_required
@@ -121,6 +123,16 @@ def profiles (request):
 	
 @login_required
 def prices (request):
+
+	# If the user doesn't have an enrolment will be redirected to the wizard
+	try:
+		enrolmentUser = Enrolment.objects.get(id=request.user.id)
+	except Enrolment.DoesNotExist:
+		return HttpResponseRedirect('/student/profiles')
+		
+	if enrolmentUser.image_rights is None or enrolmentUser.excursions is None or enrolmentUser.extracurricular is None:
+		return HttpResponseRedirect('/student/profiles')
+
 	return render(request, 'student/prices.html',
 		{'breadcrumb': [{'link': '/student/dashboard', 'text': 'Inici'},{'link': '#', 'text': 'Matriculació'},{'link': '/student/prices', 'text': 'Preu'}]}
 	)
