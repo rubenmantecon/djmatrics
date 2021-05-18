@@ -21,7 +21,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # environ object instatiation
 env = environ.Env(
     # set casting, default value
-    DEBUG=(bool, True)
+    DEBUG=(bool, True),
+    ADMIN_FLAG=(bool, True),
 )
 
 # Quick-start development settings - unsuitable for production
@@ -32,6 +33,8 @@ environ.Env.read_env()
 
 # False if not in os.environ
 DEBUG = env('DEBUG')
+ADMIN_FLAG = env('ADMIN_FLAG')
+
 
 # Raises django's ImproperlyConfigured exception if SECRET_KEY not in os.environ
 SECRET_KEY = env('SECRET_KEY')
@@ -194,7 +197,4 @@ EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST_USER = env('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')
-
-
-
 
