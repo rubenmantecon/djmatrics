@@ -203,6 +203,8 @@ class Req_enrol(models.Model):
         Enrolment, on_delete=models.SET_NULL, null=True)
     state = models.CharField(max_length=20, choices=CHOICES, default=None)
 
+    def __str__(self):
+        return self.requirement.name
 
 class Upload(models.Model):
     class Meta:
@@ -211,3 +213,5 @@ class Upload(models.Model):
     data = models.FileField(upload_to="uploads/", null=True, blank=True)
     req_enrol = models.ForeignKey(
         Req_enrol, on_delete=models.SET_NULL, null=True)
+    def __str__(self):
+        return self.data.name

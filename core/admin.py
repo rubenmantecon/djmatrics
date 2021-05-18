@@ -40,13 +40,18 @@ class UFInline(admin.TabularInline):
 
 
 class Req_EnrolInline(admin.TabularInline):
-    fields = ["requirement", "state", "getUploads"]
+    fields = ["requirement", "state", "pujades"]
+    readonly_fields = ["requirement", "pujades"]
     model = models.Req_enrol
     extra = 0
 
-    def getUploads(self, obj):
-        uploads = Req_Enrol.objects.get(Upload__data)
-        return mark_safe("<p>{},").format(uploads)
+    def pujades(self, obj):
+        html = """  """
+        files = obj.upload_set.all()
+        for upload in files:
+            html += "<p><a href='{}'>{}</a></p>".format(upload.path, upload.data)
+
+        return mark_safe(html)
 
 
 class TermAdmin(admin.ModelAdmin):
@@ -109,3 +114,4 @@ admin.site.register(models.UF, UFAdmin)
 admin.site.register(models.Enrolment, EnrolmentAdmin)
 admin.site.register(models.Requirement, RequirementAdmin)
 admin.site.register(models.ProfileRequirement)
+admin.site.register(models.Upload)
