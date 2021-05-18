@@ -2,7 +2,6 @@ from django.db import models
 import django.utils.timezone as timezone
 from django.core.files.storage import FileSystemStorage
 from django.contrib.auth.models import User
-from enum import Enum
 
 
 class Term(models.Model):
@@ -76,16 +75,16 @@ class ProfileRequirement(models.Model):
     class Meta:
         verbose_name = "Perfil de requeriments"
         verbose_name_plural = "Perfils de requeriment"
+    CHOICES = (
+        ('EX', 'Exempció'),
+        ('BO', 'Bonificació'),
+        ('MA', 'Obligatori')
+    )
 
-    class ProfileChoices(Enum):
-        OB = 'obligatori'
-        EX = 'exempció'
-        BO = 'bonificació del 50%'
 
     name = models.CharField("nom", max_length=255)
     description = models.TextField("descripció", null=True)
-    profile_type = models.CharField('profile_type', max_length=30, choices=[(
-        val_state, val_state.value) for val_state in ProfileChoices], default=None, null=False)
+    profile_type = models.CharField('profile_type', max_length=20, choices=CHOICES, default=None, null=False)
 
 
 class Enrolment(models.Model):
