@@ -168,7 +168,7 @@ AUTHENTICATION_BACKENDS = (
 
 SITE_ID = 1
 ACCOUNT_EMAIL_VERIFICATION = "none"
-LOGIN_REDIRECT_URL = "/"
+LOGIN_REDIRECT_URL = "/student/dashboard"
 ACCOUNT_LOGOUT_ON_GET = True
 #The config below disables the signup option
 ACCOUNT_ADAPTER = 'core.adapter.NoNewUsersAccountAdapter'

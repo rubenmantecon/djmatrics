@@ -12,6 +12,15 @@ def index (request):
 def dashboardStudent (request):
 	documentsQuery = Req_enrol.objects.filter(enrolment_id=request.user.id)
 
+	# If the user doesn't have an enrolment will be redirected to the wizard
+	try:
+		enrolmentUser = Enrolment.objects.get(id=request.user.id)
+	except Enrolment.DoesNotExist:
+		return HttpResponseRedirect('/student/profiles')
+		
+	if enrolmentUser.image_rights is None or enrolmentUser.excursions is None or enrolmentUser.extracurricular is None:
+		return HttpResponseRedirect('/student/profiles')
+
 	documents = []
 	count = 0
 	for document in documentsQuery:
@@ -24,7 +33,7 @@ def dashboardStudent (request):
 	return render(request, "student/dashboard.html", {
 		'title': 'Dashboard | Matriculacions - INS Institut Esteve Terradas i Illa', 
 		'breadcrumb': [{'link': '/student/dashboard', 'text': 'Inici'},{'link': '#', 'text': 'Dashboard'}],
-		'enrolmentStatus': Enrolment.objects.get(id=request.user.id).state,
+		'enrolmentStatus': enrolmentUser.state,
 		'documents': documents,
 		}
 	);
