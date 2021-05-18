@@ -66,8 +66,18 @@ def UpdateWizard(request):
             enrolment.excursions = True if value == True else False
         elif key == 'Extracurriculars':
             enrolment.extracurricular = True if value == True else False
+        elif key == 'Profile':
+            if value == 'Standard':
+                enrolment.profile_req_id = 1
+            elif value == 'Bonus':
+                enrolment.profile_req_id = 2
+            elif value == 'Exception':
+                enrolment.profile_req_id = 3
+    
+    enrolment.save()
+        
 
-
+"""
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
 def GetWizard(request):
@@ -84,7 +94,6 @@ def GetWizard(request):
     return Response(wizard)
         
 
-"""
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
 def GetImageRights(request):
@@ -138,7 +147,7 @@ def GetProfileAndRequirements(request):
 
     profilesandrequirements = {}
 
-    profilerequirementfields = ['id','name','description']
+    profilerequirementfields = ['id','name','description','profile_type']
     requirementsfields = ['name','profile_id']
     
     for pr in profilerequirements:
