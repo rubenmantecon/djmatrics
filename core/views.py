@@ -61,7 +61,7 @@ def personaldata (request):
 		'title': 'Data personal | Matriculacions - INS Institut Esteve Terradas i Illa',
 		'requirements': Requirement.objects.all(),
 		'params': params,
-		'breadcrumb': [{'link': '/student/dashboard', 'text': 'Inici'},{'link': '#', 'text': 'Alumne'},{'link': '/student/personaldata', 'text': 'Data personal'}]
+		'breadcrumb': [{'link': '/student/dashboard', 'text': 'Inici'},{'link': '#', 'text': 'Alumne'},{'link': '/student/personaldata', 'text': 'Dades personals'}]
 	});
 
 @login_required

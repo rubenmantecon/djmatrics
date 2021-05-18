@@ -34,6 +34,7 @@ class Command(BaseCommand):
             req_enrol=Req_enrolFactory()
             enrolment=EnrolmentFactory()"""
             req_enrol=Req_enrolFactory()
+            req_enrol=Req_enrolFactory()
 
         
 
