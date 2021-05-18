@@ -5,15 +5,6 @@ from django.utils.safestring import mark_safe
 
 from core import models
 
-# admin.site.register(models.UF)
-# admin.site.register(models.Enrolment)
-# admin.site.register(models.EnrolmentUF)
-admin.site.register(models.ProfileRequirement)
-# admin.site.register(models.Record)
-admin.site.register(models.Requirement)
-admin.site.register(models.Req_enrol)
-admin.site.register(models.Upload)
-
 
 class CareerInline(admin.TabularInline):
     model = models.Career
@@ -46,6 +37,16 @@ class UFInline(admin.TabularInline):
     def edita(self, obj):
         return mark_safe("<a href='/admin/core/uf/{}'>Edita la UF: {}</a>".format(
             obj.id, obj.name))
+
+
+class Req_EnrolInline(admin.TabularInline):
+    fields = ["requirement", "state", "getUploads"]
+    model = models.Req_enrol
+    extra = 0
+
+    def getUploads(self, obj):
+        uploads = Req_Enrol.objects.get(Upload__data)
+        return mark_safe("<p>{},").format(uploads)
 
 
 class TermAdmin(admin.ModelAdmin):
@@ -85,10 +86,20 @@ class EnrolmentAdmin(admin.ModelAdmin):
     exclude = ()
     list_display = ["state", "email", "dni"]
     order_by = ["state"]
+    inlines = [Req_EnrolInline]
 
 
-class Req_EnrolInline(admin.TabularInline):
-  pass
+class Req_EnrolAdmin(admin.ModelAdmin):
+    fields = ["enrolment", "requirement", "state"]
+    model = models.Req_enrol
+
+
+class RequirementAdmin(admin.ModelAdmin):
+    exclude = ()
+    list_display = ["name", "profile"]
+    readonly_fields = ["name", "profile"]
+    model = models.Requirement
+    inlines = [Req_EnrolInline]
 
 
 admin.site.register(models.Term, TermAdmin)
@@ -96,3 +107,5 @@ admin.site.register(models.Career, CareerAdmin)
 admin.site.register(models.MP, MpAdmin)
 admin.site.register(models.UF, UFAdmin)
 admin.site.register(models.Enrolment, EnrolmentAdmin)
+admin.site.register(models.Requirement, RequirementAdmin)
+admin.site.register(models.ProfileRequirement)
