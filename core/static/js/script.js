@@ -15,4 +15,8 @@ $(document).ready(function(){
 	});
 
 	$('.tooltipped, .trafficlight').tooltip();
+
+	$('.modal').modal();
+
+	$('main:has(.box-middle)').css('background', 'transparent');
 });

@@ -1,11 +1,12 @@
 from django.shortcuts import render, HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
 from django.core.exceptions import ValidationError
+from django.contrib.auth.decorators import user_passes_test
 from .models import ProfileRequirement, Req_enrol, Requirement, Enrolment, User
 from .forms import SaveProfiles
 
 def index (request):
-    return render(request, "base.html", {'title':"INS Institut Esteve Terradas i Illa", 'user': "Enric"})
+    return render(request, "landingpage.html", {'title':"INS Institut Esteve Terradas i Illa", 'user': "Enric"})
 
 @login_required
 def dashboardStudent (request):
@@ -64,7 +65,7 @@ def personaldata (request):
 		'breadcrumb': [{'link': '/student/dashboard', 'text': 'Inici'},{'link': '#', 'text': 'Alumne'},{'link': '/student/personaldata', 'text': 'Dades personals'}]
 	});
 
-@login_required
+@user_passes_test(lambda u: u.is_anonymous)
 def login (request):
     return render(request, "account/login.html")
 

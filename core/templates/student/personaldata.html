@@ -17,15 +17,23 @@
 </section>
 
 <section>
-	<h1 class="title-section">Solicitar canvis</h1>
-	<form method="post">
-		<div class="input-field col s12">
-			<textarea id="textarea2" class="textarea-form" data-length="120"></textarea>
-		</div>
-
-		{% csrf_token %}
-
-		<button class="waves-effect waves-light btn fl-right">Desa els canvis</button>
-	</form>
+	<button data-target="solicitarcanvis" class="waves-effect waves-light btn fl-right modal-trigger"><i class="material-icons left">find_in_page</i> Solicitar canvis</button>
+	<a href="/student/dashboard" class="waves-effect waves-light btn fl-right modal-trigger" style="margin-right: 10px;"><i class="material-icons left">check_box</i> Tot correcte</a>
 </section>
+
+<div id="solicitarcanvis" class="modal">
+	<div class="modal-header">
+		<div></div>
+		<h4>Solicitar canvis</h4>
+		<i class="material-icons modal-close">close</i>
+	</div>
+    <div class="modal-content">
+      	<p>Per a poder canviar les teves dades, hauràs de trucar o anar a la secretaria del centre mostrant els teus documents que acreditin la informació que estigui equivocada.</p>
+		<ul>
+			<li>Esteve Terradas i Illa - Codi: 08016781</li>
+			<li>c/ Bonavista, 70 08940 Cornellà de Llobregat</li>
+			<li>93 377 11 00</li>
+		</ul>
+    </div>
+</div>
 {% endblock %}

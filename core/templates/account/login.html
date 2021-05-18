@@ -1,30 +1,32 @@
 {% extends "../base.html" %}
-
 {% load i18n %}
 {% load account socialaccount %}
-
-
+{% load static %}
+{% block header %}{% endblock %}
 {% block content %}
+	<div class="box-middle">
+		<img src="{% static 'images/logo-ieti.png' %}" class="image-logo"/>
+		<h2>INS Esteve Terradas i Illa</h2>
+		<h4>Matriculacions</h4>
+		<form method="POST" action="{% url 'account_login' %}">
+			{% csrf_token %}
+			{{ form.as_p }}
+			{% if redirect_field_value %}
+			<input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+			{% endif %}
+			<a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Has olvidat la contrasenya?" %}</a>
+			<button class="primaryAction" type="submit">{% trans "Logat" %}</button>
+		</form>
 
+		{% get_providers as socialaccount_providers %}
+		{% if socialaccount_providers %}
+			<p>{% blocktrans with site.name as site_name %}Inicia sessió amb els següents serveis{% endblocktrans %}</p>
 
-<form class="login" method="POST" action="{% url 'account_login' %}">
-  {% csrf_token %}
-  {{ form.as_p }}
-  {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-  {% endif %}
-  <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Has olvidat la contrasenya?" %}</a>
-  <button class="primaryAction" type="submit">{% trans "Logat" %}</button>
-</form>
-
-{% get_providers as socialaccount_providers %}
-{% if socialaccount_providers %}
-<p>{% blocktrans with site.name as site_name %}Inicia sessió amb els següents serveis{% endblocktrans %}</p>
-
-<div class="socialaccount_ballot">
-  <a href="{% provider_login_url 'google' %}" class="waves-effect waves-light btn-large social google"><i class="fa fa-google fa-fw"></i> Google</a>  
-  <a href="{% provider_login_url 'office365' %}" class="waves-effect waves-light btn-large social windows"><i class="fa fa-windows fa-fw"></i> Microsoft</a>  
-</div>
-{% endif %}
+		<div class="socialaccount_ballot">
+			<a href="{% provider_login_url 'google' %}" class="waves-effect waves-light btn-large social google"><i class="fa fa-google fa-fw"></i> Google</a>  
+			<a href="{% provider_login_url 'office365' %}" class="waves-effect waves-light btn-large social windows"><i class="fa fa-windows fa-fw"></i> Microsoft</a>  
+		</div>
+		{% endif %}
+	</div>
 {% endblock %}
-
+{% block footer %}{% endblock %}
