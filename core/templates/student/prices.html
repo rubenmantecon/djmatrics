@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 <section>
-	<h1 class="title-section">Calculació de preu</h1>
+	<h1 class="title-section">Càlcul de preu</h1>
 	<div class="section-content">
 		<p>Ara que has seleccionat les autoritzacions <em>(i els perfils)</em>, hauràs de seleccionar les unitats formatives per a poder realitzar el càlcul de la matrícula.</p>
 		<form method="POST" action="/student/showprices">
@@ -31,9 +31,9 @@
 					</ul>
 				</div>
 			</div>
-			{% if enrolmentMp %}
+			{% if enrolment.career %}
 			<ul class="collapsible">
-				{% for MP in enrolmentMp %}
+				{% for MP in enrolment.career.mp_set.all %}
 				<li>
 					<div class="collapsible-header collection-bonification">
 						<span>
@@ -45,15 +45,13 @@
 						<i class="material-icons">expand_more</i>
 					</div>
 					<div class="collapsible-body">
-						{% for UF in allUfs %}
-						{% if UF.mp_id == MP.id %}
+						{% for UF in MP.uf_set.all %}
 						<p>
 							<label>
-								<input name="ufs" value="{{ UF.id }}" type="checkbox" />
+								<input name="uf-{{forloop.counter}}" value="{{UF.id}}" type="checkbox" />
 								<span class="black-text">{{ UF.code }}. {{ UF.name }}</span>
 							</label>
 						</p>
-						{% endif %}
 						{% endfor %}
 					</div>
 				</li>

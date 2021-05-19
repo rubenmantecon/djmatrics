@@ -5,6 +5,7 @@ from django.contrib.auth.decorators import user_passes_test
 from .models import *
 from .forms import SaveProfiles
 from django.contrib import messages
+from core.compute_price import compute_price
 
 
 """ {
@@ -99,21 +100,21 @@ def profiles (request):
 		if form.is_valid():
 			if int(form.data['drets_imatge']) in [0, 1] and int(form.data['salides_excursio']) in [0, 1] and int(form.data['salides_extra']) in [0, 1]:
 				
-				if not Enrolment.objects.filter(id=request.user.id).exists():
+				if not Enrolment.objects.filter(user=request.user).exists():
 					toSaveEnrolment = Enrolment.objects.create(
-						id = request.user.id,
+						user = request.user,
 						image_rights = int(form.data['drets_imatge']),
 						extracurricular = int(form.data['salides_extra']),
 						excursions = int(form.data['salides_excursio']),
 						state = 'P'
 					)
 				else:
-					toSaveEnrolment = Enrolment.objects.get(id=request.user.id)
+					toSaveEnrolment = Enrolment.objects.get(user=request.user)
 					toSaveEnrolment.image_rights = int(form.data['drets_imatge'])
 					toSaveEnrolment.extracurricular = int(form.data['salides_extra'])
 					toSaveEnrolment.excursions = int(form.data['salides_excursio'])
 
-				if len(form.data) == 5:
+				if form.data.get('profile'):
 					toSaveEnrolment.profile_id = int(form.data['profile'])
 				else:
 					toSaveEnrolment.profile_id = ''
@@ -136,48 +137,35 @@ def profiles (request):
 	
 @login_required
 def prices (request):
-	
-	# If the user doesn't have an enrolment will be redirected to the wizard
-	try:
-		enrolmentUser = Enrolment.objects.get(id=request.user.id)
-	except Enrolment.DoesNotExist:
-		return HttpResponseRedirect('/student/profiles')
-		
+	enrolmentUser = request.user.enrolment
+
 	if enrolmentUser.image_rights is None or enrolmentUser.excursions is None or enrolmentUser.extracurricular is None:
 		messages.add_message(request, messages.INFO, 'Hem detectat que necessites seleccionar les autoritzacions.')
 		return HttpResponseRedirect('/student/profiles')
-
-	try:
-		enrolmentCareer = Career.objects.get(id=enrolmentUser.career_id)
-		enrolmentMp = MP.objects.filter(career_id=enrolmentCareer.id)
-		allUfs = UF.objects.all()
-	except Career.DoesNotExist:
-		enrolmentCareer = []
-		messages.add_message(request, messages.ERROR, 'No hi ha cap cicle en la teva matrícula. Si us plau, contacta amb Secretària per a poder arreglar l\'error.')
-	except MP.DoesNotExist:
-		enrolmentMp = []
-	except UF.DoesNotExist:
-		allUfs = []
 
 	return render(request, 'student/prices.html',
 		{
 			'breadcrumb': [{'link': '/student/dashboard', 'text': 'Inici'},{'link': '#', 'text': 'Matriculació'},{'link': '/student/prices', 'text': 'Preu'}],
 			'title': 'Calculació del preu | Matriculacions - INS Institut Esteve Terradas i Illa',
-			'enrolmentCareer': enrolmentCareer,
-			'enrolmentMp': enrolmentMp,
-			'allUfs': allUfs,
+			'enrolment': enrolmentUser,
 		},
 	)
 
 @login_required
 def showPrice (request):
 	if request.method == 'POST':
-		try:
-			if request.POST['ufs']:
-				totalPrice = 0
-		except:
-			totalPrice = 0
-
+		enrolment = request.user.enrolment
+		print(request.POST)
+		enrolment.uf.clear()
+		for i in range(0,100):
+			if request.POST.get('uf-'+str(i)):
+				uf = request.POST['uf-'+str(i)]
+				print('Uf sola: ' + uf)
+				enrolment.uf.add(uf)
+			
+		enrolment.save()
+		totalPrice = compute_price(enrolment)
+		
 		return render(request, 'student/show_price.html',
 			{
 				'breadcrumb': [{'link': '/student/dashboard', 'text': 'Inici'},{'link': '#', 'text': 'Matriculació'},{'link': '/student/showprices', 'text': 'Preu'}],

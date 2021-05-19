@@ -103,7 +103,7 @@ class Enrolment(models.Model):
     )
     user = models.OneToOneField(
         User, on_delete=models.SET_NULL, null=True, blank=True)
-    uf = models.ManyToManyField(UF)
+    uf = models.ManyToManyField(UF,blank=True)
     dni = models.CharField("dni", max_length=30)
     state = models.CharField("estat de matrícula",
                              max_length=20, choices=CHOICES, default=None)
