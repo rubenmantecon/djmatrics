@@ -89,10 +89,16 @@ class UFAdmin(admin.ModelAdmin):
 
 class EnrolmentAdmin(admin.ModelAdmin):
     exclude = ()
+    save_on_top = True
+    search_fields = ["state", "dni"]
     list_display = ["state", "email", "dni"]
+    readonly_fields = ["Enrera"]
     order_by = ["state"]
     inlines = [Req_EnrolInline]
 
+    def Enrera(self, obj):
+        return mark_safe("<a href='/admin/core/enrolment'>Retorna al llistat de matrícules</a>")
+    # TODO: falta hacer una query que me mire si todos los req_enrols de un enrolment están subidos Y validados como confirmados. Además, esta función tiene que ejecutarse cada vez que hay un cambio en los req_enrol de dicho enrolment.
 
 class Req_EnrolAdmin(admin.ModelAdmin):
     fields = ["enrolment", "requirement", "state"]
