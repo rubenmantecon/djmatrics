@@ -2,7 +2,6 @@ from django.db import models
 import django.utils.timezone as timezone
 from django.core.files.storage import FileSystemStorage
 from django.contrib.auth.models import User
-from enum import Enum
 
 
 class Term(models.Model):
@@ -76,16 +75,19 @@ class ProfileRequirement(models.Model):
     class Meta:
         verbose_name = "Perfil de requeriments"
         verbose_name_plural = "Perfils de requeriment"
-
-    class ProfileChoices(Enum):
-        OB = 'obligatori'
-        EX = 'exempció'
-        BO = 'bonificació del 50%'
+    CHOICES = (
+        ('EX', 'Exempció'),
+        ('BO', 'Bonificació'),
+        ('MA', 'Obligatori')
+    )
 
     name = models.CharField("nom", max_length=255)
     description = models.TextField("descripció", null=True)
-    profile_type = models.CharField('profile_type', max_length=30, choices=[(
-        val_state, val_state.value) for val_state in ProfileChoices], default=None, null=False)
+    profile_type = models.CharField(
+        'profile_type', max_length=20, choices=CHOICES, default=None, null=True, blank=True)
+
+    def __str__(self):
+        return self.name
 
 
 class Enrolment(models.Model):
@@ -139,8 +141,8 @@ class Enrolment(models.Model):
         ProfileRequirement, on_delete=models.SET_NULL, null=True)
     term = models.ForeignKey(Term, on_delete=models.SET_NULL, null=True)
     career = models.ForeignKey(Career, on_delete=models.SET_NULL, null=True
-    )
-    
+                               )
+
     def __str__(self):
         return self.email
 
@@ -181,13 +183,16 @@ class Req_enrol(models.Model):
         ('P', 'Pendent'),
         ('V', 'Validat'),
         ('R', 'Rebutjat'),
-        ('B', 'Buit')
     )
+
     requirement = models.ForeignKey(
         Requirement, on_delete=models.SET_NULL, null=True)
     enrolment = models.ForeignKey(
         Enrolment, on_delete=models.SET_NULL, null=True)
     state = models.CharField(max_length=20, choices=CHOICES, default=None)
+
+    def __str__(self):
+        return self.requirement.name
 
 
 class Upload(models.Model):
@@ -197,3 +202,6 @@ class Upload(models.Model):
     data = models.FileField(upload_to="uploads/", null=True, blank=True)
     req_enrol = models.ForeignKey(
         Req_enrol, on_delete=models.SET_NULL, null=True)
+
+    def __str__(self):
+        return self.data.name
