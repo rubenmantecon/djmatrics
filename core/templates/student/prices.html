@@ -1,6 +1,70 @@
 {% extends "base.html" %}
 {% block content %}
 <section>
-	
+	<h1 class="title-section">Calculació de preu</h1>
+	<div class="section-content">
+		<p>Ara que has seleccionat les autoritzacions <em>(i els perfils)</em>, hauràs de seleccionar les unitats formatives per a poder realitzar el càlcul de la matrícula.</p>
+		<form method="POST" action="/student/showprices">
+			<div class="row">
+				<div class="col s4 offset-s4">
+					<ul class="collection">
+						<li class="collection-item">
+							<span>
+								<label>
+									<input type="checkbox" />
+									<span class="black-text">Pagament fraccionat</span>
+								</label> 
+							</span>
+						</li>
+					</ul>
+				</div>
+				<div class="col s4">
+					<ul class="collection">
+						<li class="collection-item">
+							<span>
+								<label>
+									<input type="checkbox" />
+									<span class="black-text">Tot el curs</span>
+								</label> 
+							</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			{% if enrolmentMp %}
+			<ul class="collapsible">
+				{% for MP in enrolmentMp %}
+				<li>
+					<div class="collapsible-header collection-bonification">
+						<span>
+							<label>
+								<input type="checkbox" />
+								<span class="black-text">{{ MP.code }}. {{ MP.name }}</span>
+							</label> 
+						</span>
+						<i class="material-icons">expand_more</i>
+					</div>
+					<div class="collapsible-body">
+						{% for UF in allUfs %}
+						{% if UF.mp_id == MP.id %}
+						<p>
+							<label>
+								<input name="ufs" value="{{ UF.id }}" type="checkbox" />
+								<span class="black-text">{{ UF.code }}. {{ UF.name }}</span>
+							</label>
+						</p>
+						{% endif %}
+						{% endfor %}
+					</div>
+				</li>
+				{% endfor %}
+			</ul>
+			{% csrf_token %}
+			<button type="submit" class="waves-effect waves-light btn fl-right modal-trigger"><i class="material-icons left">developer_board</i> Calcular el preu</a>
+		</form>
+		{% else %}
+		<blockquote>No hi ha cap per seleccionar.</blockquote>
+		{% endif %}
+	</div>
 </section>
 {% endblock %}

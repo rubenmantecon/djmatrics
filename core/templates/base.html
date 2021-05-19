@@ -10,7 +10,6 @@
 		<!-- Styles -->
 		<link rel="stylesheet" href="{% static 'css/materialize.css' %}">
 		<link rel="stylesheet" href="{% static 'css/style.css' %}">
-		<link rel="stylesheet" href="{% static 'css/toastr.min.css' %}">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 		<!-- Fonts -->
@@ -22,7 +21,6 @@
 		<script src="{% static 'js/jquery.js' %}"></script>
 		<script src="{% static 'js/jquery-plugins/jquery-rotate.js' %}"></script>
 		<script src="{% static 'js/materialize.js' %}"></script>
-		<script src="{% static 'js/toastr.min.js' %}"></script>
 		<script src="{% static 'js/script.js' %}"></script>
 	</head>
 	<body>
@@ -75,9 +73,9 @@
 		</footer>
 		{% endblock %}
 		{% if messages %}
-		<script>
+		<script defer>
 			{% for message in messages %}
-			toastr.{{ message.tags }}('{{ message }}')
+				M.toast({html: '{{ message }}'});
 			{% endfor %}
 		</script>
 		{% endif %}

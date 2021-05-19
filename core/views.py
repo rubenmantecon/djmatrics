@@ -2,12 +2,17 @@ from django.shortcuts import render, HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
 from django.core.exceptions import ValidationError
 from django.contrib.auth.decorators import user_passes_test
-from .models import ProfileRequirement, Req_enrol, Requirement, Enrolment, User
+from .models import *
 from .forms import SaveProfiles
 from django.contrib import messages
 
+
+""" {
+	'careerComplete': false,
+	'UFs': ['4','4','5']
+} """
+
 def index (request):
-    messages.add_message(request, messages.INFO, 'Hello world.')
     return render(request, "landingpage.html", {'title':"INS Institut Esteve Terradas i Illa", 'user': "Enric"})
 
 @login_required
@@ -21,6 +26,7 @@ def dashboardStudent (request):
 		return HttpResponseRedirect('/student/profiles')
 		
 	if enrolmentUser.image_rights is None or enrolmentUser.excursions is None or enrolmentUser.extracurricular is None:
+		messages.add_message(request, messages.INFO, 'Hem detectat que necessites seleccionar les autoritzacions.')
 		return HttpResponseRedirect('/student/profiles')
 
 	documents = []
@@ -68,6 +74,12 @@ def personaldata (request):
 		for param in paramsEnrolment:
 			params.append(param)
 
+	if request.method == 'POST':
+		if request.POST["data-perfect"] == '1':
+			messages.add_message(request, messages.SUCCESS, 'Has confirmat les teves dades.')
+			return HttpResponseRedirect('/student/dashboard')
+
+
 
 	return render(request, 'student/personaldata.html', {
 		'title': 'Data personal | Matriculacions - INS Institut Esteve Terradas i Illa',
@@ -107,6 +119,7 @@ def profiles (request):
 					toSaveEnrolment.profile_id = ''
 				
 				toSaveEnrolment.save()
+				messages.add_message(request, messages.SUCCESS, 'S\'ha desat les dades.')
 				return HttpResponseRedirect('/student/prices')
 
 	else:
@@ -123,7 +136,7 @@ def profiles (request):
 	
 @login_required
 def prices (request):
-
+	
 	# If the user doesn't have an enrolment will be redirected to the wizard
 	try:
 		enrolmentUser = Enrolment.objects.get(id=request.user.id)
@@ -131,8 +144,47 @@ def prices (request):
 		return HttpResponseRedirect('/student/profiles')
 		
 	if enrolmentUser.image_rights is None or enrolmentUser.excursions is None or enrolmentUser.extracurricular is None:
+		messages.add_message(request, messages.INFO, 'Hem detectat que necessites seleccionar les autoritzacions.')
 		return HttpResponseRedirect('/student/profiles')
 
+	try:
+		enrolmentCareer = Career.objects.get(id=enrolmentUser.career_id)
+		enrolmentMp = MP.objects.filter(career_id=enrolmentCareer.id)
+		allUfs = UF.objects.all()
+	except Career.DoesNotExist:
+		enrolmentCareer = []
+		messages.add_message(request, messages.ERROR, 'No hi ha cap cicle en la teva matrícula. Si us plau, contacta amb Secretària per a poder arreglar l\'error.')
+	except MP.DoesNotExist:
+		enrolmentMp = []
+	except UF.DoesNotExist:
+		allUfs = []
+
 	return render(request, 'student/prices.html',
-		{'breadcrumb': [{'link': '/student/dashboard', 'text': 'Inici'},{'link': '#', 'text': 'Matriculació'},{'link': '/student/prices', 'text': 'Preu'}]}
+		{
+			'breadcrumb': [{'link': '/student/dashboard', 'text': 'Inici'},{'link': '#', 'text': 'Matriculació'},{'link': '/student/prices', 'text': 'Preu'}],
+			'title': 'Calculació del preu | Matriculacions - INS Institut Esteve Terradas i Illa',
+			'enrolmentCareer': enrolmentCareer,
+			'enrolmentMp': enrolmentMp,
+			'allUfs': allUfs,
+		},
 	)
+
+@login_required
+def showPrice (request):
+	if request.method == 'POST':
+		try:
+			if request.POST['ufs']:
+				totalPrice = 0
+		except:
+			totalPrice = 0
+
+		return render(request, 'student/show_price.html',
+			{
+				'breadcrumb': [{'link': '/student/dashboard', 'text': 'Inici'},{'link': '#', 'text': 'Matriculació'},{'link': '/student/showprices', 'text': 'Preu'}],
+				'title': 'Calculació del preu | Matriculacions - INS Institut Esteve Terradas i Illa',
+				'price': totalPrice,
+			},
+		)
+	else:
+		messages.add_message(request, messages.ERROR, 'No tens permisos per a accedir a aquesta pàgina.')
+		return HttpResponseRedirect('/student/prices')

@@ -9,7 +9,11 @@
 				{{ param.0 }}
 			</div>
 			<div>
+				{% if param.1 %}
 				{{ param.1 }}
+				{% else %}
+				<div data-position="bottom" data-tooltip="No hi ha cap dada en aquest camp"><i class="material-icons">list</i></div>
+				{% endif %}
 			</div>
 		</li>
 		{% endfor %}
@@ -18,7 +22,10 @@
 
 <section>
 	<button data-target="solicitarcanvis" class="waves-effect waves-light btn fl-right modal-trigger"><i class="material-icons left">find_in_page</i> Solicitar canvis</button>
-	<a href="/student/dashboard" class="waves-effect waves-light btn fl-right modal-trigger" style="margin-right: 10px;"><i class="material-icons left">check_box</i> Tot correcte</a>
+	<form method="POST">
+		{% csrf_token %}
+		<button name="data-perfect" value="1" class="waves-effect waves-light btn fl-right modal-trigger" style="margin-right: 10px;"><i class="material-icons left">check_box</i> Tot correcte</a>
+	</form>
 </section>
 
 <div id="solicitarcanvis" class="modal">

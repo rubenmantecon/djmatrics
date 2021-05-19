@@ -22,7 +22,7 @@ class Command(BaseCommand):
         
         for _ in range(REGISTERS):
             #Another iteration is needed in order to add real information to: requirements, profile requirements...
-            """user= UserFactory()
+            user= UserFactory()
             term = TermFactory()
             career = CareerFactory()
             mp=MpFactory()
@@ -32,8 +32,7 @@ class Command(BaseCommand):
             record = RecordFactory()
             requirement=RequirementFactory()
             req_enrol=Req_enrolFactory()
-            enrolment=EnrolmentFactory()"""
-            req_enrol=Req_enrolFactory()
+            enrolment=EnrolmentFactory()
             req_enrol=Req_enrolFactory()
 
         
