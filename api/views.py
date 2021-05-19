@@ -1,4 +1,5 @@
-from rest_framework.decorators import api_view, permission_classes, authentication_classes
+from rest_framework.decorators import api_view, permission_classes, authentication_classes, parser_classes
+from rest_framework.parsers import FileUploadParser
 from rest_framework.authtoken.models import Token
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
@@ -7,6 +8,24 @@ from rest_framework import viewsets
 from django.contrib.auth.models import User
 from core.models import *
 from django.contrib.auth.hashers import check_password
+
+
+
+@api_view(['GET'])
+@authentication_classes([])
+@permission_classes([])
+def VerifyToken(request):
+    
+    userid = request.headers['UID']
+    tokenid = request.headers['Authorization']
+    
+    try:
+        token = Token.objects.get(user_id=userid,key=tokenid)
+        authbool = True
+    except Token.DoesNotExist:
+        authbool = False
+    
+    return Response(authbool,status=200)
 
 
 @api_view(['POST'])
@@ -33,24 +52,7 @@ def GetAccessToken(request):
 
     enrolment = Enrolment.objects.get(id=user.id)
 
-    return Response({ 'Token': token.key, 'StatusEnrolment': enrolment.state, 'BoolWizard': True if enrolment.profile_req_id else False, 'UserId': user.id })
-
-
-@api_view(['GET'])
-@authentication_classes([])
-@permission_classes([])
-def VerifyToken(request):
-    
-    userid = request.headers['UID']
-    tokenid = request.headers['Authorization'].split()[-1]
-    
-    try:
-        token = Token.objects.get(user_id=userid,key=tokenid)
-        authbool = True
-    except Token.DoesNotExist:
-        authbool = False
-    
-    return Response(authbool)
+    return Response({ 'Token': token.key, 'StatusEnrolment': enrolment.state, 'BoolWizard': True if enrolment.profile_req_id else False, 'UserId': user.id },status=200)
 
 
 @api_view(['POST'])
@@ -83,15 +85,22 @@ def UpdateWizard(request):
         enrolment = Enrolment.objects.get(id=request.user.id)
         reqenrol = Req_enrol.objects.filter(enrolment_id=enrolment.id)
         
+        reqenrolids = []
+
         for rq in reqenrol:
-            rq.delete()
+            reqenrolids.append(rq.id)
+        
+        uploads = Upload.objects.filter(req_enrol_id__in=reqenrolids)
+        uploads.delete()
+
+        reqenrol.delete()
         
         requirements = Requirement.objects.filter(profile_id=enrolment.profile_req_id)
 
         for requirement in requirements:
             Req_enrol.objects.create(state='B', enrolment_id=enrolment.id, requirement_id=requirement.id)
-        
-    return Response(sameprofile)    
+    
+    return Response(status=200)
 
 
 @api_view(['GET'])
@@ -107,7 +116,21 @@ def GetWizard(request):
         if attr in enrolmentinfofields:
             wizard[attr] = value
         
-    return Response(wizard)
+    return Response(wizard,status=200)
+
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def GetRequirementStatus(request):
+
+    reqenrols = Req_enrol.objects.filter(enrolment_id=request.user.id)
+
+    requirementstatus = {}
+
+    for reqenrol in reqenrols:
+        requirementstatus[reqenrol.requirement_id] = reqenrol.state
+    
+    return Response(requirementstatus,status=200)
 
 
 @api_view(['GET'])
@@ -130,7 +153,7 @@ def GetUserInfo(request):
         if attr in enrolmentinfofields:
             userinfo[attr] = value
 
-    return Response(userinfo)
+    return Response(userinfo,status=200)
 
 
 @api_view(['GET'])
@@ -146,7 +169,7 @@ def GetProfileAndRequirements(request):
     for requirement in requirements:
         profileandrequirements['Requirements'][requirement.id] = requirement.name
     
-    return Response(profileandrequirements)
+    return Response(profileandrequirements,status=200)
 
 
 
@@ -181,7 +204,7 @@ def GetProfilesAndRequirements(request):
                 else:
                     profilesandrequirements[profile_id]['requirements'].append(valuer)
 
-    return Response(profilesandrequirements)
+    return Response(profilesandrequirements,status=200)
 
 
 @api_view(['GET'])
@@ -232,21 +255,35 @@ def GetCareer(request):
             if attruf in ufsinfofields:
                 careermpsufs['modules'][mp_id]['ufs'][ufid][attruf] = valueuf
 
-    return Response(careermpsufs)
+    return Response(careermpsufs,status=200)
 
 
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
-def UploadReqFiles(request):
+@parser_classes([FileUploadParser])
+def UploadReqFiles(request, format=None):
     
-    enrolmentid = Enrolment.objects.get(id=request.user.id)
+    reqenrol = Req_enrol.objects.filter(enrolment_id=request.user.id)
+        
+    reqenrolids = []
+
+    for rq in reqenrol:
+        if rq.state != 'V':
+            reqenrolids.append(rq.id)
+    if 'file' not in request.data:
+        return Response("no data")
+
+    uploads = Upload.objects.filter(req_enrol_id__in=reqenrolids)
+    uploads.delete()
+    print("llego")
+    hola = request.POST.get('id')
+    for key, value in request.POST.items():
+        return Response(key+' '+value)
 
     for key, value in request.POST.items():
-        if key == '1':
-            
-            Req_enrol.objects.update(state='P')
-        elif key == '2':
-            Req_enrol.objects.update(state='P')
-        elif key == '3':
-            Req_enrol.objects.update(state='P')
-    
+        reqenrol = Req_enrol.objects.get(enrolment_id=request.user.id,requirement_id=key)
+        if reqenrol.state != 'V':
+            print(request.user.id+" -> "+ key)
+            reqenrol.update(state='P')
+
+    return Response(status=200)
