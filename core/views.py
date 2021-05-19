@@ -20,12 +20,7 @@ def index (request):
 def dashboardStudent (request):
 	documentsQuery = Req_enrol.objects.filter(enrolment_id=request.user.id)
 
-	# If the user doesn't have an enrolment will be redirected to the wizard
-	try:
-		enrolmentUser = Enrolment.objects.get(id=request.user.id)
-	except Enrolment.DoesNotExist:
-		return HttpResponseRedirect('/student/profiles')
-		
+	enrolmentUser = request.user.enrolment
 	if enrolmentUser.image_rights is None or enrolmentUser.excursions is None or enrolmentUser.extracurricular is None:
 		messages.add_message(request, messages.INFO, 'Hem detectat que necessites seleccionar les autoritzacions.')
 		return HttpResponseRedirect('/student/profiles')
@@ -55,7 +50,7 @@ def personaldata (request):
 		["Correu electrònic", request.user.email],
 	]
 
-	userEnrolment = Enrolment.objects.get(id=request.user.id)
+	userEnrolment = request.user.enrolment
 	if userEnrolment:
 		paramsEnrolment = [
 			["Document nacional d'identitat", userEnrolment.dni],
@@ -146,7 +141,7 @@ def prices (request):
 	return render(request, 'student/prices.html',
 		{
 			'breadcrumb': [{'link': '/student/dashboard', 'text': 'Inici'},{'link': '#', 'text': 'Matriculació'},{'link': '/student/prices', 'text': 'Preu'}],
-			'title': 'Calculació del preu | Matriculacions - INS Institut Esteve Terradas i Illa',
+			'title': 'Càlcul del preu | Matriculacions - INS Institut Esteve Terradas i Illa',
 			'enrolment': enrolmentUser,
 		},
 	)
@@ -169,7 +164,7 @@ def showPrice (request):
 		return render(request, 'student/show_price.html',
 			{
 				'breadcrumb': [{'link': '/student/dashboard', 'text': 'Inici'},{'link': '#', 'text': 'Matriculació'},{'link': '/student/showprices', 'text': 'Preu'}],
-				'title': 'Calculació del preu | Matriculacions - INS Institut Esteve Terradas i Illa',
+				'title': 'Càlcul del preu | Matriculacions - INS Institut Esteve Terradas i Illa',
 				'price': totalPrice,
 			},
 		)
