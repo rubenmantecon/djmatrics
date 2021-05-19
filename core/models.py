@@ -81,7 +81,6 @@ class ProfileRequirement(models.Model):
         ('MA', 'Obligatori')
     )
 
-<<<<<<< HEAD
 
     name = models.CharField("nom", max_length=255)
     description = models.TextField("descripció", null=True)
@@ -90,17 +89,6 @@ class ProfileRequirement(models.Model):
 
     def __str__(self):
         return self.name
-=======
-    class ProfileChoices(Enum):
-        OB = 'obligatori'
-        EX = 'exempció'
-        BO = 'bonificació del 50%'
-
-    name = models.CharField("nom", max_length=255)
-    description = models.TextField("descripció", null=True)
-    profile_type = models.CharField('profile_type', max_length=30, choices=[(
-        val_state, val_state.value) for val_state in ProfileChoices], default=None, null=False)
->>>>>>> pre
 
 
 class Enrolment(models.Model):
