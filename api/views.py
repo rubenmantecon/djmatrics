@@ -17,7 +17,7 @@ from django.contrib.auth.hashers import check_password
 def VerifyToken(request):
     
     userid = request.headers['UID']
-    tokenid = request.headers['Authorization']
+    tokenid = request.headers['Token']
     
     try:
         token = Token.objects.get(user_id=userid,key=tokenid)
@@ -140,7 +140,7 @@ def GetUserInfo(request):
     user = User.objects.get(id=request.user.id)
     enrolment = Enrolment.objects.get(id=user.id)
 
-    userinfofields = ['username','first_name','last_name']
+    userinfofields = ['username','first_name','last_name','email']
     enrolmentinfofields = ['dni','birthplace','birthday','address','city','postal_code','phone_number','emergency_number','tutor_1','tutor_2']
 
     userinfo= {}
