@@ -30,14 +30,37 @@ def dashboardStudent (request):
 
 @login_required
 def personaldata (request):
-	'''params = {
-		'first_name': User.objects.get(id=)
-	}'''
+	params = [
+		["Nom de l’usuari", request.user.first_name],
+		["Cognoms de l'usuari", request.user.last_name],
+		["Correu electrònic", request.user.email],
+	]
+
+	userEnrolment = Enrolment.objects.get(id=request.user.id)
+	if userEnrolment:
+		paramsEnrolment = [
+			["Document nacional d'identitat", userEnrolment.dni],
+			["Data de naixement", userEnrolment.birthday],
+			["Localització de naixement", userEnrolment.birthplace],
+			["Adreça", userEnrolment.address],
+			["Ciutat", userEnrolment.city],
+			["Codi postal", userEnrolment.postal_code],
+			["Telefon mòbil", userEnrolment.phone_number],
+			["Telefon d'emergència", userEnrolment.emergency_number],
+			["Tutor 1 - Document nacional d'identitat", userEnrolment.tutor_1_dni],
+			["Tutor 1 - Nom complet", "{} {} {}".format(userEnrolment.tutor_1_name, userEnrolment.tutor_1_lastname1, userEnrolment.tutor_1_lastname2)],
+			["Tutor 2 - Document nacional d'identitat", userEnrolment.tutor_2_dni],
+			["Tutor 2 - Nom complet", "{} {} {}".format(userEnrolment.tutor_2_name, userEnrolment.tutor_2_lastname1, userEnrolment.tutor_2_lastname2)],
+		]
+
+		for param in paramsEnrolment:
+			params.append(param)
 
 
 	return render(request, 'student/personaldata.html', {
 		'title': 'Data personal | Matriculacions - INS Institut Esteve Terradas i Illa',
 		'requirements': Requirement.objects.all(),
+		'params': params,
 		'breadcrumb': [{'link': '/student/dashboard', 'text': 'Inici'},{'link': '#', 'text': 'Alumne'},{'link': '/student/personaldata', 'text': 'Data personal'}]
 	});
 
@@ -79,7 +102,9 @@ def profiles (request):
 
 	return render(request, 'student/profiles.html', {
 		'title': 'Perfils d\'usuari | Matriculacions - INS Institut Esteve Terradas i Illa',
-		'profiles': ProfileRequirement.objects.all(),
+		'profilesBonus': ProfileRequirement.objects.filter(profile_type='bonificació del 50%'),
+		'profilesExemption': ProfileRequirement.objects.filter(profile_type='exempció'),
+		'profilesMandatory': ProfileRequirement.objects.filter(profile_type='obligatori'),
 		'requirements': Requirement.objects.all(),
 		'breadcrumb': [{'link': '/student/dashboard', 'text': 'Inici'},{'link': '#', 'text': 'Matriculació'},{'link': '/student/profiles', 'text': 'Perfils'}]
 	});

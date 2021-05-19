@@ -11,6 +11,7 @@ from django.contrib.auth.hashers import check_password
 
 @api_view(['POST'])
 def GetAccessToken(request):
+
     email = request.POST.get('email')
     password = request.POST.get('password')
 
@@ -31,6 +32,7 @@ def GetAccessToken(request):
         token = Token.objects.create(user=user)
 
     enrolment = Enrolment.objects.get(id=user.id)
+
 
     return Response({ 'Token': token.key, 'StatusEnrolment': enrolment.state, 'BoolWizard': True })
 

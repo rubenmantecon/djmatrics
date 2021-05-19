@@ -37,17 +37,6 @@ class Career(models.Model):
         return self.name
 
 
-class ProfileRequirement(models.Model):
-    class Meta:
-        verbose_name = "Perfil de requeriments"
-        verbose_name_plural = "Perfils de requeriment"
-    name = models.CharField("nom", max_length=50)
-    description = models.TextField("descripció", null=True)
-
-    def __str__(self):
-        return self.name
-
-
 class MP(models.Model):
     class Meta:
         verbose_name_plural = "MPs"
@@ -92,6 +81,7 @@ class ProfileRequirement(models.Model):
         ('MA', 'Obligatori')
     )
 
+<<<<<<< HEAD
 
     name = models.CharField("nom", max_length=255)
     description = models.TextField("descripció", null=True)
@@ -100,6 +90,17 @@ class ProfileRequirement(models.Model):
 
     def __str__(self):
         return self.name
+=======
+    class ProfileChoices(Enum):
+        OB = 'obligatori'
+        EX = 'exempció'
+        BO = 'bonificació del 50%'
+
+    name = models.CharField("nom", max_length=255)
+    description = models.TextField("descripció", null=True)
+    profile_type = models.CharField('profile_type', max_length=30, choices=[(
+        val_state, val_state.value) for val_state in ProfileChoices], default=None, null=False)
+>>>>>>> pre
 
 
 class Enrolment(models.Model):
