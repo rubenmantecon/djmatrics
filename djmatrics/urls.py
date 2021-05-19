@@ -26,9 +26,11 @@ urlpatterns = [
     path("accounts/login", views.login),
 	path('dades/', include("core.urls")),
     path('', include("core.urls")),
-    path('api/', include('api.urls'))
+    path('api/', include('api.urls')),
 ]
 
 if settings.ADMIN_FLAG:
     urlpatterns.append( path('admin/', admin.site.urls) )
 
+
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
