@@ -61,6 +61,7 @@ INSTALLED_APPS = [
     'core',
     'api',
 
+
     #CORS
     'corsheaders',
 
@@ -183,18 +184,13 @@ ACCOUNT_LOGOUT_ON_GET = True
 #The config below disables the signup option
 ACCOUNT_ADAPTER = 'core.adapter.NoNewUsersAccountAdapter'
 
-##Mail server
-# EMAIL_BACKEND = 'djcelery_email.backends.CeleryEmailBackend'
-# CELERY_EMAIL_TASK_CONFIG = {
-#     'queue' : 'email',
-#     'rate_limit' : '50/m',  # * CELERY_EMAIL_CHUNK_SIZE (default: 10)
-#     'name': 'djcelery_email_send',
-#     'ignore_result': True,
-# }
+
 EMAIL_BACKEND ='django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST_USER = env('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')
+
+DEFAULT_FROM_EMAIL= 'navarromalba00@gmail.com'
 

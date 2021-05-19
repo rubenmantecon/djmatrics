@@ -1,8 +1,19 @@
-from django.shortcuts import render, HttpResponseRedirect
+from django.shortcuts import render, HttpResponseRedirect, HttpResponse
 from django.contrib.auth.decorators import login_required
 from django.core.exceptions import ValidationError
 from .models import ProfileRequirement, Req_enrol, Requirement, Enrolment, User
-from .forms import SaveProfiles
+from .forms import SaveProfiles, ReviewForm
+from django.views.generic.edit import FormView
+
+
+class ReviewEmailView(FormView):
+    template_name="review.html"
+    form_class=ReviewForm
+
+    def form_valid(self, form):
+        form.send_mail()
+        msg = "Thanks for the review"
+        return HttpResponse(msg)
 
 def index (request):
     return render(request, "base.html", {'title':"INS Institut Esteve Terradas i Illa", 'user': "Enric"})
