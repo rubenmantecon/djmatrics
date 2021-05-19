@@ -38,17 +38,6 @@ class Career(models.Model):
         return self.name
 
 
-class ProfileRequirement(models.Model):
-    class Meta:
-        verbose_name = "Perfil de requeriments"
-        verbose_name_plural = "Perfils de requeriment"
-    name = models.CharField("nom", max_length=50)
-    description = models.TextField("descripció", null=True)
-
-    def __str__(self):
-        return self.name
-
-
 class MP(models.Model):
     class Meta:
         verbose_name_plural = "MPs"

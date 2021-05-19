@@ -44,7 +44,7 @@ DATABASES = {
     'extra': env.db('SQLITE_URL', default='sqlite:////tmp/my-tmp-sqlite.db')
 }
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [env('DOMAIN'),]
 
 # Application definition
 
@@ -73,6 +73,7 @@ INSTALLED_APPS = [
     'allauth_office365',
     'allauth.socialaccount.providers.google',
 ]
+
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
@@ -168,9 +169,34 @@ AUTHENTICATION_BACKENDS = (
     "allauth.account.auth_backends.AuthenticationBackend",
 )
 
+##Social Login
 SITE_ID = 1
+ACCOUNT_AUTHENTICATION_METHOD = 'email'
+#ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
 ACCOUNT_EMAIL_VERIFICATION = "none"
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_USERNAME_REQUIRED = False
 LOGIN_REDIRECT_URL = "/student/dashboard"
+ACCOUNT_AUTHENTICATED_LOGIN_REDIRECTS = True
 ACCOUNT_LOGOUT_ON_GET = True
 #The config below disables the signup option
 ACCOUNT_ADAPTER = 'core.adapter.NoNewUsersAccountAdapter'
+
+##Mail server
+# EMAIL_BACKEND = 'djcelery_email.backends.CeleryEmailBackend'
+# CELERY_EMAIL_TASK_CONFIG = {
+#     'queue' : 'email',
+#     'rate_limit' : '50/m',  # * CELERY_EMAIL_CHUNK_SIZE (default: 10)
+#     'name': 'djcelery_email_send',
+#     'ignore_result': True,
+# }
+EMAIL_BACKEND ='django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = env('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')
+
+
+
+
