@@ -3,30 +3,16 @@
 <section>
 	<h1 class="title-section">Dades personals</h1>
 	<ul class="collection">
+		{% for param in params %}
 		<li class="collection-item collection-sides">
 			<div>
-				Nom de l’usuari
+				{{ param.0 }}
 			</div>
 			<div>
-				{{ request. }}
+				{{ param.1 }}
 			</div>
 		</li>
-		<li class="collection-item collection-sides">
-			<div>
-				Cognoms de l'usuari
-			</div>
-			<div>
-				Mieza Jurado
-			</div>
-		</li>
-		<li class="collection-item collection-sides">
-			<div>
-				Correu electrónic
-			</div>
-			<div>
-				emieza@xtec.cat
-			</div>
-		</li>
+		{% endfor %}
 	</ul>
 </section>
 
