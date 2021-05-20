@@ -123,9 +123,9 @@ def profiles (request):
 
 	return render(request, 'student/profiles.html', {
 		'title': 'Perfils d\'usuari | Matriculacions - INS Institut Esteve Terradas i Illa',
-		'profilesBonus': ProfileRequirement.objects.filter(profile_type='bonificació del 50%'),
-		'profilesExemption': ProfileRequirement.objects.filter(profile_type='exempció'),
-		'profilesMandatory': ProfileRequirement.objects.filter(profile_type='obligatori'),
+		'profilesBonus': ProfileRequirement.objects.filter(profile_type='BO'),
+		'profilesExemption': ProfileRequirement.objects.filter(profile_type='EX'),
+		'profilesMandatory': ProfileRequirement.objects.filter(profile_type='MA'),
 		'requirements': Requirement.objects.all(),
 		'breadcrumb': [{'link': '/student/dashboard', 'text': 'Inici'},{'link': '#', 'text': 'Matriculació'},{'link': '/student/profiles', 'text': 'Perfils'}]
 	});

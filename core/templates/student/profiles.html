@@ -6,7 +6,6 @@
 		<div class="section-content">
 			<ul class="collapsible">
 				{% for profile in profilesBonus %}
-				{% if profile.profile_type == 'bonificació del 50%' %}
 				<li>
 					<div class="collapsible-header collection-bonification">
 						<span>
@@ -28,7 +27,6 @@
 						</p>
 					</div>
 				</li>
-				{% endif %}
 				{% endfor %}
 			</ul>
 		</div>
@@ -39,7 +37,6 @@
 		<div class="section-content">
 			<ul class="collapsible">
 				{% for profile in profilesExemption %}
-				{% if profile.profile_type == 'exempció' %}
 				<li>
 					<div class="collapsible-header collection-bonification">
 						<span>
@@ -61,7 +58,6 @@
 						</p>
 					</div>
 				</li>
-				{% endif %}
 				{% endfor %}
 			</ul>
 		</div>
