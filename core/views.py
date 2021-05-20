@@ -110,9 +110,9 @@ def profiles (request):
 					toSaveEnrolment.excursions = int(form.data['salides_excursio'])
 
 				if form.data.get('profile'):
-					toSaveEnrolment.profile_id = int(form.data['profile'])
+					toSaveEnrolment.profile_req_id = int(form.data['profile'])
 				else:
-					toSaveEnrolment.profile_id = ''
+					toSaveEnrolment.profile_req_id = ''
 				
 				toSaveEnrolment.save()
 				messages.add_message(request, messages.SUCCESS, 'S\'ha desat les dades.')
