@@ -5,7 +5,7 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>{% block title %}{{title}}{% endblock %}</title>
+		<title>{{ title }}</title>
 
 		<!-- Styles -->
 		<link rel="stylesheet" href="{% static 'css/materialize.css' %}">
@@ -23,8 +23,8 @@
 		<script src="{% static 'js/materialize.js' %}"></script>
 		<script src="{% static 'js/script.js' %}"></script>
 	</head>
-
 	<body>
+		{% block header %}
 		<header>
 			<a href="#" class="brand-logo">
 				<img src="{% static 'images/logo-ieti.png' %}" class="image-logo"/>
@@ -33,11 +33,12 @@
 				<h2>INS Esteve Terradas i Illa</h2>
 				<h4>Matriculacions</h4>
 			</div>
+			{% if user.is_authenticated %}
 			<ul class="user-content white-text">
-				<li><i class="material-icons">person</i> {% if request.user.first_name %}{{ request.user.first_name }}{% else %}{{ request.user.username }}{% endif %}</li>
-				<li><a href="/accounts/logout"><i class="material-icons red-text text-darken-4">exit_to_app</i></a></li>
+				<li><i class="material-icons">person</i> {% if request.user.first_name %}{{ request.user.first_name }}{% else %}{{ request.user.username }}{% endif %} <a href="/accounts/logout"><i class="material-icons red-text text-darken-4">exit_to_app</i></a></li>
 				<li>{% if request.user.is_staff == 1 %}admin{% else %}alumne{% endif %}</li>
 			</ul>
+			{% endif %}
 		</header>
 		<nav>
 			<div class="nav-wrapper">
@@ -55,21 +56,28 @@
 				</div>
 			</div>
 		</nav>
-	<main class="background container">
-		{% block content %}{% endblock %}
-	</main>
-	{% block footer %}
-	<footer class="page-footer blue darken-4">
-		<div class="container">
-			<i class="material-icons right">timelapse</i>
-		</div>
-		<div class="footer-copyright">
+		{% endblock %}
+		<main class="background container">
+			{% block content %}{% endblock %}
+		</main>
+		{% block footer %}
+		<footer class="page-footer blue darken-4">
 			<div class="container">
-				© 2021 INS Esteve Terradas i Illa
+				<i class="material-icons right">timelapse</i>
 			</div>
-		</div>
-	</footer>
-	{% endblock %}
-</body>
-
+			<div class="footer-copyright">
+				<div class="container">
+					© 2021 INS Esteve Terradas i Illa
+				</div>
+			</div>
+		</footer>
+		{% endblock %}
+		{% if messages %}
+		<script defer>
+			{% for message in messages %}
+				M.toast({html: '{{ message }}'});
+			{% endfor %}
+		</script>
+		{% endif %}
+	</body>
 </html>

@@ -47,7 +47,7 @@ DATABASES = {
     'extra': env.db('SQLITE_URL', default='sqlite:////tmp/my-tmp-sqlite.db')
 }
 
-ALLOWED_HOSTS = [env('DOMAIN'),]
+ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -96,6 +96,8 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True
+
+MESSAGE_STORAGE = 'django.contrib.messages.storage.cookie.CookieStorage'
 
 ROOT_URLCONF = 'djmatrics.urls'
 
@@ -177,7 +179,7 @@ ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
 ACCOUNT_EMAIL_VERIFICATION = "none"
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_USERNAME_REQUIRED = False
-LOGIN_REDIRECT_URL = "/student/profiles"
+LOGIN_REDIRECT_URL = "/student/dashboard"
 ACCOUNT_AUTHENTICATED_LOGIN_REDIRECTS = True
 ACCOUNT_LOGOUT_ON_GET = True
 #The config below disables the signup option
