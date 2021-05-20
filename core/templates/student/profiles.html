@@ -5,17 +5,17 @@
 		<h1 class="title-section">Bonificació 50% del preu públic</h1>
 		<div class="section-content">
 			<ul class="collapsible">
-				{% for profile in profiles %}
-				{% if profile.profile_type == 'bonus' %}
+				{% for profile in profilesBonus %}
+				{% if profile.profile_type == 'bonificació del 50%' %}
 				<li>
 					<div class="collapsible-header collection-bonification">
-						{{ profile.name }} <i class="material-icons">expand_more</i>
-						<div class="input-fl-right">
-							<label>
-								<input class="with-gap" name="profile" value="{{ profile.id }}" type="radio"/>
-								<span></span> 
-							</label>
-						</div>
+						<span>
+							{{ profile.name }} <i class="material-icons">expand_more</i>
+						</span>
+						<label>
+							<input class="with-gap" name="profile" value="{{ profile.id }}" type="radio"/>
+							<span></span> 
+						</label>
 					</div>
 					<div class="collapsible-body">
 						<span>{% if profile.description %}{{ profile.description }}{% endif %}</span>
@@ -38,17 +38,17 @@
 		<h1 class="title-section">Exempció del preu públic</h1>
 		<div class="section-content">
 			<ul class="collapsible">
-				{% for profile in profiles %}
-				{% if profile.profile_type == 'exemption' %}
+				{% for profile in profilesExemption %}
+				{% if profile.profile_type == 'exempció' %}
 				<li>
 					<div class="collapsible-header collection-bonification">
-						{{ profile.name }} <i class="material-icons">expand_more</i>
-						<div class="input-fl-right">
-							<label>
-								<input class="with-gap" name="profile" value="{{ profile.id }}" type="radio"/>
-								<span></span> 
-							</label>
-						</div>
+						<span>
+							{{ profile.name }} <i class="material-icons">expand_more</i>
+						</span>
+						<label>
+							<input class="with-gap" name="profile" value="{{ profile.id }}" type="radio"/>
+							<span></span> 
+						</label>
 					</div>
 					<div class="collapsible-body">
 						<span>{% if profile.description %}{{ profile.description }}{% endif %}</span>

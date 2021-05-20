@@ -12,6 +12,7 @@
 					<div class="trafficlight green waves-effect waves-light {% if enrolmentStatus == 'V' %}turnon{% endif %}" data-position="bottom" data-tooltip="Acceptat"></div>
 				</div>
 			</div>
+			{% if documents %}
 			<ul class="collection disable-pd disable-mg">
 				{% for document in documents %}
 				<li class="collection-item">
@@ -28,6 +29,9 @@
 				</li>
 				{% endfor %}
 			</ul>
+			{% else %}
+			<blockquote>No hi ha cap document a mostrar.</blockquote>
+			{% endif %}
 		</div>
 		<div class="col s4">
 			<h1 class="title-section">Navegació</h1>

@@ -21,7 +21,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # environ object instatiation
 env = environ.Env(
     # set casting, default value
-    DEBUG=(bool, True)
+    DEBUG=(bool, True),
+    ADMIN_FLAG=(bool, True),
 )
 
 # Quick-start development settings - unsuitable for production
@@ -32,6 +33,8 @@ environ.Env.read_env()
 
 # False if not in os.environ
 DEBUG = env('DEBUG')
+ADMIN_FLAG = env('ADMIN_FLAG')
+
 
 # Raises django's ImproperlyConfigured exception if SECRET_KEY not in os.environ
 SECRET_KEY = env('SECRET_KEY')
@@ -74,6 +77,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.google',
 ]
 
+
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.TokenAuthentication'
@@ -92,6 +96,8 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True
+
+MESSAGE_STORAGE = 'django.contrib.messages.storage.cookie.CookieStorage'
 
 ROOT_URLCONF = 'djmatrics.urls'
 
@@ -166,9 +172,31 @@ AUTHENTICATION_BACKENDS = (
     "allauth.account.auth_backends.AuthenticationBackend",
 )
 
+##Social Login
 SITE_ID = 1
+ACCOUNT_AUTHENTICATION_METHOD = 'email'
+ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
 ACCOUNT_EMAIL_VERIFICATION = "none"
-LOGIN_REDIRECT_URL = "/"
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_USERNAME_REQUIRED = False
+LOGIN_REDIRECT_URL = "/student/dashboard"
+ACCOUNT_AUTHENTICATED_LOGIN_REDIRECTS = True
 ACCOUNT_LOGOUT_ON_GET = True
 #The config below disables the signup option
 ACCOUNT_ADAPTER = 'core.adapter.NoNewUsersAccountAdapter'
+
+##Mail server
+# EMAIL_BACKEND = 'djcelery_email.backends.CeleryEmailBackend'
+# CELERY_EMAIL_TASK_CONFIG = {
+#     'queue' : 'email',
+#     'rate_limit' : '50/m',  # * CELERY_EMAIL_CHUNK_SIZE (default: 10)
+#     'name': 'djcelery_email_send',
+#     'ignore_result': True,
+# }
+EMAIL_BACKEND ='django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = env('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')
+

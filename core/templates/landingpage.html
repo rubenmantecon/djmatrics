@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+{% block header %}{% endblock %}
+{% block content %}
+
+<div class="box-middle">
+	<img src="{% static 'images/logo-ieti.png' %}" class="image-logo"/>
+	<h2>INS Esteve Terradas i Illa</h2>
+	<h4>Matriculacions</h4>
+
+	<p>Gestiona la teva matriculació a l’Institut Esteve Terradas i Illa.</p>
+	<p>Amb aquesta aplicació pots:</p>
+	<ul>
+		<li>Veure l’estat real de la teva matricula.</li>
+		<li>Gestionar els documents de la matricula.</li>
+		<li>Fer el pagament desde la propia app.</li>
+	</ul>
+	<a class="waves-effect waves-light btn" href="/accounts/login/">Inicia sessió</a>
+
+</div>
+
+{% endblock %}
+{% block footer %}{% endblock %}
