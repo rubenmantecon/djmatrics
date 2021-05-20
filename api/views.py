@@ -50,7 +50,7 @@ def GetAccessToken(request):
     except Token.DoesNotExist:
         token = Token.objects.create(user=user)
 
-    enrolment = Enrolment.objects.get(id=user.id)
+    enrolment = Enrolment.objects.get(user_id=user.id)
 
     return Response({ 'Token': token.key, 'StatusEnrolment': enrolment.state, 'BoolWizard': True if enrolment.profile_req_id else False, 'UserId': user.id },status=200)
 
@@ -59,7 +59,7 @@ def GetAccessToken(request):
 @permission_classes([IsAuthenticated])
 def UpdateWizard(request):
 
-    enrolment = Enrolment.objects.get(id=request.user.id)
+    enrolment = Enrolment.objects.get(user_id=request.user.id)
     beforeprofileid = enrolment.profile_req_id
     
     for key, value in request.POST.items():
@@ -82,7 +82,7 @@ def UpdateWizard(request):
     enrolment.save()
 
     if sameprofile == False:
-        enrolment = Enrolment.objects.get(id=request.user.id)
+        enrolment = Enrolment.objects.get(user_id=request.user.id)
         reqenrol = Req_enrol.objects.filter(enrolment_id=enrolment.id)
         
         reqenrolids = []
@@ -107,7 +107,7 @@ def UpdateWizard(request):
 @permission_classes([IsAuthenticated])
 def GetWizard(request):
 
-    enrolment = Enrolment.objects.get(id=request.user.id)
+    enrolment = Enrolment.objects.get(user_id=request.user.id)
     enrolmentinfofields = ['image_rights','excursions','extracurricular']
 
     wizard = {}
@@ -123,7 +123,8 @@ def GetWizard(request):
 @permission_classes([IsAuthenticated])
 def GetRequirementStatus(request):
 
-    reqenrols = Req_enrol.objects.filter(enrolment_id=request.user.id)
+    enrolment = Enrolment.objects.get(user_id=request.user.id)
+    reqenrols = Req_enrol.objects.filter(enrolment_id=enrolment.id)
 
     requirementstatus = {}
 
@@ -138,7 +139,7 @@ def GetRequirementStatus(request):
 def GetUserInfo(request):
     
     user = User.objects.get(id=request.user.id)
-    enrolment = Enrolment.objects.get(id=user.id)
+    enrolment = Enrolment.objects.get(user_id=user.id)
 
     userinfofields = ['username','first_name','last_name','email']
     enrolmentinfofields = ['dni','birthplace','birthday','address','city','postal_code','phone_number','emergency_number','tutor_1','tutor_2']
@@ -160,7 +161,7 @@ def GetUserInfo(request):
 @permission_classes([IsAuthenticated])
 def GetProfileAndRequirements(request):
         
-    enrolment = Enrolment.objects.get(id=request.user.id)
+    enrolment = Enrolment.objects.get(user_id=request.user.id)
     profilerequirement = ProfileRequirement.objects.get(id=enrolment.profile_req_id)
     requirements = Requirement.objects.filter(profile_id=profilerequirement.id)
 
@@ -211,7 +212,7 @@ def GetProfilesAndRequirements(request):
 @permission_classes([IsAuthenticated])
 def GetCareer(request):
 
-    enrolment = Enrolment.objects.get(id=request.user.id)
+    enrolment = Enrolment.objects.get(user_id=request.user.id)
     careerid = enrolment.career_id
 
     career = Career.objects.get(id=careerid)
