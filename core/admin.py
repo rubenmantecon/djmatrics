@@ -40,7 +40,7 @@ class UFInline(admin.TabularInline):
 
 
 class Req_EnrolInline(admin.TabularInline):
-    fields = ["requirement", "state", "pujades"]
+    fields = ["requirement", "enrolment", "state", "pujades"]
     readonly_fields = ["requirement", "pujades"]
     model = models.Req_enrol
     extra = 0
@@ -90,8 +90,9 @@ class UFAdmin(admin.ModelAdmin):
 class EnrolmentAdmin(admin.ModelAdmin):
     exclude = ()
     save_on_top = True
-    search_fields = ["state", "dni"]
-    list_display = ["state", "email", "dni"]
+    search_fields = ["career__name", "dni","email"]
+    #list_filter = ["career__name"]
+    list_display = ["state","documents_pujats", "email", "dni","career" ]
     readonly_fields = ["Enrera"]
     order_by = ["state"]
     inlines = [Req_EnrolInline]

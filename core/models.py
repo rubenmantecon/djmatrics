@@ -143,6 +143,20 @@ class Enrolment(models.Model):
     term = models.ForeignKey(Term, on_delete=models.SET_NULL, null=True)
     career = models.ForeignKey(Career, on_delete=models.SET_NULL, null=True
     )
+
+    def documents_pujats(self):
+        html= "" ""
+        req_enrols= self.req_enrol_set.all()
+        pending_docs=0
+        
+        
+        for state in req_enrols:
+            if str(state.state) == "R" or str(state.state) == "B":
+                return 0
+            elif str(state.state) == "P":
+                pending_docs = 1
+        return pending_docs
+    documents_pujats.boolean = True
     
     def __str__(self):
         return self.email
