@@ -18,9 +18,9 @@ def index (request):
 
 @login_required
 def dashboardStudent (request):
-	documentsQuery = Req_enrol.objects.filter(enrolment_id=request.user.id)
-
 	enrolmentUser = request.user.enrolment
+	documentsQuery = Req_enrol.objects.filter(enrolment_id=enrolmentUser)
+	
 	if enrolmentUser.image_rights is None or enrolmentUser.excursions is None or enrolmentUser.extracurricular is None:
 		messages.add_message(request, messages.INFO, 'Hem detectat que necessites seleccionar les autoritzacions.')
 		return HttpResponseRedirect('/student/profiles')
