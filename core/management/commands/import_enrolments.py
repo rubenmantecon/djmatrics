@@ -6,6 +6,10 @@ from datetime import datetime
 import sys
 import csv
 
+# identificative strings for columns in CSV
+CODI_ENSENYAMENT_ASSIGNAT_STR = "Codi ensenyament assignat"
+REQ_NUM_STR = "Núm. sol·licitud"
+RALC_ID = "Ident. RALC"
 
 class Command(BaseCommand):
     help = """Importa matriculacions.\n
@@ -24,15 +28,28 @@ class Command(BaseCommand):
             print('El fitxer "{}" no existeix'.format(filename))
             sys.exit()
 
-        print("Carregant matrícules. Cada fila de matrícula del fitxer es convertirà en una entrada a la taula Enrolments.")
+        print("Carregant matrícules. Cada fila del fitxer es convertirà en una entrada a la taula Enrolments.")
 
         with open(filename) as f:
             reader = csv.DictReader(f, delimiter=",")
             for row in reader:
-                # Format the date coming from csv to DB's date format
-                data_naixement = datetime.strptime(
-                    row["Data naixement"], '%d/%m/%Y').strftime('%Y-%m-%d')
+                career = Career.objects.filter(code=row[CODI_ENSENYAMENT_ASSIGNAT_STR]).first()
+                if not career:
+                    print("No s'ha trobat estudis amb codi [ {} ] per a {}".format(
+                                row[CODI_ENSENYAMENT_ASSIGNAT_STR], row[REQ_NUM_STR]))
+                    # no guardem dades si no té cap estudi admès
+                    #continue
+                    # de moment ho creem igualment pq es vegi que no ha estat acceptat explícitament
+
+                # CREATE ENROLMENT
                 matricula = Enrolment(
-                    dni=row["DNI"], state="P", birthplace=row["País naixement"], birthday=data_naixement, address='{} {}, {}'.format(row["Tipus via"], row["Nom via"], row["Número via"]), city=row["Municipi residència"], postal_code=row["CP"], phone_number=row["Telèfon"], email=row["Correu electrònic"], emergency_number=row["Telèfon"], tutor_1_dni=row["Núm. doc. tutor 1"], tutor_2_dni=row["Núm. doc. tutor 2"], tutor_1_name=row["Nom tutor 1"], tutor_1_lastname1=row["Primer cognom tutor 1"], tutor_1_lastname2=row["Segon cognom tutor 1"], tutor_2_name=row["Nom tutor 2"], tutor_2_lastname1=row["Primer cognom tutor 2"], tutor_2_lastname2=row["Segon cognom tutor 2"]
+                    request_num = row[REQ_NUM_STR],
+                    ralc_num = row[RALC_ID],
+                    first_name = row["Nom"],
+                    last_name_1 = row["Primer cognom"],
+                    last_name_2 = row["Segon cognom"],
+                    career = career,
+                    state = 'P', # pending
                 )
                 matricula.save()
+

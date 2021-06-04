@@ -53,8 +53,8 @@ class UF(models.Model):
     class Meta:
         verbose_name_plural = "UFs"
     CHOICES = (
-        ('1', 'Primer'),
-        ('2', 'Segon'),
+        ('1', '1r'),
+        ('2', '2n'),
     )
     name = models.CharField("nom", max_length=255)
     code = models.CharField("codi", max_length=20)
@@ -67,11 +67,10 @@ class UF(models.Model):
     active = models.BooleanField("és actiu", default=True)
 
     def __str__(self):
-        return self.name
+        return "{} - {}".format(self.mp.name[:4],self.name)
 
 
 class ProfileRequirement(models.Model):
-
     class Meta:
         verbose_name = "Perfil de requeriments"
         verbose_name_plural = "Perfils de requeriment"
@@ -84,7 +83,7 @@ class ProfileRequirement(models.Model):
     name = models.CharField("nom", max_length=255)
     description = models.TextField("descripció", null=True)
     profile_type = models.CharField(
-        'profile_type', max_length=20, choices=CHOICES, default=None, null=True, blank=True)
+        'tipus', max_length=20, choices=CHOICES, default=None, null=True, blank=True)
 
     def __str__(self):
         return self.name
@@ -101,54 +100,66 @@ class Enrolment(models.Model):
         ('R', 'Rebutjat'),
         ('B', 'Buit')
     )
-    user = models.OneToOneField(
-        User, on_delete=models.SET_NULL, null=True, blank=True)
-    uf = models.ManyToManyField(UF,blank=True)
-    dni = models.CharField("dni", max_length=30)
-    state = models.CharField("estat de matrícula",
-                             max_length=20, choices=CHOICES, default=None)
-    birthplace = models.CharField(
-        "lloc de naixement", max_length=50, null=True, default=None)
+    ID_TYPES = (
+        ('DNI','DNI'),
+        ('NIE','NIE'),
+        ('PASS','Passaport'),
+    )
+    user = models.ForeignKey( User, on_delete=models.SET_NULL,
+                                null=True, blank=True)
+    # dades importades
+    request_num = models.CharField("Número de sol·licitud", max_length=100)
+    ralc_num = models.CharField("Identificador RALC", max_length=100)
+    first_name = models.CharField( "nom", max_length=100 )
+    last_name_1 = models.CharField( "cognom 1", max_length=100 )
+    last_name_2 = models.CharField( "cognom 2", max_length=100 )
+    ID_num = models.CharField( "ID num", max_length=30,
+                        help_text="Número del DNI, NIE o Passaport")
+    ID_type = models.CharField( "tipus de doc ID", max_length=30, choices=ID_TYPES)
+    tis = models.CharField( "Targeta Sanitària", max_length=20,
+                            null=True, blank=True, default=None )
+    birthplace = models.CharField( "lloc de naixement", 
+                            max_length=50, null=True, default=None)
     birthday = models.DateField("data de naixement", null=True, default=None)
     address = models.CharField("adreça", max_length=255, null=True)
     city = models.CharField("ciutat", max_length=150, null=True)
     postal_code = models.CharField("codi postal", null=True, max_length=5)
-    phone_number = models.CharField(
-        "número de telèfon", null=True, max_length=14)
+    phone_number = models.CharField( "número de telèfon",
+                            null=True, max_length=14)
     email = models.EmailField("correu", max_length=254, null=True)
-    emergency_number = models.CharField(
-        "número d'emergència", null=True, max_length=14)
-    tutor_1_dni = models.CharField(
-        "dni del pare/mare o tutor/a legal", max_length=30, null=True, default=None)
-    tutor_1_name = models.CharField(
-        "nom del pare/mare o tutor/a legal (2)", max_length=50, null=True, default=None)
-    tutor_1_lastname1 = models.CharField(
-        "cognoms del pare/mare o tutor/a legal (2)", max_length=50, null=True, default=None)
-    tutor_1_lastname2 = models.CharField(
-        "cognoms del pare/mare o tutor/a legal (2)", max_length=50, null=True, default=None)
-    tutor_2_dni = models.CharField(
-        "dni del pare/mare o tutor/a legal (2)", max_length=9, null=True, default=None)
-    tutor_2_name = models.CharField(
-        "cognoms del pare/mare o tutor/a legal (2)", max_length=50, null=True, default=None)
-    tutor_2_lastname1 = models.CharField(
-        "cognoms del pare/mare o tutor/a legal (2)", max_length=50, null=True, default=None)
-    tutor_2_lastname2 = models.CharField(
-        "cognoms del pare/mare o tutor/a legal (2)", max_length=50, null=True, default=None)
+    emergency_number = models.CharField( "número d'emergència",
+                    null=True, max_length=14)
+    tutor_1_dni = models.CharField( "dni del pare/mare o tutor/a legal (1)",
+                    max_length=30, null=True, default=None)
+    tutor_1_name = models.CharField( "nom del pare/mare o tutor/a legal (1)",
+                    max_length=50, null=True, default=None)
+    tutor_1_lastname1 = models.CharField( "cognoms del pare/mare o tutor/a legal (1)",
+                    max_length=50, null=True, default=None)
+    tutor_1_lastname2 = models.CharField( "cognoms del pare/mare o tutor/a legal (1)",
+                    max_length=50, null=True, default=None)
+    tutor_2_dni = models.CharField( "dni del pare/mare o tutor/a legal (2)",
+                    max_length=9, null=True, default=None)
+    tutor_2_name = models.CharField( "cognoms del pare/mare o tutor/a legal (2)",
+                    max_length=50, null=True, default=None)
+    tutor_2_lastname1 = models.CharField( "cognoms del pare/mare o tutor/a legal (2)",
+                    max_length=50, null=True, default=None)
+    tutor_2_lastname2 = models.CharField( "cognoms del pare/mare o tutor/a legal (2)",
+                    max_length=50, null=True, default=None)
+    # dades creades per l'usuari
     image_rights = models.BooleanField("Drets d'imatge", null=True)
     excursions = models.BooleanField("Salides d'excursio", null=True)
     extracurricular = models.BooleanField("Salides extraescolars", null=True)
     profile_req = models.ForeignKey(
         ProfileRequirement, on_delete=models.SET_NULL, null=True)
-    term = models.ForeignKey(Term, on_delete=models.SET_NULL, null=True)
-    career = models.ForeignKey(Career, on_delete=models.SET_NULL, null=True
-    )
+    career = models.ForeignKey(Career, on_delete=models.SET_NULL, null=True)
+    ufs = models.ManyToManyField(UF,blank=True)
+    state = models.CharField("estat de matrícula",
+                             max_length=20, choices=CHOICES, default=None)
 
     def documents_pujats(self):
         html= "" ""
         req_enrols= self.req_enrol_set.all()
-        pending_docs=0
-        
-        
+        pending_docs=0        
         for state in req_enrols:
             if str(state.state) == "R" or str(state.state) == "B":
                 return 0
@@ -156,9 +167,8 @@ class Enrolment(models.Model):
                 pending_docs = 1
         return pending_docs
     documents_pujats.boolean = True
-    
     def __str__(self):
-        return self.email
+        return "{} {}, {}".format(self.last_name_1, self.last_name_2, self.first_name)
 
 
 class Record(models.Model):
