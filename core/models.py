@@ -108,8 +108,9 @@ class Enrolment(models.Model):
     user = models.ForeignKey( User, on_delete=models.SET_NULL,
                                 null=True, blank=True)
     # dades importades
-    request_num = models.CharField("Número de sol·licitud", max_length=100)
-    ralc_num = models.CharField("Identificador RALC", max_length=100)
+    request_num = models.CharField("Número de sol·licitud", max_length=100,unique=True)
+    ralc_num = models.CharField("Identificador RALC", max_length=100,
+                                            null=True,blank=True,unique=True)
     first_name = models.CharField( "nom", max_length=100 )
     last_name_1 = models.CharField( "cognom 1", max_length=100 )
     last_name_2 = models.CharField( "cognom 2", max_length=100 )
