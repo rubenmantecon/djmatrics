@@ -28,8 +28,6 @@ class Career(models.Model):
     desc = models.TextField(
         "descripció", max_length=300, blank=True, null=True)
     hours = models.IntegerField("duracio", null=False, default=0)
-    start = models.DateField("data inici", null=False, default=timezone.now)
-    end = models.DateField("data finalització", null=True, default=None)
     active = models.BooleanField("és actiu", default=False)
     term = models.ForeignKey(Term, on_delete=models.SET_NULL, null=True)
 
@@ -98,7 +96,6 @@ class Enrolment(models.Model):
         ('P', 'Pendent'),
         ('V', 'Validat'),
         ('R', 'Rebutjat'),
-        ('B', 'Buit')
     )
     ID_TYPES = (
         ('DNI','DNI'),
@@ -129,93 +126,108 @@ class Enrolment(models.Model):
                             null=True, max_length=14)
     email = models.EmailField("correu", max_length=254, null=True)
     emergency_number = models.CharField( "número d'emergència",
-                    null=True, max_length=14)
+                    null=True, blank=True, max_length=14)
     tutor_1_dni = models.CharField( "dni del pare/mare o tutor/a legal (1)",
-                    max_length=30, null=True, default=None)
+                    max_length=30, null=True, blank=True, default=None)
     tutor_1_name = models.CharField( "nom del pare/mare o tutor/a legal (1)",
-                    max_length=50, null=True, default=None)
+                    max_length=50, null=True, blank=True, default=None)
     tutor_1_lastname1 = models.CharField( "cognoms del pare/mare o tutor/a legal (1)",
-                    max_length=50, null=True, default=None)
+                    max_length=50, null=True, blank=True, default=None)
     tutor_1_lastname2 = models.CharField( "cognoms del pare/mare o tutor/a legal (1)",
-                    max_length=50, null=True, default=None)
+                    max_length=50, null=True, blank=True, default=None)
     tutor_2_dni = models.CharField( "dni del pare/mare o tutor/a legal (2)",
-                    max_length=9, null=True, default=None)
+                    max_length=9, null=True, blank=True, default=None)
     tutor_2_name = models.CharField( "cognoms del pare/mare o tutor/a legal (2)",
-                    max_length=50, null=True, default=None)
+                    max_length=50, null=True, blank=True, default=None)
     tutor_2_lastname1 = models.CharField( "cognoms del pare/mare o tutor/a legal (2)",
-                    max_length=50, null=True, default=None)
+                    max_length=50, null=True, blank=True, default=None)
     tutor_2_lastname2 = models.CharField( "cognoms del pare/mare o tutor/a legal (2)",
-                    max_length=50, null=True, default=None)
+                    max_length=50, null=True, blank=True, default=None)
     # dades creades per l'usuari
-    image_rights = models.BooleanField("Drets d'imatge", null=True)
-    excursions = models.BooleanField("Salides d'excursio", null=True)
-    extracurricular = models.BooleanField("Salides extraescolars", null=True)
+    image_rights = models.BooleanField("Drets d'imatge", null=True, blank=True)
+    excursions = models.BooleanField("Salides d'excursio", null=True, blank=True)
+    extracurricular = models.BooleanField("Salides extraescolars", null=True, blank=True)
     profile_req = models.ForeignKey(
-        ProfileRequirement, on_delete=models.SET_NULL, null=True)
+        ProfileRequirement, on_delete=models.SET_NULL, null=True, blank=True)
     career = models.ForeignKey(Career, on_delete=models.SET_NULL, null=True)
     ufs = models.ManyToManyField(UF,blank=True)
     state = models.CharField("estat de matrícula",
-                             max_length=20, choices=CHOICES, default=None)
-
-    def documents_pujats(self):
-        html= "" ""
+                                 max_length=20, choices=CHOICES, default="P")
+    def llest_per_a_revisio(self):
         req_enrols= self.req_enrol_set.all()
         pending_docs=0        
-        for state in req_enrols:
-            if str(state.state) == "R" or str(state.state) == "B":
+        for req in req_enrols:
+            if req.state == "R":
+                # mentre hi hagi un doc invàlid (rebutjat) no es pot finalitzar
+                # la matrícula. Per tant, no està per revisar encara
                 return 0
-            elif str(state.state) == "P":
-                pending_docs = 1
+            elif req.state == "P" and req.upload_set.count() > 0:
+                pending_docs += 1
         return pending_docs
-    documents_pujats.boolean = True
+    llest_per_a_revisio.boolean = True
+    def carregues(self):
+        total = 0
+        for req in self.req_enrol_set.all():
+            total += req.upload_set.count()
+        return total
+    def docs_valids(self):
+        for req in self.req_enrol_set.all():
+            if req.state == "V":
+                return True
+        return False
+    docs_valids.boolean = True        
+    def docs_pendents(self):
+        for req in self.req_enrol_set.all():
+            if req.state == "P" and req.upload_set.count() > 0:
+                return True
+        return False
+    docs_pendents.boolean = True
     def __str__(self):
         return "{} {}, {}".format(self.last_name_1, self.last_name_2, self.first_name)
 
 
 class Record(models.Model):
+    class Meta:
+        verbose_name = "UF_superada"
+        verbose_name_plural = "UFs_superades"
+
     uf = models.ForeignKey(UF, on_delete=models.SET_NULL, null=True)
-    uf_name = models.CharField(
-        verbose_name="nom de la unitat formativa", max_length=80)
-    uf_code = models.CharField(
-        verbose_name="codi de la unitat formativa", max_length=12)
-    student_id = models.CharField(
-        verbose_name="DNI de l'estudiant", max_length=30)
+    uf_name = models.CharField( max_length=80,
+                                verbose_name="nom de la unitat formativa" )
+    uf_code = models.CharField( max_length=12,
+                                verbose_name="codi de la unitat formativa" )
+    student_id = models.CharField( max_length=30,
+                                verbose_name="DNI de l'estudiant")
     term = models.CharField(verbose_name="any escolar", max_length=50)
     career_code = models.CharField(
         verbose_name="codi del cicle formatiu", max_length=12)
 
 
 class Requirement(models.Model):
-    verbose_name = "Requeriment"
-    verbose_name_plural = "Requeriments"
-
     class Meta:
         verbose_name = "Requeriment"
-
-    profile = models.ForeignKey(
-        ProfileRequirement, on_delete=models.SET_NULL, null=True)
     name = models.CharField("nom", max_length=255)
-
+    description = models.TextField("descripció", null=True)
+    profile = models.ForeignKey( ProfileRequirement,
+                            on_delete=models.SET_NULL, null=True)
     def __str__(self):
         return self.name
 
 
 class Req_enrol(models.Model):
     class Meta:
-        verbose_name = "Requeriments matricula"
-
+        verbose_name = "Requeriment matricula"
     CHOICES = (
         ('P', 'Pendent'),
         ('V', 'Validat'),
         ('R', 'Rebutjat'),
     )
-
-    requirement = models.ForeignKey(
-        Requirement, on_delete=models.SET_NULL, null=True)
-    enrolment = models.ForeignKey(
-        Enrolment, on_delete=models.SET_NULL, null=True)
+    requirement = models.ForeignKey( Requirement,
+                            on_delete=models.SET_NULL, null=True)
+    enrolment = models.ForeignKey( Enrolment,
+                            on_delete=models.SET_NULL, null=True)
     state = models.CharField(max_length=20, choices=CHOICES, default=None)
-
+    comments = models.TextField(null=True,blank=True)
     def __str__(self):
         return self.requirement.name
 
@@ -225,8 +237,7 @@ class Upload(models.Model):
         verbose_name = "Pujades"
         verbose_name_plural = "Pujades"
     data = models.FileField(upload_to="uploads/", null=True, blank=True)
-    req_enrol = models.ForeignKey(
-        Req_enrol, on_delete=models.SET_NULL, null=True)
-
+    req_enrol = models.ForeignKey( Req_enrol,
+                            on_delete=models.SET_NULL, null=True)
     def __str__(self):
         return self.data.name

@@ -37,65 +37,49 @@ class CareerInline(admin.TabularInline):
     readonly_fields = ["edita", "name", "code", "hours"]
     extra = 0
     # es poden afegir "camps virtuals" (readonly) al admin amb funcions
-
     def edita(self, obj):
         return mark_safe("<a href='/admin/core/career/{}'>Edita el cicle: {}</a>".format(
-            obj.id, obj.name))
-
+                                    obj.id, obj.name))
 
 class MPInline(admin.TabularInline):
-    readonly_fields = ["edita", "code"]
-    fields = ["edita", "code"]
+    readonly_fields = ["edita",]
+    fields = ["name", "code","edita",]
     model = models.MP
     extra = 0
-
     def edita(self, obj):
-        return mark_safe("<a href='/admin/core/mp/{}'>Edita el MP: {}</a>".format(obj.id, obj.name))
-
+        return mark_safe("<a href='/admin/core/mp/{}'>Edita el MP: {}</a>".format(
+                                    obj.id, obj.name))
 
 class UFInline(admin.TabularInline):
-    fields = ["edita", "code"]
-    readonly_fields = ["edita", "code"]
+    readonly_fields = ["edita",]
+    fields = ["name", "code","edita",]
     model = models.UF
     extra = 0
-
     def edita(self, obj):
         return mark_safe("<a href='/admin/core/uf/{}'>Edita la UF: {}</a>".format(
-            obj.id, obj.name))
+                                obj.id, obj.name))
 
 
-class Req_EnrolInline(admin.TabularInline):
-    fields = ["requirement", "enrolment", "state", "pujades"]
-    readonly_fields = ["requirement", "pujades"]
-    model = models.Req_enrol
-    extra = 0
-
-    def pujades(self, obj):
-        html = """  """
-        files = obj.upload_set.all()
-        for upload in files:
-            html += "<p><a href='/media/{}' target='_blank'>{}</a></p>".format(upload.data, upload.data)
-
-        return mark_safe(html)
-
-
+@admin.register(models.Term)
 class TermAdmin(admin.ModelAdmin):
     exclude = ()
     list_display = ["name", "start", "end", "active"]
     inlines = [CareerInline]
 
 
+@admin.register(models.Career)
 class CareerAdmin(admin.ModelAdmin):
     exclude = ()
     list_display = ['name','term']
     readonly_fields = ["name", "Enrera"]
     inlines = [MPInline]
     extra = 0
-
     def Enrera(self, obj):
-        return mark_safe("<a href='/admin/core/term/{}/'>Retorna al curs: {}</a>".format(obj.term.id, obj.term.name))
+        return mark_safe("<a href='/admin/core/term/{}/'>Retorna al curs: {}</a>".format(
+                                obj.term.id, obj.term.name))
 
 
+@admin.register(models.MP)
 class MpAdmin(admin.ModelAdmin):
     readonly_fields = ["Enrera"]
     list_display = ("name", "code",'career','term')
@@ -104,11 +88,12 @@ class MpAdmin(admin.ModelAdmin):
     def term(self,obj):
         return obj.career.term.name
     def Enrera(self, obj):
-        return mark_safe("<a href='/admin/core/career/{}'>Retorna al cicle: {}</a>".format(obj.id, obj.career.name))
+        return mark_safe("<a href='/admin/core/career/{}'>Retorna al cicle: {} [{}]</a>".format(
+                                obj.career.id, obj.career.name, obj.career.code))
 
-
+@admin.register(models.UF)
 class UFAdmin(admin.ModelAdmin):
-    readonly_fields = ["Enrera"]
+    readonly_fields = ["Enrera",]
     search_fields = ['name','mp__name','mp__career__name']
     list_display = ['name','mp','cicle','course','active']
     list_editable = ['course',]
@@ -118,8 +103,24 @@ class UFAdmin(admin.ModelAdmin):
     def cicle(self,obj):
         return obj.mp.career.name
     def Enrera(self, obj):
-        return mark_safe("<a href='/admin/core/mp/{}'>Retorna al MP: {}</a>".format(obj.id, obj.mp.name))
+        return mark_safe("<a href='/admin/core/mp/{}'>Retorna al MP: {} [{}]</a>".
+                                format(obj.mp.id, obj.mp.name, obj.mp.code))
 
+class Req_EnrolInline(admin.TabularInline):
+    fields = ["requirement", "enrolment", "state", "pujades","edita",]
+    readonly_fields = ["pujades","edita"]
+    model = models.Req_enrol
+    extra = 0
+    def edita(self,obj):
+        return mark_safe("<a href='/admin/core/req_enrol/{}'>Edita</a>".format(
+                                obj.id))
+    def pujades(self, obj):
+        html = """  """
+        files = obj.upload_set.all()
+        for upload in files:
+            html += "<p><a href='/media/{}' target='_blank'>{}</a></p>".format(
+                                upload.data, upload.data)
+        return mark_safe(html)
 
 @admin.register(models.Enrolment)
 class EnrolmentAdmin(admin.ModelAdmin):
@@ -127,9 +128,9 @@ class EnrolmentAdmin(admin.ModelAdmin):
     save_on_top = True
     search_fields = ["career__name", "ID_num","email",'first_name','last_name_1','last_name_2']
     #list_filter = ["career__name"]
-    list_display = ["state","documents_pujats", "nom", "email", "ID_num","career" ]
+    list_display = ["state","docs_valids","llest_per_a_revisio", "docs_pendents", "nom", "email", "ID_num","career" ]
     readonly_fields = ["Enrera"]
-    order_by = ["state"]
+    order_by = ["llest_per_a_revisio",]
     inlines = [Req_EnrolInline]
     filter_horizontal = ('ufs',)
     def formfield_for_manytomany(self, db_field, request, *args, **kwargs):
@@ -146,17 +147,29 @@ class EnrolmentAdmin(admin.ModelAdmin):
         return "{} {}, {}".format(obj.last_name_1,obj.last_name_2,obj.first_name)
     def Enrera(self, obj):
         return mark_safe("<a href='/admin/core/enrolment'>Retorna al llistat de matrícules</a>")
-    # TODO: falta hacer una query que me mire si todos los req_enrols de un enrolment están subidos Y validados como confirmados. Además, esta función tiene que ejecutarse cada vez que hay un cambio en los req_enrol de dicho enrolment.
+    # TODO: falta hacer una query que me mire si todos los req_enrols de un enrolment
+    # están subidos Y validados como confirmados. Además, esta función tiene que ejecutarse
+    # cada vez que hay un cambio en los req_enrol de dicho enrolment.
 
+
+class UploadInline(admin.TabularInline):
+    model = models.Upload
+    extra = 0
+
+@admin.register(models.Req_enrol)
 class Req_EnrolAdmin(admin.ModelAdmin):
-    fields = ["enrolment", "requirement", "state"]
-    model = models.Req_enrol
+    fields = ["enrolment", "requirement", "state", "Enrera"]
+    readonly_fields = ["Enrera","enrolment","requirement"]
+    inlines = [UploadInline,]
+    def Enrera(self,obj):
+        e = obj.enrolment
+        return mark_safe("<a href='/admin/core/enrolment/{}'>Retorna a la matrícula de \
+                    {} {} {}</a>".format(e.id, e.first_name, e.last_name_1, e.last_name_2))
 
-
+@admin.register(models.Requirement)
 class RequirementAdmin(admin.ModelAdmin):
     exclude = ()
     list_display = ["name", "profile"]
-    model = models.Requirement
 
 
 class RequirementInline(admin.TabularInline):
@@ -170,13 +183,8 @@ class ProfileRequirementAdmin(admin.ModelAdmin):
     inlines = [RequirementInline,]
 
 
-
-
-
-admin.site.register(models.Term, TermAdmin)
-admin.site.register(models.Career, CareerAdmin)
-admin.site.register(models.MP, MpAdmin)
-admin.site.register(models.UF, UFAdmin)
-admin.site.register(models.Requirement, RequirementAdmin)
-admin.site.register(models.Upload)
-admin.site.register(models.Req_enrol)
+"""
+@admin.register(models.Upload)
+class UploadAdmin(admin.ModelAdmin):
+    exclude = ()
+    list_display = """
