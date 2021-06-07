@@ -128,7 +128,7 @@ class EnrolmentAdmin(admin.ModelAdmin):
     save_on_top = True
     search_fields = ["career__name", "ID_num","email",'first_name','last_name_1','last_name_2']
     #list_filter = ["career__name"]
-    list_display = ["state","docs_valids","llest_per_a_revisio", "docs_a_revisar", "nom", "email", "ID_num","career" ]
+    list_display = ["state","docs_valids","llest_per_a_revisio", "docs_a_revisar", "__str__", "email", "ID_num","career" ]
     readonly_fields = ["Enrera"]
     order_by = ["llest_per_a_revisio",]
     inlines = [Req_EnrolInline]
@@ -143,8 +143,6 @@ class EnrolmentAdmin(admin.ModelAdmin):
             else:
                 kwargs["queryset"] = models.UF.objects.none()
         return super().formfield_for_manytomany(db_field, request, **kwargs)
-    def nom(self,obj):
-        return "{} {}, {}".format(obj.last_name_1,obj.last_name_2,obj.first_name)
     def Enrera(self, obj):
         return mark_safe("<a href='/admin/core/enrolment'>Retorna al llistat de matrícules</a>")
     # TODO: falta hacer una query que me mire si todos los req_enrols de un enrolment
@@ -161,6 +159,7 @@ class Req_EnrolAdmin(admin.ModelAdmin):
     fields = ["enrolment", "requirement", "state", "Enrera"]
     readonly_fields = ["Enrera","enrolment","requirement"]
     inlines = [UploadInline,]
+    # TODO: treure botó "guardar" a seques
     def Enrera(self,obj):
         e = obj.enrolment
         return mark_safe("<a href='/admin/core/enrolment/{}'>Retorna a la matrícula de \

@@ -110,7 +110,7 @@ class Enrolment(models.Model):
                                             null=True,blank=True,unique=True)
     first_name = models.CharField( "nom", max_length=100 )
     last_name_1 = models.CharField( "cognom 1", max_length=100 )
-    last_name_2 = models.CharField( "cognom 2", max_length=100 )
+    last_name_2 = models.CharField( "cognom 2", max_length=100, null=True, blank=True )
     ID_num = models.CharField( "ID num", max_length=30,
                         help_text="Número del DNI, NIE o Passaport")
     ID_type = models.CharField( "tipus de doc ID", max_length=30, choices=ID_TYPES)
@@ -179,10 +179,12 @@ class Enrolment(models.Model):
             total += req.upload_set.count()
         return total
     def docs_valids(self):
+        if not self.profile_req or self.req_enrol_set.count()==0:
+            return False
         for req in self.req_enrol_set.all():
-            if req.state == "V":
-                return True
-        return False
+            if req.state != "V":
+                return False
+        return True
     docs_valids.boolean = True        
     def docs_a_revisar(self):
         for req in self.req_enrol_set.all():
@@ -191,7 +193,8 @@ class Enrolment(models.Model):
         return False
     docs_a_revisar.boolean = True
     def __str__(self):
-        return "{} {}, {}".format(self.last_name_1, self.last_name_2, self.first_name)
+        lastname2 = self.last_name_2 or ""
+        return "{} {}, {}".format(self.last_name_1, lastname2, self.first_name)
 
 
 class Record(models.Model):
