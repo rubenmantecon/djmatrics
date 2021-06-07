@@ -128,7 +128,7 @@ class EnrolmentAdmin(admin.ModelAdmin):
     save_on_top = True
     search_fields = ["career__name", "ID_num","email",'first_name','last_name_1','last_name_2']
     #list_filter = ["career__name"]
-    list_display = ["state","docs_valids","llest_per_a_revisio", "docs_pendents", "nom", "email", "ID_num","career" ]
+    list_display = ["state","docs_valids","llest_per_a_revisio", "docs_a_revisar", "nom", "email", "ID_num","career" ]
     readonly_fields = ["Enrera"]
     order_by = ["llest_per_a_revisio",]
     inlines = [Req_EnrolInline]

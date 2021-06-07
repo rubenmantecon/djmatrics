@@ -154,16 +154,24 @@ class Enrolment(models.Model):
     state = models.CharField("estat de matrícula",
                                  max_length=20, choices=CHOICES, default="P")
     def llest_per_a_revisio(self):
-        req_enrols= self.req_enrol_set.all()
-        pending_docs=0        
+        #return False
+        req_enrols = self.req_enrol_set.all()
+        pending_docs = 0    
         for req in req_enrols:
             if req.state == "R":
                 # mentre hi hagi un doc invàlid (rebutjat) no es pot finalitzar
                 # la matrícula. Per tant, no està per revisar encara
-                return 0
-            elif req.state == "P" and req.upload_set.count() > 0:
+                return False
+            elif req.state == "P":
+                if req.upload_set.count() == 0:
+                    # si queda algun doc sense cap càrrega encara no està llest
+                    return False
+                # si està pendent i amb uploads podem seguir avaluant
                 pending_docs += 1
-        return pending_docs
+        # si hem arribat aquí és pq cap doc està rebutjat ni pendent de càrrega
+        if pending_docs:
+            return True
+        return False
     llest_per_a_revisio.boolean = True
     def carregues(self):
         total = 0
@@ -176,12 +184,12 @@ class Enrolment(models.Model):
                 return True
         return False
     docs_valids.boolean = True        
-    def docs_pendents(self):
+    def docs_a_revisar(self):
         for req in self.req_enrol_set.all():
             if req.state == "P" and req.upload_set.count() > 0:
                 return True
         return False
-    docs_pendents.boolean = True
+    docs_a_revisar.boolean = True
     def __str__(self):
         return "{} {}, {}".format(self.last_name_1, self.last_name_2, self.first_name)
 
