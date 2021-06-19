@@ -1,6 +1,50 @@
-## API
+# djmatrics
+Matrics Reloaded! FOSS that allows new students and the school's Administration to manage their enrollment process via web and mobile.
 
-#### Login posibilities
+I understand why Laravel is such a popular framework, but **Django > Laravel**. Must be because *[Python doesn't suck balls](https://blog.codinghorror.com/the-php-singularity/).*
+
+Please see the [matrics-app repo](https://github.com/AWS2/matrics-app/tree/dev) for the mobile version.
+
+## Setup
+### Prerequisites
+- Python 3
+- Pip
+
+Clone and `cd` into the repo. Then set up the virtual environment.
+
+### Virtual environment
+You will need to set up a Python virtual environment. I like setting up a `.virtualenvs` folder and sourcing from there:
+
+```
+python3 -m venv ~/.virtualenvs/matrics
+
+source ~/.virtualenvs/matrics/bin/activate
+
+pip install -r requirements.txt
+```
+
+ If you are interested on differences between `venv` and `virtualenv`, see [here](https://stackoverflow.com/questions/44091886/whats-the-difference-between-virtualenv-and-m-venv-in-creating-virtual-env).
+
+
+### Create a superuser
+This one is a Django's default, but it will come in handy:
+```
+./manage.py createsuperuser
+```
+
+### Populate the database
+There are multiple commands available for populating the database. Please refer to `core/management/commands`.
+Some of relevance are shown. Remember that they are executed with `./manage.py`:
+
+- `create_users`
+- `import_enrolments <path/to/csv>`
+- `populate_DB`
+
+### Run a development server
+`./manage.py runserver`
+
+## API
+### Login posibilities
 
 *Standard Login*
 
