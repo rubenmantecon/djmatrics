@@ -5,6 +5,16 @@ I understand why Laravel is such a popular framework, but **Django > Laravel**. 
 
 Please see the [matrics-app repo](https://github.com/AWS2/matrics-app/tree/dev) for the mobile version.
 
+## Features
+- Social login (Google and Outlook)
+- Automatic tuition price per the Catalan Generalitat's legal guidelines
+- Automatic requirements listings for each user, per the Catalan Generalitat's legal guidelines
+- File uploads for the necessary requirements
+- Visual, live feedback in the user's dashboard about the validation state of said requirements
+- Custom admin dashboard, based off Django's default
+- RESTful API
+
+
 ## Setup
 ### Prerequisites
 - Python 3
